@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>mbuild.dfs</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="mbuild-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://mjc.intel.com/mjcharne/mbuild">mbuild</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="mbuild-module.html">Package&nbsp;mbuild</a> ::
+        Module&nbsp;dfs
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="mbuild.dfs-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="mbuild.dfs-module.html">Module mbuild.dfs</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno">  1</tt>  <tt class="py-line"><tt class="py-comment">#!/usr/bin/env python</tt> </tt>
+<a name="L2"></a><tt class="py-lineno">  2</tt>  <tt class="py-line"><tt class="py-comment"># FILE: dfs.py</tt> </tt>
+<a name="L3"></a><tt class="py-lineno">  3</tt>  <tt class="py-line"><tt class="py-comment"># AUTHOR: Mark Charney &lt;mark.charney@intel.com&gt;</tt> </tt>
+<a name="L4"></a><tt class="py-lineno">  4</tt>  <tt class="py-line"><tt class="py-comment">#BEGIN_LEGAL</tt> </tt>
+<a name="L5"></a><tt class="py-lineno">  5</tt>  <tt class="py-line"><tt class="py-comment">#</tt> </tt>
+<a name="L6"></a><tt class="py-lineno">  6</tt>  <tt class="py-line"><tt class="py-comment">#Copyright (c) 2016 Intel Corporation</tt> </tt>
+<a name="L7"></a><tt class="py-lineno">  7</tt>  <tt class="py-line"><tt class="py-comment">#</tt> </tt>
+<a name="L8"></a><tt class="py-lineno">  8</tt>  <tt class="py-line"><tt class="py-comment">#  Licensed under the Apache License, Version 2.0 (the "License");</tt> </tt>
+<a name="L9"></a><tt class="py-lineno">  9</tt>  <tt class="py-line"><tt class="py-comment">#  you may not use this file except in compliance with the License.</tt> </tt>
+<a name="L10"></a><tt class="py-lineno"> 10</tt>  <tt class="py-line"><tt class="py-comment">#  You may obtain a copy of the License at</tt> </tt>
+<a name="L11"></a><tt class="py-lineno"> 11</tt>  <tt class="py-line"><tt class="py-comment">#</tt> </tt>
+<a name="L12"></a><tt class="py-lineno"> 12</tt>  <tt class="py-line"><tt class="py-comment">#      http://www.apache.org/licenses/LICENSE-2.0</tt> </tt>
+<a name="L13"></a><tt class="py-lineno"> 13</tt>  <tt class="py-line"><tt class="py-comment">#</tt> </tt>
+<a name="L14"></a><tt class="py-lineno"> 14</tt>  <tt class="py-line"><tt class="py-comment">#  Unless required by applicable law or agreed to in writing, software</tt> </tt>
+<a name="L15"></a><tt class="py-lineno"> 15</tt>  <tt class="py-line"><tt class="py-comment">#  distributed under the License is distributed on an "AS IS" BASIS,</tt> </tt>
+<a name="L16"></a><tt class="py-lineno"> 16</tt>  <tt class="py-line"><tt class="py-comment">#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</tt> </tt>
+<a name="L17"></a><tt class="py-lineno"> 17</tt>  <tt class="py-line"><tt class="py-comment">#  See the License for the specific language governing permissions and</tt> </tt>
+<a name="L18"></a><tt class="py-lineno"> 18</tt>  <tt class="py-line"><tt class="py-comment">#  limitations under the License.</tt> </tt>
+<a name="L19"></a><tt class="py-lineno"> 19</tt>  <tt class="py-line"><tt class="py-comment">#  </tt> </tt>
+<a name="L20"></a><tt class="py-lineno"> 20</tt>  <tt class="py-line"><tt class="py-comment">#END_LEGAL</tt> </tt>
+<a name="L21"></a><tt class="py-lineno"> 21</tt>  <tt class="py-line"> </tt>
+<a name="L22"></a><tt class="py-lineno"> 22</tt>  <tt class="py-line"><tt class="py-docstring">"""This file provides a node_t type and a dfs() routine that prints out</tt> </tt>
+<a name="L23"></a><tt class="py-lineno"> 23</tt>  <tt class="py-line"><tt class="py-docstring">cycles found in a graph represented as a list of node_t objects.</tt> </tt>
+<a name="L24"></a><tt class="py-lineno"> 24</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
+<a name="L25"></a><tt class="py-lineno"> 25</tt>  <tt class="py-line"> </tt>
+<a name="L26"></a><tt class="py-lineno"> 26</tt>  <tt class="py-line"><tt id="link-0" class="py-name" targets="Variable mbuild.dfs._dfs_verbose=mbuild.dfs-module.html#_dfs_verbose"><a title="mbuild.dfs._dfs_verbose" class="py-name" href="#" onclick="return doclink('link-0', '_dfs_verbose', 'link-0');">_dfs_verbose</a></tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L27"></a><tt class="py-lineno"> 27</tt>  <tt class="py-line"> </tt>
+<a name="node_t"></a><div id="node_t-def"><a name="L28"></a><tt class="py-lineno"> 28</tt> <a class="py-toggle" href="#" id="node_t-toggle" onclick="return toggle('node_t');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="mbuild.dfs.node_t-class.html">node_t</a><tt class="py-op">(</tt><tt class="py-base-class">object</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="node_t-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="node_t-expanded"><a name="node_t.__init__"></a><div id="node_t.__init__-def"><a name="L29"></a><tt class="py-lineno"> 29</tt> <a class="py-toggle" href="#" id="node_t.__init__-toggle" onclick="return toggle('node_t.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="mbuild.dfs.node_t-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">name</tt><tt class="py-op">=</tt><tt class="py-string">'no-name-for-node'</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="node_t.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="node_t.__init__-expanded"><a name="L30"></a><tt class="py-lineno"> 30</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">name</tt> <tt class="py-op">=</tt> <tt class="py-name">name</tt> </tt>
+<a name="L31"></a><tt class="py-lineno"> 31</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">afters</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt> </tt>
+<a name="L32"></a><tt class="py-lineno"> 32</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">befores</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt> </tt>
+<a name="L33"></a><tt class="py-lineno"> 33</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-1" class="py-name" targets="Method mbuild.dfs.node_t.zero()=mbuild.dfs.node_t-class.html#zero"><a title="mbuild.dfs.node_t.zero" class="py-name" href="#" onclick="return doclink('link-1', 'zero', 'link-1');">zero</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L34"></a><tt class="py-lineno"> 34</tt>  <tt class="py-line"> </tt>
+<a name="L35"></a><tt class="py-lineno"> 35</tt>  <tt class="py-line">        <tt class="py-comment"># The colors are:</tt> </tt>
+<a name="L36"></a><tt class="py-lineno"> 36</tt>  <tt class="py-line">        <tt class="py-comment">#    0 = white (unvisited),</tt> </tt>
+<a name="L37"></a><tt class="py-lineno"> 37</tt>  <tt class="py-line">        <tt class="py-comment">#    1=grey (discovered, visiting),</tt> </tt>
+<a name="L38"></a><tt class="py-lineno"> 38</tt>  <tt class="py-line">        <tt class="py-comment">#    2=black (finalized)</tt> </tt>
+<a name="L39"></a><tt class="py-lineno"> 39</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">color</tt> <tt class="py-op">=</tt> <tt class="py-number">0</tt> </tt>
+<a name="L40"></a><tt class="py-lineno"> 40</tt>  <tt class="py-line">                 </tt>
+<a name="L41"></a><tt class="py-lineno"> 41</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">discover</tt> <tt class="py-op">=</tt> <tt class="py-number">0</tt> </tt>
+<a name="L42"></a><tt class="py-lineno"> 42</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">finalize</tt> <tt class="py-op">=</tt> <tt class="py-number">0</tt> </tt>
+<a name="L43"></a><tt class="py-lineno"> 43</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">predecessor</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+</div><a name="node_t.zero"></a><div id="node_t.zero-def"><a name="L44"></a><tt class="py-lineno"> 44</tt> <a class="py-toggle" href="#" id="node_t.zero-toggle" onclick="return toggle('node_t.zero');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="mbuild.dfs.node_t-class.html#zero">zero</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="node_t.zero-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="node_t.zero-expanded"><a name="L45"></a><tt class="py-lineno"> 45</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">color</tt> <tt class="py-op">=</tt> <tt class="py-number">0</tt> </tt>
+</div><a name="node_t.add_successor"></a><div id="node_t.add_successor-def"><a name="L46"></a><tt class="py-lineno"> 46</tt> <a class="py-toggle" href="#" id="node_t.add_successor-toggle" onclick="return toggle('node_t.add_successor');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="mbuild.dfs.node_t-class.html#add_successor">add_successor</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">s</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="node_t.add_successor-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="node_t.add_successor-expanded"><a name="L47"></a><tt class="py-lineno"> 47</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">afters</tt><tt class="py-op">.</tt><tt class="py-name">append</tt><tt class="py-op">(</tt><tt class="py-name">s</tt><tt class="py-op">)</tt> </tt>
+<a name="L48"></a><tt class="py-lineno"> 48</tt>  <tt class="py-line">        <tt class="py-name">s</tt><tt class="py-op">.</tt><tt class="py-name">befores</tt><tt class="py-op">.</tt><tt class="py-name">append</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">)</tt> </tt>
+</div><a name="node_t.add_ancestor"></a><div id="node_t.add_ancestor-def"><a name="L49"></a><tt class="py-lineno"> 49</tt> <a class="py-toggle" href="#" id="node_t.add_ancestor-toggle" onclick="return toggle('node_t.add_ancestor');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="mbuild.dfs.node_t-class.html#add_ancestor">add_ancestor</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">s</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="node_t.add_ancestor-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="node_t.add_ancestor-expanded"><a name="L50"></a><tt class="py-lineno"> 50</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">befores</tt><tt class="py-op">.</tt><tt class="py-name">append</tt><tt class="py-op">(</tt><tt class="py-name">s</tt><tt class="py-op">)</tt> </tt>
+<a name="L51"></a><tt class="py-lineno"> 51</tt>  <tt class="py-line">        <tt class="py-name">s</tt><tt class="py-op">.</tt><tt class="py-name">afters</tt><tt class="py-op">.</tt><tt class="py-name">append</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">)</tt> </tt>
+</div><a name="node_t.__str__"></a><div id="node_t.__str__-def"><a name="L52"></a><tt class="py-lineno"> 52</tt> <a class="py-toggle" href="#" id="node_t.__str__-toggle" onclick="return toggle('node_t.__str__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="mbuild.dfs.node_t-class.html#__str__">__str__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="node_t.__str__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="node_t.__str__-expanded"><a name="L53"></a><tt class="py-lineno"> 53</tt>  <tt class="py-line">        <tt class="py-name">s</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt> </tt>
+<a name="L54"></a><tt class="py-lineno"> 54</tt>  <tt class="py-line">        <tt class="py-name">s</tt><tt class="py-op">.</tt><tt class="py-name">append</tt><tt class="py-op">(</tt><tt class="py-string">"TARGET: %s\n\t"</tt> <tt class="py-op">%</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">name</tt><tt class="py-op">)</tt> </tt>
+<a name="L55"></a><tt class="py-lineno"> 55</tt>  <tt class="py-line">        <tt class="py-name">s</tt><tt class="py-op">.</tt><tt class="py-name">append</tt><tt class="py-op">(</tt><tt class="py-string">"discovered %d  finalized %d\n\t"</tt> <tt class="py-op">%</tt> <tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">discover</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">finalize</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L56"></a><tt class="py-lineno"> 56</tt>  <tt class="py-line">        <tt class="py-name">s</tt><tt class="py-op">.</tt><tt class="py-name">extend</tt><tt class="py-op">(</tt><tt class="py-name">map</tt><tt class="py-op">(</tt><tt class="py-keyword">lambda</tt><tt class="py-op">(</tt><tt class="py-name">x</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> <tt class="py-string">"\t\n%s"</tt> <tt class="py-op">%</tt> <tt class="py-name">x</tt><tt class="py-op">.</tt><tt class="py-name">name</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">afters</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L57"></a><tt class="py-lineno"> 57</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-string">''</tt><tt class="py-op">.</tt><tt id="link-2" class="py-name" targets="Function mbuild.util.join()=mbuild.util-module.html#join"><a title="mbuild.util.join" class="py-name" href="#" onclick="return doclink('link-2', 'join', 'link-2');">join</a></tt><tt class="py-op">(</tt><tt class="py-name">s</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L58"></a><tt class="py-lineno"> 58</tt>  <tt class="py-line"> </tt>
+<a name="L59"></a><tt class="py-lineno"> 59</tt>  <tt class="py-line"> </tt>
+<a name="L60"></a><tt class="py-lineno"> 60</tt>  <tt class="py-line"> </tt>
+<a name="_print_cycle"></a><div id="_print_cycle-def"><a name="L61"></a><tt class="py-lineno"> 61</tt> <a class="py-toggle" href="#" id="_print_cycle-toggle" onclick="return toggle('_print_cycle');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="mbuild.dfs-module.html#_print_cycle">_print_cycle</a><tt class="py-op">(</tt><tt class="py-param">last_visit</tt><tt class="py-op">,</tt> <tt class="py-param">grey_loop_closer</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="_print_cycle-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="_print_cycle-expanded"><a name="L62"></a><tt class="py-lineno"> 62</tt>  <tt class="py-line">    <tt class="py-name">pad</tt> <tt class="py-op">=</tt> <tt class="py-string">''</tt> </tt>
+<a name="L63"></a><tt class="py-lineno"> 63</tt>  <tt class="py-line">    <tt class="py-name">p</tt> <tt class="py-op">=</tt> <tt class="py-name">last_visit</tt> </tt>
+<a name="L64"></a><tt class="py-lineno"> 64</tt>  <tt class="py-line">    <tt class="py-keyword">while</tt> <tt class="py-number">1</tt><tt class="py-op">:</tt> </tt>
+<a name="L65"></a><tt class="py-lineno"> 65</tt>  <tt class="py-line">        <tt class="py-keyword">print</tt> <tt class="py-name">pad</tt><tt class="py-op">,</tt> <tt class="py-name">p</tt><tt class="py-op">.</tt><tt class="py-name">name</tt> </tt>
+<a name="L66"></a><tt class="py-lineno"> 66</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">p</tt> <tt class="py-op">==</tt> <tt class="py-name">grey_loop_closer</tt><tt class="py-op">:</tt> </tt>
+<a name="L67"></a><tt class="py-lineno"> 67</tt>  <tt class="py-line">            <tt class="py-keyword">break</tt> </tt>
+<a name="L68"></a><tt class="py-lineno"> 68</tt>  <tt class="py-line">        <tt class="py-name">p</tt> <tt class="py-op">=</tt> <tt class="py-name">p</tt><tt class="py-op">.</tt><tt class="py-name">predecessor</tt> </tt>
+<a name="L69"></a><tt class="py-lineno"> 69</tt>  <tt class="py-line">        <tt class="py-name">pad</tt> <tt class="py-op">+=</tt> <tt class="py-string">'    '</tt> </tt>
+</div><a name="L70"></a><tt class="py-lineno"> 70</tt>  <tt class="py-line"> </tt>
+<a name="_visit"></a><div id="_visit-def"><a name="L71"></a><tt class="py-lineno"> 71</tt> <a class="py-toggle" href="#" id="_visit-toggle" onclick="return toggle('_visit');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="mbuild.dfs-module.html#_visit">_visit</a><tt class="py-op">(</tt><tt class="py-param">n</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="_visit-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="_visit-expanded"><a name="L72"></a><tt class="py-lineno"> 72</tt>  <tt class="py-line">    <tt class="py-keyword">global</tt> <tt class="py-name">_dfs_time</tt> </tt>
+<a name="L73"></a><tt class="py-lineno"> 73</tt>  <tt class="py-line">    <tt class="py-name">n</tt><tt class="py-op">.</tt><tt class="py-name">color</tt> <tt class="py-op">=</tt> <tt class="py-number">1</tt> </tt>
+<a name="L74"></a><tt class="py-lineno"> 74</tt>  <tt class="py-line">    <tt class="py-name">n</tt><tt class="py-op">.</tt><tt class="py-name">discover</tt> <tt class="py-op">=</tt> <tt class="py-name">_dfs_time</tt> </tt>
+<a name="L75"></a><tt class="py-lineno"> 75</tt>  <tt class="py-line">    <tt class="py-keyword">if</tt> <tt id="link-3" class="py-name"><a title="mbuild.dfs._dfs_verbose" class="py-name" href="#" onclick="return doclink('link-3', '_dfs_verbose', 'link-0');">_dfs_verbose</a></tt><tt class="py-op">:</tt> </tt>
+<a name="L76"></a><tt class="py-lineno"> 76</tt>  <tt class="py-line">        <tt class="py-keyword">print</tt> <tt class="py-string">"visiting %s"</tt> <tt class="py-op">%</tt> <tt class="py-name">str</tt><tt class="py-op">(</tt><tt class="py-name">n</tt><tt class="py-op">)</tt> </tt>
+<a name="L77"></a><tt class="py-lineno"> 77</tt>  <tt class="py-line">    <tt class="py-name">_dfs_time</tt> <tt class="py-op">+=</tt> <tt class="py-number">1</tt> </tt>
+<a name="L78"></a><tt class="py-lineno"> 78</tt>  <tt class="py-line">    <tt class="py-name">retval</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L79"></a><tt class="py-lineno"> 79</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">a</tt> <tt class="py-keyword">in</tt> <tt class="py-name">n</tt><tt class="py-op">.</tt><tt class="py-name">afters</tt><tt class="py-op">:</tt> </tt>
+<a name="L80"></a><tt class="py-lineno"> 80</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">a</tt><tt class="py-op">.</tt><tt class="py-name">color</tt> <tt class="py-op">==</tt> <tt class="py-number">0</tt><tt class="py-op">:</tt> </tt>
+<a name="L81"></a><tt class="py-lineno"> 81</tt>  <tt class="py-line">            <tt class="py-name">a</tt><tt class="py-op">.</tt><tt class="py-name">predecessor</tt> <tt class="py-op">=</tt> <tt class="py-name">n</tt> </tt>
+<a name="L82"></a><tt class="py-lineno"> 82</tt>  <tt class="py-line">            <tt class="py-name">retval</tt> <tt class="py-op">|=</tt> <tt class="py-name">_visit</tt><tt class="py-op">(</tt><tt class="py-name">a</tt><tt class="py-op">)</tt> </tt>
+<a name="L83"></a><tt class="py-lineno"> 83</tt>  <tt class="py-line">        <tt class="py-keyword">elif</tt> <tt class="py-name">a</tt><tt class="py-op">.</tt><tt class="py-name">color</tt> <tt class="py-op">==</tt> <tt class="py-number">1</tt><tt class="py-op">:</tt> </tt>
+<a name="L84"></a><tt class="py-lineno"> 84</tt>  <tt class="py-line">            <tt class="py-comment"># a back-edge</tt> </tt>
+<a name="L85"></a><tt class="py-lineno"> 85</tt>  <tt class="py-line">            <tt class="py-keyword">print</tt> <tt class="py-string">"cycle"</tt> </tt>
+<a name="L86"></a><tt class="py-lineno"> 86</tt>  <tt class="py-line">            <tt class="py-name">_print_cycle</tt><tt class="py-op">(</tt><tt class="py-name">n</tt><tt class="py-op">,</tt><tt class="py-name">a</tt><tt class="py-op">)</tt> </tt>
+<a name="L87"></a><tt class="py-lineno"> 87</tt>  <tt class="py-line">            <tt class="py-name">retval</tt> <tt class="py-op">=</tt> <tt class="py-name">True</tt> </tt>
+<a name="L88"></a><tt class="py-lineno"> 88</tt>  <tt class="py-line">    <tt class="py-name">n</tt><tt class="py-op">.</tt><tt class="py-name">color</tt> <tt class="py-op">=</tt> <tt class="py-number">2</tt> </tt>
+<a name="L89"></a><tt class="py-lineno"> 89</tt>  <tt class="py-line">    <tt class="py-name">n</tt><tt class="py-op">.</tt><tt class="py-name">finalize</tt> <tt class="py-op">=</tt> <tt class="py-name">_dfs_time</tt> </tt>
+<a name="L90"></a><tt class="py-lineno"> 90</tt>  <tt class="py-line">    <tt class="py-name">_dfs_time</tt> <tt class="py-op">+=</tt> <tt class="py-number">1</tt> </tt>
+<a name="L91"></a><tt class="py-lineno"> 91</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">retval</tt> </tt>
+</div><a name="L92"></a><tt class="py-lineno"> 92</tt>  <tt class="py-line">             </tt>
+<a name="dfs"></a><div id="dfs-def"><a name="L93"></a><tt class="py-lineno"> 93</tt> <a class="py-toggle" href="#" id="dfs-toggle" onclick="return toggle('dfs');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="mbuild.dfs-module.html#dfs">dfs</a><tt class="py-op">(</tt><tt class="py-param">nodes</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="dfs-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="dfs-expanded"><a name="L94"></a><tt class="py-lineno"> 94</tt>  <tt class="py-line">    <tt class="py-docstring">"""Depth first search a list of node_t objects. Print out cycles.</tt> </tt>
+<a name="L95"></a><tt class="py-lineno"> 95</tt>  <tt class="py-line"><tt class="py-docstring">    @rtype: bool</tt> </tt>
+<a name="L96"></a><tt class="py-lineno"> 96</tt>  <tt class="py-line"><tt class="py-docstring">    @return: True if cycles were detected.</tt> </tt>
+<a name="L97"></a><tt class="py-lineno"> 97</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="L98"></a><tt class="py-lineno"> 98</tt>  <tt class="py-line">    <tt class="py-keyword">global</tt> <tt class="py-name">_dfs_time</tt> </tt>
+<a name="L99"></a><tt class="py-lineno"> 99</tt>  <tt class="py-line">    <tt class="py-name">_dfs_time</tt> <tt class="py-op">=</tt> <tt class="py-number">0</tt> </tt>
+<a name="L100"></a><tt class="py-lineno">100</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">t</tt> <tt class="py-keyword">in</tt> <tt class="py-name">nodes</tt><tt class="py-op">:</tt> </tt>
+<a name="L101"></a><tt class="py-lineno">101</tt>  <tt class="py-line">        <tt class="py-name">t</tt><tt class="py-op">.</tt><tt id="link-4" class="py-name"><a title="mbuild.dfs.node_t.zero" class="py-name" href="#" onclick="return doclink('link-4', 'zero', 'link-1');">zero</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L102"></a><tt class="py-lineno">102</tt>  <tt class="py-line">    <tt class="py-name">cycle</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L103"></a><tt class="py-lineno">103</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">n</tt> <tt class="py-keyword">in</tt> <tt class="py-name">nodes</tt><tt class="py-op">:</tt> </tt>
+<a name="L104"></a><tt class="py-lineno">104</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">n</tt><tt class="py-op">.</tt><tt class="py-name">color</tt> <tt class="py-op">==</tt> <tt class="py-number">0</tt><tt class="py-op">:</tt> </tt>
+<a name="L105"></a><tt class="py-lineno">105</tt>  <tt class="py-line">            <tt class="py-name">cycle</tt> <tt class="py-op">|=</tt> <tt class="py-name">_visit</tt><tt class="py-op">(</tt><tt class="py-name">n</tt><tt class="py-op">)</tt> </tt>
+<a name="L106"></a><tt class="py-lineno">106</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">cycle</tt> </tt>
+</div><a name="L107"></a><tt class="py-lineno">107</tt>  <tt class="py-line"> </tt>
+<a name="L108"></a><tt class="py-lineno">108</tt>  <tt class="py-line"><tt class="py-comment">#######################################################</tt> </tt>
+<a name="L109"></a><tt class="py-lineno">109</tt>  <tt class="py-line"> </tt>
+<a name="L110"></a><tt class="py-lineno">110</tt>  <tt class="py-line"><tt class="py-comment"># stuff for a strongly connected components algorithm -- currently</tt> </tt>
+<a name="L111"></a><tt class="py-lineno">111</tt>  <tt class="py-line"><tt class="py-comment"># unused.</tt> </tt>
+<a name="L112"></a><tt class="py-lineno">112</tt>  <tt class="py-line"> </tt>
+<a name="_node_cmp"></a><div id="_node_cmp-def"><a name="L113"></a><tt class="py-lineno">113</tt> <a class="py-toggle" href="#" id="_node_cmp-toggle" onclick="return toggle('_node_cmp');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="mbuild.dfs-module.html#_node_cmp">_node_cmp</a><tt class="py-op">(</tt><tt class="py-param">aa</tt><tt class="py-op">,</tt><tt class="py-param">bb</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="_node_cmp-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="_node_cmp-expanded"><a name="L114"></a><tt class="py-lineno">114</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">aa</tt><tt class="py-op">.</tt><tt class="py-name">finalize</tt><tt class="py-op">.</tt><tt class="py-name">__cmp__</tt><tt class="py-op">(</tt><tt class="py-name">bb</tt><tt class="py-op">.</tt><tt class="py-name">finalize</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L115"></a><tt class="py-lineno">115</tt>  <tt class="py-line"> </tt>
+<a name="_visit_transpose"></a><div id="_visit_transpose-def"><a name="L116"></a><tt class="py-lineno">116</tt> <a class="py-toggle" href="#" id="_visit_transpose-toggle" onclick="return toggle('_visit_transpose');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="mbuild.dfs-module.html#_visit_transpose">_visit_transpose</a><tt class="py-op">(</tt><tt class="py-param">n</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="_visit_transpose-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="_visit_transpose-expanded"><a name="L117"></a><tt class="py-lineno">117</tt>  <tt class="py-line">    <tt class="py-keyword">global</tt> <tt class="py-name">_dfs_time</tt> </tt>
+<a name="L118"></a><tt class="py-lineno">118</tt>  <tt class="py-line">    <tt class="py-name">n</tt><tt class="py-op">.</tt><tt class="py-name">color</tt> <tt class="py-op">=</tt> <tt class="py-number">1</tt> </tt>
+<a name="L119"></a><tt class="py-lineno">119</tt>  <tt class="py-line">    <tt class="py-keyword">if</tt> <tt id="link-5" class="py-name"><a title="mbuild.dfs._dfs_verbose" class="py-name" href="#" onclick="return doclink('link-5', '_dfs_verbose', 'link-0');">_dfs_verbose</a></tt><tt class="py-op">:</tt> </tt>
+<a name="L120"></a><tt class="py-lineno">120</tt>  <tt class="py-line">        <tt class="py-keyword">print</tt> <tt class="py-string">"visiting %s"</tt> <tt class="py-op">%</tt> <tt class="py-name">str</tt><tt class="py-op">(</tt><tt class="py-name">n</tt><tt class="py-op">)</tt> </tt>
+<a name="L121"></a><tt class="py-lineno">121</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">a</tt> <tt class="py-keyword">in</tt> <tt class="py-name">n</tt><tt class="py-op">.</tt><tt class="py-name">befores</tt><tt class="py-op">:</tt> </tt>
+<a name="L122"></a><tt class="py-lineno">122</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">a</tt><tt class="py-op">.</tt><tt class="py-name">color</tt> <tt class="py-op">==</tt> <tt class="py-number">0</tt><tt class="py-op">:</tt> </tt>
+<a name="L123"></a><tt class="py-lineno">123</tt>  <tt class="py-line">            <tt class="py-name">_visit_transpose</tt><tt class="py-op">(</tt><tt class="py-name">a</tt><tt class="py-op">)</tt> </tt>
+<a name="L124"></a><tt class="py-lineno">124</tt>  <tt class="py-line">    <tt class="py-name">n</tt><tt class="py-op">.</tt><tt class="py-name">color</tt> <tt class="py-op">=</tt> <tt class="py-number">2</tt> </tt>
+</div><a name="L125"></a><tt class="py-lineno">125</tt>  <tt class="py-line"> </tt>
+<a name="L126"></a><tt class="py-lineno">126</tt>  <tt class="py-line"> </tt>
+<a name="dfs_transpose"></a><div id="dfs_transpose-def"><a name="L127"></a><tt class="py-lineno">127</tt> <a class="py-toggle" href="#" id="dfs_transpose-toggle" onclick="return toggle('dfs_transpose');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="mbuild.dfs-module.html#dfs_transpose">dfs_transpose</a><tt class="py-op">(</tt><tt class="py-param">nodes</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="dfs_transpose-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="dfs_transpose-expanded"><a name="L128"></a><tt class="py-lineno">128</tt>  <tt class="py-line">    <tt class="py-keyword">global</tt> <tt class="py-name">_dfs_time</tt> </tt>
+<a name="L129"></a><tt class="py-lineno">129</tt>  <tt class="py-line">    <tt class="py-name">_dfs_time</tt> <tt class="py-op">=</tt> <tt class="py-number">0</tt> </tt>
+<a name="L130"></a><tt class="py-lineno">130</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">t</tt> <tt class="py-keyword">in</tt> <tt class="py-name">nodes</tt><tt class="py-op">:</tt> </tt>
+<a name="L131"></a><tt class="py-lineno">131</tt>  <tt class="py-line">        <tt class="py-name">t</tt><tt class="py-op">.</tt><tt id="link-6" class="py-name"><a title="mbuild.dfs.node_t.zero" class="py-name" href="#" onclick="return doclink('link-6', 'zero', 'link-1');">zero</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L132"></a><tt class="py-lineno">132</tt>  <tt class="py-line">    <tt class="py-name">nodes</tt><tt class="py-op">.</tt><tt class="py-name">sort</tt><tt class="py-op">(</tt><tt class="py-name">cmp</tt><tt class="py-op">=</tt><tt class="py-name">_node_cmp</tt><tt class="py-op">)</tt> </tt>
+<a name="L133"></a><tt class="py-lineno">133</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">n</tt> <tt class="py-keyword">in</tt> <tt class="py-name">nodes</tt><tt class="py-op">:</tt> </tt>
+<a name="L134"></a><tt class="py-lineno">134</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">n</tt><tt class="py-op">.</tt><tt class="py-name">color</tt> <tt class="py-op">==</tt> <tt class="py-number">0</tt><tt class="py-op">:</tt> </tt>
+<a name="L135"></a><tt class="py-lineno">135</tt>  <tt class="py-line">            <tt class="py-name">_visit_transpose</tt><tt class="py-op">(</tt><tt class="py-name">n</tt><tt class="py-op">)</tt> </tt>
+<a name="L136"></a><tt class="py-lineno">136</tt>  <tt class="py-line">            <tt class="py-keyword">if</tt> <tt id="link-7" class="py-name"><a title="mbuild.dfs._dfs_verbose" class="py-name" href="#" onclick="return doclink('link-7', '_dfs_verbose', 'link-0');">_dfs_verbose</a></tt><tt class="py-op">:</tt> </tt>
+<a name="L137"></a><tt class="py-lineno">137</tt>  <tt class="py-line">                <tt class="py-keyword">print</tt> <tt class="py-string">"===="</tt> </tt>
+</div><a name="L138"></a><tt class="py-lineno">138</tt>  <tt class="py-line"> </tt>
+<a name="L139"></a><tt class="py-lineno">139</tt>  <tt class="py-line"><tt class="py-comment">####################################################</tt> </tt>
+<a name="L140"></a><tt class="py-lineno">140</tt>  <tt class="py-line">             </tt>
+<a name="_test_dfs"></a><div id="_test_dfs-def"><a name="L141"></a><tt class="py-lineno">141</tt> <a class="py-toggle" href="#" id="_test_dfs-toggle" onclick="return toggle('_test_dfs');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="mbuild.dfs-module.html#_test_dfs">_test_dfs</a><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="_test_dfs-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="_test_dfs-expanded"><a name="L142"></a><tt class="py-lineno">142</tt>  <tt class="py-line">    <tt class="py-name">node1</tt> <tt class="py-op">=</tt> <tt id="link-8" class="py-name" targets="Class mbuild.dfs.node_t=mbuild.dfs.node_t-class.html"><a title="mbuild.dfs.node_t" class="py-name" href="#" onclick="return doclink('link-8', 'node_t', 'link-8');">node_t</a></tt><tt class="py-op">(</tt><tt class="py-string">'1'</tt><tt class="py-op">)</tt> </tt>
+<a name="L143"></a><tt class="py-lineno">143</tt>  <tt class="py-line">    <tt class="py-name">node2</tt> <tt class="py-op">=</tt> <tt id="link-9" class="py-name"><a title="mbuild.dfs.node_t" class="py-name" href="#" onclick="return doclink('link-9', 'node_t', 'link-8');">node_t</a></tt><tt class="py-op">(</tt><tt class="py-string">'2'</tt><tt class="py-op">)</tt> </tt>
+<a name="L144"></a><tt class="py-lineno">144</tt>  <tt class="py-line">    <tt class="py-name">node3</tt> <tt class="py-op">=</tt> <tt id="link-10" class="py-name"><a title="mbuild.dfs.node_t" class="py-name" href="#" onclick="return doclink('link-10', 'node_t', 'link-8');">node_t</a></tt><tt class="py-op">(</tt><tt class="py-string">'3'</tt><tt class="py-op">)</tt> </tt>
+<a name="L145"></a><tt class="py-lineno">145</tt>  <tt class="py-line">    <tt class="py-name">node4</tt> <tt class="py-op">=</tt> <tt id="link-11" class="py-name"><a title="mbuild.dfs.node_t" class="py-name" href="#" onclick="return doclink('link-11', 'node_t', 'link-8');">node_t</a></tt><tt class="py-op">(</tt><tt class="py-string">'4'</tt><tt class="py-op">)</tt> </tt>
+<a name="L146"></a><tt class="py-lineno">146</tt>  <tt class="py-line">    <tt class="py-name">node1</tt><tt class="py-op">.</tt><tt id="link-12" class="py-name" targets="Method mbuild.dfs.node_t.add_successor()=mbuild.dfs.node_t-class.html#add_successor"><a title="mbuild.dfs.node_t.add_successor" class="py-name" href="#" onclick="return doclink('link-12', 'add_successor', 'link-12');">add_successor</a></tt><tt class="py-op">(</tt><tt class="py-name">node2</tt><tt class="py-op">)</tt> </tt>
+<a name="L147"></a><tt class="py-lineno">147</tt>  <tt class="py-line">    <tt class="py-name">node1</tt><tt class="py-op">.</tt><tt id="link-13" class="py-name"><a title="mbuild.dfs.node_t.add_successor" class="py-name" href="#" onclick="return doclink('link-13', 'add_successor', 'link-12');">add_successor</a></tt><tt class="py-op">(</tt><tt class="py-name">node3</tt><tt class="py-op">)</tt> </tt>
+<a name="L148"></a><tt class="py-lineno">148</tt>  <tt class="py-line">    <tt class="py-name">node3</tt><tt class="py-op">.</tt><tt id="link-14" class="py-name"><a title="mbuild.dfs.node_t.add_successor" class="py-name" href="#" onclick="return doclink('link-14', 'add_successor', 'link-12');">add_successor</a></tt><tt class="py-op">(</tt><tt class="py-name">node4</tt><tt class="py-op">)</tt> </tt>
+<a name="L149"></a><tt class="py-lineno">149</tt>  <tt class="py-line">    <tt class="py-name">node4</tt><tt class="py-op">.</tt><tt id="link-15" class="py-name"><a title="mbuild.dfs.node_t.add_successor" class="py-name" href="#" onclick="return doclink('link-15', 'add_successor', 'link-12');">add_successor</a></tt><tt class="py-op">(</tt><tt class="py-name">node1</tt><tt class="py-op">)</tt> </tt>
+<a name="L150"></a><tt class="py-lineno">150</tt>  <tt class="py-line"> </tt>
+<a name="L151"></a><tt class="py-lineno">151</tt>  <tt class="py-line">    <tt class="py-name">nodes</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt> <tt class="py-name">node1</tt><tt class="py-op">,</tt> <tt class="py-name">node2</tt><tt class="py-op">,</tt> <tt class="py-name">node3</tt><tt class="py-op">,</tt> <tt class="py-name">node4</tt> <tt class="py-op">]</tt> </tt>
+<a name="L152"></a><tt class="py-lineno">152</tt>  <tt class="py-line">    <tt class="py-name">cycle</tt> <tt class="py-op">=</tt> <tt id="link-16" class="py-name" targets="Module mbuild.dfs=mbuild.dfs-module.html,Function mbuild.dfs.dfs()=mbuild.dfs-module.html#dfs"><a title="mbuild.dfs
+mbuild.dfs.dfs" class="py-name" href="#" onclick="return doclink('link-16', 'dfs', 'link-16');">dfs</a></tt><tt class="py-op">(</tt><tt class="py-name">nodes</tt><tt class="py-op">)</tt> </tt>
+<a name="L153"></a><tt class="py-lineno">153</tt>  <tt class="py-line">    <tt class="py-keyword">if</tt> <tt class="py-name">cycle</tt><tt class="py-op">:</tt> </tt>
+<a name="L154"></a><tt class="py-lineno">154</tt>  <tt class="py-line">        <tt class="py-keyword">print</tt> <tt class="py-string">"CYCLE DETECTED"</tt> </tt>
+</div><a name="L155"></a><tt class="py-lineno">155</tt>  <tt class="py-line">    <tt class="py-comment">#print "VISIT TRANSPOSE"</tt> </tt>
+<a name="L156"></a><tt class="py-lineno">156</tt>  <tt class="py-line">    <tt class="py-comment">#dfs_transpose(nodes)</tt> </tt>
+<a name="L157"></a><tt class="py-lineno">157</tt>  <tt class="py-line"> </tt>
+<a name="L158"></a><tt class="py-lineno">158</tt>  <tt class="py-line">    <tt class="py-comment"># print "NODES\n", "\n".join(map(str,nodes))</tt> </tt>
+<a name="L159"></a><tt class="py-lineno">159</tt>  <tt class="py-line"> </tt>
+<a name="L160"></a><tt class="py-lineno">160</tt>  <tt class="py-line"><tt class="py-keyword">if</tt> <tt class="py-name">__name__</tt> <tt class="py-op">==</tt> <tt class="py-string">'__main__'</tt><tt class="py-op">:</tt> </tt>
+<a name="L161"></a><tt class="py-lineno">161</tt>  <tt class="py-line">    <tt class="py-name">_test_dfs</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L162"></a><tt class="py-lineno">162</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="mbuild-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://mjc.intel.com/mjcharne/mbuild">mbuild</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Thu Dec 15 13:53:07 2016
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

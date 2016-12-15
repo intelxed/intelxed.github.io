@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>mbuild</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th bgcolor="#70b0f0" class="navbar-select"
+          >&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://mjc.intel.com/mjcharne/mbuild">mbuild</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Package&nbsp;mbuild
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="mbuild-module.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== PACKAGE DESCRIPTION ==================== -->
+<h1 class="epydoc">Package mbuild</h1><p class="nomargin-top"><span class="codelink"><a href="mbuild-pysrc.html">source&nbsp;code</a></span></p>
+<p>This is mbuild: a simple portable dependence-based build-system 
+  written in python.</p>
+  <p>mbuild is a python-based build system very similar to scons with some 
+  philosophical features of make.  mbuild exposes the scan and build phases
+  allowing them to be repeated  as necessary. Multiple DAGs can be built, 
+  one during each scan phase.</p>
+  <p>Conceptually there are 3 major components to mbuild:</p>
+  <ul>
+    <li>
+      The environment <a href="mbuild.env.env_t-class.html" 
+      class="link">env_t</a>
+    </li>
+    <li>
+      The directed acyclic graph  <a href="mbuild.dag.dag_t-class.html" 
+      class="link">dag_t</a>
+    </li>
+    <li>
+      The work queue <a href="mbuild.work_queue.work_queue_t-class.html" 
+      class="link">work_queue_t</a>
+    </li>
+  </ul>
+  <p>Using the environment <a href="mbuild.env.env_t-class.html" 
+  class="link">env_t</a> you customize your build configuration and 
+  construct names for your source files, object files, executables, etc.  
+  The environment contains builder methods that create <a 
+  href="mbuild.plan.plan_t-class.html" class="link">plan_t</a> objects. 
+  There are builders for C, C++, static and dynamic libraries, assembly 
+  files and linking programs. The environment and builders support string 
+  substitution.</p>
+  <p>The <a href="mbuild.plan.plan_t-class.html" class="link">plan_t</a> 
+  objects are passed to the <a href="mbuild.dag.dag_t-class.html" 
+  class="link">dag_t</a> which stores the dependences that order execution.
+  The <a href="mbuild.plan.plan_t-class.html" class="link">plan_t</a> 
+  objects describe work that needs to be done. Plans typically contain a 
+  command line strings (with all substitutions done), but can also be 
+  python functions that will be executed during the build.</p>
+  <p>Using the <a href="mbuild.plan.plan_t-class.html" 
+  class="link">plan_t</a> objects, the <a 
+  href="mbuild.dag.dag_t-class.html" class="link">dag_t</a> creates <a 
+  href="mbuild.work_queue.command_t-class.html" class="link">command_t</a> 
+  objects that are passed to the <a 
+  href="mbuild.work_queue.work_queue_t-class.html" 
+  class="link">work_queue_t</a> to ultimately build the target or 
+  targets.</p>
+  <p>Your build file can have multiple environments, DAGS and work 
+  queues.</p>
+  <h1 class="heading">Using the environment dictionary</h1>
+    <p>You can bind or augmenting environment variables from the command 
+    line. For example, one can say <code>build_cpu=ia32</code> on an x86-64
+    system to change the default compilation behavior.  Similarly, one can 
+    say <code>CXXFLAGS+=-g</code> to add the <code>-g</code> flag to the 
+    existing <code>CXXFLAGS</code> variable.</p>
+    <p>Dynamic substitution is also used. Patterns of the form 
+    %(<i>string</i>)s will substitute <i>string</i> dynamically before it 
+    is used.  The expansion can happen directly from the environment and is
+    recursive. The expansion can also use dictionaries that are variables 
+    in the environment.  A dictionary in the environment is really a tuple 
+    of the key-variable and the dictionary itself.</p>
+    <p>For example:</p>
+<pre class="literalblock">
+   env['opt_flag'] = ( 'opt', {'noopt':'',
+                               '0':'%(OPTOPT)s0',
+                               '1':'%(OPTOPT)s1',
+                               '2':'%(OPTOPT)s2',
+                               '3':'%(OPTOPT)s3',
+                               '4':'%(OPTOPT)s4'} )
+
+   env['OPTOPT'] = ( 'compiler', { 'gnu':'-O',
+                                   'ms':'/O'})
+
+
+   env['CXXFLAGS'] += ' %(opt_flag)s'
+</pre>
+    <p>The <code>OPTOPT</code> variable depends on 
+    <code>env['compiler']</code>. If <code>env['compiler']='gnu'</code> 
+    then <code>env['OPTOPT']</code> expands to <code>-O</code>. If 
+    <code>env['compiler']='ms'</code> then <code>env['OPTOPT']</code> 
+    expands to <code>/O</code>.</p>
+    <p>If the <code>opt</code> variable is set 
+    &quot;<code>opt=3</code>&quot; on the command line, or equivalently if 
+    <code>env['opt']='3'</code> is set in the script, then if the 
+    <code>env['compiler']='gnu'</code> in the environment at the time of 
+    expansion, then the flag in the <code>CXXFLAGS</code> will be 
+    <code>-O3</code>. If <code>env['compiler']='ms'</code> at the time of 
+    expansion, then the optimiation flag would be <code>/O3</code>.  If 
+    <code>opt=noopt</code> (on the command line) then there will be no 
+    optimization flag in the <code>CXXFLAGS</code>.</p>
+  <h1 class="heading">Introspection</h1>
+    <p>The <a href="mbuild.work_queue.command_t-class.html" 
+    class="link">command_t</a> that are executed during the build have 
+    their output (stdout/stderr) stored in the <a 
+    href="mbuild.dag.dag_t-class.html" class="link">dag_t</a>. After a 
+    build it is possible to collect the commands using the <a 
+    href="mbuild.dag.dag_t-class.html#results" 
+    class="link">dag_t.results</a> function  and analyze the output. This 
+    is very handy for test and validation suites.</p>
+
+<!-- ==================== SUBMODULES ==================== -->
+<a name="section-Submodules"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Submodules</span></td>
+</tr>
+  <tr><td class="summary">
+  <ul class="nomargin">
+    <li> <strong class="uidlink"><a href="mbuild.arar-module.html">mbuild.arar</a></strong>    </li>
+    <li> <strong class="uidlink"><a href="mbuild.base-module.html">mbuild.base</a></strong>: <em class="summary">Base functionality: messages, verbosity, python version checking</em>    </li>
+    <li> <strong class="uidlink"><a href="mbuild.dag-module.html">mbuild.dag</a></strong>: <em class="summary">dependence tracking using a directed acyclic graph (DAG)</em>    </li>
+    <li> <strong class="uidlink"><a href="mbuild.dfs-module.html">mbuild.dfs</a></strong>: <em class="summary">This file provides a node_t type and a dfs() routine that prints 
+        out cycles found in a graph represented as a list of node_t 
+        objects.</em>    </li>
+    <li> <strong class="uidlink"><a href="mbuild.doxygen-module.html">mbuild.doxygen</a></strong>    </li>
+    <li> <strong class="uidlink"><a href="mbuild.env-module.html">mbuild.env</a></strong>: <em class="summary">Environment support</em>    </li>
+    <li> <strong class="uidlink"><a href="mbuild.header_tag-module.html">mbuild.header_tag</a></strong>    </li>
+    <li> <strong class="uidlink"><a href="mbuild.msvs-module.html">mbuild.msvs</a></strong>: <em class="summary">Environment setup for Microsoft Visual Studio.</em>    </li>
+    <li> <strong class="uidlink"><a href="mbuild.plan-module.html">mbuild.plan</a></strong>: <em class="summary">Intermediate data structure produced by builders and sent to the 
+        dependence directed acyclic graph (DAG) that sequences execution.</em>    </li>
+    <li> <strong class="uidlink"><a href="mbuild.util-module.html">mbuild.util</a></strong>: <em class="summary">Basic useful utilities: file copying, removal, permissions, 
+        path-name manipulation, and command execution.</em>    </li>
+    <li> <strong class="uidlink"><a href="mbuild.work_queue-module.html">mbuild.work_queue</a></strong>: <em class="summary">Command objects and parallel work queue</em>    </li>
+  </ul></td></tr>
+</table>
+
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th bgcolor="#70b0f0" class="navbar-select"
+          >&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://mjc.intel.com/mjcharne/mbuild">mbuild</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Thu Dec 15 13:53:07 2016
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

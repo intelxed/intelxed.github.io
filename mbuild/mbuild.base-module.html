@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>mbuild.base</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="mbuild-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://mjc.intel.com/mjcharne/mbuild">mbuild</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="mbuild-module.html">Package&nbsp;mbuild</a> ::
+        Module&nbsp;base
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="mbuild.base-module.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== MODULE DESCRIPTION ==================== -->
+<h1 class="epydoc">Module base</h1><p class="nomargin-top"><span class="codelink"><a href="mbuild.base-pysrc.html">source&nbsp;code</a></span></p>
+<p>Base functionality: messages, verbosity, python version checking</p>
+
+<!-- ==================== FUNCTIONS ==================== -->
+<a name="section-Functions"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Functions</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">string</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="mbuild.base-module.html#bracket" class="summary-sig-name">bracket</a>(<span class="summary-sig-arg">s</span>,
+        <span class="summary-sig-arg">m</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string"></code><code class="variable-quote">'</code></span>)</span><br />
+      add a bracket around s and append m.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.base-pysrc.html#bracket">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">bool</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="mbuild.base-module.html#check_python_version" class="summary-sig-name">check_python_version</a>(<span class="summary-sig-arg">maj</span>,
+        <span class="summary-sig-arg">minor</span>,
+        <span class="summary-sig-arg">fix</span>=<span class="summary-sig-default">0</span>)</span><br />
+      Return true if the current python version at least the one specified 
+      by the arguments.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.base-pysrc.html#check_python_version">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="mbuild.base-module.html#cond_die" class="summary-sig-name">cond_die</a>(<span class="summary-sig-arg">v</span>,
+        <span class="summary-sig-arg">cmd</span>,
+        <span class="summary-sig-arg">msg</span>)</span><br />
+      Conditionally die, if v is not zero.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.base-pysrc.html#cond_die">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="die"></a><span class="summary-sig-name">die</span>(<span class="summary-sig-arg">m</span>,
+        <span class="summary-sig-arg">s</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string"></code><code class="variable-quote">'</code></span>)</span><br />
+      Emit an error message m (and optionally s) and exit with a return 
+      value 1</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.base-pysrc.html#die">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="error_msg"></a><span class="summary-sig-name">error_msg</span>(<span class="summary-sig-arg">s</span>,
+        <span class="summary-sig-arg">t</span>)</span><br />
+      Emit '[s] t' to stderr with a newline</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.base-pysrc.html#error_msg">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">int</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="mbuild.base-module.html#get_python_version" class="summary-sig-name">get_python_version</a>()</span><br />
+      Return the python version as an integer</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.base-pysrc.html#get_python_version">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">tuple</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="mbuild.base-module.html#get_python_version_tuple" class="summary-sig-name">get_python_version_tuple</a>()</span><br />
+      Return the python version as a tuple (major,minor,fixlevel)</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.base-pysrc.html#get_python_version_tuple">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="mbuild.base-module.html#get_verbosity" class="summary-sig-name">get_verbosity</a>()</span><br />
+      Return the global verbosity level.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.base-pysrc.html#get_verbosity">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="msg"></a><span class="summary-sig-name">msg</span>(<span class="summary-sig-arg">s</span>,
+        <span class="summary-sig-arg">pad</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string"></code><code class="variable-quote">'</code></span>)</span><br />
+      Emit s to stdout with a newline</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.base-pysrc.html#msg">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="msgb"></a><span class="summary-sig-name">msgb</span>(<span class="summary-sig-arg">s</span>,
+        <span class="summary-sig-arg">t</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string"></code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">pad</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string"></code><code class="variable-quote">'</code></span>)</span><br />
+      a bracketed  string s  sent to stdout, followed by a string t</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.base-pysrc.html#msgb">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="msgn"></a><span class="summary-sig-name">msgn</span>(<span class="summary-sig-arg">s</span>,
+        <span class="summary-sig-arg">pad</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string"></code><code class="variable-quote">'</code></span>)</span><br />
+      Emit s to stdout without a newline</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.base-pysrc.html#msgn">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">bool</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="mbuild.base-module.html#on_native_windows" class="summary-sig-name">on_native_windows</a>()</span><br />
+      Returns:
+      True iff on native windows win32/win64</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.base-pysrc.html#on_native_windows">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">bool</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="mbuild.base-module.html#on_windows" class="summary-sig-name">on_windows</a>()</span><br />
+      Returns:
+      True iff on  windows cygwin/win32/win64</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.base-pysrc.html#on_windows">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="mbuild.base-module.html#set_verbosity" class="summary-sig-name">set_verbosity</a>(<span class="summary-sig-arg">v</span>)</span><br />
+      Set the global verbosity level.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.base-pysrc.html#set_verbosity">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">bool</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="mbuild.base-module.html#verbose" class="summary-sig-name">verbose</a>(<span class="summary-sig-arg">level</span>=<span class="summary-sig-default">0</span>)</span><br />
+      Return True if the configured message level supplied is &gt;= the 
+      level arguement</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.base-pysrc.html#verbose">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="vmsgb"></a><span class="summary-sig-name">vmsgb</span>(<span class="summary-sig-arg">v</span>,
+        <span class="summary-sig-arg">s</span>,
+        <span class="summary-sig-arg">t</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string"></code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">pad</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string"></code><code class="variable-quote">'</code></span>)</span><br />
+      If verbosity v is sufficient, emit a bracketed string s sent to 
+      stdout, followed by a string t</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.base-pysrc.html#vmsgb">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="warn"></a><span class="summary-sig-name">warn</span>(<span class="summary-sig-arg">m</span>)</span><br />
+      Emit an warning message</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.base-pysrc.html#warn">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== VARIABLES ==================== -->
+<a name="section-Variables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Variables</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="__package__"></a><span class="summary-name">__package__</span> = <code title="'mbuild'"><code class="variable-quote">'</code><code class="variable-string">mbuild</code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+</table>
+<!-- ==================== FUNCTION DETAILS ==================== -->
+<a name="section-FunctionDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Function Details</span></td>
+</tr>
+</table>
+<a name="bracket"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">bracket</span>(<span class="sig-arg">s</span>,
+        <span class="sig-arg">m</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string"></code><code class="variable-quote">'</code></span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="mbuild.base-pysrc.html#bracket">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>add a bracket around s and append m.</p>
+  <dl class="fields">
+    <dt>Returns: string</dt>
+        <dd>a bracketed string s and a suffixed message m</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="check_python_version"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">check_python_version</span>(<span class="sig-arg">maj</span>,
+        <span class="sig-arg">minor</span>,
+        <span class="sig-arg">fix</span>=<span class="sig-default">0</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="mbuild.base-pysrc.html#check_python_version">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Return true if the current python version at least the one specified 
+  by the arguments.</p>
+  <dl class="fields">
+    <dt>Returns: bool</dt>
+        <dd>True/False</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="cond_die"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">cond_die</span>(<span class="sig-arg">v</span>,
+        <span class="sig-arg">cmd</span>,
+        <span class="sig-arg">msg</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="mbuild.base-pysrc.html#cond_die">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Conditionally die, if v is not zero. Print the msg and the cmd.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>v</code></strong> (int) - we die if v is not 0</li>
+        <li><strong class="pname"><code>cmd</code></strong> (string) - a command to print</li>
+        <li><strong class="pname"><code>msg</code></strong> (string) - a message to print before the command</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_python_version"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_python_version</span>()</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="mbuild.base-pysrc.html#get_python_version">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Return the python version as an integer</p>
+  <dl class="fields">
+    <dt>Returns: int</dt>
+        <dd>major * 100000 + minor + 1000 + fixlevel</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_python_version_tuple"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_python_version_tuple</span>()</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="mbuild.base-pysrc.html#get_python_version_tuple">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Return the python version as a tuple (major,minor,fixlevel)</p>
+  <dl class="fields">
+    <dt>Returns: tuple</dt>
+        <dd>(major,minor,fixlevel)</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_verbosity"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_verbosity</span>()</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="mbuild.base-pysrc.html#get_verbosity">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Return the global verbosity level. 0=quiet, 99=very very noisy</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="on_native_windows"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">on_native_windows</span>()</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="mbuild.base-pysrc.html#on_native_windows">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Returns: bool</dt>
+        <dd>True iff on native windows win32/win64</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="on_windows"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">on_windows</span>()</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="mbuild.base-pysrc.html#on_windows">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Returns: bool</dt>
+        <dd>True iff on  windows cygwin/win32/win64</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="set_verbosity"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">set_verbosity</span>(<span class="sig-arg">v</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="mbuild.base-pysrc.html#set_verbosity">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Set the global verbosity level. 0=quiet, 99=very very noisy</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="verbose"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">verbose</span>(<span class="sig-arg">level</span>=<span class="sig-default">0</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="mbuild.base-pysrc.html#verbose">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Return True if the configured message level supplied is &gt;= the 
+  level arguement</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>level</code></strong> - int</li>
+        <li><strong class="pname"><code>level</code></strong> - the verbosity level at which this function should return True</li>
+    </ul></dd>
+    <dt>Returns: bool</dt>
+        <dd>True iff the level argument is &gt;= current verbosity level</dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="mbuild-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://mjc.intel.com/mjcharne/mbuild">mbuild</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Thu Dec 15 13:53:07 2016
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

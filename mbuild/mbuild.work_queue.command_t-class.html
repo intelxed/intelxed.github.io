@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>mbuild.work_queue.command_t</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="mbuild-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://mjc.intel.com/mjcharne/mbuild">mbuild</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="mbuild-module.html">Package&nbsp;mbuild</a> ::
+        <a href="mbuild.work_queue-module.html">Module&nbsp;work_queue</a> ::
+        Class&nbsp;command_t
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="mbuild.work_queue.command_t-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class command_t</h1><p class="nomargin-top"><span class="codelink"><a href="mbuild.work_queue-pysrc.html#command_t">source&nbsp;code</a></span></p>
+<pre class="base-tree">
+object --+
+         |
+        <strong class="uidshort">command_t</strong>
+</pre>
+
+<hr />
+<p>The primary data structure used to track jobs in this script. It is 
+  created when you add <a href="mbuild.plan.plan_t-class.html" 
+  class="link">plan_t</a> objects to the DAG <a 
+  href="mbuild.dag.dag_t-class.html" class="link">dag_t</a>.</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Instance Methods</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="mbuild.work_queue.command_t-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">command</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">args</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">xenv</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">unbufferred</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">output_file_name</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">shell_executable</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">directory</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">name</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">show_output</span>=<span class="summary-sig-default">True</span>,
+        <span class="summary-sig-arg">osenv</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">seconds</span>=<span class="summary-sig-default">0</span>,
+        <span class="summary-sig-arg">input_file_name</span>=<span class="summary-sig-default">None</span>)</span><br />
+      This is the unit of work for the <a 
+      href="mbuild.work_queue.work_queue_t-class.html" 
+      class="link">work_queue_t</a>.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.work_queue-pysrc.html#command_t.__init__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="mbuild.work_queue.command_t-class.html#__str__" class="summary-sig-name">__str__</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      str(x)</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.work_queue-pysrc.html#command_t.__str__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="mbuild.work_queue.command_t-class.html#add_after_me" class="summary-sig-name">add_after_me</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">n</span>)</span><br />
+      Make the current command execute before command n.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.work_queue-pysrc.html#command_t.add_after_me">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="mbuild.work_queue.command_t-class.html#add_before_me" class="summary-sig-name">add_before_me</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">n</span>)</span><br />
+      Make the current command execute after command n</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.work_queue-pysrc.html#command_t.add_before_me">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="dagkey"></a><span class="summary-sig-name">dagkey</span>(<span class="summary-sig-arg">self</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.work_queue-pysrc.html#command_t.dagkey">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="dump"></a><span class="summary-sig-name">dump</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">tab_output</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">show_output</span>=<span class="summary-sig-default">True</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.work_queue-pysrc.html#command_t.dump">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="dump_cmd"></a><span class="summary-sig-name">dump_cmd</span>(<span class="summary-sig-arg">self</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.work_queue-pysrc.html#command_t.dump_cmd">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">string</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="mbuild.work_queue.command_t-class.html#elapsed" class="summary-sig-name">elapsed</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Return the elapsed time.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.work_queue-pysrc.html#command_t.elapsed">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="elapsed_time"></a><span class="summary-sig-name">elapsed_time</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Return the elapsed time as an number of seconds</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.work_queue-pysrc.html#command_t.elapsed_time">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="mbuild.work_queue.command_t-class.html#execute" class="summary-sig-name">execute</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Execute the command whether it be a python function or a command 
+      string.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.work_queue-pysrc.html#command_t.execute">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">bool</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="mbuild.work_queue.command_t-class.html#failed" class="summary-sig-name">failed</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Return the exit status.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.work_queue-pysrc.html#command_t.failed">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">bool</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="has_python_subcommand"></a><span class="summary-sig-name">has_python_subcommand</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Return true if the command list has a python function</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.work_queue-pysrc.html#command_t.has_python_subcommand">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="hash"></a><span class="summary-sig-name">hash</span>(<span class="summary-sig-arg">self</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.work_queue-pysrc.html#command_t.hash">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">bool</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="is_command_line"></a><span class="summary-sig-name">is_command_line</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">i</span>=<span class="summary-sig-default">0</span>)</span><br />
+      Return true if the command list element is normal string command 
+      line.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.work_queue-pysrc.html#command_t.is_command_line">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">bool</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="is_dir_cmd"></a><span class="summary-sig-name">is_dir_cmd</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">i</span>=<span class="summary-sig-default">0</span>)</span><br />
+      Return true if the command list element is a python dir_cmd_t object</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.work_queue-pysrc.html#command_t.is_dir_cmd">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">bool</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="is_python_command"></a><span class="summary-sig-name">is_python_command</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">i</span>=<span class="summary-sig-default">0</span>)</span><br />
+      Return true if the command list element is a python function</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.work_queue-pysrc.html#command_t.is_python_command">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="stderr_exists"></a><span class="summary-sig-name">stderr_exists</span>(<span class="summary-sig-arg">self</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.work_queue-pysrc.html#command_t.stderr_exists">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="stdout_exists"></a><span class="summary-sig-name">stdout_exists</span>(<span class="summary-sig-arg">self</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="mbuild.work_queue-pysrc.html#command_t.stdout_exists">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__delattr__</code>,
+      <code>__format__</code>,
+      <code>__getattribute__</code>,
+      <code>__hash__</code>,
+      <code>__new__</code>,
+      <code>__reduce__</code>,
+      <code>__reduce_ex__</code>,
+      <code>__repr__</code>,
+      <code>__setattr__</code>,
+      <code>__sizeof__</code>,
+      <code>__subclasshook__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== PROPERTIES ==================== -->
+<a name="section-Properties"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Properties</span></td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__class__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Method Details</span></td>
+</tr>
+</table>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">command</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">args</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">xenv</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">unbufferred</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">output_file_name</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">shell_executable</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">directory</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">name</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">show_output</span>=<span class="sig-default">True</span>,
+        <span class="sig-arg">osenv</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">seconds</span>=<span class="sig-default">0</span>,
+        <span class="sig-arg">input_file_name</span>=<span class="sig-default">None</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="mbuild.work_queue-pysrc.html#command_t.__init__">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>This is the unit of work for the <a 
+  href="mbuild.work_queue.work_queue_t-class.html" 
+  class="link">work_queue_t</a>. These are typically created by the <a 
+  href="mbuild.dag.dag_t-class.html" class="link">dag_t</a> but they can 
+  also be created by hand and added to the <a 
+  href="mbuild.work_queue.work_queue_t-class.html" 
+  class="link">work_queue_t</a> to execute arbitrary commands.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>command</code></strong> (string or python function, or a list of both) - command line string to execute or a python function</li>
+        <li><strong class="pname"><code>args</code></strong> (anything) - (optional) typically a list of arguments for the python function.</li>
+        <li><strong class="pname"><code>xenv</code></strong> (<a href="mbuild.env.env_t-class.html" class="link">env_t</a>) - (optional) environment for used by the python function. Passed as
+          the second argument to the python function.</li>
+        <li><strong class="pname"><code>osenv</code></strong> (dictionary) - (optional) the environment that will be set in the new 
+          subprocess.</li>
+        <li><strong class="pname"><code>unbufferred</code></strong> (<code class="link">bool</code>) - (optional) true if the output should be unbufferred.</li>
+        <li><strong class="pname"><code>output_file_name</code></strong> (string) - (optional) file name for stderr/stdout</li>
+        <li><strong class="pname"><code>show_output</code></strong> (<code class="link">bool</code>) - (optional) show output, default True</li>
+        <li><strong class="pname"><code>input_file_name</code></strong> (string) - (optional) file name for stdin</li>
+    </ul></dd>
+    <dt>Overrides:
+        object.__init__
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="__str__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__str__</span>(<span class="sig-arg">self</span>)</span>
+    <br /><em class="fname">(Informal representation operator)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="mbuild.work_queue-pysrc.html#command_t.__str__">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>str(x)</p>
+  <dl class="fields">
+    <dt>Overrides:
+        object.__str__
+        <dd><em class="note">(inherited documentation)</em></dd>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="add_after_me"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">add_after_me</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">n</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="mbuild.work_queue-pysrc.html#command_t.add_after_me">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Make the current command execute before command n.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>n</code></strong> (<a href="mbuild.work_queue.command_t-class.html" 
+          class="link">command_t</a>) - another (later) command</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="add_before_me"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">add_before_me</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">n</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="mbuild.work_queue-pysrc.html#command_t.add_before_me">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Make the current command execute after command n</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>n</code></strong> (<a href="mbuild.work_queue.command_t-class.html" 
+          class="link">command_t</a>) - another (earlier) command</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="elapsed"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">elapsed</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="mbuild.work_queue-pysrc.html#command_t.elapsed">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Return the elapsed time.</p>
+  <dl class="fields">
+    <dt>Returns: string</dt>
+        <dd>the elapsed wall clock  time of execution.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="execute"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">execute</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="mbuild.work_queue-pysrc.html#command_t.execute">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Execute the command whether it be a python function or a command 
+  string. This is executed by worker threads but is made available here for
+  potential debugging.  Record execution exit/return status and output.</p>
+  <p>Sets the exit_status, output and stderr error fields of the</p>
+  <p>command object.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="failed"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">failed</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="mbuild.work_queue-pysrc.html#command_t.failed">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Return the exit status.</p>
+  <dl class="fields">
+    <dt>Returns: bool</dt>
+        <dd>True if the command failed (exit status != 0)</dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="mbuild-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://mjc.intel.com/mjcharne/mbuild">mbuild</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Thu Dec 15 13:53:07 2016
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>
