@@ -1,9 +1,12 @@
 <HTML>
-   <HEADER>
+  <HEAD>
+    <style>
+      p { font-family: Consolas, Arial, Helvetica, sans-serif; }
+    </style>
      <TITLE>
           Intel XED
      </TITLE>
-   </HEADER>
+   </HEAD>
    <BODY>
       <CENTER>
       <FONT COLOR="#bb0000">
@@ -25,11 +28,17 @@
       of 1 to 15 bytes. Disassembly is essentially printing pass on
         the data structure.
 
-      <P> XED is the encoder/decoder used by Pin (and thus the Intel
-      Software Development Emulator, SDE).  XED is used by the ASIM
-      performance model, as well as projects at McAfee, Wind River,
-      ZSIM, VTune, the Intel architecture code analyzer (IACA), and
-      many other projects inside and outside Intel.
+      <P> XED is the encoder/decoder used
+      by <A HREF="https://software.intel.com/en-us/articles/pin-a-dynamic-binary-instrumentation-tool">Pin</A>
+      and
+      the <A HREF="https://software.intel.com/en-us/articles/intel-software-development-emulator">Intel&reg;
+      Software Development Emulator (SDE)</A>.  XED is used by the
+      <A HREF="http://people.csail.mit.edu/emer/papers/2002.02.computer.asim.pdf">ASIM
+      performance
+      model</A>, <A HREF="http://www.cs.virginia.edu/kim/docs/wish11zsim.pdf">ZSIM</A>,
+      <A HREF="https://software.intel.com/en-us/intel-vtune-amplifier-xe">Intel&reg; VTune Amplifier</A>, <A HREF="https://software.intel.com/en-us/articles/intel-architecture-code-analyzer">IACA</A>,
+      as well as in projects at McAfee, Wind River, and many other
+      projects inside and outside Intel.
 
       <p> XED supports the notion of layers of instructions. As new
        instructions are made public, the associated layers are added
