@@ -23,9 +23,9 @@
       associated headers) for encoding and decoding X86 (IA32 and
       Intel64) instructions. The decoder takes sequences of 1-15 bytes
       along with machine mode information and produces a data
-      structure describing the opcode and operands, and flags. The
+      structure describing the opcode, operands, and flags. The
       encoder takes a similar data structure and produces a sequence
-      of 1 to 15 bytes. Disassembly is essentially printing pass on
+      of 1 to 15 bytes. Disassembly is essentially a printing pass on
         the data structure.
 
       <P> XED is the encoder/decoder used
@@ -60,7 +60,7 @@
        "dot" graphs to show register dependences between instructions.
 
       <p> When required, XED can be built without the encoder or
-        without the decoder to reduce the code/data footprint.  The
+        the decoder to reduce the code/data footprint.  The
         code in the XED library is written in C and is partially
         generated from tables using python scripts at build time. XED
         is designed for embedding and has a minimal set of simple
