@@ -110,7 +110,7 @@ Introduction</h1>
 <p>Intel XED was designed to be very fast and extensible.</p>
 <p>Intel XED compiles with the following compilers: </p><ul>
 <li>
-GNU Gcc </li>
+GNU GCC </li>
 <li>
 Microsoft Visual Studio </li>
 <li>
@@ -183,7 +183,7 @@ stderr </li>
 </ul>
 <h1><a class="anchor" id="TERMS"></a>
 Terminology</h1>
-<p>X86 instructions are 1-15 byte values. They consist of several well defined components: </p><ul>
+<p>X86 instructions are 1-15 byte values. They consist of several well-defined components: </p><ul>
 <li>
 <p class="startli">Prefix bytes. </p><ul>
 <li>
@@ -238,7 +238,7 @@ repeating certain instructions (2 prefixes), and </li>
 <li>
 opcode refinement. </li>
 </ul>
-<p>There are 11 distinct legacy prefixes. Three of them (operand size, and the two repeat prefixes) have different meanings in different contexts; Sometimes they are used for opcode refinement and do not have their default meaning. Less frequently. two of the segment overrides can be used for conditional branch hints.</p>
+<p>There are 11 distinct legacy prefixes. Three of them (operand size, and the two repeat prefixes) have different meanings in different contexts; Sometimes they are used for opcode refinement and do not have their default meaning. Less frequently, two of the segment overrides can be used for conditional branch hints.</p>
 <p>There are also multiple ways to encode certain instructions, with the same or differing length.</p>
 <p>For additional information on the instruction semantics and encodings: </p><ul>
 <li>
@@ -272,7 +272,7 @@ LOCK-prefixed (0xF0) atomic read-modify-write memory instructions were split in 
 <h2><a class="anchor" id="NOPs"></a>
 NOPs</h2>
 <p>NOPs are very special. Intel XED allows for encoding NOPs of 1 to 9 bytes through the use of the XED_ICLASS_NOP (the one byte nop), and XED_ICLASS_NOP2 ... XED_ICLASS_NOP9. These use the recommended NOP sequences from the Intel&reg; 64 and IA-32 Architectures Software Developers Manual.</p>
-<p>The instruction 0x90 is very special in the instruction set because it gets special treatment in 64b mode. In 64b mode, 32b register writes normally zero the upper 32 bits of a 64b register. No so for 0x90. If it did zero the upper 32 bits, it would not be a NOP.</p>
+<p>The instruction 0x90 is very special in the instruction set because it gets special treatment in 64b mode. In 64b mode, 32b register writes normally zero the upper 32 bits of a 64b register. Not so for 0x90. If it did zero the upper 32 bits, it would not be a NOP.</p>
 <p>There are two important NOP categories. XED_CATEGORY_NOP and XED_CATEGORY_WIDENOP. The XED_CATEGORY_NOP applies only to the 0x90 opcode. The WIDENOP category applies to the NOPs in the two byte table row 0F19...0F1F. The WIDENOPs take MODRM bytes, and optional SIB and displacements. </p><hr/>
  <h1><a class="anchor" id="X86-OPERANDS"></a>
 Operands</h1>
@@ -315,7 +315,7 @@ There is just one displacement associated with the common fields. It could be as
 Intel® AVX512 Operands</h2>
 <p>Intel&reg; AVX512 adds write masking, merging and zeroing to the instruction set via the EVEX encodings. Write masking, merging and zeroing are properties of the instruction encoding and are not visible by looking at individual operands. Write masking with merging makes it possible for values of the destination register to live on from prior to the execution of the instruction. Write masking with merging results in an extra register read of the destination operand. In contrast write masking with zeroing always completely overwrites the destination operand, either with values computed by the instruction or with zeros for elements that are "masked off".</p>
 <p>For most operands, to learn if the operand reads or writes its associated resource, one can use <a class="el" href="group__DEC.html#gae5299214951891952401b5061e48a6ca" title="DEPRECATED: Returns the raw R/W action. ">xed_operand_rw</a>(const xed_operand_t* p). However because masking, merging and zeroing are properties of the instruction, and not just the operand, use of a different function is required.</p>
-<p>To handle this, Intel XED has a new interface function <a class="el" href="group__DEC.html#ga5540113a3dfdf1472de90fdf7953cb5d" title="Interpret the operand action in light of AVX512 masking and zeroing/merging. ">xed_decoded_inst_operand_action()</a> which takes a <a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac" title="The main container for instructions. ">xed_decoded_inst_t</a> pointer and an operand index and indicates how the read/write behavior is modified in the presense of masking with merging or masking with zeroing.</p>
+<p>To handle this, Intel XED has a new interface function <a class="el" href="group__DEC.html#ga5540113a3dfdf1472de90fdf7953cb5d" title="Interpret the operand action in light of AVX512 masking and zeroing/merging. ">xed_decoded_inst_operand_action()</a> which takes a <a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac" title="The main container for instructions. ">xed_decoded_inst_t</a> pointer and an operand index and indicates how the read/write behavior is modified in the presence of masking with merging or masking with zeroing.</p>
 <p>The following list attempts to summarize how the value returned from <a class="el" href="group__DEC.html#gae5299214951891952401b5061e48a6ca" title="DEPRECATED: Returns the raw R/W action. ">xed_operand_rw()</a> is internally modified for the 0th operand, except for stores: </p><ul>
 <li>
 no masking: no change. </li>
@@ -368,7 +368,7 @@ Immediates and Displacements</h2>
 <p>Using the API functions for setting immediates, memory displacements and branch displacements. Immediates and Displacements are stored in normal integers internally, but they are stored endian swapped and left justified. The API functions take care of all the endian swapping and positioning so you don't have to worry about that detail.</p>
 <p>Immediates and displacements are different things in the ISA. They can be 1, 2, 4 or 8 bytes. Branch displacements (1, 2 or 4 bytes) and Memory displacements (1, 2, 4 or 8 bytes) refer to the signed constants that are used for relative distances or memory "offsets" from a base register (including the instruction pointer) or start of a memory region.</p>
 <p>Immediates are signed or unsigned and are used for numerical computations, shift distances, and also hold things like segment selectors for far pointers for certain jump or call instructions.</p>
-<p>There is also a second 1B immedate used only for the ENTER instruction.</p>
+<p>There is also a second 1B immediate used only for the ENTER instruction.</p>
 <p>Intel XED will try to use the shortest allowed width for a displacement or immediate. You can control Intel XED's selection of allowed widths using a notion of "legal widths". A "legal width" is a binary number where each bit represents a legal desired width. For example, when you have a valid base register in 32 or 64b addressing, and a displacement is required, your displacement must be either 1 byte or 4 bytes long. This is expressed by OR'ing 1 and 4 together to get 0101 (base 2) or 5 (base 10).</p>
 <p>If a four byte displacement was required, but the value was representable in fewer than four bytes, then the legal width should be set to 0100 (base 2) or 4 (base 10).</p>
 <h1><a class="anchor" id="API_REF"></a>
