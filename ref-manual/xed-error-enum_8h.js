@@ -13,6 +13,7 @@ var xed_error_enum_8h =
       [ "XED_ERROR_BAD_EVEX_UBIT", "xed-error-enum_8h.html#a2611877aa5e8b566c1c2be45aa89c792a3c3af7c9a910f0ae0449ee99236c24d7", null ],
       [ "XED_ERROR_BAD_MAP", "xed-error-enum_8h.html#a2611877aa5e8b566c1c2be45aa89c792a9ebe6ef3e9ce67e99305ac17ba880fb3", null ],
       [ "XED_ERROR_BAD_EVEX_V_PRIME", "xed-error-enum_8h.html#a2611877aa5e8b566c1c2be45aa89c792a981609f7b749152430e34d0d132b2d27", null ],
+      [ "XED_ERROR_BAD_EVEX_Z_NO_MASKING", "xed-error-enum_8h.html#a2611877aa5e8b566c1c2be45aa89c792a61bba6cdfd479a0751f183623e122165", null ],
       [ "XED_ERROR_NO_OUTPUT_POINTER", "xed-error-enum_8h.html#a2611877aa5e8b566c1c2be45aa89c792ae02c63efe2f10fecefe0748f5a510247", null ],
       [ "XED_ERROR_NO_AGEN_CALL_BACK_REGISTERED", "xed-error-enum_8h.html#a2611877aa5e8b566c1c2be45aa89c792a4c0cd6f70aa81d919057f068c116402a", null ],
       [ "XED_ERROR_BAD_MEMOP_INDEX", "xed-error-enum_8h.html#a2611877aa5e8b566c1c2be45aa89c792a6f634b571b7f101e875143297320b056", null ],

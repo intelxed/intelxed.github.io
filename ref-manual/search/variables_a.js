@@ -15,7 +15,6 @@ var searchData=
   ['mode_5ffirst_5fprefix',['mode_first_prefix',['../structxed__operand__storage__s.html#a1f980d6704ace761de9edc06c4598923',1,'xed_operand_storage_s']]],
   ['modep5',['modep5',['../structxed__operand__storage__s.html#a25b2f50484ecb1a89c51d52562bebda0',1,'xed_operand_storage_s']]],
   ['modep55c',['modep55c',['../structxed__operand__storage__s.html#afd4899f12b95a02a93132b27d161039e',1,'xed_operand_storage_s']]],
-  ['modrm',['modrm',['../structxed__operand__storage__s.html#ac868edaab6f0253f1e84c2a892130e9e',1,'xed_operand_storage_s']]],
   ['modrm_5fbyte',['modrm_byte',['../structxed__operand__storage__s.html#a215275504dbfe6703eefc0ef4c26829c',1,'xed_operand_storage_s']]],
   ['mpxmode',['mpxmode',['../structxed__operand__storage__s.html#a190ebdd8a7269db139971f3ff6f56c5c',1,'xed_operand_storage_s']]],
   ['must_5fbe_5f0a',['must_be_0a',['../unionxed__flag__set__s.html#a23108990a6959f5f26751773749547fa',1,'xed_flag_set_s']]],

@@ -2,6 +2,7 @@ var xed_attribute_enum_8h =
 [
     [ "xed_attribute_enum_t", "xed-attribute-enum_8h.html#a848d4cf396be5a647413e94bc6f0a383", [
       [ "XED_ATTRIBUTE_INVALID", "xed-attribute-enum_8h.html#a848d4cf396be5a647413e94bc6f0a383ab67ff570191b2960f11837ceccd3ce6c", null ],
+      [ "XED_ATTRIBUTE_AMDONLY", "xed-attribute-enum_8h.html#a848d4cf396be5a647413e94bc6f0a383a9bed6a6c668b8c3dba7f4efd9e3b14e4", null ],
       [ "XED_ATTRIBUTE_ATT_OPERAND_ORDER_EXCEPTION", "xed-attribute-enum_8h.html#a848d4cf396be5a647413e94bc6f0a383a14c1a546e2f8b96f269105839de22f8e", null ],
       [ "XED_ATTRIBUTE_BROADCAST_ENABLED", "xed-attribute-enum_8h.html#a848d4cf396be5a647413e94bc6f0a383aa047364646346b2667f0611a55cf4f76", null ],
       [ "XED_ATTRIBUTE_BYTEOP", "xed-attribute-enum_8h.html#a848d4cf396be5a647413e94bc6f0a383a2f4dbc3f0ea12b385dccb125095a77ef", null ],
@@ -46,6 +47,7 @@ var xed_attribute_enum_8h =
       [ "XED_ATTRIBUTE_IGNORES_OSFXSR", "xed-attribute-enum_8h.html#a848d4cf396be5a647413e94bc6f0a383a5ae048ac31887e1974e978b0d34cb782", null ],
       [ "XED_ATTRIBUTE_IMPLICIT_ONE", "xed-attribute-enum_8h.html#a848d4cf396be5a647413e94bc6f0a383a7599cef87a987ada34f05a4b0965ea80", null ],
       [ "XED_ATTRIBUTE_INDEX_REG_IS_POINTER", "xed-attribute-enum_8h.html#a848d4cf396be5a647413e94bc6f0a383ab6b730dfa9bc88cb05087e3b9fb3c83d", null ],
+      [ "XED_ATTRIBUTE_INDIRECT_BRANCH", "xed-attribute-enum_8h.html#a848d4cf396be5a647413e94bc6f0a383a95efc19ad2662aa3625516c4ede02460", null ],
       [ "XED_ATTRIBUTE_KMASK", "xed-attribute-enum_8h.html#a848d4cf396be5a647413e94bc6f0a383a91c27bd0930e7aafd5ba65dde2fca8fa", null ],
       [ "XED_ATTRIBUTE_LOCKABLE", "xed-attribute-enum_8h.html#a848d4cf396be5a647413e94bc6f0a383adcd1de159d96e5e3d923fa34d838bce7", null ],
       [ "XED_ATTRIBUTE_LOCKED", "xed-attribute-enum_8h.html#a848d4cf396be5a647413e94bc6f0a383aefed4c4dbeadc49bd170792149fe618f", null ],
@@ -59,6 +61,7 @@ var xed_attribute_enum_8h =
       [ "XED_ATTRIBUTE_MULTISOURCE4", "xed-attribute-enum_8h.html#a848d4cf396be5a647413e94bc6f0a383a87a109635e77635561d1ab9dbf2a9f1e", null ],
       [ "XED_ATTRIBUTE_MXCSR", "xed-attribute-enum_8h.html#a848d4cf396be5a647413e94bc6f0a383acbbc9625c471161b322dbcf8096762ff", null ],
       [ "XED_ATTRIBUTE_MXCSR_RD", "xed-attribute-enum_8h.html#a848d4cf396be5a647413e94bc6f0a383aa0597a7aa93ee47c32ca2c94134ab0d3", null ],
+      [ "XED_ATTRIBUTE_NONTEMPORAL", "xed-attribute-enum_8h.html#a848d4cf396be5a647413e94bc6f0a383aee2f2f51a6925008a67da19f9728aef8", null ],
       [ "XED_ATTRIBUTE_NOP", "xed-attribute-enum_8h.html#a848d4cf396be5a647413e94bc6f0a383ace11280204295daec8a0abf893803616", null ],
       [ "XED_ATTRIBUTE_NOTSX", "xed-attribute-enum_8h.html#a848d4cf396be5a647413e94bc6f0a383a128128c71a841ef7358e160594c3d3e8", null ],
       [ "XED_ATTRIBUTE_NOTSX_COND", "xed-attribute-enum_8h.html#a848d4cf396be5a647413e94bc6f0a383a940081c3221431c8fa2492fa41004bfc", null ],

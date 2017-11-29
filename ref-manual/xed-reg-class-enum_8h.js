@@ -16,6 +16,7 @@ var xed_reg_class_enum_8h =
       [ "XED_REG_CLASS_IP", "xed-reg-class-enum_8h.html#a8ac6bf3f9f78208385c46ea25324ea76aaa425979e99361662c5870b663c246f5", null ],
       [ "XED_REG_CLASS_MASK", "xed-reg-class-enum_8h.html#a8ac6bf3f9f78208385c46ea25324ea76aee6f9480d5ac0881718caa442fb4b15a", null ],
       [ "XED_REG_CLASS_MMX", "xed-reg-class-enum_8h.html#a8ac6bf3f9f78208385c46ea25324ea76af52dc1ada2fe3e2e97a79fc662ca1067", null ],
+      [ "XED_REG_CLASS_MSR", "xed-reg-class-enum_8h.html#a8ac6bf3f9f78208385c46ea25324ea76a4b09182c80ced53254f7694564563387", null ],
       [ "XED_REG_CLASS_MXCSR", "xed-reg-class-enum_8h.html#a8ac6bf3f9f78208385c46ea25324ea76a6f3bcdea30666c7ada2c6a21e8ecc867", null ],
       [ "XED_REG_CLASS_PSEUDO", "xed-reg-class-enum_8h.html#a8ac6bf3f9f78208385c46ea25324ea76a2947bd7fa2f8798733d3f79aa85fa675", null ],
       [ "XED_REG_CLASS_PSEUDOX87", "xed-reg-class-enum_8h.html#a8ac6bf3f9f78208385c46ea25324ea76aaace4711e201fd8358343c11c4f955ae", null ],
