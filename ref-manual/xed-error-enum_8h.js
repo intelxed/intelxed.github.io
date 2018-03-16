@@ -21,6 +21,7 @@ var xed_error_enum_8h =
       [ "XED_ERROR_GATHER_REGS", "xed-error-enum_8h.html#a2611877aa5e8b566c1c2be45aa89c792a6327cdfdcce54c8319e87b98a6804ccc", null ],
       [ "XED_ERROR_INSTR_TOO_LONG", "xed-error-enum_8h.html#a2611877aa5e8b566c1c2be45aa89c792a2b0a5cc7a32c06af437f7bb1e5368eb6", null ],
       [ "XED_ERROR_INVALID_MODE", "xed-error-enum_8h.html#a2611877aa5e8b566c1c2be45aa89c792af33e18a230710352c6234010a7dc784f", null ],
+      [ "XED_ERROR_BAD_EVEX_LL", "xed-error-enum_8h.html#a2611877aa5e8b566c1c2be45aa89c792a1c1481483361e866d55c6f58cb393140", null ],
       [ "XED_ERROR_LAST", "xed-error-enum_8h.html#a2611877aa5e8b566c1c2be45aa89c792a31699d329b9d3c4d12980d3605428a8f", null ]
     ] ],
     [ "str2xed_error_enum_t", "group__ENUM.html#ga203bb495b7c49e34ef3e83c25024775b", null ],

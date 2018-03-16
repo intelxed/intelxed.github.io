@@ -24,7 +24,6 @@ var xed_operand_enum_8h =
       [ "XED_OPERAND_EOSZ", "xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aa46fd183fc795f858498f2ab6ef45004a", null ],
       [ "XED_OPERAND_ERROR", "xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aa7dc42669b06c5ae7075935a81b226a02", null ],
       [ "XED_OPERAND_ESRC", "xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aabb173224c4b74214a7ec9f174bb7262e", null ],
-      [ "XED_OPERAND_EVEXRR", "xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aa679d6839b4173fc63b04364761a6d398", null ],
       [ "XED_OPERAND_FIRST_F2F3", "xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aa6746b8ca3ef3b0bfa8c238e39170a451", null ],
       [ "XED_OPERAND_HAS_MODRM", "xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aa40cfcb19cb70fa466b03e9c4d8469050", null ],
       [ "XED_OPERAND_HAS_SIB", "xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aa55007779d09f44d6529afb0a360b9ed5", null ],
@@ -124,6 +123,7 @@ var xed_operand_enum_8h =
       [ "XED_OPERAND_VEX_C4", "xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aa125ab494e5cb4ff672e2215c726de3fb", null ],
       [ "XED_OPERAND_VEX_PREFIX", "xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aa37cf9fb0324a544013770d348101be13", null ],
       [ "XED_OPERAND_VL", "xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aae8f5c3f6067ff768f31c28c1c592e69c", null ],
+      [ "XED_OPERAND_WBNOINVD", "xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aa3f7a8ba55935d2e2352210aaa1c77b55", null ],
       [ "XED_OPERAND_ZEROING", "xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aab84fdc4253567bbd5980b29944447f99", null ],
       [ "XED_OPERAND_LAST", "xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aa6558448a12b7ce8bf00d73cf3e45dafd", null ]
     ] ],

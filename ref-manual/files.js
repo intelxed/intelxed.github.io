@@ -61,6 +61,7 @@ var files =
     [ "xed-operand-values-interface.h", "xed-operand-values-interface_8h.html", "xed-operand-values-interface_8h" ],
     [ "xed-operand-visibility-enum.h", "xed-operand-visibility-enum_8h.html", "xed-operand-visibility-enum_8h" ],
     [ "xed-operand-width-enum.h", "xed-operand-width-enum_8h.html", "xed-operand-width-enum_8h" ],
+    [ "xed-patch.h", "xed-patch_8h.html", "xed-patch_8h" ],
     [ "xed-portability.h", "xed-portability_8h.html", "xed-portability_8h" ],
     [ "xed-print-info.h", "xed-print-info_8h.html", "xed-print-info_8h" ],
     [ "xed-reg-class-enum.h", "xed-reg-class-enum_8h.html", "xed-reg-class-enum_8h" ],

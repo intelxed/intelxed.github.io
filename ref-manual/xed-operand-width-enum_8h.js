@@ -68,6 +68,7 @@ var xed_operand_width_enum_8h =
       [ "XED_OPERAND_WIDTH_Z", "xed-operand-width-enum_8h.html#a4bc2ed96b8433c06c363d614a2fa1676a61b7122ec41dc0bf0c879f656c22af8a", null ],
       [ "XED_OPERAND_WIDTH_SPW8", "xed-operand-width-enum_8h.html#a4bc2ed96b8433c06c363d614a2fa1676a127387bb8021be4cbf522a2b76d2bef6", null ],
       [ "XED_OPERAND_WIDTH_SPW", "xed-operand-width-enum_8h.html#a4bc2ed96b8433c06c363d614a2fa1676a663b44d895f2231413ac3d90963f9a2a", null ],
+      [ "XED_OPERAND_WIDTH_SPW5", "xed-operand-width-enum_8h.html#a4bc2ed96b8433c06c363d614a2fa1676a3857ddba15b749385ea3648ae0121953", null ],
       [ "XED_OPERAND_WIDTH_SPW3", "xed-operand-width-enum_8h.html#a4bc2ed96b8433c06c363d614a2fa1676abe83835f75f98930c997eddd50d45e0d", null ],
       [ "XED_OPERAND_WIDTH_SPW2", "xed-operand-width-enum_8h.html#a4bc2ed96b8433c06c363d614a2fa1676aa650a8ce1a529dab407cd93ad21d758b", null ],
       [ "XED_OPERAND_WIDTH_I1", "xed-operand-width-enum_8h.html#a4bc2ed96b8433c06c363d614a2fa1676a0e595d5c254cbb0cd491341d15a8f070", null ],

@@ -60,6 +60,7 @@ var searchData=
   ['xed_2doperand_2dvalues_2dinterface_2eh',['xed-operand-values-interface.h',['../xed-operand-values-interface_8h.html',1,'']]],
   ['xed_2doperand_2dvisibility_2denum_2eh',['xed-operand-visibility-enum.h',['../xed-operand-visibility-enum_8h.html',1,'']]],
   ['xed_2doperand_2dwidth_2denum_2eh',['xed-operand-width-enum.h',['../xed-operand-width-enum_8h.html',1,'']]],
+  ['xed_2dpatch_2eh',['xed-patch.h',['../xed-patch_8h.html',1,'']]],
   ['xed_2dportability_2eh',['xed-portability.h',['../xed-portability_8h.html',1,'']]],
   ['xed_2dprint_2dinfo_2eh',['xed-print-info.h',['../xed-print-info_8h.html',1,'']]],
   ['xed_2dreg_2dclass_2denum_2eh',['xed-reg-class-enum.h',['../xed-reg-class-enum_8h.html',1,'']]],

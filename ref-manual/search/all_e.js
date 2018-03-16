@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['patching_20instructions',['Patching instructions',['../group__ENCHLPATCH.html',1,'']]],
   ['p',['p',['../structxed__print__info__t.html#ab975d6795638986ea3d0ac52cd6b0e27',1,'xed_print_info_t']]],
   ['p4',['p4',['../structxed__operand__storage__s.html#a55d77f127dbb4395e66b457e2c018122',1,'xed_operand_storage_s']]],
   ['pf',['pf',['../unionxed__flag__set__s.html#a67dee0986ec87026ca20dd3f77431d38',1,'xed_flag_set_s']]],

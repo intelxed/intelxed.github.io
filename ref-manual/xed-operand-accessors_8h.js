@@ -23,7 +23,6 @@ var xed_operand_accessors_8h =
     [ "xed3_operand_get_eosz", "xed-operand-accessors_8h.html#acad2a7fef287c0409444ac633179f477", null ],
     [ "xed3_operand_get_error", "xed-operand-accessors_8h.html#aa02389e3c741173787a94372e145fe6f", null ],
     [ "xed3_operand_get_esrc", "xed-operand-accessors_8h.html#a234c0e97635eca63ee4b2c13e6b9fc59", null ],
-    [ "xed3_operand_get_evexrr", "xed-operand-accessors_8h.html#a0a36cf7564a5f99c6c921ae7975946f9", null ],
     [ "xed3_operand_get_first_f2f3", "xed-operand-accessors_8h.html#a9e299395dd1f80001b0e24f0644a37d7", null ],
     [ "xed3_operand_get_has_modrm", "xed-operand-accessors_8h.html#aaf8469069564e4ccb58f3eb593469913", null ],
     [ "xed3_operand_get_has_sib", "xed-operand-accessors_8h.html#aeb1e3aac69d51321a819b1f46ac20012", null ],
@@ -123,6 +122,7 @@ var xed_operand_accessors_8h =
     [ "xed3_operand_get_vexdest4", "xed-operand-accessors_8h.html#a040044145d187dd583addb68ad7cde4e", null ],
     [ "xed3_operand_get_vexvalid", "xed-operand-accessors_8h.html#a86b0c3a65894cc594fea2adcf2036d21", null ],
     [ "xed3_operand_get_vl", "xed-operand-accessors_8h.html#a4d08319933fa41df36c8e1e5b350980d", null ],
+    [ "xed3_operand_get_wbnoinvd", "xed-operand-accessors_8h.html#a8a19ebda4f7c7e1e85cb0f6935f43517", null ],
     [ "xed3_operand_get_zeroing", "xed-operand-accessors_8h.html#a9249c99df833309c7321ceab53e20822", null ],
     [ "xed3_operand_set_agen", "xed-operand-accessors_8h.html#aa928287fe07b682a80cd6d6c5cc906ca", null ],
     [ "xed3_operand_set_amd3dnow", "xed-operand-accessors_8h.html#ac4119040487b704cbca826dac87a1287", null ],
@@ -146,7 +146,6 @@ var xed_operand_accessors_8h =
     [ "xed3_operand_set_eosz", "xed-operand-accessors_8h.html#a317cae92839bfe6b4eb6a68d5e792f1b", null ],
     [ "xed3_operand_set_error", "xed-operand-accessors_8h.html#ab92413f46320f7d0b0fb2d407b9610c6", null ],
     [ "xed3_operand_set_esrc", "xed-operand-accessors_8h.html#aa7c827bfce86d8a64a1ba0d34bc839c9", null ],
-    [ "xed3_operand_set_evexrr", "xed-operand-accessors_8h.html#aa1a59fb819f6a36c0034b7dc12a1dc00", null ],
     [ "xed3_operand_set_first_f2f3", "xed-operand-accessors_8h.html#a70404f30eb0adfaa08ebcf51e799a126", null ],
     [ "xed3_operand_set_has_modrm", "xed-operand-accessors_8h.html#a74df0ea758722a75818cbd004103a87b", null ],
     [ "xed3_operand_set_has_sib", "xed-operand-accessors_8h.html#a373f4f8bdf89c3d932ac217e2fbe62ac", null ],
@@ -246,6 +245,7 @@ var xed_operand_accessors_8h =
     [ "xed3_operand_set_vexdest4", "xed-operand-accessors_8h.html#adc1b5598d30bdce375d4f723fc5e096e", null ],
     [ "xed3_operand_set_vexvalid", "xed-operand-accessors_8h.html#a3a5d326c44ace45e0e759f782ae09765", null ],
     [ "xed3_operand_set_vl", "xed-operand-accessors_8h.html#adcaebd214aa9b9d18d2929b3cd44f340", null ],
+    [ "xed3_operand_set_wbnoinvd", "xed-operand-accessors_8h.html#a08b21162d0ff66ae72bc45648c4d686a", null ],
     [ "xed3_operand_set_zeroing", "xed-operand-accessors_8h.html#a05d5213e556ff6323a80004a6806a674", null ],
     [ "xed3_set_generic_operand", "xed-operand-accessors_8h.html#a3fb1d2c411672d3c55e4c07f3d593984", null ]
 ];

@@ -9,5 +9,6 @@ var xed_build_defines_8h =
     [ "XED_MPX", "xed-build-defines_8h.html#a1371000eebf7e948d73de2afbd2b3cd4", null ],
     [ "XED_SUPPORTS_AVX512", "xed-build-defines_8h.html#ad814bc316b47add9888ac9c9a52b660c", null ],
     [ "XED_SUPPORTS_LZCNT_TZCNT", "xed-build-defines_8h.html#a1a8a030a51db1d2e4d41de9c89bd393a", null ],
-    [ "XED_SUPPORTS_SHA", "xed-build-defines_8h.html#a2085d19702a50435ddfc4d2288074e9b", null ]
+    [ "XED_SUPPORTS_SHA", "xed-build-defines_8h.html#a2085d19702a50435ddfc4d2288074e9b", null ],
+    [ "XED_SUPPORTS_WBNOINVD", "xed-build-defines_8h.html#a87d55f68ab62adc3d837b4869e7d699c", null ]
 ];

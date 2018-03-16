@@ -50,6 +50,7 @@ var xed_category_enum_8h =
       [ "XED_CATEGORY_MPX", "xed-category-enum_8h.html#a3e6e23a35a7ad463e2422d7db98e49f5a1b35527e61d82286ac0903ab02b3069a", null ],
       [ "XED_CATEGORY_NOP", "xed-category-enum_8h.html#a3e6e23a35a7ad463e2422d7db98e49f5a3daf234ebb436b3036f5118f9ab4950a", null ],
       [ "XED_CATEGORY_PCLMULQDQ", "xed-category-enum_8h.html#a3e6e23a35a7ad463e2422d7db98e49f5af44d15a81c020ef3f11744e0ded3bd75", null ],
+      [ "XED_CATEGORY_PCONFIG", "xed-category-enum_8h.html#a3e6e23a35a7ad463e2422d7db98e49f5a99f9e9363f526ebe9fab5c15bcd3ca16", null ],
       [ "XED_CATEGORY_PKU", "xed-category-enum_8h.html#a3e6e23a35a7ad463e2422d7db98e49f5a903804f1b557a59eb4caa24fa1f34598", null ],
       [ "XED_CATEGORY_POP", "xed-category-enum_8h.html#a3e6e23a35a7ad463e2422d7db98e49f5a752fdbd4160fdbd1cb8b3502134554a4", null ],
       [ "XED_CATEGORY_PREFETCH", "xed-category-enum_8h.html#a3e6e23a35a7ad463e2422d7db98e49f5a57bf9af3076e92642d65a68ebacb6ab3", null ],

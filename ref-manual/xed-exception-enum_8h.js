@@ -37,7 +37,6 @@ var xed_exception_enum_8h =
       [ "XED_EXCEPTION_AVX_TYPE_6", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4da77ffc22ac13cb3ba7aebf2a7a4344fa1", null ],
       [ "XED_EXCEPTION_AVX_TYPE_7", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4dab354d162a5b646c4d7f202bf62ca78bd", null ],
       [ "XED_EXCEPTION_AVX_TYPE_8", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4dae8e27600a3ccffefc4de3027a0627660", null ],
-      [ "XED_EXCEPTION_E4", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4da00ccab819a20b4894be232426bc57857", null ],
       [ "XED_EXCEPTION_MMX_FP", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4da696d5d49505df07f8c932001df5eff73", null ],
       [ "XED_EXCEPTION_MMX_FP_16ALIGN", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4da21ebfa6f2d3826cf4dd30bfc5773bfe4", null ],
       [ "XED_EXCEPTION_MMX_MEM", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4da265d3fffb12f0330a45d7d0121ac08ce", null ],

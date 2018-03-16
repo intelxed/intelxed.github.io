@@ -73,6 +73,7 @@ var searchData=
   ['xed_5fsupports_5favx512',['XED_SUPPORTS_AVX512',['../xed-build-defines_8h.html#ad814bc316b47add9888ac9c9a52b660c',1,'xed-build-defines.h']]],
   ['xed_5fsupports_5flzcnt_5ftzcnt',['XED_SUPPORTS_LZCNT_TZCNT',['../xed-build-defines_8h.html#a1a8a030a51db1d2e4d41de9c89bd393a',1,'xed-build-defines.h']]],
   ['xed_5fsupports_5fsha',['XED_SUPPORTS_SHA',['../xed-build-defines_8h.html#a2085d19702a50435ddfc4d2288074e9b',1,'xed-build-defines.h']]],
+  ['xed_5fsupports_5fwbnoinvd',['XED_SUPPORTS_WBNOINVD',['../xed-build-defines_8h.html#a87d55f68ab62adc3d837b4869e7d699c',1,'xed-build-defines.h']]],
   ['xed_5fverbose',['XED_VERBOSE',['../xed-util_8h.html#a3f5db43cb695b01d7f69c7c080b61c5a',1,'xed-util.h']]],
   ['xed_5fvery_5fverbose',['XED_VERY_VERBOSE',['../xed-util_8h.html#a50f75a29830559433eb138c0f06cb1d2',1,'xed-util.h']]]
 ];

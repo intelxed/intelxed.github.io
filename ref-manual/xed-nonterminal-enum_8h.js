@@ -34,7 +34,6 @@ var xed_nonterminal_enum_8h =
       [ "XED_NONTERMINAL_CR_R", "xed-nonterminal-enum_8h.html#ae0eb8f71a8f89cddf0df4b1a6a2b27afaa7e93e05af376ed1c6af655e9438c103", null ],
       [ "XED_NONTERMINAL_CR_WIDTH", "xed-nonterminal-enum_8h.html#ae0eb8f71a8f89cddf0df4b1a6a2b27afa1cdd8c6c6f1dd75bac5878b7d529f3e6", null ],
       [ "XED_NONTERMINAL_DF64", "xed-nonterminal-enum_8h.html#ae0eb8f71a8f89cddf0df4b1a6a2b27afa4cdf5fbce81f85cfba9ff49f66b3d288", null ],
-      [ "XED_NONTERMINAL_DR_B", "xed-nonterminal-enum_8h.html#ae0eb8f71a8f89cddf0df4b1a6a2b27afa80edd36694994e6aa24d45b7f3479383", null ],
       [ "XED_NONTERMINAL_DR_R", "xed-nonterminal-enum_8h.html#ae0eb8f71a8f89cddf0df4b1a6a2b27afadfc6dc8999ea1bfa202cc147af0344fd", null ],
       [ "XED_NONTERMINAL_ESIZE_128_BITS", "xed-nonterminal-enum_8h.html#ae0eb8f71a8f89cddf0df4b1a6a2b27afafab180d717e4bae107cb265caf0d00c9", null ],
       [ "XED_NONTERMINAL_ESIZE_16_BITS", "xed-nonterminal-enum_8h.html#ae0eb8f71a8f89cddf0df4b1a6a2b27afa3d564b917d24bb6754de3e891d3daea5", null ],

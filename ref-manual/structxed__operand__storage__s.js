@@ -22,7 +22,6 @@ var structxed__operand__storage__s =
     [ "eosz", "structxed__operand__storage__s.html#aafc351c98a02647c7eb4d38ae1c8a490", null ],
     [ "error", "structxed__operand__storage__s.html#a2fc902b0aea6394f8fbb0e3e26895f2b", null ],
     [ "esrc", "structxed__operand__storage__s.html#ad19b924b8cdb03442958e235399947e3", null ],
-    [ "evexrr", "structxed__operand__storage__s.html#a9abfab0954ca339a10ac089959534155", null ],
     [ "first_f2f3", "structxed__operand__storage__s.html#a5c5ec581efbfb93f64ea4acc5ad97673", null ],
     [ "has_modrm", "structxed__operand__storage__s.html#a5e1b914cf33a996de380ab2b84a6eff4", null ],
     [ "has_sib", "structxed__operand__storage__s.html#ae60ed464f49cf38771c67a6d32121340", null ],
@@ -122,5 +121,6 @@ var structxed__operand__storage__s =
     [ "vexdest4", "structxed__operand__storage__s.html#a6a5028d180274c4aa23fc9306715a348", null ],
     [ "vexvalid", "structxed__operand__storage__s.html#a0dbff530f195371c35c71da2c5feb2d1", null ],
     [ "vl", "structxed__operand__storage__s.html#a27ce99975034d1b474a089b7e008be62", null ],
+    [ "wbnoinvd", "structxed__operand__storage__s.html#af528dcb11cf54d6362b5c885b81556fc", null ],
     [ "zeroing", "structxed__operand__storage__s.html#a5c250aa1fde976f1a64b169930d888a3", null ]
 ];
