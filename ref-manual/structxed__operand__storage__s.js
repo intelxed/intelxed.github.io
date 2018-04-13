@@ -10,6 +10,7 @@ var structxed__operand__storage__s =
     [ "brdisp_width", "structxed__operand__storage__s.html#ab478458d9396b979753e55264b924933", null ],
     [ "cet", "structxed__operand__storage__s.html#a6f47854b1aae1643e3e9bc1f3b87ec69", null ],
     [ "chip", "structxed__operand__storage__s.html#a522f16922869deae0f982f6277470b14", null ],
+    [ "cldemote", "structxed__operand__storage__s.html#ac3663ec41dacbe5a25f77457c3842971", null ],
     [ "default_seg", "structxed__operand__storage__s.html#a2d00d3a834e152cb4fd3507ba340f3e4", null ],
     [ "df32", "structxed__operand__storage__s.html#afa174ee6680e7dbeb613855c585aa071", null ],
     [ "df64", "structxed__operand__storage__s.html#a4c0fe3d295763cd48147a572071c2037", null ],

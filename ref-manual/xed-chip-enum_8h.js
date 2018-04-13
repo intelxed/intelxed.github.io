@@ -38,6 +38,7 @@ var xed_chip_enum_8h =
       [ "XED_CHIP_AMD", "xed-chip-enum_8h.html#ae77c7c405380680ef2414d50d67f1301aa43b9b881a32ad880526b7f0f6c0eced", null ],
       [ "XED_CHIP_GOLDMONT", "xed-chip-enum_8h.html#ae77c7c405380680ef2414d50d67f1301a8fb5ce07f2a86459c130d6bdc0a47cfa", null ],
       [ "XED_CHIP_GOLDMONT_PLUS", "xed-chip-enum_8h.html#ae77c7c405380680ef2414d50d67f1301a27302910a0df82d42fa41dce44402ca8", null ],
+      [ "XED_CHIP_TREMONT", "xed-chip-enum_8h.html#ae77c7c405380680ef2414d50d67f1301ae1ff09d9c7fb9c6655d95851a5e2e56b", null ],
       [ "XED_CHIP_SANDYBRIDGE", "xed-chip-enum_8h.html#ae77c7c405380680ef2414d50d67f1301a5bcf22c2b1597ece5567754e228affbc", null ],
       [ "XED_CHIP_IVYBRIDGE", "xed-chip-enum_8h.html#ae77c7c405380680ef2414d50d67f1301abdcab7f7a17af9c615fe19f28cc59373", null ],
       [ "XED_CHIP_HASWELL", "xed-chip-enum_8h.html#ae77c7c405380680ef2414d50d67f1301ab5081754a0498c1148ec803bb851b5ae", null ],

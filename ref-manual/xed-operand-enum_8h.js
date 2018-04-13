@@ -12,6 +12,7 @@ var xed_operand_enum_8h =
       [ "XED_OPERAND_BRDISP_WIDTH", "xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aa7eeeaf2a5d4ea78589ca4a38f31f1406", null ],
       [ "XED_OPERAND_CET", "xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aa767138c287ea1e5d6ba6fde143a2c425", null ],
       [ "XED_OPERAND_CHIP", "xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aaeae0d99329757499b8b02c29242639fd", null ],
+      [ "XED_OPERAND_CLDEMOTE", "xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aa734159cbf1344d1136869b0b5272fb46", null ],
       [ "XED_OPERAND_DEFAULT_SEG", "xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aafb7ee99bfa799de5ede496e9cb29926d", null ],
       [ "XED_OPERAND_DF32", "xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aaac29f94c88efa6ef8267b6e4b6fb9a60", null ],
       [ "XED_OPERAND_DF64", "xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aa29c4366da567a0e4aeefc3cb8c66f7bd", null ],

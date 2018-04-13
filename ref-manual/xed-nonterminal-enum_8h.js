@@ -22,6 +22,8 @@ var xed_nonterminal_enum_8h =
       [ "XED_NONTERMINAL_AVX512_ROUND", "xed-nonterminal-enum_8h.html#ae0eb8f71a8f89cddf0df4b1a6a2b27afaf46c998211957eff09ce3a96b511c9d7", null ],
       [ "XED_NONTERMINAL_AVX_INSTRUCTIONS", "xed-nonterminal-enum_8h.html#ae0eb8f71a8f89cddf0df4b1a6a2b27afa39fe66bc05b9b63d3c9077d7536265b9", null ],
       [ "XED_NONTERMINAL_AVX_SPLITTER", "xed-nonterminal-enum_8h.html#ae0eb8f71a8f89cddf0df4b1a6a2b27afa00a78f9c88897469cda1fbeb36a94b57", null ],
+      [ "XED_NONTERMINAL_A_GPR_B", "xed-nonterminal-enum_8h.html#ae0eb8f71a8f89cddf0df4b1a6a2b27afab453b037799f6a3bcfadb4dbad8b50c4", null ],
+      [ "XED_NONTERMINAL_A_GPR_R", "xed-nonterminal-enum_8h.html#ae0eb8f71a8f89cddf0df4b1a6a2b27afacfbee96278bb963b9075d22531e8f310", null ],
       [ "XED_NONTERMINAL_BND_B", "xed-nonterminal-enum_8h.html#ae0eb8f71a8f89cddf0df4b1a6a2b27afaebaf0d0552587fa441cfd0c0eb8d7102", null ],
       [ "XED_NONTERMINAL_BND_B_CHECK", "xed-nonterminal-enum_8h.html#ae0eb8f71a8f89cddf0df4b1a6a2b27afabcb663adf42c3f882c308194bf955836", null ],
       [ "XED_NONTERMINAL_BND_R", "xed-nonterminal-enum_8h.html#ae0eb8f71a8f89cddf0df4b1a6a2b27afaddec0d5c987571da960fae2dfac928fc", null ],
