@@ -7,7 +7,7 @@ var searchData=
   ['disassembly_5fcallback',['disassembly_callback',['../structxed__print__info__t.html#a2b39e838ee753fb0c2f9c95a793c689f',1,'xed_print_info_t']]],
   ['disp',['disp',['../structxed__memop__t.html#a62574ae50e6dc5819e7ca1a8319ff606',1,'xed_memop_t::disp()'],['../structxed__operand__storage__s.html#ab52f482f625a662b1cb47127dc41d19a',1,'xed_operand_storage_s::disp()']]],
   ['disp_5fwidth',['disp_width',['../structxed__operand__storage__s.html#a8aec9335704d9db6e4fc47567ab194b0',1,'xed_operand_storage_s']]],
-  ['displacement',['displacement',['../structxed__enc__displacement__t.html#afa8ff12ae5e87cef3fca11b518b27d3f',1,'xed_enc_displacement_t']]],
+  ['displacement',['displacement',['../structxed__enc__displacement__t.html#a3381893b7ba0243c7f76054e9d74734a',1,'xed_enc_displacement_t']]],
   ['displacement_5fbits',['displacement_bits',['../structxed__enc__displacement__t.html#a31e145e28dc1d23a490ecbfec96afd21',1,'xed_enc_displacement_t']]],
   ['dummy',['dummy',['../structxed__operand__storage__s.html#a45d0895b1839a19b845db046507a92ab',1,'xed_operand_storage_s']]],
   ['dword',['dword',['../unionxed__union64__t.html#a051add75892a4457b58fcbc334410158',1,'xed_union64_t']]]

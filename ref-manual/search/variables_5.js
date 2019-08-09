@@ -9,6 +9,12 @@ var searchData=
   ['eosz',['eosz',['../structxed__operand__storage__s.html#aafc351c98a02647c7eb4d38ae1c8a490',1,'xed_operand_storage_s']]],
   ['error',['error',['../structxed__operand__storage__s.html#a2fc902b0aea6394f8fbb0e3e26895f2b',1,'xed_operand_storage_s']]],
   ['esrc',['esrc',['../structxed__operand__storage__s.html#ad19b924b8cdb03442958e235399947e3',1,'xed_operand_storage_s']]],
+  ['evexaaa',['evexaaa',['../structxed__enc2__req__payload__t.html#a79021e981aeee1d3a92221f798c9969d',1,'xed_enc2_req_payload_t']]],
+  ['evexb',['evexb',['../structxed__enc2__req__payload__t.html#ae2d398dcd38fecd2620befceeb362c2a',1,'xed_enc2_req_payload_t']]],
+  ['evexll',['evexll',['../structxed__enc2__req__payload__t.html#aabfe8de21aa32847104e511db0e871fc',1,'xed_enc2_req_payload_t']]],
+  ['evexrr',['evexrr',['../structxed__enc2__req__payload__t.html#a539fb9c118cc44f9908b9391d91c2550',1,'xed_enc2_req_payload_t']]],
+  ['evexvv',['evexvv',['../structxed__enc2__req__payload__t.html#a02db03d83296edc1ea700196b4da800b',1,'xed_enc2_req_payload_t']]],
+  ['evexz',['evexz',['../structxed__enc2__req__payload__t.html#a40b487ffc402b25211859cf4acf38cd5',1,'xed_enc2_req_payload_t']]],
   ['extension',['extension',['../structxed__iform__info__s.html#af6f9cb7167ac8757f659fa0173cfd0d6',1,'xed_iform_info_s']]],
   ['extra_5findex_5foperand',['extra_index_operand',['../structxed__print__info__t.html#ab333e6d2b6d6beab5dbcea01a55ffaf0',1,'xed_print_info_t']]]
 ];

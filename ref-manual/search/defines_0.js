@@ -57,6 +57,8 @@ var searchData=
   ['xed_5fmax_5fimmediate_5fbytes',['XED_MAX_IMMEDIATE_BYTES',['../xed-common-defs_8h.html#a77804e53f494e2623103f337f30ec3bf',1,'xed-common-defs.h']]],
   ['xed_5fmax_5finst_5ftable_5fnodes',['XED_MAX_INST_TABLE_NODES',['../xed-gen-table-defs_8h.html#a72087c6d05f34b616acca54f62583063',1,'xed-gen-table-defs.h']]],
   ['xed_5fmax_5finstruction_5fbytes',['XED_MAX_INSTRUCTION_BYTES',['../xed-common-defs_8h.html#a214b18e98040dbace0d9e0a0a7937484',1,'xed-common-defs.h']]],
+  ['xed_5fmax_5fmap_5fevex',['XED_MAX_MAP_EVEX',['../xed-gen-table-defs_8h.html#a16ab23b765622007085e3693bf66d047',1,'xed-gen-table-defs.h']]],
+  ['xed_5fmax_5fmap_5fvex',['XED_MAX_MAP_VEX',['../xed-gen-table-defs_8h.html#a671e13e6fbd764464c0b78774a90394f',1,'xed-gen-table-defs.h']]],
   ['xed_5fmax_5foperand_5fsequences',['XED_MAX_OPERAND_SEQUENCES',['../xed-gen-table-defs_8h.html#a259f03e7fc44d7bc5a7e8fc49155fb89',1,'xed-gen-table-defs.h']]],
   ['xed_5fmax_5foperand_5ftable_5fnodes',['XED_MAX_OPERAND_TABLE_NODES',['../xed-gen-table-defs_8h.html#a96d71be5db3f232663b4cfc5057a84f9',1,'xed-gen-table-defs.h']]],
   ['xed_5fmax_5fpointer_5fnames',['XED_MAX_POINTER_NAMES',['../xed-init-pointer-names_8h.html#a43d04300923d6317e30a3505cf592cc1',1,'xed-init-pointer-names.h']]],
@@ -75,5 +77,6 @@ var searchData=
   ['xed_5fsupports_5fsha',['XED_SUPPORTS_SHA',['../xed-build-defines_8h.html#a2085d19702a50435ddfc4d2288074e9b',1,'xed-build-defines.h']]],
   ['xed_5fsupports_5fwbnoinvd',['XED_SUPPORTS_WBNOINVD',['../xed-build-defines_8h.html#a87d55f68ab62adc3d837b4869e7d699c',1,'xed-build-defines.h']]],
   ['xed_5fverbose',['XED_VERBOSE',['../xed-util_8h.html#a3f5db43cb695b01d7f69c7c080b61c5a',1,'xed-util.h']]],
-  ['xed_5fvery_5fverbose',['XED_VERY_VERBOSE',['../xed-util_8h.html#a50f75a29830559433eb138c0f06cb1d2',1,'xed-util.h']]]
+  ['xed_5fvery_5fverbose',['XED_VERY_VERBOSE',['../xed-util_8h.html#a50f75a29830559433eb138c0f06cb1d2',1,'xed-util.h']]],
+  ['xed_5fvia_5fenabled',['XED_VIA_ENABLED',['../xed-build-defines_8h.html#a95f1fad201f70ea6c2a52466dbae3e24',1,'xed-build-defines.h']]]
 ];

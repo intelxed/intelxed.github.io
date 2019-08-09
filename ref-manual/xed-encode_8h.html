@@ -86,17 +86,15 @@ $(document).ready(function(){initNavTree('xed-encode_8h.html','');});
 <div class="title">xed-encode.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="xed-common-hdrs_8h_source.html">xed-common-hdrs.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="xed-types_8h_source.html">xed-types.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="xed-error-enum_8h_source.html">xed-error-enum.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="xed-operand-values-interface_8h_source.html">xed-operand-values-interface.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="xed-operand-width-enum_8h_source.html">xed-operand-width-enum.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="xed-encoder-iforms_8h_source.html">xed-encoder-iforms.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="xed-encoder-gen-defs_8h_source.html">xed-encoder-gen-defs.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="xed-decoded-inst_8h_source.html">xed-decoded-inst.h</a>&quot;</code><br />
-</div>
-<p><a href="xed-encode_8h_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+<div class="textblock"><code>#include &quot;<a class="el" href="xed-common-hdrs_8h.html">xed-common-hdrs.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="xed-types_8h.html">xed-types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="xed-error-enum_8h.html">xed-error-enum.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="xed-operand-values-interface_8h.html">xed-operand-values-interface.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="xed-operand-width-enum_8h.html">xed-operand-width-enum.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="xed-encoder-iforms_8h.html">xed-encoder-iforms.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="xed-encoder-gen-defs_8h.html">xed-encoder-gen-defs.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="xed-decoded-inst_8h.html">xed-decoded-inst.h</a>&quot;</code><br />
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ga56df34e455c5fa7524ff651017ef87fe"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structxed__decoded__inst__s.html">xed_decoded_inst_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ENC.html#ga56df34e455c5fa7524ff651017ef87fe">xed_encoder_request_s</a></td></tr>
@@ -111,22 +109,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga6c6a723c9a89d72d3ad51705cb6b8836"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xed-common-hdrs_8h.html#a029d5ee2957ac2af5e2b75ec09f1daf9">XED_DLL_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ENC.html#ga6c6a723c9a89d72d3ad51705cb6b8836">xed_encoder_request_init_from_decode</a> (struct <a class="el" href="structxed__decoded__inst__s.html">xed_decoded_inst_s</a> *d)</td></tr>
 <tr class="memdesc:ga6c6a723c9a89d72d3ad51705cb6b8836"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an decoder request to a valid encoder request.  <a href="group__ENC.html#ga6c6a723c9a89d72d3ad51705cb6b8836">More...</a><br /></td></tr>
 <tr class="separator:ga6c6a723c9a89d72d3ad51705cb6b8836"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8411194f443b2bbfe5fbb23c1896dc74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xed-common-hdrs_8h.html#a029d5ee2957ac2af5e2b75ec09f1daf9">XED_DLL_EXPORT</a> <a class="el" href="xed-decoded-inst_8h.html#acc5f47a6c962e198ec5df935002f34e6">xed_operand_values_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ENC.html#ga8411194f443b2bbfe5fbb23c1896dc74">xed_encoder_request_operands</a> (<a class="el" href="group__ENC.html#ga6f914541ddfa1ffe609acebff72d0b5f">xed_encoder_request_t</a> *p)</td></tr>
-<tr class="separator:ga8411194f443b2bbfe5fbb23c1896dc74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabaed3d3191f648f4289ff8dcb43464b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xed-common-hdrs_8h.html#a029d5ee2957ac2af5e2b75ec09f1daf9">XED_DLL_EXPORT</a> const <a class="el" href="xed-decoded-inst_8h.html#acc5f47a6c962e198ec5df935002f34e6">xed_operand_values_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ENC.html#gabaed3d3191f648f4289ff8dcb43464b1">xed_encoder_request_operands_const</a> (const <a class="el" href="group__ENC.html#ga6f914541ddfa1ffe609acebff72d0b5f">xed_encoder_request_t</a> *p)</td></tr>
-<tr class="separator:gabaed3d3191f648f4289ff8dcb43464b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4ed9f789a65caa5fdcb6b71a28168314"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> <a class="el" href="xed-decoded-inst_8h.html#acc5f47a6c962e198ec5df935002f34e6">xed_operand_values_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ENC.html#ga4ed9f789a65caa5fdcb6b71a28168314">xed_encoder_request_operands</a> (<a class="el" href="group__ENC.html#ga6f914541ddfa1ffe609acebff72d0b5f">xed_encoder_request_t</a> *p)</td></tr>
+<tr class="separator:ga4ed9f789a65caa5fdcb6b71a28168314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8f888c59825db19c0925f59939f47479"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> const <a class="el" href="xed-decoded-inst_8h.html#acc5f47a6c962e198ec5df935002f34e6">xed_operand_values_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ENC.html#ga8f888c59825db19c0925f59939f47479">xed_encoder_request_operands_const</a> (const <a class="el" href="group__ENC.html#ga6f914541ddfa1ffe609acebff72d0b5f">xed_encoder_request_t</a> *p)</td></tr>
+<tr class="separator:ga8f888c59825db19c0925f59939f47479"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaff030e16b97deae21b1f7613684c54c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xed-common-hdrs_8h.html#a029d5ee2957ac2af5e2b75ec09f1daf9">XED_DLL_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ENC.html#gaff030e16b97deae21b1f7613684c54c7">xed_encoder_request_set_iclass</a> (<a class="el" href="group__ENC.html#ga6f914541ddfa1ffe609acebff72d0b5f">xed_encoder_request_t</a> *p, <a class="el" href="xed-iclass-enum_8h.html#ad318511ae9cc50f102251b3c91a1ab9f">xed_iclass_enum_t</a> iclass)</td></tr>
 <tr class="separator:gaff030e16b97deae21b1f7613684c54c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Prefixes</div></td></tr>
-<tr class="memitem:gaf651a483ec90cbf4495f87b114facc0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xed-common-hdrs_8h.html#a029d5ee2957ac2af5e2b75ec09f1daf9">XED_DLL_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ENC.html#gaf651a483ec90cbf4495f87b114facc0b">xed_encoder_request_set_repne</a> (<a class="el" href="group__ENC.html#ga6f914541ddfa1ffe609acebff72d0b5f">xed_encoder_request_t</a> *p)</td></tr>
-<tr class="memdesc:gaf651a483ec90cbf4495f87b114facc0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">for REPNE(F2) prefix on string ops  <a href="group__ENC.html#gaf651a483ec90cbf4495f87b114facc0b">More...</a><br /></td></tr>
-<tr class="separator:gaf651a483ec90cbf4495f87b114facc0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga71d03e9d694f56fc362974f2d81e5464"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xed-common-hdrs_8h.html#a029d5ee2957ac2af5e2b75ec09f1daf9">XED_DLL_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ENC.html#ga71d03e9d694f56fc362974f2d81e5464">xed_encoder_request_set_rep</a> (<a class="el" href="group__ENC.html#ga6f914541ddfa1ffe609acebff72d0b5f">xed_encoder_request_t</a> *p)</td></tr>
-<tr class="memdesc:ga71d03e9d694f56fc362974f2d81e5464"><td class="mdescLeft">&#160;</td><td class="mdescRight">for REP(F3) prefix on string ops  <a href="group__ENC.html#ga71d03e9d694f56fc362974f2d81e5464">More...</a><br /></td></tr>
-<tr class="separator:ga71d03e9d694f56fc362974f2d81e5464"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4c58b2cb01c560f3eb7ea9472ffd1201"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xed-common-hdrs_8h.html#a029d5ee2957ac2af5e2b75ec09f1daf9">XED_DLL_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ENC.html#ga4c58b2cb01c560f3eb7ea9472ffd1201">xed_encoder_request_clear_rep</a> (<a class="el" href="group__ENC.html#ga6f914541ddfa1ffe609acebff72d0b5f">xed_encoder_request_t</a> *p)</td></tr>
-<tr class="memdesc:ga4c58b2cb01c560f3eb7ea9472ffd1201"><td class="mdescLeft">&#160;</td><td class="mdescRight">clear the REP prefix indicator  <a href="group__ENC.html#ga4c58b2cb01c560f3eb7ea9472ffd1201">More...</a><br /></td></tr>
-<tr class="separator:ga4c58b2cb01c560f3eb7ea9472ffd1201"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Primary Encode Functions</div></td></tr>
 <tr class="memitem:ga53b937905ca110c4dd4b20e5695d8937"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xed-common-hdrs_8h.html#a029d5ee2957ac2af5e2b75ec09f1daf9">XED_DLL_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ENC.html#ga53b937905ca110c4dd4b20e5695d8937">xed_encoder_request_set_effective_operand_width</a> (<a class="el" href="group__ENC.html#ga6f914541ddfa1ffe609acebff72d0b5f">xed_encoder_request_t</a> *p, <a class="el" href="xed-types_8h.html#a0c92e8263b7ca02d8e4826ae5b79bb30">xed_uint_t</a> width_bits)</td></tr>
 <tr class="separator:ga53b937905ca110c4dd4b20e5695d8937"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,7 +195,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_39bdcf4cee9880e493b49f6c513c9c12.html">kits</a></li><li class="navelem"><a class="el" href="dir_342126a8aef901d5869f48b451e3ee4b.html">xed-install-base-2018-04-13-mac-x86-64</a></li><li class="navelem"><a class="el" href="dir_7dd137f1e64ed7bf22c982df847f429b.html">include</a></li><li class="navelem"><a class="el" href="dir_b21188e50d0c085a6a0e43e2d66b3604.html">xed</a></li><li class="navelem"><a class="el" href="xed-encode_8h.html">xed-encode.h</a></li>
+    <li class="navelem"><a class="el" href="dir_43724e81dd40e09f32417973865cdd64.html">obj</a></li><li class="navelem"><a class="el" href="dir_8457b5fead640a375ca0704568b0d081.html">wkit</a></li><li class="navelem"><a class="el" href="dir_e175811efbbe3767b218dbb51940252f.html">include</a></li><li class="navelem"><a class="el" href="dir_c905250153190ac9a0e58f61ab3d1cbf.html">xed</a></li><li class="navelem"><a class="el" href="xed-encode_8h.html">xed-encode.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

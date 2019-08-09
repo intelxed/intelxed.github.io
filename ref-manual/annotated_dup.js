@@ -5,6 +5,8 @@ var annotated_dup =
     [ "xed_convert_table_t", "structxed__convert__table__t.html", "structxed__convert__table__t" ],
     [ "xed_cpuid_rec_t", "structxed__cpuid__rec__t.html", "structxed__cpuid__rec__t" ],
     [ "xed_decoded_inst_s", "structxed__decoded__inst__s.html", "structxed__decoded__inst__s" ],
+    [ "xed_enc2_req_payload_t", "structxed__enc2__req__payload__t.html", "structxed__enc2__req__payload__t" ],
+    [ "xed_enc2_req_t", "unionxed__enc2__req__t.html", "unionxed__enc2__req__t" ],
     [ "xed_enc_displacement_t", "structxed__enc__displacement__t.html", "structxed__enc__displacement__t" ],
     [ "xed_encoder_iforms_s", "structxed__encoder__iforms__s.html", "structxed__encoder__iforms__s" ],
     [ "xed_encoder_instruction_t", "structxed__encoder__instruction__t.html", "structxed__encoder__instruction__t" ],

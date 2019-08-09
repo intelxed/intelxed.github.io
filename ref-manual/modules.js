@@ -4,6 +4,7 @@ var modules =
     [ "Encoding Instructions", "group__ENC.html", "group__ENC" ],
     [ "High Level API for Encoding Instructions", "group__ENCHL.html", "group__ENCHL" ],
     [ "Patching instructions", "group__ENCHLPATCH.html", "group__ENCHLPATCH" ],
+    [ "Fast Encoder for Specific Instructions", "group__ENC2.html", "group__ENC2" ],
     [ "Operand storage fields", "group__OPERANDS.html", "group__OPERANDS" ],
     [ "Iforms", "group__IFORM.html", "group__IFORM" ],
     [ "Groupings of features for chips", "group__ISASET.html", "group__ISASET" ],

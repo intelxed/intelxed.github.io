@@ -19,6 +19,8 @@ var files =
     [ "xed-decoded-inst-api.h", "xed-decoded-inst-api_8h.html", "xed-decoded-inst-api_8h" ],
     [ "xed-decoded-inst.h", "xed-decoded-inst_8h.html", "xed-decoded-inst_8h" ],
     [ "xed-disas.h", "xed-disas_8h.html", "xed-disas_8h" ],
+    [ "xed-encode-check.h", "xed-encode-check_8h.html", "xed-encode-check_8h" ],
+    [ "xed-encode-direct.h", "xed-encode-direct_8h.html", "xed-encode-direct_8h" ],
     [ "xed-encode.h", "xed-encode_8h.html", "xed-encode_8h" ],
     [ "xed-encoder-gen-defs.h", "xed-encoder-gen-defs_8h.html", "xed-encoder-gen-defs_8h" ],
     [ "xed-encoder-hl.h", "xed-encoder-hl_8h.html", "xed-encoder-hl_8h" ],

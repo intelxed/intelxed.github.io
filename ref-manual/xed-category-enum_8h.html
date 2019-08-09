@@ -86,10 +86,8 @@ $(document).ready(function(){initNavTree('xed-category-enum_8h.html','');});
 <div class="title">xed-category-enum.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="xed-common-hdrs_8h_source.html">xed-common-hdrs.h</a>&quot;</code><br />
-</div>
-<p><a href="xed-category-enum_8h_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+<div class="textblock"><code>#include &quot;<a class="el" href="xed-common-hdrs_8h.html">xed-common-hdrs.h</a>&quot;</code><br />
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a3e6e23a35a7ad463e2422d7db98e49f5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-category-enum_8h.html#a3e6e23a35a7ad463e2422d7db98e49f5">xed_category_enum_t</a> { <br />
@@ -116,6 +114,8 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="xed-category-enum_8h.html#a3e6e23a35a7ad463e2422d7db98e49f5a4bb6006f5931e24398412d91b294bc79">XED_CATEGORY_AVX512_BITALG</a>, 
 <br />
 &#160;&#160;<a class="el" href="xed-category-enum_8h.html#a3e6e23a35a7ad463e2422d7db98e49f5a248acdfb0fd5b986ddc67a3e111858b3">XED_CATEGORY_AVX512_VBMI</a>, 
+<br />
+&#160;&#160;<a class="el" href="xed-category-enum_8h.html#a3e6e23a35a7ad463e2422d7db98e49f5a04f196a04bf00fe0ff81998c7927d20f">XED_CATEGORY_AVX512_VP2INTERSECT</a>, 
 <br />
 &#160;&#160;<a class="el" href="xed-category-enum_8h.html#a3e6e23a35a7ad463e2422d7db98e49f5a39e4f50213019e0500729c124a4ad54c">XED_CATEGORY_BINARY</a>, 
 <br />
@@ -154,6 +154,8 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="xed-category-enum_8h.html#a3e6e23a35a7ad463e2422d7db98e49f5a7445bc16a271292d464d84ba89951d6b">XED_CATEGORY_DATAXFER</a>, 
 <br />
 &#160;&#160;<a class="el" href="xed-category-enum_8h.html#a3e6e23a35a7ad463e2422d7db98e49f5ab829bf7612fa0b222c6e75235e7b0fba">XED_CATEGORY_DECIMAL</a>, 
+<br />
+&#160;&#160;<a class="el" href="xed-category-enum_8h.html#a3e6e23a35a7ad463e2422d7db98e49f5aac4ecd696ffcbe21150609af1af5f2af">XED_CATEGORY_ENQCMD</a>, 
 <br />
 &#160;&#160;<a class="el" href="xed-category-enum_8h.html#a3e6e23a35a7ad463e2422d7db98e49f5a228c134851e1b3e068430eb9b93d9b27">XED_CATEGORY_EXPAND</a>, 
 <br />
@@ -211,6 +213,8 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="xed-category-enum_8h.html#a3e6e23a35a7ad463e2422d7db98e49f5ab6ec0c3982f84f54c17e38b3b610e714">XED_CATEGORY_RDPID</a>, 
 <br />
+&#160;&#160;<a class="el" href="xed-category-enum_8h.html#a3e6e23a35a7ad463e2422d7db98e49f5a008dc89149a6136496de1a03930aafab">XED_CATEGORY_RDPRU</a>, 
+<br />
 &#160;&#160;<a class="el" href="xed-category-enum_8h.html#a3e6e23a35a7ad463e2422d7db98e49f5a548a79191b9b30be5e90f7f368615612">XED_CATEGORY_RDRAND</a>, 
 <br />
 &#160;&#160;<a class="el" href="xed-category-enum_8h.html#a3e6e23a35a7ad463e2422d7db98e49f5a3b52d77a2eb1120b840ab860f6767ea6">XED_CATEGORY_RDSEED</a>, 
@@ -258,6 +262,8 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="xed-category-enum_8h.html#a3e6e23a35a7ad463e2422d7db98e49f5a7a904eda2a1f4b7ca17040f91cf0bb8e">XED_CATEGORY_VBMI2</a>, 
 <br />
 &#160;&#160;<a class="el" href="xed-category-enum_8h.html#a3e6e23a35a7ad463e2422d7db98e49f5a0a0f0a511ec4604f69d8d4d2b0b4bb57">XED_CATEGORY_VFMA</a>, 
+<br />
+&#160;&#160;<a class="el" href="xed-category-enum_8h.html#a3e6e23a35a7ad463e2422d7db98e49f5ace8b82a0473eefd4f7409ab97f4d1ade">XED_CATEGORY_VIA_PADLOCK</a>, 
 <br />
 &#160;&#160;<a class="el" href="xed-category-enum_8h.html#a3e6e23a35a7ad463e2422d7db98e49f5a86b4883359d9d3964604e0b4cbddf52e">XED_CATEGORY_VPCLMULQDQ</a>, 
 <br />
@@ -317,6 +323,7 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a3e6e23a35a7ad463e2422d7db98e49f5a64d2dc902936663ad3dbc9cedcc5ef82"></a>XED_CATEGORY_AVX512_4VNNIW&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3e6e23a35a7ad463e2422d7db98e49f5a4bb6006f5931e24398412d91b294bc79"></a>XED_CATEGORY_AVX512_BITALG&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3e6e23a35a7ad463e2422d7db98e49f5a248acdfb0fd5b986ddc67a3e111858b3"></a>XED_CATEGORY_AVX512_VBMI&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3e6e23a35a7ad463e2422d7db98e49f5a04f196a04bf00fe0ff81998c7927d20f"></a>XED_CATEGORY_AVX512_VP2INTERSECT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3e6e23a35a7ad463e2422d7db98e49f5a39e4f50213019e0500729c124a4ad54c"></a>XED_CATEGORY_BINARY&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3e6e23a35a7ad463e2422d7db98e49f5ab34fd13767fbe4cf0c2357c167db0ab5"></a>XED_CATEGORY_BITBYTE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3e6e23a35a7ad463e2422d7db98e49f5a606cd85ef46bb1fbdf1b22643f4fed07"></a>XED_CATEGORY_BLEND&#160;</td><td class="fielddoc"></td></tr>
@@ -336,6 +343,7 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a3e6e23a35a7ad463e2422d7db98e49f5ad0baf9aa213fbe78ed27e4d563e2931b"></a>XED_CATEGORY_CONVERT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3e6e23a35a7ad463e2422d7db98e49f5a7445bc16a271292d464d84ba89951d6b"></a>XED_CATEGORY_DATAXFER&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3e6e23a35a7ad463e2422d7db98e49f5ab829bf7612fa0b222c6e75235e7b0fba"></a>XED_CATEGORY_DECIMAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3e6e23a35a7ad463e2422d7db98e49f5aac4ecd696ffcbe21150609af1af5f2af"></a>XED_CATEGORY_ENQCMD&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3e6e23a35a7ad463e2422d7db98e49f5a228c134851e1b3e068430eb9b93d9b27"></a>XED_CATEGORY_EXPAND&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3e6e23a35a7ad463e2422d7db98e49f5a7c3085a4bd7b9c51f142da1c65521e4d"></a>XED_CATEGORY_FCMOV&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3e6e23a35a7ad463e2422d7db98e49f5aafeb9114ddb0ea7d584f4681fcfd6e85"></a>XED_CATEGORY_FLAGOP&#160;</td><td class="fielddoc"></td></tr>
@@ -364,6 +372,7 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a3e6e23a35a7ad463e2422d7db98e49f5af199b925a3bc9963d65e678852dc6b37"></a>XED_CATEGORY_PT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3e6e23a35a7ad463e2422d7db98e49f5a15d32522b8ae825c957c8babbd926acf"></a>XED_CATEGORY_PUSH&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3e6e23a35a7ad463e2422d7db98e49f5ab6ec0c3982f84f54c17e38b3b610e714"></a>XED_CATEGORY_RDPID&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3e6e23a35a7ad463e2422d7db98e49f5a008dc89149a6136496de1a03930aafab"></a>XED_CATEGORY_RDPRU&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3e6e23a35a7ad463e2422d7db98e49f5a548a79191b9b30be5e90f7f368615612"></a>XED_CATEGORY_RDRAND&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3e6e23a35a7ad463e2422d7db98e49f5a3b52d77a2eb1120b840ab860f6767ea6"></a>XED_CATEGORY_RDSEED&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3e6e23a35a7ad463e2422d7db98e49f5a64439f33b413342775c49f2541cfa0bb"></a>XED_CATEGORY_RDWRFSGS&#160;</td><td class="fielddoc"></td></tr>
@@ -388,6 +397,7 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a3e6e23a35a7ad463e2422d7db98e49f5a0cd13a8a67bcdd08cc32fd1485f66291"></a>XED_CATEGORY_VAES&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3e6e23a35a7ad463e2422d7db98e49f5a7a904eda2a1f4b7ca17040f91cf0bb8e"></a>XED_CATEGORY_VBMI2&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3e6e23a35a7ad463e2422d7db98e49f5a0a0f0a511ec4604f69d8d4d2b0b4bb57"></a>XED_CATEGORY_VFMA&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3e6e23a35a7ad463e2422d7db98e49f5ace8b82a0473eefd4f7409ab97f4d1ade"></a>XED_CATEGORY_VIA_PADLOCK&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3e6e23a35a7ad463e2422d7db98e49f5a86b4883359d9d3964604e0b4cbddf52e"></a>XED_CATEGORY_VPCLMULQDQ&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3e6e23a35a7ad463e2422d7db98e49f5a7602470ea5489adf15fe8ef7e4a2533f"></a>XED_CATEGORY_VTX&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3e6e23a35a7ad463e2422d7db98e49f5a2573b65a0c17d2f10e876278d2a6fc4b"></a>XED_CATEGORY_WAITPKG&#160;</td><td class="fielddoc"></td></tr>
@@ -399,8 +409,6 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a3e6e23a35a7ad463e2422d7db98e49f5a05331113355163706eb8f226b8da42c2"></a>XED_CATEGORY_LAST&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="xed-category-enum_8h_source.html#l00026">26</a> of file <a class="el" href="xed-category-enum_8h_source.html">xed-category-enum.h</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
@@ -408,7 +416,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_39bdcf4cee9880e493b49f6c513c9c12.html">kits</a></li><li class="navelem"><a class="el" href="dir_342126a8aef901d5869f48b451e3ee4b.html">xed-install-base-2018-04-13-mac-x86-64</a></li><li class="navelem"><a class="el" href="dir_7dd137f1e64ed7bf22c982df847f429b.html">include</a></li><li class="navelem"><a class="el" href="dir_b21188e50d0c085a6a0e43e2d66b3604.html">xed</a></li><li class="navelem"><a class="el" href="xed-category-enum_8h.html">xed-category-enum.h</a></li>
+    <li class="navelem"><a class="el" href="dir_43724e81dd40e09f32417973865cdd64.html">obj</a></li><li class="navelem"><a class="el" href="dir_8457b5fead640a375ca0704568b0d081.html">wkit</a></li><li class="navelem"><a class="el" href="dir_e175811efbbe3767b218dbb51940252f.html">include</a></li><li class="navelem"><a class="el" href="dir_c905250153190ac9a0e58f61ab3d1cbf.html">xed</a></li><li class="navelem"><a class="el" href="xed-category-enum_8h.html">xed-category-enum.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

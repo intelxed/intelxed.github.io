@@ -2,7 +2,7 @@ var group__ENCHL =
 [
     [ "xed_addr", "group__ENCHL.html#gaee1676fa4fdf348226f265b6f5abe386", null ],
     [ "xed_convert_to_encoder_request", "group__ENCHL.html#gac53594aeb5688c348000a7424d559aac", null ],
-    [ "xed_disp", "group__ENCHL.html#gab78a9f5cd721dd7fb0016ed55eb0858a", null ],
+    [ "xed_disp", "group__ENCHL.html#gab250b7cc3902e49e4c51ce4b0a8e6e8a", null ],
     [ "xed_imm0", "group__ENCHL.html#ga2c90afba72af73938e57855c86386a47", null ],
     [ "xed_imm1", "group__ENCHL.html#gaca114d4a9178d126b76772a22779aa23", null ],
     [ "xed_inst", "group__ENCHL.html#ga0b2f5d72a7c89397c9eb011280d4b001", null ],

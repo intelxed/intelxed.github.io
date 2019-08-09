@@ -72,7 +72,7 @@ var group__DEC =
     [ "xed_decoded_inst_get_memory_displacement_width_bits", "group__DEC.html#ga1dbd440bd1bde01bd35d01ec1e518fb5", null ],
     [ "xed_decoded_inst_get_memory_operand_length", "group__DEC.html#gaecce1ea119eb21d3569ee0058d5ce084", null ],
     [ "xed_decoded_inst_get_modrm", "group__DEC.html#ga21740dee629a5b07e630f95604f6b649", null ],
-    [ "xed_decoded_inst_get_nprefixes", "group__DEC.html#ga736415e126f916c307ca2580dda96266", null ],
+    [ "xed_decoded_inst_get_nprefixes", "group__DEC.html#ga18754b5fc481ec34a2e265d46ed1c53b", null ],
     [ "xed_decoded_inst_get_operand_width", "group__DEC.html#gad4d75490247559d47fa417c71bd76722", null ],
     [ "xed_decoded_inst_get_reg", "group__DEC.html#ga16d972d293abe583a1caffb472b71418", null ],
     [ "xed_decoded_inst_get_rflags_info", "group__DEC.html#ga275353ead71e5915f810ef06c4149b68", null ],

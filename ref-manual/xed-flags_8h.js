@@ -12,7 +12,7 @@ var xed_flags_8h =
     [ "xed_flag_action_write_action", "group__FLAGS.html#ga93ce4bd708adffe1ec0c5c3a884802cc", null ],
     [ "xed_flag_action_writes_flag", "group__FLAGS.html#gae17824babf697205b4ec3ea1547e6f95", null ],
     [ "xed_flag_set_is_subset_of", "group__FLAGS.html#ga1beb49469f104f6e92147b0522fb7cc0", null ],
-    [ "xed_flag_set_mask", "group__FLAGS.html#gaa51e48465bdabfb43983cbc887cf6c51", null ],
+    [ "xed_flag_set_mask", "group__FLAGS.html#ga615e2237e74d1c365addeb299d2efdd4", null ],
     [ "xed_flag_set_print", "group__FLAGS.html#ga7f7a68d1f3d02a08b60205a96e025bb2", null ],
     [ "xed_simple_flag_get_flag_action", "group__FLAGS.html#ga1db7706b1121de4f70e82fc85e3988c1", null ],
     [ "xed_simple_flag_get_may_write", "group__FLAGS.html#ga7ef6569c3ed439bc8987307492a59281", null ],

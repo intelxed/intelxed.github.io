@@ -123,9 +123,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga21740dee629a5b07e630f95604f6b649"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xed-common-hdrs_8h.html#a029d5ee2957ac2af5e2b75ec09f1daf9">XED_DLL_EXPORT</a> xed_uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DEC.html#ga21740dee629a5b07e630f95604f6b649">xed_decoded_inst_get_modrm</a> (const <a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *p)</td></tr>
 <tr class="memdesc:ga21740dee629a5b07e630f95604f6b649"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the modrm byte.  <a href="#ga21740dee629a5b07e630f95604f6b649">More...</a><br /></td></tr>
 <tr class="separator:ga21740dee629a5b07e630f95604f6b649"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga736415e126f916c307ca2580dda96266"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xed-common-hdrs_8h.html#a029d5ee2957ac2af5e2b75ec09f1daf9">XED_DLL_EXPORT</a> <a class="el" href="xed-types_8h.html#a0c92e8263b7ca02d8e4826ae5b79bb30">xed_uint_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DEC.html#ga736415e126f916c307ca2580dda96266">xed_decoded_inst_get_nprefixes</a> (<a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *p)</td></tr>
-<tr class="memdesc:ga736415e126f916c307ca2580dda96266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of legacy prefixes.  <a href="#ga736415e126f916c307ca2580dda96266">More...</a><br /></td></tr>
-<tr class="separator:ga736415e126f916c307ca2580dda96266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga18754b5fc481ec34a2e265d46ed1c53b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xed-common-hdrs_8h.html#a029d5ee2957ac2af5e2b75ec09f1daf9">XED_DLL_EXPORT</a> <a class="el" href="xed-types_8h.html#a0c92e8263b7ca02d8e4826ae5b79bb30">xed_uint_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DEC.html#ga18754b5fc481ec34a2e265d46ed1c53b">xed_decoded_inst_get_nprefixes</a> (const <a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *p)</td></tr>
+<tr class="memdesc:ga18754b5fc481ec34a2e265d46ed1c53b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of legacy prefixes.  <a href="#ga18754b5fc481ec34a2e265d46ed1c53b">More...</a><br /></td></tr>
+<tr class="separator:ga18754b5fc481ec34a2e265d46ed1c53b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac6648aa96058086b1624655a1718a184"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xed-common-hdrs_8h.html#a029d5ee2957ac2af5e2b75ec09f1daf9">XED_DLL_EXPORT</a> xed_uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DEC.html#gac6648aa96058086b1624655a1718a184">xed_decoded_inst_has_mpx_prefix</a> (const <a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *p)</td></tr>
 <tr class="memdesc:gac6648aa96058086b1624655a1718a184"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns 1 if the instruction has mpx prefix.  <a href="#gac6648aa96058086b1624655a1718a184">More...</a><br /></td></tr>
 <tr class="separator:gac6648aa96058086b1624655a1718a184"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1015,8 +1015,6 @@ a length of the text array </li>
 <p>Read itext byte. </p>
 <p>Read a whole byte from the normal input bytes. </p>
 
-<p class="definition">Definition at line <a class="el" href="xed-decoded-inst-api_8h_source.html#l00287">287</a> of file <a class="el" href="xed-decoded-inst-api_8h_source.html">xed-decoded-inst-api.h</a>.</p>
-
 </div>
 </div>
 <a id="gadb8cfb26a825d8a8d8dcbf49857eab63"></a>
@@ -1044,8 +1042,6 @@ a length of the text array </li>
 </div><div class="memdoc">
 
 <p>Return the instruction <a class="el" href="xed-category-enum_8h.html#a3e6e23a35a7ad463e2422d7db98e49f5">xed_category_enum_t</a> enumeration. </p>
-
-<p class="definition">Definition at line <a class="el" href="xed-decoded-inst-api_8h_source.html#l00054">54</a> of file <a class="el" href="xed-decoded-inst-api_8h_source.html">xed-decoded-inst-api.h</a>.</p>
 
 </div>
 </div>
@@ -1075,8 +1071,6 @@ a length of the text array </li>
 
 <p>Return the instruction <a class="el" href="xed-extension-enum_8h.html#ae7b9f64cdf123c5fda22bd10d5db9916">xed_extension_enum_t</a> enumeration. </p>
 
-<p class="definition">Definition at line <a class="el" href="xed-decoded-inst-api_8h_source.html#l00061">61</a> of file <a class="el" href="xed-decoded-inst-api_8h_source.html">xed-decoded-inst-api.h</a>.</p>
-
 </div>
 </div>
 <a id="ga2bc965a8dc2a1fee79b80b2c45d4329c"></a>
@@ -1104,8 +1098,6 @@ a length of the text array </li>
 </div><div class="memdoc">
 
 <p>Return the instruction <a class="el" href="xed-iclass-enum_8h.html#ad318511ae9cc50f102251b3c91a1ab9f">xed_iclass_enum_t</a> enumeration. </p>
-
-<p class="definition">Definition at line <a class="el" href="xed-decoded-inst-api_8h_source.html#l00075">75</a> of file <a class="el" href="xed-decoded-inst-api_8h_source.html">xed-decoded-inst-api.h</a>.</p>
 
 </div>
 </div>
@@ -1135,8 +1127,6 @@ a length of the text array </li>
 
 <p>Return the instruction iform enum of type <a class="el" href="xed-iform-enum_8h.html#af48986d6e090a75f7ab50e6d4a182e21">xed_iform_enum_t</a> . </p>
 
-<p class="definition">Definition at line <a class="el" href="xed-decoded-inst-api_8h_source.html#l00365">365</a> of file <a class="el" href="xed-decoded-inst-api_8h_source.html">xed-decoded-inst-api.h</a>.</p>
-
 </div>
 </div>
 <a id="ga8c85bf31ee09bde1bb5b957699a38f71"></a>
@@ -1165,8 +1155,6 @@ a length of the text array </li>
 
 <p>Return the instruction zero-based iform number based on masking the corresponding <a class="el" href="xed-iform-enum_8h.html#af48986d6e090a75f7ab50e6d4a182e21">xed_iform_enum_t</a>. </p>
 <p>This value is suitable for dispatching. The maximum value for a particular iclass is provided by <a class="el" href="group__IFORM.html#ga7b2e9c4095bddf90c3679c9fdd54b20c" title="Return the maximum number of iforms for a particular iclass. ">xed_iform_max_per_iclass()</a> . </p>
-
-<p class="definition">Definition at line <a class="el" href="xed-decoded-inst-api_8h_source.html#l00376">376</a> of file <a class="el" href="xed-decoded-inst-api_8h_source.html">xed-decoded-inst-api.h</a>.</p>
 
 </div>
 </div>
@@ -1284,8 +1272,6 @@ a length of the text array </li>
 
 <p>Return the user-specified <a class="el" href="xed-chip-enum_8h.html#ae77c7c405380680ef2414d50d67f1301">xed_chip_enum_t</a> chip name, or XED_CHIP_INVALID if not set. </p>
 
-<p class="definition">Definition at line <a class="el" href="xed-decoded-inst-api_8h_source.html#l00334">334</a> of file <a class="el" href="xed-decoded-inst-api_8h_source.html">xed-decoded-inst-api.h</a>.</p>
-
 </div>
 </div>
 <a id="ga085ca25ab4513e982c563b30927dffc9"></a>
@@ -1313,8 +1299,6 @@ a length of the text array </li>
 </div><div class="memdoc">
 
 <p>Return the instruction <a class="el" href="xed-isa-set-enum_8h.html#a4a1095357d6e9552d94418d2bd9f5681">xed_isa_set_enum_t</a> enumeration. </p>
-
-<p class="definition">Definition at line <a class="el" href="xed-decoded-inst-api_8h_source.html#l00068">68</a> of file <a class="el" href="xed-decoded-inst-api_8h_source.html">xed-decoded-inst-api.h</a>.</p>
 
 </div>
 </div>
@@ -1344,8 +1328,6 @@ a length of the text array </li>
 
 <p>Return the length of the decoded instruction in bytes. </p>
 
-<p class="definition">Definition at line <a class="el" href="xed-decoded-inst-api_8h_source.html#l00275">275</a> of file <a class="el" href="xed-decoded-inst-api_8h_source.html">xed-decoded-inst-api.h</a>.</p>
-
 </div>
 </div>
 <a id="ga851d9b2b496b1af5fe79a15d325aa523"></a>
@@ -1374,8 +1356,6 @@ a length of the text array </li>
 
 <p>Returns 16/32/64 indicating the machine mode with in bits. </p>
 <p>This is derived from the input mode information. </p>
-
-<p class="definition">Definition at line <a class="el" href="xed-decoded-inst-api_8h_source.html#l00302">302</a> of file <a class="el" href="xed-decoded-inst-api_8h_source.html">xed-decoded-inst-api.h</a>.</p>
 
 </div>
 </div>
@@ -1548,8 +1528,8 @@ a length of the text array </li>
 
 </div>
 </div>
-<a id="ga736415e126f916c307ca2580dda96266"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga736415e126f916c307ca2580dda96266">&#9670;&nbsp;</a></span>xed_decoded_inst_get_nprefixes()</h2>
+<a id="ga18754b5fc481ec34a2e265d46ed1c53b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga18754b5fc481ec34a2e265d46ed1c53b">&#9670;&nbsp;</a></span>xed_decoded_inst_get_nprefixes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1557,7 +1537,7 @@ a length of the text array </li>
         <tr>
           <td class="memname"><a class="el" href="xed-common-hdrs_8h.html#a029d5ee2957ac2af5e2b75ec09f1daf9">XED_DLL_EXPORT</a> <a class="el" href="xed-types_8h.html#a0c92e8263b7ca02d8e4826ae5b79bb30">xed_uint_t</a> xed_decoded_inst_get_nprefixes </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *&#160;</td>
           <td class="paramname"><em>p</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1695,8 +1675,6 @@ a length of the text array </li>
 
 <p>Return the second immediate. </p>
 
-<p class="definition">Definition at line <a class="el" href="xed-decoded-inst-api_8h_source.html#l00509">509</a> of file <a class="el" href="xed-decoded-inst-api_8h_source.html">xed-decoded-inst-api.h</a>.</p>
-
 </div>
 </div>
 <a id="ga1451e49df729a4fe1e650db6cb3343d2"></a>
@@ -1772,8 +1750,6 @@ a length of the text array </li>
 <p>Returns 16/32/64 indicating the stack addressing mode with in bits. </p>
 <p>This is derived from the input mode information. </p>
 
-<p class="definition">Definition at line <a class="el" href="xed-decoded-inst-api_8h_source.html#l00312">312</a> of file <a class="el" href="xed-decoded-inst-api_8h_source.html">xed-decoded-inst-api.h</a>.</p>
-
 </div>
 </div>
 <a id="ga79461981ed1722ab09a094915fb72428"></a>
@@ -1819,8 +1795,6 @@ a length of the text array </li>
 </div><div class="memdoc">
 
 <p>Return a user data field for arbitrary use by the user after decoding. </p>
-
-<p class="definition">Definition at line <a class="el" href="xed-decoded-inst-api_8h_source.html#l00659">659</a> of file <a class="el" href="xed-decoded-inst-api_8h_source.html">xed-decoded-inst-api.h</a>.</p>
 
 </div>
 </div>
@@ -1870,8 +1844,6 @@ a length of the text array </li>
 
 <p>Return the <a class="el" href="group__DEC.html#ga4410c86154ad601e0440a075864f9c4b" title="constant information about a decoded instruction form, including the pointer to the constant operand ...">xed_inst_t</a> structure for this instruction. </p>
 <p>This is the route to the basic operands form information. </p>
-
-<p class="definition">Definition at line <a class="el" href="xed-decoded-inst-api_8h_source.html#l00046">46</a> of file <a class="el" href="xed-decoded-inst-api_8h_source.html">xed-decoded-inst-api.h</a>.</p>
 
 </div>
 </div>
@@ -2148,8 +2120,6 @@ a length of the text array </li>
 
 <p>Return the number of operands. </p>
 
-<p class="definition">Definition at line <a class="el" href="xed-decoded-inst-api_8h_source.html#l00170">170</a> of file <a class="el" href="xed-decoded-inst-api_8h_source.html">xed-decoded-inst-api.h</a>.</p>
-
 </div>
 </div>
 <a id="gac093ecf9904ce025bafa8e7318ded0ec"></a>
@@ -2378,8 +2348,6 @@ a length of the text array </li>
 
 <p>Obtain a non-constant pointer to the operands. </p>
 
-<p class="definition">Definition at line <a class="el" href="xed-decoded-inst-api_8h_source.html#l00148">148</a> of file <a class="el" href="xed-decoded-inst-api_8h_source.html">xed-decoded-inst-api.h</a>.</p>
-
 </div>
 </div>
 <a id="ga38e372d3227817713159035cb47ad1fd"></a>
@@ -2407,8 +2375,6 @@ a length of the text array </li>
 </div><div class="memdoc">
 
 <p>Obtain a constant pointer to the operands. </p>
-
-<p class="definition">Definition at line <a class="el" href="xed-decoded-inst-api_8h_source.html#l00142">142</a> of file <a class="el" href="xed-decoded-inst-api_8h_source.html">xed-decoded-inst-api.h</a>.</p>
 
 </div>
 </div>
@@ -2664,8 +2630,6 @@ a length of the text array </li>
 
 <p>Set a user-specified <a class="el" href="xed-chip-enum_8h.html#ae77c7c405380680ef2414d50d67f1301">xed_chip_enum_t</a> chip name for restricting decode. </p>
 
-<p class="definition">Definition at line <a class="el" href="xed-decoded-inst-api_8h_source.html#l00341">341</a> of file <a class="el" href="xed-decoded-inst-api_8h_source.html">xed-decoded-inst-api.h</a>.</p>
-
 </div>
 </div>
 <a id="ga6a4b96d0db7e35adb4fa7e4eaed79c30"></a>
@@ -2783,8 +2747,6 @@ a length of the text array </li>
 <p>Set the machine mode and stack addressing width directly. </p>
 <p>This is NOT a full initialization; Call <a class="el" href="group__DEC.html#ga187a0e161873242e9989a186466a06b6" title="Zero the decode structure completely. ">xed_decoded_inst_zero()</a> before using this if you want a clean slate. </p>
 
-<p class="definition">Definition at line <a class="el" href="xed-decoded-inst-api_8h_source.html#l00249">249</a> of file <a class="el" href="xed-decoded-inst-api_8h_source.html">xed-decoded-inst-api.h</a>.</p>
-
 </div>
 </div>
 <a id="gae568590fb678b524e5e1068d085d76dc"></a>
@@ -2850,8 +2812,6 @@ a length of the text array </li>
 </div><div class="memdoc">
 
 <p>Modify the user data field. </p>
-
-<p class="definition">Definition at line <a class="el" href="xed-decoded-inst-api_8h_source.html#l00665">665</a> of file <a class="el" href="xed-decoded-inst-api_8h_source.html">xed-decoded-inst-api.h</a>.</p>
 
 </div>
 </div>
@@ -2921,8 +2881,6 @@ a length of the text array </li>
 </div><div class="memdoc">
 
 <p>Return true if the instruction is valid. </p>
-
-<p class="definition">Definition at line <a class="el" href="xed-decoded-inst-api_8h_source.html#l00039">39</a> of file <a class="el" href="xed-decoded-inst-api_8h_source.html">xed-decoded-inst-api.h</a>.</p>
 
 </div>
 </div>
@@ -3170,8 +3128,6 @@ a length of the text array </li>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-inst_8h_source.html#l00297">297</a> of file <a class="el" href="xed-inst_8h_source.html">xed-inst.h</a>.</p>
-
 </div>
 </div>
 <a id="gaaf47d56bea81c3f7f815fab8cbc64a50"></a>
@@ -3224,8 +3180,6 @@ a length of the text array </li>
 <p>Return <a class="el" href="xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4d">xed_exception_enum_t</a> if present for the specified instruction. </p>
 <p>This is currently only used for SSE and AVX instructions. </p>
 
-<p class="definition">Definition at line <a class="el" href="xed-inst_8h_source.html#l00359">359</a> of file <a class="el" href="xed-inst_8h_source.html">xed-inst.h</a>.</p>
-
 </div>
 </div>
 <a id="ga561a6688c1f8666cef9d2182f299f5bc"></a>
@@ -3251,8 +3205,6 @@ a length of the text array </li>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-inst_8h_source.html#l00301">301</a> of file <a class="el" href="xed-inst_8h_source.html">xed-inst.h</a>.</p>
 
 </div>
 </div>
@@ -3348,8 +3300,6 @@ a length of the text array </li>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-inst_8h_source.html#l00293">293</a> of file <a class="el" href="xed-inst_8h_source.html">xed-inst.h</a>.</p>
-
 </div>
 </div>
 <a id="gab13c4e9442dfe6624ed492f1c6521286"></a>
@@ -3376,8 +3326,6 @@ a length of the text array </li>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-inst_8h_source.html#l00289">289</a> of file <a class="el" href="xed-inst_8h_source.html">xed-inst.h</a>.</p>
-
 </div>
 </div>
 <a id="ga6db12b2be0153b8cc8fffba00e4d3eaa"></a>
@@ -3403,8 +3351,6 @@ a length of the text array </li>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-inst_8h_source.html#l00304">304</a> of file <a class="el" href="xed-inst_8h_source.html">xed-inst.h</a>.</p>
 
 </div>
 </div>
@@ -3433,8 +3379,6 @@ a length of the text array </li>
 </div><div class="memdoc">
 
 <p>Number of instruction operands. </p>
-
-<p class="definition">Definition at line <a class="el" href="xed-inst_8h_source.html#l00312">312</a> of file <a class="el" href="xed-inst_8h_source.html">xed-inst.h</a>.</p>
 
 </div>
 </div>
@@ -3580,8 +3524,6 @@ REP/REPNE/REPE prefix and return the corresponding <a class="el" href="xed-iclas
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="xed-inst_8h_source.html#l00169">169</a> of file <a class="el" href="xed-inst_8h_source.html">xed-inst.h</a>.</p>
-
 </div>
 </div>
 <a id="ga336d0e245e83f1b90f609f72b136a2aa"></a>
@@ -3616,8 +3558,6 @@ REP/REPNE/REPE prefix and return the corresponding <a class="el" href="xed-iclas
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>1 if the operand name is for a memory addressing register operand, 0 otherwise. See also <a class="el" href="group__DEC.html#gab506c3ac00ee5350d9b5ab55270c392c" title="Tests the enum for inclusion in XED_OPERAND_REG0 through XED_OPERAND_REG15. ">xed_operand_is_register</a> . </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="xed-inst_8h_source.html#l00202">202</a> of file <a class="el" href="xed-inst_8h_source.html">xed-inst.h</a>.</p>
 
 </div>
 </div>
@@ -3655,8 +3595,6 @@ REP/REPNE/REPE prefix and return the corresponding <a class="el" href="xed-iclas
 <dl class="section return"><dt>Returns</dt><dd>1 if the operand name is REG0...REG15, 0 otherwise.</dd></dl>
 <p>Note there are other registers for memory addressing; See <a class="el" href="group__DEC.html#ga336d0e245e83f1b90f609f72b136a2aa" title="Tests the enum for inclusion in XED_OPERAND_{BASE0,BASE1,INDEX,SEG0,SEG1}. ">xed_operand_is_memory_addressing_register</a> . </p>
 
-<p class="definition">Definition at line <a class="el" href="xed-inst_8h_source.html#l00193">193</a> of file <a class="el" href="xed-inst_8h_source.html">xed-inst.h</a>.</p>
-
 </div>
 </div>
 <a id="ga57209697b0dfb3e9ed4f694ca7cc16a4"></a>
@@ -3682,8 +3620,6 @@ REP/REPNE/REPE prefix and return the corresponding <a class="el" href="xed-iclas
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-inst_8h_source.html#l00080">80</a> of file <a class="el" href="xed-inst_8h_source.html">xed-inst.h</a>.</p>
 
 </div>
 </div>
@@ -3711,8 +3647,6 @@ REP/REPNE/REPE prefix and return the corresponding <a class="el" href="xed-iclas
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-inst_8h_source.html#l00127">127</a> of file <a class="el" href="xed-inst_8h_source.html">xed-inst.h</a>.</p>
-
 </div>
 </div>
 <a id="ga2e8b5df9fc68c6aa7fbeb98735e1d4a9"></a>
@@ -3738,8 +3672,6 @@ REP/REPNE/REPE prefix and return the corresponding <a class="el" href="xed-iclas
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-inst_8h_source.html#l00087">87</a> of file <a class="el" href="xed-inst_8h_source.html">xed-inst.h</a>.</p>
 
 </div>
 </div>
@@ -3880,8 +3812,6 @@ REP/REPNE/REPE prefix and return the corresponding <a class="el" href="xed-iclas
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the implicit or suppressed registers, type <a class="el" href="xed-reg-enum_8h.html#af05c33c5a68e9304d1d8ac0408ae3f61">xed_reg_enum_t</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="xed-inst_8h_source.html#l00142">142</a> of file <a class="el" href="xed-inst_8h_source.html">xed-inst.h</a>.</p>
-
 </div>
 </div>
 <a id="gae5299214951891952401b5061e48a6ca"></a>
@@ -3910,8 +3840,6 @@ REP/REPNE/REPE prefix and return the corresponding <a class="el" href="xed-iclas
 
 <p>DEPRECATED: Returns the raw R/W action. </p>
 <p>There are many cases for conditional reads and writes. See <a class="el" href="group__DEC.html#ga5540113a3dfdf1472de90fdf7953cb5d" title="Interpret the operand action in light of AVX512 masking and zeroing/merging. ">xed_decoded_inst_operand_action()</a>. </p>
-
-<p class="definition">Definition at line <a class="el" href="xed-inst_8h_source.html#l00218">218</a> of file <a class="el" href="xed-inst_8h_source.html">xed-inst.h</a>.</p>
 
 </div>
 </div>
@@ -3949,8 +3877,6 @@ REP/REPNE/REPE prefix and return the corresponding <a class="el" href="xed-iclas
 <dl class="section return"><dt>Returns</dt><dd>1 if the operand template represents are register-type operand.</dd></dl>
 <p>Related functions: Use <a class="el" href="group__DEC.html#ga16d972d293abe583a1caffb472b71418" title="Return the specified register operand. ">xed_decoded_inst_get_reg()</a> to get the decoded name of /// the register, <a class="el" href="xed-reg-enum_8h.html#af05c33c5a68e9304d1d8ac0408ae3f61">xed_reg_enum_t</a>. Use <a class="el" href="group__DEC.html#gab506c3ac00ee5350d9b5ab55270c392c" title="Tests the enum for inclusion in XED_OPERAND_REG0 through XED_OPERAND_REG15. ">xed_operand_is_register()</a> to test <a class="el" href="xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011a">xed_operand_enum_t</a> names. </p>
 
-<p class="definition">Definition at line <a class="el" href="xed-inst_8h_source.html#l00161">161</a> of file <a class="el" href="xed-inst_8h_source.html">xed-inst.h</a>.</p>
-
 </div>
 </div>
 <a id="gacaf67b54704bacb6b47f5f2afcf2a4b1"></a>
@@ -3978,8 +3904,6 @@ REP/REPNE/REPE prefix and return the corresponding <a class="el" href="xed-iclas
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="xed-operand-type-enum_8h.html#a7f9198331fe1015a2df65f7b42aa43a8">xed_operand_type_enum_t</a> of the operand template. This is probably not what you want. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="xed-inst_8h_source.html#l00096">96</a> of file <a class="el" href="xed-inst_8h_source.html">xed-inst.h</a>.</p>
-
 </div>
 </div>
 <a id="ga1159569c734bf712a40a2a88542d549d"></a>
@@ -4005,8 +3929,6 @@ REP/REPNE/REPE prefix and return the corresponding <a class="el" href="xed-iclas
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-inst_8h_source.html#l00111">111</a> of file <a class="el" href="xed-inst_8h_source.html">xed-inst.h</a>.</p>
 
 </div>
 </div>
@@ -4110,8 +4032,6 @@ REP/REPNE/REPE prefix and return the corresponding <a class="el" href="xed-iclas
 </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="xed-operand-element-xtype-enum_8h.html#a2df598e1a20ef98a15d7b1f8f844c413">xed_operand_element_xtype_enum_t</a> of the operand template. This is probably not what you want. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="xed-inst_8h_source.html#l00104">104</a> of file <a class="el" href="xed-inst_8h_source.html">xed-inst.h</a>.</p>
 
 </div>
 </div>

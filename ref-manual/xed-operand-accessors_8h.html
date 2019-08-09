@@ -85,11 +85,9 @@ $(document).ready(function(){initNavTree('xed-operand-accessors_8h.html','');});
 <div class="title">xed-operand-accessors.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="xed-decoded-inst_8h_source.html">xed-decoded-inst.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>&quot;</code><br />
-</div>
-<p><a href="xed-operand-accessors_8h_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+<div class="textblock"><code>#include &quot;<a class="el" href="xed-decoded-inst_8h.html">xed-decoded-inst.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="xed-operand-storage_8h.html">xed-operand-storage.h</a>&quot;</code><br />
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ab542629e53f6f917910224e08939002e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xed-common-hdrs_8h.html#a029d5ee2957ac2af5e2b75ec09f1daf9">XED_DLL_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-operand-accessors_8h.html#ab542629e53f6f917910224e08939002e">xed3_get_generic_operand</a> (const <a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *d, <a class="el" href="xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011a">xed_operand_enum_t</a> operand, void *ret_arg)</td></tr>
@@ -202,6 +200,8 @@ Functions</h2></td></tr>
 <tr class="separator:a268ae01346e4a17206d8d9047f380919"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e6b76dc2c7a45355431f2182bd7a5eb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> <a class="el" href="xed-types_8h.html#ad8e5425203890e5c0028827b19649375">xed_bits_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-operand-accessors_8h.html#a0e6b76dc2c7a45355431f2182bd7a5eb">xed3_operand_get_mpxmode</a> (const <a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *d)</td></tr>
 <tr class="separator:a0e6b76dc2c7a45355431f2182bd7a5eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9754e4bff2de3b316d5b4f081d113071"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> <a class="el" href="xed-types_8h.html#ad8e5425203890e5c0028827b19649375">xed_bits_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-operand-accessors_8h.html#a9754e4bff2de3b316d5b4f081d113071">xed3_operand_get_must_use_evex</a> (const <a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *d)</td></tr>
+<tr class="separator:a9754e4bff2de3b316d5b4f081d113071"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5755ef0fdd02efda928b50bfd440740"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> <a class="el" href="xed-types_8h.html#ad8e5425203890e5c0028827b19649375">xed_bits_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-operand-accessors_8h.html#aa5755ef0fdd02efda928b50bfd440740">xed3_operand_get_need_memdisp</a> (const <a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *d)</td></tr>
 <tr class="separator:aa5755ef0fdd02efda928b50bfd440740"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01fee88550e01efdc778dcfbb31bf858"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> <a class="el" href="xed-types_8h.html#ad8e5425203890e5c0028827b19649375">xed_bits_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-operand-accessors_8h.html#a01fee88550e01efdc778dcfbb31bf858">xed3_operand_get_needrex</a> (const <a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *d)</td></tr>
@@ -304,14 +304,10 @@ Functions</h2></td></tr>
 <tr class="separator:aa7e7737ac99780c34bbd58cbcfad5ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cdcbf08f2a98ddcaf1f4c39c4d28988"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> <a class="el" href="xed-types_8h.html#ad8e5425203890e5c0028827b19649375">xed_bits_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-operand-accessors_8h.html#a2cdcbf08f2a98ddcaf1f4c39c4d28988">xed3_operand_get_sibscale</a> (const <a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *d)</td></tr>
 <tr class="separator:a2cdcbf08f2a98ddcaf1f4c39c4d28988"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83bac4dc25ca382248c9459aa1e6c2a8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> <a class="el" href="xed-types_8h.html#ad8e5425203890e5c0028827b19649375">xed_bits_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-operand-accessors_8h.html#a83bac4dc25ca382248c9459aa1e6c2a8">xed3_operand_get_skip_osz</a> (const <a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *d)</td></tr>
-<tr class="separator:a83bac4dc25ca382248c9459aa1e6c2a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07653bc6daf42c83414878f75ecd2cb5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> <a class="el" href="xed-types_8h.html#ad8e5425203890e5c0028827b19649375">xed_bits_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-operand-accessors_8h.html#a07653bc6daf42c83414878f75ecd2cb5">xed3_operand_get_smode</a> (const <a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *d)</td></tr>
 <tr class="separator:a07653bc6daf42c83414878f75ecd2cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbc86da6cfc675b3f287b87eb6edbfe6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> <a class="el" href="xed-types_8h.html#ad8e5425203890e5c0028827b19649375">xed_bits_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-operand-accessors_8h.html#afbc86da6cfc675b3f287b87eb6edbfe6">xed3_operand_get_srm</a> (const <a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *d)</td></tr>
 <tr class="separator:afbc86da6cfc675b3f287b87eb6edbfe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e1c6fb03eae8ecc9a7ccab6ebe4e659"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> <a class="el" href="xed-operand-element-type-enum_8h.html#a6942f19fe2b1943a9a98d6598ff2c9d5">xed_operand_element_type_enum_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-operand-accessors_8h.html#a8e1c6fb03eae8ecc9a7ccab6ebe4e659">xed3_operand_get_type</a> (const <a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *d)</td></tr>
-<tr class="separator:a8e1c6fb03eae8ecc9a7ccab6ebe4e659"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af06f1adbd1f599d34d40a82699ada44c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> <a class="el" href="xed-types_8h.html#ad8e5425203890e5c0028827b19649375">xed_bits_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-operand-accessors_8h.html#af06f1adbd1f599d34d40a82699ada44c">xed3_operand_get_tzcnt</a> (const <a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *d)</td></tr>
 <tr class="separator:af06f1adbd1f599d34d40a82699ada44c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6588d305024611a061c9af79c1f1ca5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> <a class="el" href="xed-types_8h.html#ad8e5425203890e5c0028827b19649375">xed_bits_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-operand-accessors_8h.html#ab6588d305024611a061c9af79c1f1ca5">xed3_operand_get_ubit</a> (const <a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *d)</td></tr>
@@ -338,6 +334,8 @@ Functions</h2></td></tr>
 <tr class="separator:a86b0c3a65894cc594fea2adcf2036d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d08319933fa41df36c8e1e5b350980d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> <a class="el" href="xed-types_8h.html#ad8e5425203890e5c0028827b19649375">xed_bits_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-operand-accessors_8h.html#a4d08319933fa41df36c8e1e5b350980d">xed3_operand_get_vl</a> (const <a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *d)</td></tr>
 <tr class="separator:a4d08319933fa41df36c8e1e5b350980d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46e37d9af04f9b8afd0288f6d4222a5b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> <a class="el" href="xed-types_8h.html#ad8e5425203890e5c0028827b19649375">xed_bits_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-operand-accessors_8h.html#a46e37d9af04f9b8afd0288f6d4222a5b">xed3_operand_get_vlx</a> (const <a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *d)</td></tr>
+<tr class="separator:a46e37d9af04f9b8afd0288f6d4222a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a19ebda4f7c7e1e85cb0f6935f43517"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> <a class="el" href="xed-types_8h.html#ad8e5425203890e5c0028827b19649375">xed_bits_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-operand-accessors_8h.html#a8a19ebda4f7c7e1e85cb0f6935f43517">xed3_operand_get_wbnoinvd</a> (const <a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *d)</td></tr>
 <tr class="separator:a8a19ebda4f7c7e1e85cb0f6935f43517"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9249c99df833309c7321ceab53e20822"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> <a class="el" href="xed-types_8h.html#ad8e5425203890e5c0028827b19649375">xed_bits_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-operand-accessors_8h.html#a9249c99df833309c7321ceab53e20822">xed3_operand_get_zeroing</a> (const <a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *d)</td></tr>
@@ -450,6 +448,8 @@ Functions</h2></td></tr>
 <tr class="separator:a76cd6c9f32c601f16ab03424dd5ab8b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cab05654ad5c4018faf2be46909614a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-operand-accessors_8h.html#a2cab05654ad5c4018faf2be46909614a">xed3_operand_set_mpxmode</a> (<a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *d, <a class="el" href="xed-types_8h.html#ad8e5425203890e5c0028827b19649375">xed_bits_t</a> opval)</td></tr>
 <tr class="separator:a2cab05654ad5c4018faf2be46909614a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af21fb45771bf9807dee7a7e2019413ec"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-operand-accessors_8h.html#af21fb45771bf9807dee7a7e2019413ec">xed3_operand_set_must_use_evex</a> (<a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *d, <a class="el" href="xed-types_8h.html#ad8e5425203890e5c0028827b19649375">xed_bits_t</a> opval)</td></tr>
+<tr class="separator:af21fb45771bf9807dee7a7e2019413ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4025503a2c0a2ac5c49124297f31ba9a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-operand-accessors_8h.html#a4025503a2c0a2ac5c49124297f31ba9a">xed3_operand_set_need_memdisp</a> (<a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *d, <a class="el" href="xed-types_8h.html#ad8e5425203890e5c0028827b19649375">xed_bits_t</a> opval)</td></tr>
 <tr class="separator:a4025503a2c0a2ac5c49124297f31ba9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad91fb7e2901f0c35911b9f96965efe48"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-operand-accessors_8h.html#ad91fb7e2901f0c35911b9f96965efe48">xed3_operand_set_needrex</a> (<a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *d, <a class="el" href="xed-types_8h.html#ad8e5425203890e5c0028827b19649375">xed_bits_t</a> opval)</td></tr>
@@ -552,14 +552,10 @@ Functions</h2></td></tr>
 <tr class="separator:ad98313f98dd2c134013fae18819b3dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62ad89ed5453a6088d7e779d834f93d7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-operand-accessors_8h.html#a62ad89ed5453a6088d7e779d834f93d7">xed3_operand_set_sibscale</a> (<a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *d, <a class="el" href="xed-types_8h.html#ad8e5425203890e5c0028827b19649375">xed_bits_t</a> opval)</td></tr>
 <tr class="separator:a62ad89ed5453a6088d7e779d834f93d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a651c02cf031239da9b8a6939c064f2d6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-operand-accessors_8h.html#a651c02cf031239da9b8a6939c064f2d6">xed3_operand_set_skip_osz</a> (<a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *d, <a class="el" href="xed-types_8h.html#ad8e5425203890e5c0028827b19649375">xed_bits_t</a> opval)</td></tr>
-<tr class="separator:a651c02cf031239da9b8a6939c064f2d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0665b23e9af73ef7c7c8ad455081b8c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-operand-accessors_8h.html#ab0665b23e9af73ef7c7c8ad455081b8c">xed3_operand_set_smode</a> (<a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *d, <a class="el" href="xed-types_8h.html#ad8e5425203890e5c0028827b19649375">xed_bits_t</a> opval)</td></tr>
 <tr class="separator:ab0665b23e9af73ef7c7c8ad455081b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b73be9683ab063b2f693be60f4f465c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-operand-accessors_8h.html#a5b73be9683ab063b2f693be60f4f465c">xed3_operand_set_srm</a> (<a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *d, <a class="el" href="xed-types_8h.html#ad8e5425203890e5c0028827b19649375">xed_bits_t</a> opval)</td></tr>
 <tr class="separator:a5b73be9683ab063b2f693be60f4f465c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73797dc0256bd0b66b4e1474a97510c9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-operand-accessors_8h.html#a73797dc0256bd0b66b4e1474a97510c9">xed3_operand_set_type</a> (<a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *d, <a class="el" href="xed-operand-element-type-enum_8h.html#a6942f19fe2b1943a9a98d6598ff2c9d5">xed_operand_element_type_enum_t</a> opval)</td></tr>
-<tr class="separator:a73797dc0256bd0b66b4e1474a97510c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad842ccca68997b4e284e8e2fd59c48c3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-operand-accessors_8h.html#ad842ccca68997b4e284e8e2fd59c48c3">xed3_operand_set_tzcnt</a> (<a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *d, <a class="el" href="xed-types_8h.html#ad8e5425203890e5c0028827b19649375">xed_bits_t</a> opval)</td></tr>
 <tr class="separator:ad842ccca68997b4e284e8e2fd59c48c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3963bcbfe7401531d7376e793714ea3c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-operand-accessors_8h.html#a3963bcbfe7401531d7376e793714ea3c">xed3_operand_set_ubit</a> (<a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *d, <a class="el" href="xed-types_8h.html#ad8e5425203890e5c0028827b19649375">xed_bits_t</a> opval)</td></tr>
@@ -586,6 +582,8 @@ Functions</h2></td></tr>
 <tr class="separator:a3a5d326c44ace45e0e759f782ae09765"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcaebd214aa9b9d18d2929b3cd44f340"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-operand-accessors_8h.html#adcaebd214aa9b9d18d2929b3cd44f340">xed3_operand_set_vl</a> (<a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *d, <a class="el" href="xed-types_8h.html#ad8e5425203890e5c0028827b19649375">xed_bits_t</a> opval)</td></tr>
 <tr class="separator:adcaebd214aa9b9d18d2929b3cd44f340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5fffab297a98a2d7f6515b8b4f84a46"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-operand-accessors_8h.html#ac5fffab297a98a2d7f6515b8b4f84a46">xed3_operand_set_vlx</a> (<a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *d, <a class="el" href="xed-types_8h.html#ad8e5425203890e5c0028827b19649375">xed_bits_t</a> opval)</td></tr>
+<tr class="separator:ac5fffab297a98a2d7f6515b8b4f84a46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08b21162d0ff66ae72bc45648c4d686a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-operand-accessors_8h.html#a08b21162d0ff66ae72bc45648c4d686a">xed3_operand_set_wbnoinvd</a> (<a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *d, <a class="el" href="xed-types_8h.html#ad8e5425203890e5c0028827b19649375">xed_bits_t</a> opval)</td></tr>
 <tr class="separator:a08b21162d0ff66ae72bc45648c4d686a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05d5213e556ff6323a80004a6806a674"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-operand-accessors_8h.html#a05d5213e556ff6323a80004a6806a674">xed3_operand_set_zeroing</a> (<a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *d, <a class="el" href="xed-types_8h.html#ad8e5425203890e5c0028827b19649375">xed_bits_t</a> opval)</td></tr>
@@ -652,8 +650,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00655">655</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="adc269ebd74fd6c13839690796b8646d3"></a>
@@ -679,8 +675,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00631">631</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -708,8 +702,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01111">1111</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="ab1586251caad1892753b57a44d9354ed"></a>
@@ -735,8 +727,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00975">975</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -764,8 +754,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00983">983</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a42f798f21ee6ce138cea33cd77cb9e03"></a>
@@ -791,8 +779,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01303">1303</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -820,8 +806,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00871">871</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a87cba03ff75ae16e7631e705b3a81936"></a>
@@ -847,8 +831,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01175">1175</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -876,8 +858,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00823">823</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a7eb7a6e42e95fe167779fef803454b36"></a>
@@ -903,8 +883,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00623">623</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -932,8 +910,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00687">687</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a5715b155234687415f476b8262202656"></a>
@@ -959,8 +935,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01271">1271</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -988,8 +962,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01423">1423</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="ac4f7ad33d3a51a8e4ffa8eee53217d59"></a>
@@ -1015,8 +987,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01199">1199</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -1044,8 +1014,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00999">999</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a82d8ada3ae2c0d537fb7005d5bfb7cbc"></a>
@@ -1071,8 +1039,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00543">543</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -1100,8 +1066,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01335">1335</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="acff0f54ef0adf5e447f16257f10d7f06"></a>
@@ -1127,8 +1091,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01135">1135</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -1156,8 +1118,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00783">783</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a8e370ab285fda5e3442e331a1cd75673"></a>
@@ -1183,8 +1143,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01063">1063</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -1212,8 +1170,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00775">775</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="aa02389e3c741173787a94372e145fe6f"></a>
@@ -1239,8 +1195,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00879">879</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -1268,8 +1222,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00735">735</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a9e299395dd1f80001b0e24f0644a37d7"></a>
@@ -1295,8 +1247,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01503">1503</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -1324,8 +1274,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01215">1215</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="aeb1e3aac69d51321a819b1f46ac20012"></a>
@@ -1351,8 +1299,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00767">767</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -1380,8 +1326,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00567">567</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a5e43b17a7b2a531822dc9c16ea654269"></a>
@@ -1407,8 +1351,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00855">855</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -1436,8 +1378,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00711">711</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a36235606eb1a02464c429adfa506757c"></a>
@@ -1463,8 +1403,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01047">1047</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -1492,8 +1430,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01415">1415</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="ad275a5cd11c2a51e15b716565b62ce88"></a>
@@ -1519,8 +1455,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01391">1391</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -1548,8 +1482,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00895">895</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a815c76b8686994ed62064788ca441153"></a>
@@ -1575,8 +1507,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01383">1383</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -1604,8 +1534,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01183">1183</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a3ba9b5e298244896005fa3cb34f1d174"></a>
@@ -1631,8 +1559,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00863">863</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -1660,8 +1586,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00703">703</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a28afb8f07f09fc3291b0b7dc39c41ca7"></a>
@@ -1687,8 +1611,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00535">535</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -1716,8 +1638,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00727">727</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a6db8886b88c9d8efd9302fec37a11c62"></a>
@@ -1743,8 +1663,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01207">1207</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -1772,8 +1690,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01159">1159</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a0d35eeb4b83bf04750c9e003ec418f7e"></a>
@@ -1799,8 +1715,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00639">639</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -1828,8 +1742,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01119">1119</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a244acd729503cc3f426a4d124297e4f7"></a>
@@ -1855,8 +1767,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01487">1487</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -1884,8 +1794,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01167">1167</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a0c35332700656f2402fa35d52e153fe3"></a>
@@ -1911,8 +1819,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01127">1127</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -1940,8 +1846,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01151">1151</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="aaf8b171d07948550292f7a1a00fc503a"></a>
@@ -1967,8 +1871,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00991">991</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -1996,8 +1898,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01447">1447</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a377e47b141fd99e938d7c386f50c59aa"></a>
@@ -2023,8 +1923,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00583">583</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -2052,8 +1950,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01495">1495</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="ab11891efda1646d500ea7a3ee4208653"></a>
@@ -2079,8 +1975,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00847">847</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -2108,8 +2002,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01439">1439</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a0e6b76dc2c7a45355431f2182bd7a5eb"></a>
@@ -2136,7 +2028,31 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01455">1455</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
+</div>
+</div>
+<a id="a9754e4bff2de3b316d5b4f081d113071"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9754e4bff2de3b316d5b4f081d113071">&#9670;&nbsp;</a></span>xed3_operand_get_must_use_evex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> <a class="el" href="xed-types_8h.html#ad8e5425203890e5c0028827b19649375">xed_bits_t</a> xed3_operand_get_must_use_evex </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -2164,8 +2080,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01367">1367</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a01fee88550e01efdc778dcfbb31bf858"></a>
@@ -2191,8 +2105,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01247">1247</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -2220,8 +2132,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00887">887</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="ab897c934dbb1abfdd54128121eaf2652"></a>
@@ -2247,8 +2157,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01399">1399</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -2276,8 +2184,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00663">663</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a240c67d856ed2f186493c76bb8fe2d48"></a>
@@ -2303,8 +2209,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01343">1343</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -2332,8 +2236,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00695">695</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="ae1ece181755d843f86efc5d636ab292d"></a>
@@ -2359,8 +2261,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00743">743</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -2388,8 +2288,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01279">1279</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="acf2cdc31ce9b2f7d57fde7285268e9e2"></a>
@@ -2415,8 +2313,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00759">759</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -2444,8 +2340,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01375">1375</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a38ad85795b5e640fe36c5766fa269e8d"></a>
@@ -2471,8 +2365,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01263">1263</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -2500,8 +2392,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00839">839</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a5e88a3da61cf7514dcae4297c8c5ac48"></a>
@@ -2527,8 +2417,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00791">791</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -2556,8 +2444,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01023">1023</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a257a0e5dfef1357c588aadb99ff2b257"></a>
@@ -2583,8 +2469,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01143">1143</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -2612,8 +2496,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01295">1295</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a552cac84763e2a58b9350c37365c2f06"></a>
@@ -2639,8 +2521,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01079">1079</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -2668,8 +2548,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00751">751</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a7eaf511c85b96d2bc914c2a14777c4ce"></a>
@@ -2695,8 +2573,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01095">1095</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -2724,8 +2600,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00831">831</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="af7f36aed0dfa6c1f1579afa01c71692a"></a>
@@ -2751,8 +2625,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01431">1431</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -2780,8 +2652,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01071">1071</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="aaec035ce1e612250727d4d7de22d753e"></a>
@@ -2807,8 +2677,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00959">959</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -2836,8 +2704,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00967">967</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="aaa2776fba92f7bf2da38b5aa084d5a49"></a>
@@ -2863,8 +2729,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00943">943</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -2892,8 +2756,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00951">951</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="ad754465270d63ed17740b6ce3a99f582"></a>
@@ -2919,8 +2781,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00927">927</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -2948,8 +2808,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00935">935</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="afc6e30ce13bcd4b6b1a37177b249e85e"></a>
@@ -2975,8 +2833,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00911">911</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -3004,8 +2860,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00919">919</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a62ebfc7ac28a3acc7012cf30d6e4036a"></a>
@@ -3031,8 +2885,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00903">903</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -3060,8 +2912,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01407">1407</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="aac52a7bde85743dd67cbe6e82b73d4c3"></a>
@@ -3087,8 +2937,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01031">1031</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -3116,8 +2964,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01007">1007</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a60c7d821605a405b50b8fc6b4c59b2a7"></a>
@@ -3143,8 +2989,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01015">1015</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -3172,8 +3016,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01055">1055</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a5fb4ea9b17243c26458695a300146337"></a>
@@ -3199,8 +3041,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01103">1103</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -3228,8 +3068,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01039">1039</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="ac0f41361a82c26d1e6ff887deaebea39"></a>
@@ -3255,8 +3093,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01087">1087</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -3284,8 +3120,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00615">615</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a1c947c178d9ad0665fbed045e7b20a4e"></a>
@@ -3311,8 +3145,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01351">1351</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -3340,8 +3172,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00575">575</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a9e936b682cf66085095cb151d8a0faf5"></a>
@@ -3367,8 +3197,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00719">719</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -3396,8 +3224,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00679">679</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="af4b3fc44a6d346f0d70ece968f3b04df"></a>
@@ -3423,8 +3249,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00671">671</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -3452,8 +3276,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01319">1319</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a1e5380a740d1f1ca6d8a544b1b2b87c6"></a>
@@ -3479,8 +3301,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00527">527</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -3508,8 +3328,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01359">1359</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="aa7e7737ac99780c34bbd58cbcfad5ecf"></a>
@@ -3535,8 +3353,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00647">647</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -3564,36 +3380,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01463">1463</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
-</div>
-</div>
-<a id="a83bac4dc25ca382248c9459aa1e6c2a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83bac4dc25ca382248c9459aa1e6c2a8">&#9670;&nbsp;</a></span>xed3_operand_get_skip_osz()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> <a class="el" href="xed-types_8h.html#ad8e5425203890e5c0028827b19649375">xed_bits_t</a> xed3_operand_get_skip_osz </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *&#160;</td>
-          <td class="paramname"><em>d</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01255">1255</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a07653bc6daf42c83414878f75ecd2cb5"></a>
@@ -3619,8 +3405,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00607">607</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -3648,36 +3432,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01231">1231</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
-</div>
-</div>
-<a id="a8e1c6fb03eae8ecc9a7ccab6ebe4e659"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e1c6fb03eae8ecc9a7ccab6ebe4e659">&#9670;&nbsp;</a></span>xed3_operand_get_type()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> <a class="el" href="xed-operand-element-type-enum_8h.html#a6942f19fe2b1943a9a98d6598ff2c9d5">xed_operand_element_type_enum_t</a> xed3_operand_get_type </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *&#160;</td>
-          <td class="paramname"><em>d</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01311">1311</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="af06f1adbd1f599d34d40a82699ada44c"></a>
@@ -3703,8 +3457,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01191">1191</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -3732,8 +3484,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00799">799</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="abe6795d0ed348a9c8f028ccad03ffbd7"></a>
@@ -3759,8 +3509,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00599">599</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -3788,8 +3536,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00591">591</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="ab8c1185e3e7efe7b0c49cb92b7eacdc9"></a>
@@ -3815,8 +3561,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00551">551</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -3844,8 +3588,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00559">559</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a7049ebbdb943cd2e9ebcd7e81b886455"></a>
@@ -3871,8 +3613,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01287">1287</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -3900,8 +3640,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01327">1327</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a322f0591b7daef6dfa674d594784138f"></a>
@@ -3927,8 +3665,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00807">807</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -3956,8 +3692,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00815">815</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a040044145d187dd583addb68ad7cde4e"></a>
@@ -3983,8 +3717,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01511">1511</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -4012,8 +3744,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01239">1239</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a4d08319933fa41df36c8e1e5b350980d"></a>
@@ -4040,7 +3770,31 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01471">1471</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
+</div>
+</div>
+<a id="a46e37d9af04f9b8afd0288f6d4222a5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46e37d9af04f9b8afd0288f6d4222a5b">&#9670;&nbsp;</a></span>xed3_operand_get_vlx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> <a class="el" href="xed-types_8h.html#ad8e5425203890e5c0028827b19649375">xed_bits_t</a> xed3_operand_get_vlx </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -4068,8 +3822,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01479">1479</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a9249c99df833309c7321ceab53e20822"></a>
@@ -4095,8 +3847,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01223">1223</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -4134,8 +3884,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00659">659</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="ac4119040487b704cbca826dac87a1287"></a>
@@ -4171,8 +3919,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00635">635</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -4210,8 +3956,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01115">1115</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="adc28caf5812e769d65c299330c04b0fe"></a>
@@ -4247,8 +3991,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00979">979</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -4286,8 +4028,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00987">987</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="abd90284b99f0d9a22fa1fcb5a770fbde"></a>
@@ -4323,8 +4063,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01307">1307</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -4362,8 +4100,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00875">875</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a91c1f7c7b84d817f345e12431f0730c1"></a>
@@ -4399,8 +4135,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01179">1179</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -4438,8 +4172,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00827">827</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a5811acb7234721f70ea7f5dd544d7069"></a>
@@ -4475,8 +4207,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00627">627</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -4514,8 +4244,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00691">691</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a2c4b24e8ad190bab6ceb6279dfb00e8c"></a>
@@ -4551,8 +4279,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01275">1275</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -4590,8 +4316,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01427">1427</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a02bf9924665e17b4171eec62588dcad1"></a>
@@ -4627,8 +4351,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01203">1203</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -4666,8 +4388,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01003">1003</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a1f43cf847e4f8457fdf83c990398cfb3"></a>
@@ -4703,8 +4423,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00547">547</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -4742,8 +4460,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01339">1339</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="ae2cfcab3184111f30850c4e261355bff"></a>
@@ -4779,8 +4495,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01139">1139</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -4818,8 +4532,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00787">787</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a1db2131e30ea811b55a956ff9086d493"></a>
@@ -4855,8 +4567,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01067">1067</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -4894,8 +4604,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00779">779</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="ab92413f46320f7d0b0fb2d407b9610c6"></a>
@@ -4931,8 +4639,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00883">883</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -4970,8 +4676,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00739">739</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a70404f30eb0adfaa08ebcf51e799a126"></a>
@@ -5007,8 +4711,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01507">1507</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -5046,8 +4748,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01219">1219</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a373f4f8bdf89c3d932ac217e2fbe62ac"></a>
@@ -5083,8 +4783,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00771">771</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -5122,8 +4820,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00571">571</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a2225c3afeb326dc6f8fa8f1d14435b0b"></a>
@@ -5159,8 +4855,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00859">859</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -5198,8 +4892,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00715">715</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="ab92b094e3093a6f581f30f8360430225"></a>
@@ -5235,8 +4927,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01051">1051</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -5274,8 +4964,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01419">1419</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="adc843b74f5d12af1dc458c008eb7b637"></a>
@@ -5311,8 +4999,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01395">1395</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -5350,8 +5036,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00899">899</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a5d28f0d9447d2e42ce7106f149cc8816"></a>
@@ -5387,8 +5071,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01387">1387</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -5426,8 +5108,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01187">1187</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a9a747813e6ff77e8c47d0c57c4be8494"></a>
@@ -5463,8 +5143,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00867">867</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -5502,8 +5180,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00707">707</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a8a63ecdf1b3deeb77acdd4d4a134143c"></a>
@@ -5539,8 +5215,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00539">539</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -5578,8 +5252,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00731">731</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a4affc4b8a3cb6bf55037a3d51bc9cb00"></a>
@@ -5615,8 +5287,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01211">1211</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -5654,8 +5324,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01163">1163</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="af712f2e85262d1eeb7a113617f31d6c8"></a>
@@ -5691,8 +5359,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00643">643</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -5730,8 +5396,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01123">1123</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="ac20779940f54e15b4567b1037c65e939"></a>
@@ -5767,8 +5431,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01491">1491</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -5806,8 +5468,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01171">1171</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a8137ff9f71c2804a241b5275aac45566"></a>
@@ -5843,8 +5503,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01131">1131</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -5882,8 +5540,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01155">1155</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a07ce5c0b5762d21034869f8bed2ba244"></a>
@@ -5919,8 +5575,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00995">995</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -5958,8 +5612,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01451">1451</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a955f6d7c8590a8fbf33bc9f9a6e86584"></a>
@@ -5995,8 +5647,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00587">587</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -6034,8 +5684,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01499">1499</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a452dfaaca4c9ed692bd0ea0b06ff4a14"></a>
@@ -6071,8 +5719,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00851">851</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -6110,8 +5756,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01443">1443</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a2cab05654ad5c4018faf2be46909614a"></a>
@@ -6148,7 +5792,41 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01459">1459</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
+</div>
+</div>
+<a id="af21fb45771bf9807dee7a7e2019413ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af21fb45771bf9807dee7a7e2019413ec">&#9670;&nbsp;</a></span>xed3_operand_set_must_use_evex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> void xed3_operand_set_must_use_evex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="xed-types_8h.html#ad8e5425203890e5c0028827b19649375">xed_bits_t</a>&#160;</td>
+          <td class="paramname"><em>opval</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -6186,8 +5864,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01371">1371</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="ad91fb7e2901f0c35911b9f96965efe48"></a>
@@ -6223,8 +5899,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01251">1251</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -6262,8 +5936,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00891">891</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a4b6d70829d5d4c8f8c4495abea69e1a5"></a>
@@ -6299,8 +5971,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01403">1403</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -6338,8 +6008,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00667">667</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="ad8471d48832d69bb8ba6138472958466"></a>
@@ -6375,8 +6043,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01347">1347</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -6414,8 +6080,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00699">699</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a675bf8e3072ac2a75e670143cfde950d"></a>
@@ -6451,8 +6115,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00747">747</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -6490,8 +6152,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01283">1283</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a2b140c9eeaeb83ff540f7421c789ebbc"></a>
@@ -6527,8 +6187,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00763">763</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -6566,8 +6224,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01379">1379</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="ae7887498b8ddc29bc282ff9f767d4c0b"></a>
@@ -6603,8 +6259,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01267">1267</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -6642,8 +6296,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00843">843</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a9572e04a38766145b8e2c8eaa5560696"></a>
@@ -6679,8 +6331,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00795">795</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -6718,8 +6368,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01027">1027</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a8d668f8e29595ded49fda74330db3f19"></a>
@@ -6755,8 +6403,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01147">1147</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -6794,8 +6440,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01299">1299</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a778bb69be6d7009eb479e09db7fc8075"></a>
@@ -6831,8 +6475,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01083">1083</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -6870,8 +6512,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00755">755</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a71bf5ce673717e38de38f94967c2530c"></a>
@@ -6907,8 +6547,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01099">1099</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -6946,8 +6584,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00835">835</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="aac46544f2e8367158713b8fb10bf0797"></a>
@@ -6983,8 +6619,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01435">1435</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -7022,8 +6656,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01075">1075</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="adf74786ea03c5c8c61f6e041c2d5f901"></a>
@@ -7059,8 +6691,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00963">963</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -7098,8 +6728,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00971">971</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="ad521d5deafd4c77abbb9925e22994e34"></a>
@@ -7135,8 +6763,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00947">947</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -7174,8 +6800,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00955">955</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="ab6a2667fa478e1e9fa248c89c7c65f33"></a>
@@ -7211,8 +6835,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00931">931</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -7250,8 +6872,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00939">939</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="aa894f82274a3d02c254f09505e37fd15"></a>
@@ -7287,8 +6907,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00915">915</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -7326,8 +6944,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00923">923</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a7891a6294eea24a2c296e2bf51d460d9"></a>
@@ -7363,8 +6979,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00907">907</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -7402,8 +7016,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01411">1411</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="af9b63ae414f8b7eeded047d94c4e13a2"></a>
@@ -7439,8 +7051,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01035">1035</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -7478,8 +7088,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01011">1011</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="abad54dd6dfc3ebd2b1e6963d65de3c6e"></a>
@@ -7515,8 +7123,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01019">1019</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -7554,8 +7160,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01059">1059</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a33a98a4fe75b3640fd2d8805ae56d571"></a>
@@ -7591,8 +7195,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01107">1107</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -7630,8 +7232,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01043">1043</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a48a8eab6d7ca5e26ba03a138d0720845"></a>
@@ -7667,8 +7267,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01091">1091</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -7706,8 +7304,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00619">619</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="ab3b4fbe90eeed66432adaf2d56242e80"></a>
@@ -7743,8 +7339,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01355">1355</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -7782,8 +7376,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00579">579</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="ac600460bc7adc8654423e3d53a7c4005"></a>
@@ -7819,8 +7411,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00723">723</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -7858,8 +7448,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00683">683</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a088c51b726ba30247c5742411fbbe361"></a>
@@ -7895,8 +7483,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00675">675</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -7934,8 +7520,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01323">1323</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="acf0c4a9201d8cde76a5881beb7219226"></a>
@@ -7971,8 +7555,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00531">531</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -8010,8 +7592,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01363">1363</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="ad98313f98dd2c134013fae18819b3dcd"></a>
@@ -8047,8 +7627,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00651">651</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -8086,46 +7664,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01467">1467</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
-</div>
-</div>
-<a id="a651c02cf031239da9b8a6939c064f2d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a651c02cf031239da9b8a6939c064f2d6">&#9670;&nbsp;</a></span>xed3_operand_set_skip_osz()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> void xed3_operand_set_skip_osz </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *&#160;</td>
-          <td class="paramname"><em>d</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="xed-types_8h.html#ad8e5425203890e5c0028827b19649375">xed_bits_t</a>&#160;</td>
-          <td class="paramname"><em>opval</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01259">1259</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="ab0665b23e9af73ef7c7c8ad455081b8c"></a>
@@ -8161,8 +7699,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00611">611</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -8200,46 +7736,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01235">1235</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
-</div>
-</div>
-<a id="a73797dc0256bd0b66b4e1474a97510c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73797dc0256bd0b66b4e1474a97510c9">&#9670;&nbsp;</a></span>xed3_operand_set_type()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> void xed3_operand_set_type </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *&#160;</td>
-          <td class="paramname"><em>d</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="xed-operand-element-type-enum_8h.html#a6942f19fe2b1943a9a98d6598ff2c9d5">xed_operand_element_type_enum_t</a>&#160;</td>
-          <td class="paramname"><em>opval</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01315">1315</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="ad842ccca68997b4e284e8e2fd59c48c3"></a>
@@ -8275,8 +7771,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01195">1195</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -8314,8 +7808,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00803">803</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a61e53d4a10377cfb1c7cbca536148d94"></a>
@@ -8351,8 +7843,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00603">603</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -8390,8 +7880,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00595">595</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="af415993718223e62c8cdb95e67e22cd6"></a>
@@ -8427,8 +7915,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00555">555</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -8466,8 +7952,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00563">563</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a09b46367a42f779a4665bebce40ec25e"></a>
@@ -8503,8 +7987,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01291">1291</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -8542,8 +8024,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01331">1331</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="abca41056b33128d01345e1878b9f7bc8"></a>
@@ -8579,8 +8059,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00811">811</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -8618,8 +8096,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l00819">819</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="adc1b5598d30bdce375d4f723fc5e096e"></a>
@@ -8655,8 +8131,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01515">1515</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -8694,8 +8168,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01243">1243</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="adcaebd214aa9b9d18d2929b3cd44f340"></a>
@@ -8732,7 +8204,41 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01475">1475</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
+</div>
+</div>
+<a id="ac5fffab297a98a2d7f6515b8b4f84a46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5fffab297a98a2d7f6515b8b4f84a46">&#9670;&nbsp;</a></span>xed3_operand_set_vlx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> void xed3_operand_set_vlx </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac">xed_decoded_inst_t</a> *&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="xed-types_8h.html#ad8e5425203890e5c0028827b19649375">xed_bits_t</a>&#160;</td>
+          <td class="paramname"><em>opval</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -8770,8 +8276,6 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01483">1483</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
-
 </div>
 </div>
 <a id="a05d5213e556ff6323a80004a6806a674"></a>
@@ -8807,8 +8311,6 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-accessors_8h_source.html#l01227">1227</a> of file <a class="el" href="xed-operand-accessors_8h_source.html">xed-operand-accessors.h</a>.</p>
 
 </div>
 </div>
@@ -8851,7 +8353,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_39bdcf4cee9880e493b49f6c513c9c12.html">kits</a></li><li class="navelem"><a class="el" href="dir_342126a8aef901d5869f48b451e3ee4b.html">xed-install-base-2018-04-13-mac-x86-64</a></li><li class="navelem"><a class="el" href="dir_7dd137f1e64ed7bf22c982df847f429b.html">include</a></li><li class="navelem"><a class="el" href="dir_b21188e50d0c085a6a0e43e2d66b3604.html">xed</a></li><li class="navelem"><a class="el" href="xed-operand-accessors_8h.html">xed-operand-accessors.h</a></li>
+    <li class="navelem"><a class="el" href="dir_43724e81dd40e09f32417973865cdd64.html">obj</a></li><li class="navelem"><a class="el" href="dir_8457b5fead640a375ca0704568b0d081.html">wkit</a></li><li class="navelem"><a class="el" href="dir_e175811efbbe3767b218dbb51940252f.html">include</a></li><li class="navelem"><a class="el" href="dir_c905250153190ac9a0e58f61ab3d1cbf.html">xed</a></li><li class="navelem"><a class="el" href="xed-operand-accessors_8h.html">xed-operand-accessors.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

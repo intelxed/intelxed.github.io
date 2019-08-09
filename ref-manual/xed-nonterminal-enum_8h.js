@@ -143,6 +143,8 @@ var xed_nonterminal_enum_8h =
       [ "XED_NONTERMINAL_ONE", "xed-nonterminal-enum_8h.html#ae0eb8f71a8f89cddf0df4b1a6a2b27afabc770d125abec353adb6fce01726a341", null ],
       [ "XED_NONTERMINAL_ORAX", "xed-nonterminal-enum_8h.html#ae0eb8f71a8f89cddf0df4b1a6a2b27afa077918ddec7ed1c5c937ba4252a6311c", null ],
       [ "XED_NONTERMINAL_ORBP", "xed-nonterminal-enum_8h.html#ae0eb8f71a8f89cddf0df4b1a6a2b27afa8df90b0fdd8598d3e97df5147e64e826", null ],
+      [ "XED_NONTERMINAL_ORBX", "xed-nonterminal-enum_8h.html#ae0eb8f71a8f89cddf0df4b1a6a2b27afae44ddb827e66d1ed5b1af11974a26816", null ],
+      [ "XED_NONTERMINAL_ORCX", "xed-nonterminal-enum_8h.html#ae0eb8f71a8f89cddf0df4b1a6a2b27afa77ec5fa959a84a4e7f0650c707909dbe", null ],
       [ "XED_NONTERMINAL_ORDX", "xed-nonterminal-enum_8h.html#ae0eb8f71a8f89cddf0df4b1a6a2b27afa5ae18e0694b309a6f6386b5fbe38c890", null ],
       [ "XED_NONTERMINAL_ORSP", "xed-nonterminal-enum_8h.html#ae0eb8f71a8f89cddf0df4b1a6a2b27afa412a78e2897acb78651dc4ab79f6985d", null ],
       [ "XED_NONTERMINAL_OSZ_NONTERM", "xed-nonterminal-enum_8h.html#ae0eb8f71a8f89cddf0df4b1a6a2b27afa5c40dd492275e28a87ac0aa241f1dd31", null ],

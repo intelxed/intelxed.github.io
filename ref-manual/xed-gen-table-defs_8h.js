@@ -7,6 +7,8 @@ var xed_gen_table_defs_8h =
     [ "XED_MAX_GLOBAL_FLAG_ACTIONS", "xed-gen-table-defs_8h.html#a8d88303d74a44fb2a0f063b5c83dc1b1", null ],
     [ "XED_MAX_IFORMS_PER_ICLASS", "xed-gen-table-defs_8h.html#a9e437d2b3d1e19f37194f5d905b558f6", null ],
     [ "XED_MAX_INST_TABLE_NODES", "xed-gen-table-defs_8h.html#a72087c6d05f34b616acca54f62583063", null ],
+    [ "XED_MAX_MAP_EVEX", "xed-gen-table-defs_8h.html#a16ab23b765622007085e3693bf66d047", null ],
+    [ "XED_MAX_MAP_VEX", "xed-gen-table-defs_8h.html#a671e13e6fbd764464c0b78774a90394f", null ],
     [ "XED_MAX_OPERAND_SEQUENCES", "xed-gen-table-defs_8h.html#a259f03e7fc44d7bc5a7e8fc49155fb89", null ],
     [ "XED_MAX_OPERAND_TABLE_NODES", "xed-gen-table-defs_8h.html#a96d71be5db3f232663b4cfc5057a84f9", null ],
     [ "XED_MAX_REQUIRED_ATTRIBUTES", "xed-gen-table-defs_8h.html#acdb91b4722887be17e24e66cd05d53db", null ],

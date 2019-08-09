@@ -17,7 +17,7 @@ var xed_immdis_8h =
     [ "xed_immdis_get_max_length", "xed-immdis_8h.html#a080f7760ed59c575127c916d69f744c8", null ],
     [ "xed_immdis_get_signed64", "xed-immdis_8h.html#a1bff44b0ca30c12563825ddcec37f78b", null ],
     [ "xed_immdis_get_unsigned64", "xed-immdis_8h.html#afe3967ac09cbb8ad05ddd129497b1c4d", null ],
-    [ "xed_immdis_init", "xed-immdis_8h.html#a4859cf5e21466fa6901ac22e8beae61d", null ],
+    [ "xed_immdis_init", "xed-immdis_8h.html#adf46a7fcd1c460e735f42602a573f800", null ],
     [ "xed_immdis_is_one", "xed-immdis_8h.html#af5b69e09505844a5d9d5658593f58c5f", null ],
     [ "xed_immdis_is_present", "xed-immdis_8h.html#a35f17051ebfbdf7a0444ac8ec1ab68c0", null ],
     [ "xed_immdis_is_signed", "xed-immdis_8h.html#ac3fc38384a98d3225bbba3e99e156821", null ],

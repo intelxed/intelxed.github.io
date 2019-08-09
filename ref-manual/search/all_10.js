@@ -2,7 +2,7 @@ var searchData=
 [
   ['read',['read',['../structxed__simple__flag__s.html#a722858b8b07e26ef8229e6b8df791f2f',1,'xed_simple_flag_s']]],
   ['realmode',['realmode',['../structxed__operand__storage__s.html#afe29558821b787a225360319fe7fa1f9',1,'xed_operand_storage_s']]],
-  ['reg',['reg',['../structxed__cpuid__rec__t.html#affc78afe4f18c8d806e91949f223ec6d',1,'xed_cpuid_rec_t::reg()'],['../structxed__encoder__operand__t.html#affc78afe4f18c8d806e91949f223ec6d',1,'xed_encoder_operand_t::reg()'],['../structxed__operand__storage__s.html#a1d28582d63a7ed4338a2659360837481',1,'xed_operand_storage_s::reg()']]],
+  ['reg',['reg',['../structxed__cpuid__rec__t.html#affc78afe4f18c8d806e91949f223ec6d',1,'xed_cpuid_rec_t::reg()'],['../structxed__enc2__req__payload__t.html#a1744546281fd2806f81dc6266d4641a9',1,'xed_enc2_req_payload_t::reg()'],['../structxed__encoder__operand__t.html#affc78afe4f18c8d806e91949f223ec6d',1,'xed_encoder_operand_t::reg()'],['../structxed__operand__storage__s.html#a1d28582d63a7ed4338a2659360837481',1,'xed_operand_storage_s::reg()']]],
   ['reg0',['reg0',['../structxed__operand__storage__s.html#aefd4a87649a20c827a60c09fe06c37c2',1,'xed_operand_storage_s']]],
   ['reg1',['reg1',['../structxed__operand__storage__s.html#a463b7102df380fdbf71e94456cb8881e',1,'xed_operand_storage_s']]],
   ['reg2',['reg2',['../structxed__operand__storage__s.html#a92a6727cf333338c33275bf90672dc84',1,'xed_operand_storage_s']]],
@@ -17,13 +17,13 @@ var searchData=
   ['rep',['rep',['../unionxed__encoder__prefixes__t.html#aec0a195f8c65332931922e60304f72ad',1,'xed_encoder_prefixes_t::rep()'],['../structxed__operand__storage__s.html#a78286715259195dc4fe2d2cdbe7cb269',1,'xed_operand_storage_s::rep()']]],
   ['repne',['repne',['../unionxed__encoder__prefixes__t.html#a7808aa5a29f1964b18def98281b448dd',1,'xed_encoder_prefixes_t']]],
   ['rex',['rex',['../structxed__operand__storage__s.html#ad019db09a9d2843b5f2f2e7ed4e079dc',1,'xed_operand_storage_s']]],
-  ['rexb',['rexb',['../structxed__operand__storage__s.html#a2971060e90db085c130b46d62057177b',1,'xed_operand_storage_s']]],
-  ['rexr',['rexr',['../structxed__operand__storage__s.html#a5c1b6a0ac2d97a8e77a2e977ebfcddd2',1,'xed_operand_storage_s']]],
+  ['rexb',['rexb',['../structxed__enc2__req__payload__t.html#af730599ecf5ddb9661c7973f2ddeb381',1,'xed_enc2_req_payload_t::rexb()'],['../structxed__operand__storage__s.html#a2971060e90db085c130b46d62057177b',1,'xed_operand_storage_s::rexb()']]],
+  ['rexr',['rexr',['../structxed__enc2__req__payload__t.html#a281f0cf560ffcfef4e65d4e48a2b7167',1,'xed_enc2_req_payload_t::rexr()'],['../structxed__operand__storage__s.html#a5c1b6a0ac2d97a8e77a2e977ebfcddd2',1,'xed_operand_storage_s::rexr()']]],
   ['rexrr',['rexrr',['../structxed__operand__storage__s.html#acfa0e8b80de4a34fce85f65fe14ef088',1,'xed_operand_storage_s']]],
-  ['rexw',['rexw',['../structxed__operand__storage__s.html#a91241c9bb5b525dca2c8c9d1df643091',1,'xed_operand_storage_s']]],
-  ['rexx',['rexx',['../structxed__operand__storage__s.html#a6c418347a9988669ee378ed8f7054303',1,'xed_operand_storage_s']]],
+  ['rexw',['rexw',['../structxed__enc2__req__payload__t.html#ab40180b465767689794a52ad07c5b21e',1,'xed_enc2_req_payload_t::rexw()'],['../structxed__operand__storage__s.html#a91241c9bb5b525dca2c8c9d1df643091',1,'xed_operand_storage_s::rexw()']]],
+  ['rexx',['rexx',['../structxed__enc2__req__payload__t.html#aa85912972b1b23e4cad1643079f33a04',1,'xed_enc2_req_payload_t::rexx()'],['../structxed__operand__storage__s.html#a6c418347a9988669ee378ed8f7054303',1,'xed_operand_storage_s::rexx()']]],
   ['rf',['rf',['../unionxed__flag__set__s.html#ac6ab00c5d37abe6db8280ea2c6e2e6e2',1,'xed_flag_set_s']]],
-  ['rm',['rm',['../structxed__operand__storage__s.html#ab7e27ae87067dc00b69453abbff59e44',1,'xed_operand_storage_s']]],
+  ['rm',['rm',['../structxed__enc2__req__payload__t.html#ab8a192dde1a6c981e23eaf8ba253e88d',1,'xed_enc2_req_payload_t::rm()'],['../structxed__operand__storage__s.html#ab7e27ae87067dc00b69453abbff59e44',1,'xed_operand_storage_s::rm()']]],
   ['roundc',['roundc',['../structxed__operand__storage__s.html#ac7924e52422996baa086a362e35a02f8',1,'xed_operand_storage_s']]],
   ['runtime_5faddress',['runtime_address',['../structxed__print__info__t.html#a8da4bce641493ceb76bacec824630184',1,'xed_print_info_t']]]
 ];

@@ -84,11 +84,13 @@ $(document).ready(function(){initNavTree('index.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>by Mark Charney</p>
-<p>2018-04-13</p>
+<p>2019-08-09</p>
 <h1><a class="anchor" id="INTRO"></a>
 Introduction</h1>
 <p>XED is an acronym for X86 Encoder Decoder. The latter part is pronounced like the (British) English "z".</p>
-<p>Intel XED is a software library (and associated headers) written in C for encoding and decoding X86 (IA-32 instruction set and Intel&reg; 64 instruction set) instructions. The decoder takes sequences of 1-15 bytes along with machine mode information and produces a data structure describing the opcode and operands, and flags. The encoder takes a similar data structure and produces a sequence of 1 to 15 bytes. Intel XED is multi-thread safe.</p>
+<p>Intel XED is a software library (and associated headers) written in C for encoding and decoding X86 (IA-32 instruction set and Intel&reg; 64 instruction set) instructions. The decoder takes sequences of 1-15 bytes along with machine mode information and produces a data structure describing the opcode and operands, and flags. The generic encoder takes a similar data structure and produces a sequence of 1 to 15 bytes.</p>
+<p>There another encoder called "enc2" available that is much faster than the generic encoder mentioned above. Rather than using a generic interface, in enc2, instruction encoding is done by calling one of a very large number of functions, passing as arguments the registers and constants that would be used the assembly language description of the instruction. There are two interfaces to the enc2 encoder: "unchecked" and "checked". The unchecked version is faster and assumes the arguments passed to it are in the correct ranges. The checked version validates that the argument passed in are in the correct ranges and if that succeeds, it calls the corresponding unchecked version of the function. The checking can be skipped if desired using a runtime setting. The enc2 encoder is available in builds done with the "--enc2" option. Due to the large amount of code generated, that build takes longer.</p>
+<p>Intel XED is multi-thread safe.</p>
 <p>Intel XED was designed to be very fast and extensible.</p>
 <p>Intel XED compiles with the following compilers: </p><ul>
 <li>
@@ -226,7 +228,8 @@ Overview of XED approach</h1>
 <p>The output of the decoder, the <a class="el" href="group__DEC.html#gac566768d37da62eafbbda459f6fec3ac" title="The main container for instructions. ">xed_decoded_inst_t</a> , includes additional information that is not required for encoding, but provides more information about the instruction resources.</p>
 <p>The common operand fields, used by both the encoder and decoder, hold the operands and the memory addressing information.</p>
 <p>The decoder has an operands array that holds order of the decoded operands. This array indicates whether or not the operands are read or written.</p>
-<p>The encoder has an operand array where the encoder user must specify the order of the operands used for encoding. </p><hr/>
+<p>The encoder has an operand array where the encoder user must specify the order of the operands used for encoding.</p>
+<hr/>
  <h1><a class="anchor" id="ICLASS"></a>
 Instruction classes</h1>
 <p>The <a class="el" href="xed-iclass-enum_8h.html#ad318511ae9cc50f102251b3c91a1ab9f">xed_iclass_enum_t</a> class describes the instruction names. The names are (mostly) taken from the Intel manual, with exceptions only for certain ambiguities. This is what is typically thought of as the instruction mnemonic. Note, Intel XED does not typically distinguish instructions based on width unless the ISA manuals do so as well. For example, <a class="el" href="xed-iclass-enum_8h.html#ad318511ae9cc50f102251b3c91a1ab9f">xed_iclass_enum_t</a>'s are not suffixed with "w", "l" or "q" typically. There are instructions whose <a class="el" href="xed-iclass-enum_8h.html#ad318511ae9cc50f102251b3c91a1ab9f">xed_iclass_enum_t</a> ends in a "B" or a "Q" (including all byte operations and certain string operations) and those names are preserved as described in the Intel programmers' reference manuals.</p>
@@ -350,9 +353,10 @@ API Reference</h1>
 <ul>
 <li><a class="el" href="group__INIT.html">INIT</a> Initialization</li>
 <li><a class="el" href="group__DEC.html">DEC</a> Decoding instructions</li>
-<li><a class="el" href="group__ENC.html">ENC</a> Encoding instructions</li>
-<li><a class="el" href="group__ENCHL.html">ENCHL</a> High level API for encoding instructions</li>
+<li><a class="el" href="group__ENC.html">ENC</a> Generic API for encoding instructions</li>
+<li><a class="el" href="group__ENCHL.html">ENCHL</a> High level API for the generic encoder</li>
 <li><a class="el" href="group__ENCHLPATCH.html">ENCHLPATCH</a> Patching instructions</li>
+<li><a class="el" href="group__ENC2.html">ENC2</a> Fast encoder for specific instructions</li>
 <li><a class="el" href="group__OPERANDS.html">OPERANDS</a> Operand storage fields</li>
 <li><a class="el" href="group__IFORM.html">IFORM</a> Iforms</li>
 <li><a class="el" href="group__ISASET.html">ISASET</a> ISA-sets and chips</li>

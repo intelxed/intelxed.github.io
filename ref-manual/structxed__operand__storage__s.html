@@ -86,7 +86,7 @@ $(document).ready(function(){initNavTree('structxed__operand__storage__s.html','
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>&gt;</code></p>
+<p><code>#include &lt;xed-operand-storage.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
@@ -198,6 +198,8 @@ Data Fields</h2></td></tr>
 <tr class="separator:a215275504dbfe6703eefc0ef4c26829c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a190ebdd8a7269db139971f3ff6f56c5c"><td class="memItemLeft" align="right" valign="top">xed_uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structxed__operand__storage__s.html#a190ebdd8a7269db139971f3ff6f56c5c">mpxmode</a></td></tr>
 <tr class="separator:a190ebdd8a7269db139971f3ff6f56c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66998558a4daf2a7570dd5cda612a28b"><td class="memItemLeft" align="right" valign="top">xed_uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structxed__operand__storage__s.html#a66998558a4daf2a7570dd5cda612a28b">must_use_evex</a></td></tr>
+<tr class="separator:a66998558a4daf2a7570dd5cda612a28b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a639c395abbaed39e9b7c3072eb92064d"><td class="memItemLeft" align="right" valign="top">xed_uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structxed__operand__storage__s.html#a639c395abbaed39e9b7c3072eb92064d">need_memdisp</a></td></tr>
 <tr class="separator:a639c395abbaed39e9b7c3072eb92064d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b892a8c0b4a0870ebb665499d4cd48b"><td class="memItemLeft" align="right" valign="top">xed_uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structxed__operand__storage__s.html#a1b892a8c0b4a0870ebb665499d4cd48b">needrex</a></td></tr>
@@ -300,14 +302,10 @@ Data Fields</h2></td></tr>
 <tr class="separator:af6d7c92360c3352fa1ec027859c8ff55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6fd7d3930e50bb158aaf51a0931ad4b"><td class="memItemLeft" align="right" valign="top">xed_uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structxed__operand__storage__s.html#aa6fd7d3930e50bb158aaf51a0931ad4b">sibscale</a></td></tr>
 <tr class="separator:aa6fd7d3930e50bb158aaf51a0931ad4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07c39bea562237bd4e9d86626581fb92"><td class="memItemLeft" align="right" valign="top">xed_uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structxed__operand__storage__s.html#a07c39bea562237bd4e9d86626581fb92">skip_osz</a></td></tr>
-<tr class="separator:a07c39bea562237bd4e9d86626581fb92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89f36a662d4d34db109be0988540e8b2"><td class="memItemLeft" align="right" valign="top">xed_uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structxed__operand__storage__s.html#a89f36a662d4d34db109be0988540e8b2">smode</a></td></tr>
 <tr class="separator:a89f36a662d4d34db109be0988540e8b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a069477621f91b6f03d866af397df3b0b"><td class="memItemLeft" align="right" valign="top">xed_uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structxed__operand__storage__s.html#a069477621f91b6f03d866af397df3b0b">srm</a></td></tr>
 <tr class="separator:a069477621f91b6f03d866af397df3b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4318d50f36d74b9ae3185bcdb0603368"><td class="memItemLeft" align="right" valign="top">xed_uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structxed__operand__storage__s.html#a4318d50f36d74b9ae3185bcdb0603368">type</a></td></tr>
-<tr class="separator:a4318d50f36d74b9ae3185bcdb0603368"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4175ed549c54b2de13ff7ed4e1d509c8"><td class="memItemLeft" align="right" valign="top">xed_uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structxed__operand__storage__s.html#a4175ed549c54b2de13ff7ed4e1d509c8">tzcnt</a></td></tr>
 <tr class="separator:a4175ed549c54b2de13ff7ed4e1d509c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17efd81e6c815c79e2cdf4b40adc3adc"><td class="memItemLeft" align="right" valign="top">xed_uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structxed__operand__storage__s.html#a17efd81e6c815c79e2cdf4b40adc3adc">ubit</a></td></tr>
@@ -334,15 +332,14 @@ Data Fields</h2></td></tr>
 <tr class="separator:a0dbff530f195371c35c71da2c5feb2d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27ce99975034d1b474a089b7e008be62"><td class="memItemLeft" align="right" valign="top">xed_uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structxed__operand__storage__s.html#a27ce99975034d1b474a089b7e008be62">vl</a></td></tr>
 <tr class="separator:a27ce99975034d1b474a089b7e008be62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa916c39ab1ee38f4636fd2504fd5954b"><td class="memItemLeft" align="right" valign="top">xed_uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structxed__operand__storage__s.html#aa916c39ab1ee38f4636fd2504fd5954b">vlx</a></td></tr>
+<tr class="separator:aa916c39ab1ee38f4636fd2504fd5954b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af528dcb11cf54d6362b5c885b81556fc"><td class="memItemLeft" align="right" valign="top">xed_uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structxed__operand__storage__s.html#af528dcb11cf54d6362b5c885b81556fc">wbnoinvd</a></td></tr>
 <tr class="separator:af528dcb11cf54d6362b5c885b81556fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c250aa1fde976f1a64b169930d888a3"><td class="memItemLeft" align="right" valign="top">xed_uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structxed__operand__storage__s.html#a5c250aa1fde976f1a64b169930d888a3">zeroing</a></td></tr>
 <tr class="separator:a5c250aa1fde976f1a64b169930d888a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00030">30</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-</div><h2 class="groupheader">Field Documentation</h2>
+<h2 class="groupheader">Field Documentation</h2>
 <a id="aa98814ea0c9dc7d120c6154c40cd2082"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa98814ea0c9dc7d120c6154c40cd2082">&#9670;&nbsp;</a></span>agen</h2>
 
@@ -354,8 +351,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00031">31</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -371,8 +366,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00032">32</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a6b35796e7ba1792792ab31d714a60761"></a>
@@ -386,8 +379,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00033">33</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -403,8 +394,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00135">135</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a7c9e48459acd2573dcce2441dd1d93f6"></a>
@@ -418,8 +407,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00136">136</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -435,8 +422,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00114">114</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a56a7f38bf7471f038869c06a07bec946"></a>
@@ -450,8 +435,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00034">34</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -467,8 +450,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00117">117</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a6f47854b1aae1643e3e9bc1f3b87ec69"></a>
@@ -482,8 +463,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00035">35</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -499,8 +478,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00115">115</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="ac3663ec41dacbe5a25f77457c3842971"></a>
@@ -514,8 +491,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00036">36</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -531,8 +506,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00083">83</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="afa174ee6680e7dbeb613855c585aa071"></a>
@@ -546,8 +519,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00037">37</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -563,8 +534,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00038">38</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="ab52f482f625a662b1cb47127dc41d19a"></a>
@@ -578,8 +547,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00153">153</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -595,8 +562,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00118">118</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a45d0895b1839a19b845db046507a92ab"></a>
@@ -610,8 +575,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00039">39</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -627,8 +590,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00084">84</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="acbce437fe6914af047fae06df2368a1c"></a>
@@ -642,8 +603,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00137">137</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -659,8 +618,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00040">40</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="aafc351c98a02647c7eb4d38ae1c8a490"></a>
@@ -674,8 +631,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00085">85</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -691,8 +646,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00108">108</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="ad19b924b8cdb03442958e235399947e3"></a>
@@ -706,8 +659,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00109">109</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -723,8 +674,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00086">86</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a5e1b914cf33a996de380ab2b84a6eff4"></a>
@@ -738,8 +687,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00087">87</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -755,8 +702,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00041">41</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a3390c38d47d6aff23814ae37b503666a"></a>
@@ -770,8 +715,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00097">97</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -787,8 +730,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00151">151</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="ac57a7ddb914e1a186da00bc469e521fb"></a>
@@ -802,8 +743,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00042">42</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -819,8 +758,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00043">43</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a91ca03fd2581444b22beeeac9da6f4a3"></a>
@@ -834,8 +771,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00119">119</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -851,8 +786,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00044">44</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="ade5891995ec8fa7d320c29b189af52b7"></a>
@@ -866,8 +799,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00045">45</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -883,8 +814,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00046">46</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a12c120e0916fa7aacf2bd5f83fe89a57"></a>
@@ -898,8 +827,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00120">120</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -915,8 +842,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00121">121</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a5f2371b709c5fa56ad0c4f61450d965c"></a>
@@ -930,8 +855,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00138">138</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -947,8 +870,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00088">88</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a4770166a134a40fad2101f19765c8545"></a>
@@ -962,8 +883,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00089">89</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -979,8 +898,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00047">47</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="ace28ee6f9bf483b98231a7ad54c2107f"></a>
@@ -994,8 +911,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00048">48</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -1011,8 +926,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00110">110</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a3f89a94262b4663bbd668d109b3746c8"></a>
@@ -1026,8 +939,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00098">98</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -1043,8 +954,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00122">122</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a19e441620a0f38fed11a3dd8f6ddfa31"></a>
@@ -1058,8 +967,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00049">49</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -1075,8 +982,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00050">50</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="ad6a412a223ec5b57efa75fb320a54f69"></a>
@@ -1090,8 +995,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00152">152</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -1107,8 +1010,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00090">90</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="af76beeb9c32516b575dc68f64176333d"></a>
@@ -1122,8 +1023,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00091">91</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -1139,8 +1038,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00053">53</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a25b2f50484ecb1a89c51d52562bebda0"></a>
@@ -1154,8 +1051,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00051">51</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -1171,8 +1066,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00052">52</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a215275504dbfe6703eefc0ef4c26829c"></a>
@@ -1186,8 +1079,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00123">123</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -1203,7 +1094,19 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00054">54</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
+</div>
+</div>
+<a id="a66998558a4daf2a7570dd5cda612a28b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66998558a4daf2a7570dd5cda612a28b">&#9670;&nbsp;</a></span>must_use_evex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">xed_uint8_t must_use_evex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1219,8 +1122,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00116">116</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a1b892a8c0b4a0870ebb665499d4cd48b"></a>
@@ -1234,8 +1135,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00055">55</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -1251,8 +1150,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00111">111</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a11cdb7d6abbb9ea6f74f472ccde91f50"></a>
@@ -1266,8 +1163,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00057">57</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -1283,8 +1178,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00124">124</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a456f9de3efd3a0e9bbcbb29e3f0d95a2"></a>
@@ -1298,8 +1191,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00056">56</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -1315,8 +1206,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00125">125</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a40a8da00806f200307ab6a94ef14c11f"></a>
@@ -1330,8 +1219,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00126">126</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -1347,8 +1234,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00127">127</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a1e9faa26506012593bba0a1e244e3859"></a>
@@ -1362,8 +1247,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00058">58</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -1379,8 +1262,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00059">59</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="ae3f10720d98fa3620ac51343010bb582"></a>
@@ -1394,8 +1275,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00139">139</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -1411,8 +1290,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00060">60</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a9974476cb28d4137fb6f0e8804847f21"></a>
@@ -1426,8 +1303,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00128">128</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -1443,8 +1318,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00129">129</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a439c496a4efdf4ed13fe68966d313d18"></a>
@@ -1458,8 +1331,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00130">130</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -1475,8 +1346,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00131">131</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a4836abdbb079a84bc521aff6527ab621"></a>
@@ -1490,8 +1359,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00132">132</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -1507,8 +1374,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00133">133</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="af772e398dcf935d941241c2b2d110a14"></a>
@@ -1522,8 +1387,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00061">61</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -1539,8 +1402,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00062">62</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="afe29558821b787a225360319fe7fa1f9"></a>
@@ -1554,8 +1415,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00063">63</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -1571,8 +1430,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00099">99</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="aefd4a87649a20c827a60c09fe06c37c2"></a>
@@ -1586,8 +1443,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00140">140</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -1603,8 +1458,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00141">141</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a92a6727cf333338c33275bf90672dc84"></a>
@@ -1618,8 +1471,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00142">142</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -1635,8 +1486,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00143">143</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="aded5beb7056277fa4bd8a8a3ddae8e04"></a>
@@ -1650,8 +1499,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00144">144</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -1667,8 +1514,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00145">145</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a70aa8222e96a5c84d14cf7b725aa9762"></a>
@@ -1682,8 +1527,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00146">146</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -1699,8 +1542,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00147">147</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a1703bcddf42c08d9c5f7761f860988d9"></a>
@@ -1714,8 +1555,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00148">148</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -1731,8 +1570,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00064">64</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a78286715259195dc4fe2d2cdbe7cb269"></a>
@@ -1746,8 +1583,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00092">92</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -1763,8 +1598,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00065">65</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a2971060e90db085c130b46d62057177b"></a>
@@ -1778,8 +1611,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00066">66</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -1795,8 +1626,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00067">67</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="acfa0e8b80de4a34fce85f65fe14ef088"></a>
@@ -1810,8 +1639,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00068">68</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -1827,8 +1654,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00069">69</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a6c418347a9988669ee378ed8f7054303"></a>
@@ -1842,8 +1667,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00070">70</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -1859,8 +1682,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00100">100</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="ac7924e52422996baa086a362e35a02f8"></a>
@@ -1874,8 +1695,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00101">101</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -1891,8 +1710,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00071">71</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a7ea43b55f869a6a22a3abd4a111d369b"></a>
@@ -1906,8 +1723,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00112">112</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -1923,8 +1738,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00149">149</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="ab552475d42ef41ee80d71cf4d6a4966b"></a>
@@ -1938,8 +1751,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00150">150</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -1955,8 +1766,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00102">102</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a09dbe857f4548b7212050c8b78e5be74"></a>
@@ -1970,8 +1779,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00072">72</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -1987,8 +1794,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00103">103</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="af6d7c92360c3352fa1ec027859c8ff55"></a>
@@ -2002,8 +1807,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00104">104</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -2019,24 +1822,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00093">93</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
-</div>
-</div>
-<a id="a07c39bea562237bd4e9d86626581fb92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07c39bea562237bd4e9d86626581fb92">&#9670;&nbsp;</a></span>skip_osz</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">xed_uint8_t skip_osz</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00073">73</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a89f36a662d4d34db109be0988540e8b2"></a>
@@ -2050,8 +1835,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00094">94</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -2067,24 +1850,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00105">105</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
-</div>
-</div>
-<a id="a4318d50f36d74b9ae3185bcdb0603368"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4318d50f36d74b9ae3185bcdb0603368">&#9670;&nbsp;</a></span>type</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">xed_uint8_t type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00113">113</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a4175ed549c54b2de13ff7ed4e1d509c8"></a>
@@ -2098,8 +1863,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00074">74</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -2115,8 +1878,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00075">75</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a27342d6ed806e9075a1d274bd80d32b4"></a>
@@ -2130,8 +1891,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00154">154</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -2147,8 +1906,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00134">134</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a720d3b2187836507b81547408f35433e"></a>
@@ -2162,8 +1919,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00076">76</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -2179,8 +1934,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00077">77</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="aab83b9b17c9e7db17aadb02f819b331e"></a>
@@ -2194,8 +1947,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00080">80</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -2211,8 +1962,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00095">95</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a4f151b021dc9532a98b3d9a7391693ce"></a>
@@ -2226,8 +1975,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00106">106</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -2243,8 +1990,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00078">78</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a6a5028d180274c4aa23fc9306715a348"></a>
@@ -2258,8 +2003,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00079">79</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
 
 </div>
 </div>
@@ -2275,8 +2018,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00107">107</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a27ce99975034d1b474a089b7e008be62"></a>
@@ -2291,7 +2032,19 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00096">96</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
+</div>
+</div>
+<a id="aa916c39ab1ee38f4636fd2504fd5954b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa916c39ab1ee38f4636fd2504fd5954b">&#9670;&nbsp;</a></span>vlx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">xed_uint8_t vlx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -2307,8 +2060,6 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00081">81</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <a id="a5c250aa1fde976f1a64b169930d888a3"></a>
@@ -2323,12 +2074,10 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="xed-operand-storage_8h_source.html#l00082">82</a> of file <a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="xed-operand-storage_8h_source.html">xed-operand-storage.h</a></li>
+<li><a class="el" href="xed-operand-storage_8h.html">xed-operand-storage.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

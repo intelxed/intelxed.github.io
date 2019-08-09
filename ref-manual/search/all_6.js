@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['fast_20encoder_20for_20specific_20instructions',['Fast Encoder for Specific Instructions',['../group__ENC2.html',1,'']]],
   ['f',['f',['../structxed__chip__features__t.html#a021b76f767ab1e39026ec833ff32ce1f',1,'xed_chip_features_t']]],
   ['fa_5findex',['fa_index',['../structxed__simple__flag__s.html#a6ca9e07f3c737f6f07deb0678f4c5d8c',1,'xed_simple_flag_s']]],
   ['fc0',['fc0',['../unionxed__flag__set__s.html#ac60b72c28c13fe3e184f3c71d1f767ee',1,'xed_flag_set_s']]],

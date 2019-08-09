@@ -7,7 +7,6 @@ var xed_operand_ctype_enum_8h =
       [ "XED_OPERAND_CTYPE_XED_ERROR_ENUM_T", "xed-operand-ctype-enum_8h.html#a0b2cec39e2812706b0bf62b761543318a2d43fa247b35a16f70754247614495a2", null ],
       [ "XED_OPERAND_CTYPE_XED_ICLASS_ENUM_T", "xed-operand-ctype-enum_8h.html#a0b2cec39e2812706b0bf62b761543318a666ee8acb82fffc34c697eb88044a36a", null ],
       [ "XED_OPERAND_CTYPE_XED_INT64_T", "xed-operand-ctype-enum_8h.html#a0b2cec39e2812706b0bf62b761543318a7d5ed1d605c20419ae2cbb79be843c6b", null ],
-      [ "XED_OPERAND_CTYPE_XED_OPERAND_ELEMENT_TYPE_ENUM_T", "xed-operand-ctype-enum_8h.html#a0b2cec39e2812706b0bf62b761543318a009be7f7ceafb9273c7f023ed3ed8f4a", null ],
       [ "XED_OPERAND_CTYPE_XED_REG_ENUM_T", "xed-operand-ctype-enum_8h.html#a0b2cec39e2812706b0bf62b761543318aff84e7f86488a4287b5d32d5b22810cd", null ],
       [ "XED_OPERAND_CTYPE_XED_UINT16_T", "xed-operand-ctype-enum_8h.html#a0b2cec39e2812706b0bf62b761543318aa811bb27288bbe23144a687c9c7d9a3e", null ],
       [ "XED_OPERAND_CTYPE_XED_UINT64_T", "xed-operand-ctype-enum_8h.html#a0b2cec39e2812706b0bf62b761543318a5ae882b0d128f3db586bcd8f6a35fe53", null ],

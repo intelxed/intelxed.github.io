@@ -8,6 +8,7 @@ var xed_machine_mode_enum_8h =
       [ "XED_MACHINE_MODE_LEGACY_32", "xed-machine-mode-enum_8h.html#a754db9d73c5365644094cd161fe570a7aa96a9d517621e28100e179eff7c92458", null ],
       [ "XED_MACHINE_MODE_LEGACY_16", "xed-machine-mode-enum_8h.html#a754db9d73c5365644094cd161fe570a7a389547057da410225afe20064b3a4c0e", null ],
       [ "XED_MACHINE_MODE_REAL_16", "xed-machine-mode-enum_8h.html#a754db9d73c5365644094cd161fe570a7a42b4d1fea99e7128a28e001b0caf6e5b", null ],
+      [ "XED_MACHINE_MODE_REAL_32", "xed-machine-mode-enum_8h.html#a754db9d73c5365644094cd161fe570a7af21c1b8c72498f1d8f4f47faad7aa29e", null ],
       [ "XED_MACHINE_MODE_LAST", "xed-machine-mode-enum_8h.html#a754db9d73c5365644094cd161fe570a7a97414d3e1b22e5bb1f62ce7d98465966", null ]
     ] ],
     [ "str2xed_machine_mode_enum_t", "group__ENUM.html#gaa6229dc875554ab07fbb2b1bdd18bb65", null ],

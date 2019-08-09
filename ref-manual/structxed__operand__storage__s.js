@@ -54,6 +54,7 @@ var structxed__operand__storage__s =
     [ "modep55c", "structxed__operand__storage__s.html#afd4899f12b95a02a93132b27d161039e", null ],
     [ "modrm_byte", "structxed__operand__storage__s.html#a215275504dbfe6703eefc0ef4c26829c", null ],
     [ "mpxmode", "structxed__operand__storage__s.html#a190ebdd8a7269db139971f3ff6f56c5c", null ],
+    [ "must_use_evex", "structxed__operand__storage__s.html#a66998558a4daf2a7570dd5cda612a28b", null ],
     [ "need_memdisp", "structxed__operand__storage__s.html#a639c395abbaed39e9b7c3072eb92064d", null ],
     [ "needrex", "structxed__operand__storage__s.html#a1b892a8c0b4a0870ebb665499d4cd48b", null ],
     [ "nelem", "structxed__operand__storage__s.html#aaba9037a2338078081e98e30c0318251", null ],
@@ -105,10 +106,8 @@ var structxed__operand__storage__s =
     [ "sibbase", "structxed__operand__storage__s.html#a25589fcfde391eb8b5195fd81774f6cc", null ],
     [ "sibindex", "structxed__operand__storage__s.html#af6d7c92360c3352fa1ec027859c8ff55", null ],
     [ "sibscale", "structxed__operand__storage__s.html#aa6fd7d3930e50bb158aaf51a0931ad4b", null ],
-    [ "skip_osz", "structxed__operand__storage__s.html#a07c39bea562237bd4e9d86626581fb92", null ],
     [ "smode", "structxed__operand__storage__s.html#a89f36a662d4d34db109be0988540e8b2", null ],
     [ "srm", "structxed__operand__storage__s.html#a069477621f91b6f03d866af397df3b0b", null ],
-    [ "type", "structxed__operand__storage__s.html#a4318d50f36d74b9ae3185bcdb0603368", null ],
     [ "tzcnt", "structxed__operand__storage__s.html#a4175ed549c54b2de13ff7ed4e1d509c8", null ],
     [ "ubit", "structxed__operand__storage__s.html#a17efd81e6c815c79e2cdf4b40adc3adc", null ],
     [ "uimm0", "structxed__operand__storage__s.html#a27342d6ed806e9075a1d274bd80d32b4", null ],
@@ -122,6 +121,7 @@ var structxed__operand__storage__s =
     [ "vexdest4", "structxed__operand__storage__s.html#a6a5028d180274c4aa23fc9306715a348", null ],
     [ "vexvalid", "structxed__operand__storage__s.html#a0dbff530f195371c35c71da2c5feb2d1", null ],
     [ "vl", "structxed__operand__storage__s.html#a27ce99975034d1b474a089b7e008be62", null ],
+    [ "vlx", "structxed__operand__storage__s.html#aa916c39ab1ee38f4636fd2504fd5954b", null ],
     [ "wbnoinvd", "structxed__operand__storage__s.html#af528dcb11cf54d6362b5c885b81556fc", null ],
     [ "zeroing", "structxed__operand__storage__s.html#a5c250aa1fde976f1a64b169930d888a3", null ]
 ];

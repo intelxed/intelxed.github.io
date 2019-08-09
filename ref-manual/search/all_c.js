@@ -1,6 +1,7 @@
 var searchData=
 [
   ['need_5fmemdisp',['need_memdisp',['../structxed__operand__storage__s.html#a639c395abbaed39e9b7c3072eb92064d',1,'xed_operand_storage_s']]],
+  ['need_5frex',['need_rex',['../structxed__enc2__req__payload__t.html#a1c31e68aba5ad060d24b1f08b847ab2f',1,'xed_enc2_req_payload_t']]],
   ['needrex',['needrex',['../structxed__operand__storage__s.html#a1b892a8c0b4a0870ebb665499d4cd48b',1,'xed_operand_storage_s']]],
   ['nelem',['nelem',['../structxed__operand__storage__s.html#aaba9037a2338078081e98e30c0318251',1,'xed_operand_storage_s']]],
   ['nflags',['nflags',['../structxed__simple__flag__s.html#a8adf988b444df44631430dce32912463',1,'xed_simple_flag_s']]],

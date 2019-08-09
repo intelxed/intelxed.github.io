@@ -5,6 +5,8 @@ var searchData=
   ['xed_5fconvert_5ftable_5ft',['xed_convert_table_t',['../structxed__convert__table__t.html',1,'']]],
   ['xed_5fcpuid_5frec_5ft',['xed_cpuid_rec_t',['../structxed__cpuid__rec__t.html',1,'']]],
   ['xed_5fdecoded_5finst_5fs',['xed_decoded_inst_s',['../structxed__decoded__inst__s.html',1,'']]],
+  ['xed_5fenc2_5freq_5fpayload_5ft',['xed_enc2_req_payload_t',['../structxed__enc2__req__payload__t.html',1,'']]],
+  ['xed_5fenc2_5freq_5ft',['xed_enc2_req_t',['../unionxed__enc2__req__t.html',1,'']]],
   ['xed_5fenc_5fdisplacement_5ft',['xed_enc_displacement_t',['../structxed__enc__displacement__t.html',1,'']]],
   ['xed_5fencoder_5fiforms_5fs',['xed_encoder_iforms_s',['../structxed__encoder__iforms__s.html',1,'']]],
   ['xed_5fencoder_5finstruction_5ft',['xed_encoder_instruction_t',['../structxed__encoder__instruction__t.html',1,'']]],

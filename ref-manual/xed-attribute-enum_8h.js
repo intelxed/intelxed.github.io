@@ -58,6 +58,7 @@ var xed_attribute_enum_8h =
       [ "XED_ATTRIBUTE_MEMORY_FAULT_SUPPRESSION", "xed-attribute-enum_8h.html#a848d4cf396be5a647413e94bc6f0a383a8180175a8fc78094246622c298061c42", null ],
       [ "XED_ATTRIBUTE_MMX_EXCEPT", "xed-attribute-enum_8h.html#a848d4cf396be5a647413e94bc6f0a383abf8518611c3d3f932908b81fe7ef07c7", null ],
       [ "XED_ATTRIBUTE_MPX_PREFIX_ABLE", "xed-attribute-enum_8h.html#a848d4cf396be5a647413e94bc6f0a383a006a57277b0700b2a2e63cd93a9e5941", null ],
+      [ "XED_ATTRIBUTE_MULTIDEST2", "xed-attribute-enum_8h.html#a848d4cf396be5a647413e94bc6f0a383a85abf33d0318984393d8681c44255e44", null ],
       [ "XED_ATTRIBUTE_MULTISOURCE4", "xed-attribute-enum_8h.html#a848d4cf396be5a647413e94bc6f0a383a87a109635e77635561d1ab9dbf2a9f1e", null ],
       [ "XED_ATTRIBUTE_MXCSR", "xed-attribute-enum_8h.html#a848d4cf396be5a647413e94bc6f0a383acbbc9625c471161b322dbcf8096762ff", null ],
       [ "XED_ATTRIBUTE_MXCSR_RD", "xed-attribute-enum_8h.html#a848d4cf396be5a647413e94bc6f0a383aa0597a7aa93ee47c32ca2c94134ab0d3", null ],

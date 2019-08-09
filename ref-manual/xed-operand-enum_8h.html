@@ -86,10 +86,8 @@ $(document).ready(function(){initNavTree('xed-operand-enum_8h.html','');});
 <div class="title">xed-operand-enum.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="xed-common-hdrs_8h_source.html">xed-common-hdrs.h</a>&quot;</code><br />
-</div>
-<p><a href="xed-operand-enum_8h_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+<div class="textblock"><code>#include &quot;<a class="el" href="xed-common-hdrs_8h.html">xed-common-hdrs.h</a>&quot;</code><br />
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a09c2a35d8bb7bfe68bb3d34b0a5e011a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011a">xed_operand_enum_t</a> { <br />
@@ -203,6 +201,8 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aa26e336646645acbd8292f1383f86b51b">XED_OPERAND_MPXMODE</a>, 
 <br />
+&#160;&#160;<a class="el" href="xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aaddcfa4b086347f470626cf0d57e2e962">XED_OPERAND_MUST_USE_EVEX</a>, 
+<br />
 &#160;&#160;<a class="el" href="xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aaa2569dae603f93ead17bd5b7b6608156">XED_OPERAND_NEEDREX</a>, 
 <br />
 &#160;&#160;<a class="el" href="xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aa9bee3ea59d9ad25c6847fc1be78fa4e5">XED_OPERAND_NEED_MEMDISP</a>, 
@@ -305,13 +305,9 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aa79145b7008dde1b56afbb5cec1aa53d8">XED_OPERAND_SIBSCALE</a>, 
 <br />
-&#160;&#160;<a class="el" href="xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aad3746cb0167b321f9d26bce49cf26e2a">XED_OPERAND_SKIP_OSZ</a>, 
-<br />
 &#160;&#160;<a class="el" href="xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aa55c7014490c4ad2f151ed375afff0863">XED_OPERAND_SMODE</a>, 
 <br />
 &#160;&#160;<a class="el" href="xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aab5a8c259a18d86f62ea13d63a3740172">XED_OPERAND_SRM</a>, 
-<br />
-&#160;&#160;<a class="el" href="xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aabebadf81fd6e5f385be962e961adcdec">XED_OPERAND_TYPE</a>, 
 <br />
 &#160;&#160;<a class="el" href="xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aa4cd85371483745fe30269aa2463222d3">XED_OPERAND_TZCNT</a>, 
 <br />
@@ -338,6 +334,8 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aa37cf9fb0324a544013770d348101be13">XED_OPERAND_VEX_PREFIX</a>, 
 <br />
 &#160;&#160;<a class="el" href="xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aae8f5c3f6067ff768f31c28c1c592e69c">XED_OPERAND_VL</a>, 
+<br />
+&#160;&#160;<a class="el" href="xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aa3004d3fefb0e4f79d065092899737e3a">XED_OPERAND_VLX</a>, 
 <br />
 &#160;&#160;<a class="el" href="xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aa3f7a8ba55935d2e2352210aaa1c77b55">XED_OPERAND_WBNOINVD</a>, 
 <br />
@@ -428,6 +426,7 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a09c2a35d8bb7bfe68bb3d34b0a5e011aaefe200444c00eca19c846b5a95714835"></a>XED_OPERAND_MODE_FIRST_PREFIX&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a09c2a35d8bb7bfe68bb3d34b0a5e011aad1ff6b5bfd8a27d95560c495ebf7ab70"></a>XED_OPERAND_MODRM_BYTE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a09c2a35d8bb7bfe68bb3d34b0a5e011aa26e336646645acbd8292f1383f86b51b"></a>XED_OPERAND_MPXMODE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a09c2a35d8bb7bfe68bb3d34b0a5e011aaddcfa4b086347f470626cf0d57e2e962"></a>XED_OPERAND_MUST_USE_EVEX&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a09c2a35d8bb7bfe68bb3d34b0a5e011aaa2569dae603f93ead17bd5b7b6608156"></a>XED_OPERAND_NEEDREX&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a09c2a35d8bb7bfe68bb3d34b0a5e011aa9bee3ea59d9ad25c6847fc1be78fa4e5"></a>XED_OPERAND_NEED_MEMDISP&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a09c2a35d8bb7bfe68bb3d34b0a5e011aa8b551ec9c2f5e446a83f612e1fa201b9"></a>XED_OPERAND_NELEM&#160;</td><td class="fielddoc"></td></tr>
@@ -479,10 +478,8 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a09c2a35d8bb7bfe68bb3d34b0a5e011aa1252cc84614bf9018d5156b860b452cc"></a>XED_OPERAND_SIBBASE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a09c2a35d8bb7bfe68bb3d34b0a5e011aa0019a16a323d48cab2b19e9567b87f8f"></a>XED_OPERAND_SIBINDEX&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a09c2a35d8bb7bfe68bb3d34b0a5e011aa79145b7008dde1b56afbb5cec1aa53d8"></a>XED_OPERAND_SIBSCALE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a09c2a35d8bb7bfe68bb3d34b0a5e011aad3746cb0167b321f9d26bce49cf26e2a"></a>XED_OPERAND_SKIP_OSZ&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a09c2a35d8bb7bfe68bb3d34b0a5e011aa55c7014490c4ad2f151ed375afff0863"></a>XED_OPERAND_SMODE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a09c2a35d8bb7bfe68bb3d34b0a5e011aab5a8c259a18d86f62ea13d63a3740172"></a>XED_OPERAND_SRM&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a09c2a35d8bb7bfe68bb3d34b0a5e011aabebadf81fd6e5f385be962e961adcdec"></a>XED_OPERAND_TYPE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a09c2a35d8bb7bfe68bb3d34b0a5e011aa4cd85371483745fe30269aa2463222d3"></a>XED_OPERAND_TZCNT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a09c2a35d8bb7bfe68bb3d34b0a5e011aafcd7139fc501f9996855d5e08cc71cc5"></a>XED_OPERAND_UBIT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a09c2a35d8bb7bfe68bb3d34b0a5e011aa51ea68b2b2912502de1d2c4598bda472"></a>XED_OPERAND_UIMM0&#160;</td><td class="fielddoc"></td></tr>
@@ -496,12 +493,11 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a09c2a35d8bb7bfe68bb3d34b0a5e011aa125ab494e5cb4ff672e2215c726de3fb"></a>XED_OPERAND_VEX_C4&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a09c2a35d8bb7bfe68bb3d34b0a5e011aa37cf9fb0324a544013770d348101be13"></a>XED_OPERAND_VEX_PREFIX&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a09c2a35d8bb7bfe68bb3d34b0a5e011aae8f5c3f6067ff768f31c28c1c592e69c"></a>XED_OPERAND_VL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a09c2a35d8bb7bfe68bb3d34b0a5e011aa3004d3fefb0e4f79d065092899737e3a"></a>XED_OPERAND_VLX&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a09c2a35d8bb7bfe68bb3d34b0a5e011aa3f7a8ba55935d2e2352210aaa1c77b55"></a>XED_OPERAND_WBNOINVD&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a09c2a35d8bb7bfe68bb3d34b0a5e011aab84fdc4253567bbd5980b29944447f99"></a>XED_OPERAND_ZEROING&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a09c2a35d8bb7bfe68bb3d34b0a5e011aa6558448a12b7ce8bf00d73cf3e45dafd"></a>XED_OPERAND_LAST&#160;</td><td class="fielddoc"></td></tr>
 </table>
-
-<p class="definition">Definition at line <a class="el" href="xed-operand-enum_8h_source.html#l00026">26</a> of file <a class="el" href="xed-operand-enum_8h_source.html">xed-operand-enum.h</a>.</p>
 
 </div>
 </div>
@@ -510,7 +506,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_39bdcf4cee9880e493b49f6c513c9c12.html">kits</a></li><li class="navelem"><a class="el" href="dir_342126a8aef901d5869f48b451e3ee4b.html">xed-install-base-2018-04-13-mac-x86-64</a></li><li class="navelem"><a class="el" href="dir_7dd137f1e64ed7bf22c982df847f429b.html">include</a></li><li class="navelem"><a class="el" href="dir_b21188e50d0c085a6a0e43e2d66b3604.html">xed</a></li><li class="navelem"><a class="el" href="xed-operand-enum_8h.html">xed-operand-enum.h</a></li>
+    <li class="navelem"><a class="el" href="dir_43724e81dd40e09f32417973865cdd64.html">obj</a></li><li class="navelem"><a class="el" href="dir_8457b5fead640a375ca0704568b0d081.html">wkit</a></li><li class="navelem"><a class="el" href="dir_e175811efbbe3767b218dbb51940252f.html">include</a></li><li class="navelem"><a class="el" href="dir_c905250153190ac9a0e58f61ab3d1cbf.html">xed</a></li><li class="navelem"><a class="el" href="xed-operand-enum_8h.html">xed-operand-enum.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

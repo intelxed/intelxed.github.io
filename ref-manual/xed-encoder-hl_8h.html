@@ -87,15 +87,14 @@ $(document).ready(function(){initNavTree('xed-encoder-hl_8h.html','');});
 <div class="title">xed-encoder-hl.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="xed-types_8h_source.html">xed-types.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="xed-reg-enum_8h_source.html">xed-reg-enum.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="xed-state_8h_source.html">xed-state.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="xed-iclass-enum_8h_source.html">xed-iclass-enum.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="xed-portability_8h_source.html">xed-portability.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="xed-encode_8h_source.html">xed-encode.h</a>&quot;</code><br />
-</div>
-<p><a href="xed-encoder-hl_8h_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+<div class="textblock"><code>#include &quot;<a class="el" href="xed-types_8h.html">xed-types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="xed-reg-enum_8h.html">xed-reg-enum.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="xed-state_8h.html">xed-state.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="xed-iclass-enum_8h.html">xed-iclass-enum.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="xed-portability_8h.html">xed-portability.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="xed-encode_8h.html">xed-encode.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="xed-util_8h.html">xed-util.h</a>&quot;</code><br />
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structxed__enc__displacement__t.html">xed_enc_displacement_t</a></td></tr>
@@ -111,7 +110,7 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:abfeb6b3bab64107ecb69a1276aaa14ed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-encoder-hl_8h.html#abfeb6b3bab64107ecb69a1276aaa14ed">XED_ENCODER_OPERANDS_MAX</a>&#160;&#160;&#160;5 /* FIXME */</td></tr>
+<tr class="memitem:abfeb6b3bab64107ecb69a1276aaa14ed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-encoder-hl_8h.html#abfeb6b3bab64107ecb69a1276aaa14ed">XED_ENCODER_OPERANDS_MAX</a>&#160;&#160;&#160;8 /* FIXME */</td></tr>
 <tr class="separator:abfeb6b3bab64107ecb69a1276aaa14ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -145,9 +144,9 @@ Enumerations</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Memory Displacement</div></td></tr>
-<tr class="memitem:gab78a9f5cd721dd7fb0016ed55eb0858a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> <a class="el" href="structxed__enc__displacement__t.html">xed_enc_displacement_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ENCHL.html#gab78a9f5cd721dd7fb0016ed55eb0858a">xed_disp</a> (xed_uint64_t displacement, xed_uint32_t displacement_bits)</td></tr>
-<tr class="memdesc:gab78a9f5cd721dd7fb0016ed55eb0858a"><td class="mdescLeft">&#160;</td><td class="mdescRight">a memory displacement (not for branches)  <a href="group__ENCHL.html#gab78a9f5cd721dd7fb0016ed55eb0858a">More...</a><br /></td></tr>
-<tr class="separator:gab78a9f5cd721dd7fb0016ed55eb0858a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab250b7cc3902e49e4c51ce4b0a8e6e8a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> <a class="el" href="structxed__enc__displacement__t.html">xed_enc_displacement_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ENCHL.html#gab250b7cc3902e49e4c51ce4b0a8e6e8a">xed_disp</a> (xed_int64_t displacement, xed_uint32_t displacement_bits)</td></tr>
+<tr class="memdesc:gab250b7cc3902e49e4c51ce4b0a8e6e8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">a memory displacement (not for branches)  <a href="group__ENCHL.html#gab250b7cc3902e49e4c51ce4b0a8e6e8a">More...</a><br /></td></tr>
+<tr class="separator:gab250b7cc3902e49e4c51ce4b0a8e6e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Branch Displacement</div></td></tr>
 <tr class="memitem:gac5c956ff78a660eb29ba29da4357c02d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xed-portability_8h.html#a816cca0d95c86100144b556e68e836b7">XED_INLINE</a> <a class="el" href="structxed__encoder__operand__t.html">xed_encoder_operand_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ENCHL.html#gac5c956ff78a660eb29ba29da4357c02d">xed_relbr</a> (xed_int32_t brdisp, <a class="el" href="xed-types_8h.html#a0c92e8263b7ca02d8e4826ae5b79bb30">xed_uint_t</a> width_bits)</td></tr>
 <tr class="memdesc:gac5c956ff78a660eb29ba29da4357c02d"><td class="mdescLeft">&#160;</td><td class="mdescRight">a relative branch displacement operand  <a href="group__ENCHL.html#gac5c956ff78a660eb29ba29da4357c02d">More...</a><br /></td></tr>
@@ -244,12 +243,10 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define XED_ENCODER_OPERANDS_MAX&#160;&#160;&#160;5 /* FIXME */</td>
+          <td class="memname">#define XED_ENCODER_OPERANDS_MAX&#160;&#160;&#160;8 /* FIXME */</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="xed-encoder-hl_8h_source.html#l00391">391</a> of file <a class="el" href="xed-encoder-hl_8h_source.html">xed-encoder-hl.h</a>.</p>
 
 </div>
 </div>
@@ -279,8 +276,6 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a7621255aeac26b5e78f7a0dc72d12638a263eeedf98d73a93dd619bc0b2359d79"></a>XED_ENCODER_OPERAND_TYPE_OTHER&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="xed-encoder-hl_8h_source.html#l00060">60</a> of file <a class="el" href="xed-encoder-hl_8h_source.html">xed-encoder-hl.h</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
@@ -288,7 +283,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_39bdcf4cee9880e493b49f6c513c9c12.html">kits</a></li><li class="navelem"><a class="el" href="dir_342126a8aef901d5869f48b451e3ee4b.html">xed-install-base-2018-04-13-mac-x86-64</a></li><li class="navelem"><a class="el" href="dir_7dd137f1e64ed7bf22c982df847f429b.html">include</a></li><li class="navelem"><a class="el" href="dir_b21188e50d0c085a6a0e43e2d66b3604.html">xed</a></li><li class="navelem"><a class="el" href="xed-encoder-hl_8h.html">xed-encoder-hl.h</a></li>
+    <li class="navelem"><a class="el" href="dir_43724e81dd40e09f32417973865cdd64.html">obj</a></li><li class="navelem"><a class="el" href="dir_8457b5fead640a375ca0704568b0d081.html">wkit</a></li><li class="navelem"><a class="el" href="dir_e175811efbbe3767b218dbb51940252f.html">include</a></li><li class="navelem"><a class="el" href="dir_c905250153190ac9a0e58f61ab3d1cbf.html">xed</a></li><li class="navelem"><a class="el" href="xed-encoder-hl_8h.html">xed-encoder-hl.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

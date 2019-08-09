@@ -18,6 +18,8 @@ var searchData=
   ['xed_2ddecoded_2dinst_2eh',['xed-decoded-inst.h',['../xed-decoded-inst_8h.html',1,'']]],
   ['xed_2ddisas_2eh',['xed-disas.h',['../xed-disas_8h.html',1,'']]],
   ['xed_2ddoc_2dtop_2etxt',['xed-doc-top.txt',['../xed-doc-top_8txt.html',1,'']]],
+  ['xed_2dencode_2dcheck_2eh',['xed-encode-check.h',['../xed-encode-check_8h.html',1,'']]],
+  ['xed_2dencode_2ddirect_2eh',['xed-encode-direct.h',['../xed-encode-direct_8h.html',1,'']]],
   ['xed_2dencode_2eh',['xed-encode.h',['../xed-encode_8h.html',1,'']]],
   ['xed_2dencoder_2dgen_2ddefs_2eh',['xed-encoder-gen-defs.h',['../xed-encoder-gen-defs_8h.html',1,'']]],
   ['xed_2dencoder_2dhl_2eh',['xed-encoder-hl.h',['../xed-encoder-hl_8h.html',1,'']]],

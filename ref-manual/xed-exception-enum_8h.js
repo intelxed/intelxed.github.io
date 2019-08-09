@@ -6,7 +6,6 @@ var xed_exception_enum_8h =
       [ "XED_EXCEPTION_AVX512_E10", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4dafbb791d3fec3a65431a5874346b361cd", null ],
       [ "XED_EXCEPTION_AVX512_E10NF", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4da5f8252299254b24ac2e04440270150a7", null ],
       [ "XED_EXCEPTION_AVX512_E11", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4da3618f36f5a5eb21023a67b40af64b3d0", null ],
-      [ "XED_EXCEPTION_AVX512_E11NF", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4da4e55a6b07a68c3d98bb0b8ecc4d5f7cb", null ],
       [ "XED_EXCEPTION_AVX512_E12", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4daaff62585c9187bc698a9e0c686b32860", null ],
       [ "XED_EXCEPTION_AVX512_E12NP", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4da5bc86b6846abe34a00890ce6243c85d7", null ],
       [ "XED_EXCEPTION_AVX512_E1NF", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4dac028f21546bd3085d295adca8ac9e61e", null ],

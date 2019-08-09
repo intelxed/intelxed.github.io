@@ -23,5 +23,6 @@ var searchData=
   ['xed_5fsimple_5fflag_5ft',['xed_simple_flag_t',['../group__FLAGS.html#ga002ba726d6a37baddb92f95535f87329',1,'xed-flags.h']]],
   ['xed_5fstate_5ft',['xed_state_t',['../group__INIT.html#gada6bf6c5b88022528bea9b648e356504',1,'xed-state.h']]],
   ['xed_5fuint_5ft',['xed_uint_t',['../xed-types_8h.html#a0c92e8263b7ca02d8e4826ae5b79bb30',1,'xed-types.h']]],
-  ['xed_5fuser_5fabort_5ffunction_5ft',['xed_user_abort_function_t',['../xed-util_8h.html#a45f6a52b3be7c5335e5b59827e43ca23',1,'xed-util.h']]]
+  ['xed_5fuser_5fabort_5ffunction_5ft',['xed_user_abort_function_t',['../xed-util_8h.html#a45f6a52b3be7c5335e5b59827e43ca23',1,'xed-util.h']]],
+  ['xed_5fuser_5fabort_5fhandler_5ft',['xed_user_abort_handler_t',['../xed-encode-direct_8h.html#a7eef74d3aaa883a2e3e1180f5b10ec6d',1,'xed-encode-direct.h']]]
 ];
