@@ -1,5 +1,27 @@
 var xed_error_enum_8h =
 [
+    [ "XED_ERROR_BAD_EVEX_LL_DEFINED", "xed-error-enum_8h.html#a80be801da5960f3365fd5a630aaef024", null ],
+    [ "XED_ERROR_BAD_EVEX_V_PRIME_DEFINED", "xed-error-enum_8h.html#ae9f3af20f24493f9359c42fc1b6b59e3", null ],
+    [ "XED_ERROR_BAD_EVEX_Z_NO_MASKING_DEFINED", "xed-error-enum_8h.html#a0c01257da5acbf9f028f370b12d7bf7f", null ],
+    [ "XED_ERROR_BAD_LEGACY_PREFIX_DEFINED", "xed-error-enum_8h.html#a003aa0265fc688c4a598af3fcd25f304", null ],
+    [ "XED_ERROR_BAD_LOCK_PREFIX_DEFINED", "xed-error-enum_8h.html#a2d88acdea4b628b347f452fbbf1839b0", null ],
+    [ "XED_ERROR_BAD_MAP_DEFINED", "xed-error-enum_8h.html#a43533aa5c59785be2e69dbed600f5870", null ],
+    [ "XED_ERROR_BAD_MEMOP_INDEX_DEFINED", "xed-error-enum_8h.html#a5e79c19cbd3b01bb907a12bf6215a772", null ],
+    [ "XED_ERROR_BAD_REG_MATCH_DEFINED", "xed-error-enum_8h.html#a2033c218ab4d491cfcb30d33632c5c66", null ],
+    [ "XED_ERROR_BAD_REGISTER_DEFINED", "xed-error-enum_8h.html#a827342e7f3bd6edcf574f955851a18fb", null ],
+    [ "XED_ERROR_BAD_REP_PREFIX_DEFINED", "xed-error-enum_8h.html#a67b4769e669745a7d911ea197f8c9ceb", null ],
+    [ "XED_ERROR_BAD_REX_PREFIX_DEFINED", "xed-error-enum_8h.html#aae9a693b6dd1529710cccb557b830b88", null ],
+    [ "XED_ERROR_BUFFER_TOO_SHORT_DEFINED", "xed-error-enum_8h.html#a27368571a84b66cec1664d0a4b06e793", null ],
+    [ "XED_ERROR_CALLBACK_PROBLEM_DEFINED", "xed-error-enum_8h.html#aad8bf579bf584c3f394e070167e33b4c", null ],
+    [ "XED_ERROR_GATHER_REGS_DEFINED", "xed-error-enum_8h.html#a24f6308d47a5074476798e37a132c76e", null ],
+    [ "XED_ERROR_GENERAL_ERROR_DEFINED", "xed-error-enum_8h.html#a8e616abbdc3c688d4544dea040e3be0b", null ],
+    [ "XED_ERROR_INSTR_TOO_LONG_DEFINED", "xed-error-enum_8h.html#a80b6a8ea9a310decf56ebf6935fc9a89", null ],
+    [ "XED_ERROR_INVALID_FOR_CHIP_DEFINED", "xed-error-enum_8h.html#a2af0b0fd58d7c66247a1c916b36ab9f3", null ],
+    [ "XED_ERROR_INVALID_MODE_DEFINED", "xed-error-enum_8h.html#a0fa39f54f5447ec4a9e364414a25b6b7", null ],
+    [ "XED_ERROR_LAST_DEFINED", "xed-error-enum_8h.html#ad3dfd624894b8995b25fe41ad6e4ab09", null ],
+    [ "XED_ERROR_NO_AGEN_CALL_BACK_REGISTERED_DEFINED", "xed-error-enum_8h.html#a0e5eef6be1da2ce6cac23e6017723087", null ],
+    [ "XED_ERROR_NO_OUTPUT_POINTER_DEFINED", "xed-error-enum_8h.html#ab503af911240fc3b462e28fab0f770fc", null ],
+    [ "XED_ERROR_NONE_DEFINED", "xed-error-enum_8h.html#a6c3f1fcb2d05e4d17210157d72a8f467", null ],
     [ "xed_error_enum_t", "xed-error-enum_8h.html#a2611877aa5e8b566c1c2be45aa89c792", [
       [ "XED_ERROR_NONE", "xed-error-enum_8h.html#a2611877aa5e8b566c1c2be45aa89c792ad9f5736eacb4d9dedd9aadf1d75b9de6", null ],
       [ "XED_ERROR_BUFFER_TOO_SHORT", "xed-error-enum_8h.html#a2611877aa5e8b566c1c2be45aa89c792a4e1f9ac48c70bc8ff830829266e6d10a", null ],
@@ -10,7 +32,6 @@ var xed_error_enum_8h =
       [ "XED_ERROR_BAD_REP_PREFIX", "xed-error-enum_8h.html#a2611877aa5e8b566c1c2be45aa89c792a4395705c02fc4ff2cacd2b5a961c8f1b", null ],
       [ "XED_ERROR_BAD_LEGACY_PREFIX", "xed-error-enum_8h.html#a2611877aa5e8b566c1c2be45aa89c792a5319bd151826b44808cf443b5ba7fc73", null ],
       [ "XED_ERROR_BAD_REX_PREFIX", "xed-error-enum_8h.html#a2611877aa5e8b566c1c2be45aa89c792a4eba199376d5cd67f45fbd5d62050af0", null ],
-      [ "XED_ERROR_BAD_EVEX_UBIT", "xed-error-enum_8h.html#a2611877aa5e8b566c1c2be45aa89c792a3c3af7c9a910f0ae0449ee99236c24d7", null ],
       [ "XED_ERROR_BAD_MAP", "xed-error-enum_8h.html#a2611877aa5e8b566c1c2be45aa89c792a9ebe6ef3e9ce67e99305ac17ba880fb3", null ],
       [ "XED_ERROR_BAD_EVEX_V_PRIME", "xed-error-enum_8h.html#a2611877aa5e8b566c1c2be45aa89c792a981609f7b749152430e34d0d132b2d27", null ],
       [ "XED_ERROR_BAD_EVEX_Z_NO_MASKING", "xed-error-enum_8h.html#a2611877aa5e8b566c1c2be45aa89c792a61bba6cdfd479a0751f183623e122165", null ],
@@ -22,9 +43,10 @@ var xed_error_enum_8h =
       [ "XED_ERROR_INSTR_TOO_LONG", "xed-error-enum_8h.html#a2611877aa5e8b566c1c2be45aa89c792a2b0a5cc7a32c06af437f7bb1e5368eb6", null ],
       [ "XED_ERROR_INVALID_MODE", "xed-error-enum_8h.html#a2611877aa5e8b566c1c2be45aa89c792af33e18a230710352c6234010a7dc784f", null ],
       [ "XED_ERROR_BAD_EVEX_LL", "xed-error-enum_8h.html#a2611877aa5e8b566c1c2be45aa89c792a1c1481483361e866d55c6f58cb393140", null ],
+      [ "XED_ERROR_BAD_REG_MATCH", "xed-error-enum_8h.html#a2611877aa5e8b566c1c2be45aa89c792a6945b6d27b39087beae5d56caf62a637", null ],
       [ "XED_ERROR_LAST", "xed-error-enum_8h.html#a2611877aa5e8b566c1c2be45aa89c792a31699d329b9d3c4d12980d3605428a8f", null ]
     ] ],
     [ "str2xed_error_enum_t", "group__ENUM.html#ga203bb495b7c49e34ef3e83c25024775b", null ],
-    [ "xed_error_enum_t2str", "group__ENUM.html#ga3a44865dce1b468619bc95ad8593b0bf", null ],
+    [ "xed_error_enum_t2str", "group__ENUM.html#ga096d962191d0bef4dea339f09f49bcf4", null ],
     [ "xed_error_enum_t_last", "group__ENUM.html#gab58a666af2254a23031d8e0ce4b255b3", null ]
 ];

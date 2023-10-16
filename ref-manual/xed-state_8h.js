@@ -1,6 +1,6 @@
 var xed_state_8h =
 [
-    [ "xed_state_t", "group__INIT.html#gada6bf6c5b88022528bea9b648e356504", null ],
+    [ "xed_state_t", "group__INIT.html#ga0579d095621727c10fb89befa307a809", null ],
     [ "xed_state_get_address_width", "group__INIT.html#gaa5df14c6b5a97bd9f9ee4c50ab790a85", null ],
     [ "xed_state_get_machine_mode", "group__INIT.html#ga8b1fc00b95c50fd54959889d72dc569a", null ],
     [ "xed_state_get_stack_address_width", "group__INIT.html#ga4fb992e21a8f9f9f39e8fa36f22de96c", null ],

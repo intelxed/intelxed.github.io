@@ -4,7 +4,7 @@ var group__INIT =
       [ "mmode", "structxed__state__s.html#acedcfb0936b7c302087ad7fe5de5cb10", null ],
       [ "stack_addr_width", "structxed__state__s.html#a202e530cc6f872ce7744b4bdddcb49ba", null ]
     ] ],
-    [ "xed_state_t", "group__INIT.html#gada6bf6c5b88022528bea9b648e356504", null ],
+    [ "xed_state_t", "group__INIT.html#ga0579d095621727c10fb89befa307a809", null ],
     [ "xed_get_copyright", "group__INIT.html#gab8d9c7a109a7e0d1cd483e68e3033cc4", null ],
     [ "xed_get_version", "group__INIT.html#ga884629a9ddd4db55da6aa0b012423108", null ],
     [ "xed_register_abort_function", "group__INIT.html#ga017b6fcac483ea9f1621c4cdd0af84bd", null ],

@@ -8,7 +8,8 @@ var xed_encoder_hl_8h =
     [ "XED_ENCODER_OPERANDS_MAX", "xed-encoder-hl_8h.html#abfeb6b3bab64107ecb69a1276aaa14ed", null ],
     [ "xed_encoder_operand_type_t", "xed-encoder-hl_8h.html#a7621255aeac26b5e78f7a0dc72d12638", [
       [ "XED_ENCODER_OPERAND_TYPE_INVALID", "xed-encoder-hl_8h.html#a7621255aeac26b5e78f7a0dc72d12638acbc8d93653c02e76eac8d019f449d88b", null ],
-      [ "XED_ENCODER_OPERAND_TYPE_BRDISP", "xed-encoder-hl_8h.html#a7621255aeac26b5e78f7a0dc72d12638a3bea84e3495457e582cd5533b3b67b43", null ],
+      [ "XED_ENCODER_OPERAND_TYPE_REL_BRDISP", "xed-encoder-hl_8h.html#a7621255aeac26b5e78f7a0dc72d12638a97417842bced8ce03ec91a2341c234e9", null ],
+      [ "XED_ENCODER_OPERAND_TYPE_ABS_BRDISP", "xed-encoder-hl_8h.html#a7621255aeac26b5e78f7a0dc72d12638a8ff72b057819bf4fc86d5831c0e7d407", null ],
       [ "XED_ENCODER_OPERAND_TYPE_REG", "xed-encoder-hl_8h.html#a7621255aeac26b5e78f7a0dc72d12638ac7e137bec55ec1ebaf1b3269cbf8d35b", null ],
       [ "XED_ENCODER_OPERAND_TYPE_IMM0", "xed-encoder-hl_8h.html#a7621255aeac26b5e78f7a0dc72d12638aec1aab94e9a39cad7281722d72f4c074", null ],
       [ "XED_ENCODER_OPERAND_TYPE_SIMM0", "xed-encoder-hl_8h.html#a7621255aeac26b5e78f7a0dc72d12638a6010b70490d8deb87248988db4851991", null ],
@@ -19,6 +20,7 @@ var xed_encoder_hl_8h =
       [ "XED_ENCODER_OPERAND_TYPE_SEG1", "xed-encoder-hl_8h.html#a7621255aeac26b5e78f7a0dc72d12638aacd0df30646ec7115ac403e2dc7bf2ff", null ],
       [ "XED_ENCODER_OPERAND_TYPE_OTHER", "xed-encoder-hl_8h.html#a7621255aeac26b5e78f7a0dc72d12638a263eeedf98d73a93dd619bc0b2359d79", null ]
     ] ],
+    [ "xed_absbr", "group__ENCHL.html#ga8a85684e8b3b2628ea77a05a141a5e89", null ],
     [ "xed_addr", "group__ENCHL.html#gaee1676fa4fdf348226f265b6f5abe386", null ],
     [ "xed_convert_to_encoder_request", "group__ENCHL.html#gac53594aeb5688c348000a7424d559aac", null ],
     [ "xed_disp", "group__ENCHL.html#gab250b7cc3902e49e4c51ce4b0a8e6e8a", null ],
