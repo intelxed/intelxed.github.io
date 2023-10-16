@@ -16,6 +16,7 @@ var annotated_dup =
     [ "xed_flag_set_s", "unionxed__flag__set__s.html", "unionxed__flag__set__s" ],
     [ "xed_format_options_t", "structxed__format__options__t.html", "structxed__format__options__t" ],
     [ "xed_iform_info_s", "structxed__iform__info__s.html", "structxed__iform__info__s" ],
+    [ "xed_ild_vars_t", "unionxed__ild__vars__t.html", "unionxed__ild__vars__t" ],
     [ "xed_immdis_s", "structxed__immdis__s.html", "structxed__immdis__s" ],
     [ "xed_immdis_values_t", "unionxed__immdis__values__t.html", "unionxed__immdis__values__t" ],
     [ "xed_inst_s", "structxed__inst__s.html", "structxed__inst__s" ],

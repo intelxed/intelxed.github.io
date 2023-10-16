@@ -1,5 +1,28 @@
 var xed_flag_enum_8h =
 [
+    [ "XED_FLAG_ac_DEFINED", "xed-flag-enum_8h.html#a28d45f1a16996e0d70b205d6b35fa90c", null ],
+    [ "XED_FLAG_af_DEFINED", "xed-flag-enum_8h.html#afc9029f0b4afdeeb31c73c5a4d8eaf85", null ],
+    [ "XED_FLAG_cf_DEFINED", "xed-flag-enum_8h.html#af55731b063fa73f38e7d0097443aadc0", null ],
+    [ "XED_FLAG_df_DEFINED", "xed-flag-enum_8h.html#aada8c3b68883fc54eb02863ec1b48801", null ],
+    [ "XED_FLAG_fc0_DEFINED", "xed-flag-enum_8h.html#ad43c9b4ae5784d79b8c2f6cbfef531c3", null ],
+    [ "XED_FLAG_fc1_DEFINED", "xed-flag-enum_8h.html#a803660ca47ce89ccadf00e84299ae91c", null ],
+    [ "XED_FLAG_fc2_DEFINED", "xed-flag-enum_8h.html#a7f820e363c718364dcd435dd1cb173c4", null ],
+    [ "XED_FLAG_fc3_DEFINED", "xed-flag-enum_8h.html#a8cc59a15d72a2fe33a853e2fa28f265b", null ],
+    [ "XED_FLAG_id_DEFINED", "xed-flag-enum_8h.html#a507bd0972704c905992199c648d5baae", null ],
+    [ "XED_FLAG_if_DEFINED", "xed-flag-enum_8h.html#a2b1122c51486a6de91ca0b5ace9d14bc", null ],
+    [ "XED_FLAG_INVALID_DEFINED", "xed-flag-enum_8h.html#a3fa7cfd6a2f59abfb9f15b1d894791b9", null ],
+    [ "XED_FLAG_iopl_DEFINED", "xed-flag-enum_8h.html#a29004a3ce323a7a39b9dc320dd651fbf", null ],
+    [ "XED_FLAG_LAST_DEFINED", "xed-flag-enum_8h.html#afa37450fc68c7bafe7bf83856ed9054b", null ],
+    [ "XED_FLAG_nt_DEFINED", "xed-flag-enum_8h.html#a4426b11d85a3dbb493b23b5805116a3d", null ],
+    [ "XED_FLAG_of_DEFINED", "xed-flag-enum_8h.html#a535e3003999ecee03417d8d864a6feab", null ],
+    [ "XED_FLAG_pf_DEFINED", "xed-flag-enum_8h.html#a4bc915c9c79d2331d2791d3b7c1f3943", null ],
+    [ "XED_FLAG_rf_DEFINED", "xed-flag-enum_8h.html#a602c93b85712c22d8d7550090d855863", null ],
+    [ "XED_FLAG_sf_DEFINED", "xed-flag-enum_8h.html#ae35d67593be675b91957c0872016e009", null ],
+    [ "XED_FLAG_tf_DEFINED", "xed-flag-enum_8h.html#a9891e40638cb5f50e01bbd69eab90549", null ],
+    [ "XED_FLAG_vif_DEFINED", "xed-flag-enum_8h.html#a8a942a3ba6c18e98de1edfce7e6e0312", null ],
+    [ "XED_FLAG_vip_DEFINED", "xed-flag-enum_8h.html#ad7284750ff96e79f7f69dc4e3a097112", null ],
+    [ "XED_FLAG_vm_DEFINED", "xed-flag-enum_8h.html#a4b3122c8d175eb232194282233909d57", null ],
+    [ "XED_FLAG_zf_DEFINED", "xed-flag-enum_8h.html#a7e407b3ad067c21b5850cb649f0203f3", null ],
     [ "xed_flag_enum_t", "xed-flag-enum_8h.html#adeb40402942b755ccf3761c7e1804286", [
       [ "XED_FLAG_INVALID", "xed-flag-enum_8h.html#adeb40402942b755ccf3761c7e1804286aa8bfc3616f8924295c9e0e9da2e4d40d", null ],
       [ "XED_FLAG_of", "xed-flag-enum_8h.html#adeb40402942b755ccf3761c7e1804286a2788057d6b4d85d66dd8180c09b6c7a9", null ],
@@ -26,6 +49,6 @@ var xed_flag_enum_8h =
       [ "XED_FLAG_LAST", "xed-flag-enum_8h.html#adeb40402942b755ccf3761c7e1804286ade692c0fff6f563a25dbccd58aff1919", null ]
     ] ],
     [ "str2xed_flag_enum_t", "group__ENUM.html#ga44725b8b3c08e8ca5d59ca11f07513f2", null ],
-    [ "xed_flag_enum_t2str", "group__ENUM.html#gae4da58f64748390a11bd84b0588a4c1d", null ],
+    [ "xed_flag_enum_t2str", "group__ENUM.html#gafdd5502909a89c33f9bbab5fd88dad02", null ],
     [ "xed_flag_enum_t_last", "group__ENUM.html#gaedae7e6e529bf1f04346ddae172b23bd", null ]
 ];

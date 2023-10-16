@@ -1,4 +1,4 @@
-var files =
+var files_dup =
 [
     [ "xed-address-width-enum.h", "xed-address-width-enum_8h.html", "xed-address-width-enum_8h" ],
     [ "xed-agen.h", "xed-agen_8h.html", "xed-agen_8h" ],
@@ -13,7 +13,8 @@ var files =
     [ "xed-common-defs.h", "xed-common-defs_8h.html", "xed-common-defs_8h" ],
     [ "xed-common-hdrs.h", "xed-common-hdrs_8h.html", "xed-common-hdrs_8h" ],
     [ "xed-convert-table-init.h", "xed-convert-table-init_8h.html", "xed-convert-table-init_8h" ],
-    [ "xed-cpuid-bit-enum.h", "xed-cpuid-bit-enum_8h.html", "xed-cpuid-bit-enum_8h" ],
+    [ "xed-cpuid-group-enum.h", "xed-cpuid-group-enum_8h.html", "xed-cpuid-group-enum_8h" ],
+    [ "xed-cpuid-rec-enum.h", "xed-cpuid-rec-enum_8h.html", "xed-cpuid-rec-enum_8h" ],
     [ "xed-cpuid-rec.h", "xed-cpuid-rec_8h.html", "xed-cpuid-rec_8h" ],
     [ "xed-decode.h", "xed-decode_8h.html", "xed-decode_8h" ],
     [ "xed-decoded-inst-api.h", "xed-decoded-inst-api_8h.html", "xed-decoded-inst-api_8h" ],
@@ -38,6 +39,7 @@ var files =
     [ "xed-iform-enum.h", "xed-iform-enum_8h.html", "xed-iform-enum_8h" ],
     [ "xed-iform-map.h", "xed-iform-map_8h.html", "xed-iform-map_8h" ],
     [ "xed-iformfl-enum.h", "xed-iformfl-enum_8h.html", "xed-iformfl-enum_8h" ],
+    [ "xed-ild-enum.h", "xed-ild-enum_8h.html", "xed-ild-enum_8h" ],
     [ "xed-ild.h", "xed-ild_8h.html", "xed-ild_8h" ],
     [ "xed-immdis.h", "xed-immdis_8h.html", "xed-immdis_8h" ],
     [ "xed-immed.h", "xed-immed_8h.html", "xed-immed_8h" ],
@@ -48,6 +50,7 @@ var files =
     [ "xed-isa-set-enum.h", "xed-isa-set-enum_8h.html", "xed-isa-set-enum_8h" ],
     [ "xed-isa-set.h", "xed-isa-set_8h.html", "xed-isa-set_8h" ],
     [ "xed-machine-mode-enum.h", "xed-machine-mode-enum_8h.html", "xed-machine-mode-enum_8h" ],
+    [ "xed-mapu-enum.h", "xed-mapu-enum_8h.html", "xed-mapu-enum_8h" ],
     [ "xed-nonterminal-enum.h", "xed-nonterminal-enum_8h.html", "xed-nonterminal-enum_8h" ],
     [ "xed-operand-accessors.h", "xed-operand-accessors_8h.html", "xed-operand-accessors_8h" ],
     [ "xed-operand-action-enum.h", "xed-operand-action-enum_8h.html", "xed-operand-action-enum_8h" ],

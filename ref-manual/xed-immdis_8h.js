@@ -3,7 +3,7 @@ var xed_immdis_8h =
     [ "xed_immdis_s", "structxed__immdis__s.html", "structxed__immdis__s" ],
     [ "xed_immdis_values_t", "unionxed__immdis__values__t.html", "unionxed__immdis__values__t" ],
     [ "XED_MAX_IMMDIS_BYTES", "xed-immdis_8h.html#ac24112540bbcc8fa68f707909a90f5b7", null ],
-    [ "xed_immdis_t", "xed-immdis_8h.html#a781179e646ad2e23fa6f9551ecb5d282", null ],
+    [ "xed_immdis_t", "xed-immdis_8h.html#ac260f5b8deddb8bd27e41ec7c128449e", null ],
     [ "xed_immdis_add16", "xed-immdis_8h.html#a4aba92c75a2790ec5c58d8f9b4624d6e", null ],
     [ "xed_immdis_add32", "xed-immdis_8h.html#a58b5fa6f2d5b90172e24e92ec5bb6e67", null ],
     [ "xed_immdis_add64", "xed-immdis_8h.html#ae042967b326bda13845e01f6833e495c", null ],

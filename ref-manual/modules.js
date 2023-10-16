@@ -12,9 +12,9 @@ var modules =
     [ "Register Interface", "group__REGINTFC.html", "group__REGINTFC" ],
     [ "Flags Interface", "group__FLAGS.html", "group__FLAGS" ],
     [ "Address generation calculation support", "group__AGEN.html", "group__AGEN" ],
-    [ "Intel XED enumerations", "group__ENUM.html", "group__ENUM" ],
-    [ "Intel XED initialization", "group__INIT.html", "group__INIT" ],
-    [ "Intel XED command interface", "group__CMDLINE.html", null ],
-    [ "Examples of using Intel XED", "group__EXAMPLES.html", null ],
-    [ "Small Examples of using Intel XED", "group__SMALLEXAMPLES.html", null ]
+    [ "Intel® XED enumerations", "group__ENUM.html", "group__ENUM" ],
+    [ "Intel® XED initialization", "group__INIT.html", "group__INIT" ],
+    [ "Intel® XED command interface", "group__CMDLINE.html", null ],
+    [ "Examples of using Intel® XED", "group__EXAMPLES.html", null ],
+    [ "Small Examples of using Intel® XED", "group__SMALLEXAMPLES.html", null ]
 ];

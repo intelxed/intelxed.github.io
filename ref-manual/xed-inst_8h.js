@@ -1,8 +1,8 @@
 var xed_inst_8h =
 [
-    [ "xed_inst_t", "group__DEC.html#ga4410c86154ad601e0440a075864f9c4b", null ],
+    [ "xed_inst_t", "group__DEC.html#ga7e5fc2fec01824b7692f9055cae1e04b", null ],
     [ "xed_operand_extractor_fn_t", "xed-inst_8h.html#ac84f004406713e7a3919a8bf164fb4aa", null ],
-    [ "xed_operand_t", "group__DEC.html#ga507554fe5435fe99bf6a85df3d40645a", null ],
+    [ "xed_operand_t", "group__DEC.html#gaf64487d8493545406f6192a9b8090c1e", null ],
     [ "xed_attribute", "group__DEC.html#ga38f0b100d724d97d80a8291a494dde06", null ],
     [ "xed_attribute_max", "group__DEC.html#ga69fd7ed52eedd5fc2811050ab51903a4", null ],
     [ "xed_inst_category", "group__DEC.html#gab81b14e6d31cc013d3a0c414ee185093", null ],
@@ -16,8 +16,8 @@ var xed_inst_8h =
     [ "xed_inst_iform_enum", "group__DEC.html#gab13c4e9442dfe6624ed492f1c6521286", null ],
     [ "xed_inst_isa_set", "group__DEC.html#ga6db12b2be0153b8cc8fffba00e4d3eaa", null ],
     [ "xed_inst_noperands", "group__DEC.html#ga5808f0c3992221777a51c9356bbfc1cf", null ],
-    [ "xed_inst_operand", "group__DEC.html#ga6d9f85b730ee9800e311663b0ac2e2f9", null ],
-    [ "xed_inst_table_base", "group__DEC.html#ga4213e284206b24be503bde043ff4bb43", null ],
+    [ "xed_inst_operand", "group__DEC.html#ga87f27d49acae5a2574c01fb12f41f195", null ],
+    [ "xed_inst_table_base", "group__DEC.html#ga2431e24ccd2cb7b4440308fc8bbfe771", null ],
     [ "xed_operand_conditional_read", "group__DEC.html#gae7b820b7db6c7437f1e0c6bb11510b10", null ],
     [ "xed_operand_conditional_write", "group__DEC.html#gad6b80021a33c772fa74a038f17343562", null ],
     [ "xed_operand_imm", "group__DEC.html#ga15cd2fdc19d6e7e9864df7b56e9235f0", null ],

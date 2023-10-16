@@ -13,5 +13,6 @@ var structxed__print__info__t =
     [ "p", "structxed__print__info__t.html#ab975d6795638986ea3d0ac52cd6b0e27", null ],
     [ "runtime_address", "structxed__print__info__t.html#a8da4bce641493ceb76bacec824630184", null ],
     [ "skip_operand", "structxed__print__info__t.html#a909b439e9e2cdfaf67bb5e53b69c69ad", null ],
-    [ "syntax", "structxed__print__info__t.html#aade5b0550443918f13c25f1589adbb70", null ]
+    [ "syntax", "structxed__print__info__t.html#aade5b0550443918f13c25f1589adbb70", null ],
+    [ "truncate_eip_eosz16", "structxed__print__info__t.html#ac3330d211af79491f055ef15bbc73d01", null ]
 ];

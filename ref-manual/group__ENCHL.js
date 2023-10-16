@@ -1,5 +1,6 @@
 var group__ENCHL =
 [
+    [ "xed_absbr", "group__ENCHL.html#ga8a85684e8b3b2628ea77a05a141a5e89", null ],
     [ "xed_addr", "group__ENCHL.html#gaee1676fa4fdf348226f265b6f5abe386", null ],
     [ "xed_convert_to_encoder_request", "group__ENCHL.html#gac53594aeb5688c348000a7424d559aac", null ],
     [ "xed_disp", "group__ENCHL.html#gab250b7cc3902e49e4c51ce4b0a8e6e8a", null ],
