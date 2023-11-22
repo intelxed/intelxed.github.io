@@ -18,6 +18,7 @@ var xed_decoded_inst_api_8h =
     [ "xed_decoded_inst_get_branch_displacement_width_bits", "group__DEC.html#ga6983743d83d51517bae4404d3345b865", null ],
     [ "xed_decoded_inst_get_byte", "group__DEC.html#ga89defb76a530889fb56b00ed2094d569", null ],
     [ "xed_decoded_inst_get_category", "group__DEC.html#gadb8cfb26a825d8a8d8dcbf49857eab63", null ],
+    [ "xed_decoded_inst_get_dfv_reg", "group__DEC.html#gaf12b60b6cc0906ebc1ad36ba4d43035e", null ],
     [ "xed_decoded_inst_get_extension", "group__DEC.html#ga2ad01ffd078ac7166c8a2bc1be1b6d4d", null ],
     [ "xed_decoded_inst_get_iclass", "group__DEC.html#ga2bc965a8dc2a1fee79b80b2c45d4329c", null ],
     [ "xed_decoded_inst_get_iform_enum", "group__DEC.html#gaf51f3a8153bdedec0d8864cc0e89b5c7", null ],

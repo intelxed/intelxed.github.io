@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['fast_20encoder_20for_20specific_20instructions_66506',['Fast Encoder for Specific Instructions',['../group__ENC2.html',1,'']]],
-  ['flags_20interface_66507',['Flags Interface',['../group__FLAGS.html',1,'']]]
+  ['encoding_20instructions_66633',['Encoding Instructions',['../group__ENC.html',1,'']]],
+  ['examples_20of_20using_20intel_26reg_3b_20xed_66634',['Examples of using Intel&amp;reg; XED',['../group__EXAMPLES.html',1,'']]]
 ];

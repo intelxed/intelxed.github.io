@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>X86 Encoder Decoder: X86 Encoder Decoder User Guide</title>
+<title>Intel&reg; X86 Encoder Decoder: Intel&reg; X86 Encoder Decoder User Guide</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">X86 Encoder Decoder
+   <div id="projectname">Intel&reg; X86 Encoder Decoder
    </div>
   </td>
  </tr>
@@ -82,13 +82,13 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">X86 Encoder Decoder User Guide </div>  </div>
+<div class="title">Intel&reg; X86 Encoder Decoder User Guide </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>2020-11-13</p>
+<div class="textblock"><p>November 2023</p>
 <h1><a class="anchor" id="INTRO"></a>
 Introduction</h1>
-<p>XED is an acronym for X86 Encoder Decoder. The latter part is pronounced like the (British) English "z".</p>
+<p>Intel&reg; XED is an acronym for X86 Encoder Decoder. The latter part is pronounced like the (British) English "z".</p>
 <p>Intel&reg; X86 Encoder Decoder (Intel&reg; XED) is a software library (and associated headers) written in C for encoding and decoding X86 (IA-32 instruction set and Intel&reg; 64 instruction set) instructions. The decoder takes sequences of 1-15 bytes along with machine mode information and produces a data structure describing the opcode and operands, and flags. The generic encoder takes a similar data structure and produces a sequence of 1 to 15 bytes.</p>
 <p>There another encoder called "enc2" available that is much faster than the generic encoder mentioned above. Rather than using a generic interface, in enc2, instruction encoding is done by calling one of a very large number of functions, passing as arguments the registers and constants that would be used the assembly language description of the instruction. There are two interfaces to the enc2 encoder: "unchecked" and "checked". The unchecked version is faster and assumes the arguments passed to it are in the correct ranges. The checked version validates that the argument passed in are in the correct ranges and if that succeeds, it calls the corresponding unchecked version of the function. The checking can be skipped if desired using a runtime setting. The enc2 encoder is available in builds done with the "--enc2" option. Due to the large amount of code generated, that build takes longer.</p>
 <p>Intel&reg; XED is multi-thread safe.</p>
@@ -181,11 +181,15 @@ Terminology</h1>
 <p class="endli"></p>
 </li>
 <li>
+<p class="startli">REX2 prefix, a 2-byte variant of the REX prefix, introduced with Intel&reg; APX extensions (see <a class="el" href="index.html#APX">Intel&reg; APX</a>), adds 16 Extended General Purpose Registers (EGPRs) across the legacy instruction set. It has eigth 1-bit fields: M0, R4, X4, B4, W, R3, X3 and B3. R3, X3, B3 and W bits are the same as R, X and B bits in the REX prefix. While R4, X4, and B4 are additional bits used to encode the 32 EGPR registers. M0 bit selects between legacy maps 0 and 1 (1-byte opcodes no escape and 2-byte opcodes escape 0x0F respectively).</p>
+<p class="endli"></p>
+</li>
+<li>
 <p class="startli">VEX prefix byte sequence. The VEX prefix is used mostly for AVX1 and AVX2 instructions as well as BMI1/2 instructions and mask operations in Intel&reg; AVX512. The VEX prefix comes in two forms. The 2-byte sequence begins with an 0xC5 byte. The 3-byte sequence begins with an 0xC4 byte.</p>
 <p class="endli"></p>
 </li>
 <li>
-<p class="startli">EVEX prefix. The EVEX 4-byte sequence used for encoding Intel AVX512 instructions and begins with an 0x62 byte.</p>
+<p class="startli">EVEX prefix. The EVEX 4-byte sequence used for encoding Intel&reg; AVX512 instructions and begins with an 0x62 byte. Intel&reg; APX provides an extended version of the prefix, where the semantics of several payload bits are redefined. The extension is esentially used to provide Intel&reg; APX features for legacy instructions that cannot be provided by other prefixes, such as support for the new data destination (see <a class="el" href="index.html#APX">Intel&reg; APX</a>) or status flags update suppression "no flags" which are represented by the ND and NF bits respectively in the third payload byte. Note that the byte following the extended EVEX prefix is always interpreted as the main opcode byte.</p>
 <p class="endli"></p>
 </li>
 </ul>
@@ -232,13 +236,82 @@ opcode refinement. </li>
 <li>
 <a href="http://www.intel.com/software/isa">http://www.intel.com/software/isa</a> Information on future ISA extensions. </li>
 </ul>
+<h2><a class="anchor" id="APX"></a>
+Intel® APX</h2>
+<p>Intel&reg; Advanced Performance Extensions (Intel&reg; APX) expands the Intel&reg; 64 instruction set architecture with access to more registers and adds various new features that improve general-purpose performance. The extensions are designed to provide efficient performance gains across a variety of workloads without significantly increasing silicon area or power consumption of the core. The main features of Intel&reg; APX include: </p><ul>
+<li>
+Extended GPRs also known as EGPRs (see <a class="el" href="index.html#APX_OPERANDS">Intel&reg; APX Operands</a>) </li>
+<li>
+Three-operand instructions with a new data destination (NDD); legacy integer instructions can now use EVEX to encode a dedicated destination register operand – turning them into three-operand instructions and reducing the need for extra register move instructions. The NDD receives the result of the computation and all other operands (including the original destination operand) become read-only source operands </li>
+<li>
+Legacy-promoted instructions that support status flag update suppression "no flags" (NF); an option for the compiler to suppress the status flags writes of common instructions (no CSPAZO flags, such as Parity, Overflow...) </li>
+<li>
+Conditional ISA improvements: New conditional load, store and compare instructions </li>
+<li>
+Optimized register state save/restore operations </li>
+<li>
+A new 64-bit absolute direct jump instruction </li>
+<li>
+Zero Upper (ZU) support for several APX-Promoted instructions which zero the upper bits of a destination GPR. The destination GPR will get the instruction’s result in bits [OSIZE-1:0] and, if OSIZE &lt; 64b, have its upper bits [63:OSIZE] zeroed </li>
+</ul>
+<p>Intel&reg; APX instructions' definition by Intel&reg; XED;</p>
+<p>Legacy:</p><ul>
+<li>Instructions with REX2 prefix are not defined with new iforms or new ISA-SETs</li>
+<li>The APXLEGACY extension group includes new APX-F instructions</li>
+</ul>
+<p>EVEX:</p><ul>
+<li>Existing (non-APX) EVEX instructions with EGPRs are not defined with new iforms or new ISA-SETs</li>
+<li>Promoted and new instructions are defined with new iforms, using the '_APX' suffix</li>
+<li>Promoted new data destination instructions with the 'APX_NDD' attribute</li>
+<li>Promoted no flags instructions with the 'APX_NF' attribute</li>
+<li>The APXEVEX extension group includes new and promoted APX-F instructions</li>
+</ul>
+<h2><a class="anchor" id="AVX10"></a>
+Intel® AVX10</h2>
+<p>Intel&reg; Advanced Vector Extensions 10 (Intel&reg; AVX10) establishes a common, converged vector instruction set across all Intel&reg; architectures, incorporating the modern vectorization aspects of Intel&reg; AVX-512.</p>
+<p>The Intel&reg; AVX10 architecture introduces several new features and capabilities; </p><ul>
+<li>
+Introduces a version-based instruction set enumeration </li>
+<li>
+Allows a converged implementation supported on all Intel&reg; CPUs to include all the existing Intel&reg; AVX-512 capabilities such as EVEX encoding, 32 vector registers and 8 32-bit opmask registers at maximum vector length of 256 (Intel&reg; AVX10/256) </li>
+<li>
+Allows an implementation to include support for 512-bit vector and 64-bit opmask registers on P-Core CPUs (Intel&reg; AVX10/512) for heavy vector compute applications that can leverage the additional vector length </li>
+<li>
+Introduces embedded rounding and Suppress All Exceptions (SAE) control for YMM versions of the instructions </li>
+</ul>
 <h1><a class="anchor" id="OVERVIEW"></a>
-Overview of XED approach</h1>
-<p>XED has two fundamental interfaces: encoding and decoding. Supporting these interfaces are many data structures, but the two starting points are the <a class="el" href="group__ENC.html#ga6f914541ddfa1ffe609acebff72d0b5f">xed_encoder_request_t</a> and the <a class="el" href="group__DEC.html#gacc9a7be76b242c5bf65f56036f5399e6">xed_decoded_inst_t</a> . The <a class="el" href="group__DEC.html#gacc9a7be76b242c5bf65f56036f5399e6">xed_decoded_inst_t</a> has more information than the <a class="el" href="group__ENC.html#ga6f914541ddfa1ffe609acebff72d0b5f">xed_encoder_request_t</a> , but both types are derived from a set of common fields called the <a class="el" href="xed-decoded-inst_8h.html#acc5f47a6c962e198ec5df935002f34e6">xed_operand_values_t</a>.</p>
+Overview of Intel® XED approach</h1>
+<p>Intel&reg; XED has two fundamental interfaces: encoding and decoding. Supporting these interfaces are many data structures, but the two starting points are the <a class="el" href="group__ENC.html#ga6f914541ddfa1ffe609acebff72d0b5f">xed_encoder_request_t</a> and the <a class="el" href="group__DEC.html#gacc9a7be76b242c5bf65f56036f5399e6">xed_decoded_inst_t</a> . The <a class="el" href="group__DEC.html#gacc9a7be76b242c5bf65f56036f5399e6">xed_decoded_inst_t</a> has more information than the <a class="el" href="group__ENC.html#ga6f914541ddfa1ffe609acebff72d0b5f">xed_encoder_request_t</a> , but both types are derived from a set of common fields called the <a class="el" href="xed-decoded-inst_8h.html#acc5f47a6c962e198ec5df935002f34e6">xed_operand_values_t</a>.</p>
 <p>The output of the decoder, the <a class="el" href="group__DEC.html#gacc9a7be76b242c5bf65f56036f5399e6">xed_decoded_inst_t</a> , includes additional information that is not required for encoding, but provides more information about the instruction resources.</p>
 <p>The common operand fields, used by both the encoder and decoder, hold the operands and the memory addressing information.</p>
 <p>The decoder has an operands array that holds order of the decoded operands. This array indicates whether or not the operands are read or written.</p>
 <p>The encoder has an operand array where the encoder user must specify the order of the operands used for encoding.</p>
+<h2><a class="anchor" id="CPUID"></a>
+CPUID</h2>
+<p>Intel&reg; XED ISA-SETs can be mapped to one or more CPUID groups, each being mapped to one or more CPUID records. The CPUID record contains information about the register containing the bits to-be-set, the leaf, subleaf and bit indices. When the leaf and subleaf values are loaded into the EAX and ECX registers, respectively, the CPUID instruction sets the specified bits of the specified register, indicating support for the ISA or the feature, which is often the CPUID name field.</p>
+<p>Intel&reg; AVX10 introduced a versioned approach for enumeration that ensures that all Intel&reg; CPUs support the same features and instructions at a given Intel&reg; AVX10 version number. This approach also reduced the required number of CPUID feature flags to be checked to determine feature support. This way, usually, it is only needed to check three fields:</p><ol type="1">
+<li>A CPUID feature bit indicating that the Intel&reg; AVX10 ISA is supported</li>
+<li>A version number to ensure that the supported version is greater than or equal to the desired version</li>
+<li>A vector length bit indicating the maximum supported vector length</li>
+</ol>
+<p>Determining whether an ISA-SET is supported by a chip: For ISA-SETs with a single CPUID group, all of its CPUID records must be set in order to be supported by the chip. For ISA-SETs with multiple CPUID groups, at least one CPUID group must be satisfied. In order to match one group, all of its cpuid records must be set. To simplify things, we can transform it to a logical expression - </p><div class="fragment"><div class="line"><span class="stringliteral">&quot;CPUID GROUP A&quot;</span>                                        OR     <span class="stringliteral">&quot;CPUID GROUP B&quot;</span>                                       OR ...</div>
+<div class="line">(<span class="stringliteral">&quot;CPUID RECORD A.A&quot;</span> AND <span class="stringliteral">&quot;CPUID RECORD A.B&quot;</span> AND ... )   OR    (<span class="stringliteral">&quot;CPUID RECORD B.A&quot;</span> AND <span class="stringliteral">&quot;CPUID RECORD B.B&quot;</span> AND ... )   OR ...</div>
+</div><!-- fragment --><p> If one CPUID group is satisfied, the whole expression will be satisfied ("OR" relationship), thus indicating chip support for the ISA. Since the CPUID group itself is an "AND" expression between all of its CPUID records, all CPUID records must be set (satisfied) in order to satisfy the sub-expression.</p>
+<p>For instance, the ISA-SET AVX512F_512 has the following CPUIDS groups: The Intel&reg; AVX10 CPUID group with three CPUID records: </p><ul>
+<li>
+CPUID name avx10_enabled, leaf 0x7, sub-leaf 0x1, register EDX, bit 19 </li>
+<li>
+CPUID name avx10_ver1, leaf 0x24, sub-leaf 0x0, register EBX, bits 0 to 7 </li>
+<li>
+CPUID name avx10_512vl, leaf 0x24, sub-leaf 0x0, register EBX, bit 18 </li>
+</ul>
+<p>The feature group with a single CPUID record: </p><ul>
+<li>
+CPUID name avx512f, leaf 0x7, sub-leaf 0x0, register EBX, bit 16 </li>
+</ul>
+<p>This means that a chip supports AVX512F_512 ISA if at least one of the two groups has a match. In order to match one CPUID group, all of its records must be set. So either the first group's three CPUID records or the second group's single CPUID record must be set.</p>
+<p>To provide further insight on Intel&reg; AVX10 CPUID, let's discuss the first CPUID group of AVX512F_512: The first record ("AVX10 Converged Vector ISA Enable" bit) is indicative of processor support of Intel&reg; AVX10 ISA. While the second CPUID record specifies the processor's minimal required Intel&reg; AVX10 version (in this case AVX10.1). The last CPUID record is the vector length bit indicating the maximum supported VL (512).</p>
+<p>For the recommended usage of the Intel&reg; XED CPUID APIS, see <a class="el" href="group__SMALLEXAMPLES.html">Small Examples of using Intel&reg; XED</a> .</p>
 <hr  />
  <h1><a class="anchor" id="ICLASS"></a>
 Instruction classes</h1>
@@ -322,6 +395,18 @@ masking with zeroing: no change. </li>
 <li>
 masking with merging : destination register operands that are nominally "rw" or "w" become "rcw" indicating a read with a conditional write. </li>
 </ul>
+<h2><a class="anchor" id="APX_OPERANDS"></a>
+Intel® APX Operands</h2>
+<p>2023 saw the introduction of Intel&reg; Advanced Performance Extensions (Intel&reg; APX) which expands the entire x86 instruction set with access to more registers. Intel&reg; APX doubles the number of general-purpose registers (GPRs) from 16 to 32 (Extended GPRs or EGPRs).</p>
+<p>New and promoted APX-F instructions are defined in one of the following Intel&reg; XED extension groups:</p><ul>
+<li>XED_EXTENSION_APXLEGACY: For new APX-F instructions within the Legacy encoding space</li>
+<li>XED_EXTENSION_APXEVEX: For new and promoted APX-F instructions within the EVEX encoding space</li>
+</ul>
+<p>CCMP and CTEST are two new sets of instructions for conditional CMP and TEST, respectively. These instructions introduce a new 4-bit pseudo-register for "Default Flags Values" called DFV (EVEX.[OF, SF, ZF, CF]).</p>
+<p>The register index represents the default flags bits. For example: DFV10.index == 10 == 0b1010 -&gt; OF=1, SF=0, ZF=1, CF=0. The DFV pseudo-register should be explicitly defined in an encoder request.</p>
+<p>The <a class="el" href="group__DEC.html#gaf12b60b6cc0906ebc1ad36ba4d43035e">xed_decoded_inst_get_dfv_reg()</a> API can be used in order to retrieve a DFV register enumeration from a decoded instruction. The xed_flag_dfv_get_default_flags_values() API can be used to get the default flags values given a DFV register enumeration.</p>
+<p>Developers can, however, dynamically disable Intel&reg; APX architecture encoder support using the 'NO_APX' API <a class="el" href="xed-operand-accessors_8h.html#a0d0a166d9efe570f975cb56038144bbe">xed3_operand_set_no_apx()</a>. The <a class="el" href="xed-operand-accessors_8h.html#af21fb45771bf9807dee7a7e2019413ec">xed3_operand_set_must_use_evex()</a> API can also be used for APX promoted instructions in order to force EVEX space upon the encoding request.</p>
+<p>Developers wishing to encode No-Flags Intel&reg; APX instructions should set the NF Intel&reg; XED operand. Whereas those wishing to encode SETcc/IMUL with Zero Upper behavior should set the ND Intel&reg; XED operand.</p>
 <h2><a class="anchor" id="OPERAND_VISIBILITY"></a>
 Operand Resource Visibilities</h2>
 <p>See <a class="el" href="xed-operand-visibility-enum_8h.html#ae678c6279a7ba50bf58f2e357242b58d">xed_operand_visibility_enum_t</a> .</p>
@@ -397,7 +482,7 @@ Disclaimer and Legal Information</h1>
 <p>The software described in this document may contain software defects which may cause the product to deviate from published specifications. Current characterized software defects are available on request.</p>
 <p>Intel, the Intel logo, Intel SpeedStep, Intel NetBurst, Intel NetStructure, MMX, Intel386, Intel486, Celeron, Intel Centrino, Intel Xeon, Intel XScale, Itanium, Pentium, Pentium II Xeon, Pentium III Xeon, Pentium M, and VTune are trademarks or registered trademarks of Intel Corporation or its subsidiaries in the United States and other countries.</p>
 <p>Other names and brands may be claimed as the property of others.</p>
-<p>Copyright (c) 2002-2016 Intel Corporation. All Rights Reserved. </p>
+<p>Copyright (c) 2002-2023 Intel Corporation. All Rights Reserved. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->

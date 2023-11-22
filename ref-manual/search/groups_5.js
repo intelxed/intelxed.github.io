@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['high_20level_20api_20for_20encoding_20instructions_66509',['High Level API for Encoding Instructions',['../group__ENCHL.html',1,'']]]
+  ['groupings_20of_20features_20for_20chips_66637',['Groupings of features for chips',['../group__ISASET.html',1,'']]]
 ];
