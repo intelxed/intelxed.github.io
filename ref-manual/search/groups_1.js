@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['decoding_20instructions_66503',['Decoding Instructions',['../group__DEC.html',1,'']]]
+  ['cpuid_20apis_66631',['CPUID APIs',['../group__CPUID.html',1,'']]]
 ];

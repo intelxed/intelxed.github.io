@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>X86 Encoder Decoder: Fast Encoder for Specific Instructions</title>
+<title>Intel&reg; X86 Encoder Decoder: Fast Encoder for Specific Instructions</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">X86 Encoder Decoder
+   <div id="projectname">Intel&reg; X86 Encoder Decoder
    </div>
   </td>
  </tr>
@@ -137,7 +137,7 @@ Functions</h2></td></tr>
 "s" indicates an a scale factor (1,2,4,8) for the index register. </li>
 </ul>
 <p>The idea behind having different functions for the different addressing modes is to make the encode functions simpler and more straight-line code. Memory instructions also indicate their effective addressing width with one of "_a16", "_a32" or "_a64" substrings.</p>
-<p>The libraries for the ENC2 encoder are built when when includes the "--enc2" switch during the build process. There is one set of libraries and headers generated for each supported configuration. Currently XED ENC2 supports 64b mode with 64b addrssing (m64,a64) and 32b mode with 32b addressing (m32,a32). The build process creates an enc2-m64-a64 directory and an enc2-m32-a32 directory, each with two libraries for the checked and unchecked interfaces. There are 2 headers as well, one for each version of each library in the hdr/xed subdirectory of their respective enc2-* directory. On linux, for a static build, you'd see: </p><div class="fragment"><div class="line">enc2-m64-a64/</div>
+<p>The libraries for the ENC2 encoder are built when when includes the "--enc2" switch during the build process. There is one set of libraries and headers generated for each supported configuration. Currently Intel&reg; XED ENC2 supports 64b mode with 64b addrssing (m64,a64) and 32b mode with 32b addressing (m32,a32). The build process creates an enc2-m64-a64 directory and an enc2-m32-a32 directory, each with two libraries for the checked and unchecked interfaces. There are 2 headers as well, one for each version of each library in the hdr/xed subdirectory of their respective enc2-* directory. On linux, for a static build, you'd see: </p><div class="fragment"><div class="line">enc2-m64-a64/</div>
 <div class="line">            libxed-chk-enc2-m64-a64.a</div>
 <div class="line">            libxed-enc2-m64-a64.a</div>
 <div class="line">            hdr/</div>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>X86 Encoder Decoder: Groupings of features for chips</title>
+<title>Intel&reg; X86 Encoder Decoder: Groupings of features for chips</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">X86 Encoder Decoder
+   <div id="projectname">Intel&reg; X86 Encoder Decoder
    </div>
   </td>
  </tr>
@@ -104,6 +104,7 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Every Intel&reg; XED iform belongs to one <a class="el" href="xed-isa-set-enum_8h.html#a4a1095357d6e9552d94418d2bd9f5681">xed_isa_set_enum_t</a>. Each Intel&reg; XED chip of type <a class="el" href="xed-chip-enum_8h.html#ae77c7c405380680ef2414d50d67f1301">xed_chip_enum_t</a> represents a collection of xed "isa-sets". If you have a <a class="el" href="group__DEC.html#gacc9a7be76b242c5bf65f56036f5399e6">xed_decoded_inst_t</a>, you can get the isa set via the function <a class="el" href="group__DEC.html#ga085ca25ab4513e982c563b30927dffc9">xed_decoded_inst_get_isa_set</a>. </p>
+<p>Intel&reg; XED chip-check supports the detection of all Intel&reg; APX instructions and flavors, whether be it a new Intel&reg; APX instruction, legacy instruction with REX2 prefix, EVEX instruction with EGPR as one of its operands (register or memory) or EVEX instruction with ignored EGPR encoding. </p>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga84dd41dd65bce8f8daabc8ce69c4d043"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga84dd41dd65bce8f8daabc8ce69c4d043">&#9670;&nbsp;</a></span>xed_isa_set_is_valid_for_chip()</h2>

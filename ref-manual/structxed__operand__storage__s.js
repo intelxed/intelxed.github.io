@@ -71,6 +71,7 @@ var structxed__operand__storage__s =
     [ "no_vex", "structxed__operand__storage__s.html#a87597b507cb0ad2fb42e8094ade505b4", null ],
     [ "nominal_opcode", "structxed__operand__storage__s.html#a20113dd806992cb61a9edcc4de58ec5b", null ],
     [ "norex", "structxed__operand__storage__s.html#a456f9de3efd3a0e9bbcbb29e3f0d95a2", null ],
+    [ "norex2", "structxed__operand__storage__s.html#a61adf51f88f5f974ccdbd23ce60bf794", null ],
     [ "nprefixes", "structxed__operand__storage__s.html#a55cfd9ca586500f39f5ce5cc12401e22", null ],
     [ "nrexes", "structxed__operand__storage__s.html#a40a8da00806f200307ab6a94ef14c11f", null ],
     [ "nseg_prefixes", "structxed__operand__storage__s.html#a99f2348b52a79a2c12a92a6c0118bf17", null ],
