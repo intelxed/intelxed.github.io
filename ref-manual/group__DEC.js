@@ -32,7 +32,7 @@ var group__DEC =
       [ "_reg", "structxed__operand__s.html#aecf0d39932822f1a79838ec7ff5d591a", null ],
       [ "_rw", "structxed__operand__s.html#aadd7d08d3a7d3a054e920d400d77251e", null ],
       [ "_type", "structxed__operand__s.html#a1e0fdf66e3f80cc241c204015d168fb7", null ],
-      [ "_u", "structxed__operand__s.html#a6494502d7105fa995bcad950ffa5bbe3", null ],
+      [ "_u", "structxed__operand__s.html#ac49d81c01b948d5a8ac664f059b79725", null ],
       [ "_xtype", "structxed__operand__s.html#ad8e970f9e25990f49f819bf036362411", null ]
     ] ],
     [ "xed_decoded_inst_t", "group__DEC.html#gacc9a7be76b242c5bf65f56036f5399e6", null ],

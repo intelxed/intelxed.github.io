@@ -82,7 +82,9 @@ $(document).ready(function(){initNavTree('group__FLAGS.html',''); initResizable(
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a>  </div>
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Flags Interface</div>  </div>
 </div><!--header-->
@@ -93,12 +95,24 @@ $(document).ready(function(){initNavTree('group__FLAGS.html',''); initResizable(
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionxed__flag__dfv__s.html">xed_flag_dfv_s</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structxed__flag__enum__s.html">xed_flag_enum_s</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionxed__flag__set__s.html">xed_flag_set_s</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structxed__simple__flag__s.html">xed_simple_flag_s</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gaae30d8d7a89b14d2b55bd99e0e23c761"><td class="memItemLeft" align="right" valign="top">typedef union <a class="el" href="unionxed__flag__dfv__s.html">xed_flag_dfv_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__FLAGS.html#gaae30d8d7a89b14d2b55bd99e0e23c761">xed_flag_dfv_t</a></td></tr>
+<tr class="separator:gaae30d8d7a89b14d2b55bd99e0e23c761"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga1e6bf5fadd96a36207f7f16244f0cb43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xed-common-hdrs_8h.html#a029d5ee2957ac2af5e2b75ec09f1daf9">XED_DLL_EXPORT</a> <a class="el" href="xed-types_8h.html#ad355c921b747945a82d62233a599c7b5">xed_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__FLAGS.html#ga1e6bf5fadd96a36207f7f16244f0cb43">xed_flag_dfv_get_default_flags_values</a> (<a class="el" href="xed-reg-enum_8h.html#af05c33c5a68e9304d1d8ac0408ae3f61">xed_reg_enum_t</a> dfv_reg, <a class="el" href="group__FLAGS.html#gaae30d8d7a89b14d2b55bd99e0e23c761">xed_flag_dfv_t</a> *p)</td></tr>
+<tr class="separator:ga1e6bf5fadd96a36207f7f16244f0cb43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Flag-set accessors</h2></td></tr>
@@ -172,6 +186,21 @@ Accessing the simple flags (Mid-level access)</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Associated with each flag field there can be one action. </p>
+
+</div>
+</div>
+<a id="gaae30d8d7a89b14d2b55bd99e0e23c761"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaae30d8d7a89b14d2b55bd99e0e23c761">&#9670;&nbsp;</a></span>xed_flag_dfv_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef union <a class="el" href="unionxed__flag__dfv__s.html">xed_flag_dfv_s</a> <a class="el" href="group__FLAGS.html#gaae30d8d7a89b14d2b55bd99e0e23c761">xed_flag_dfv_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>a struct representing an instruction's default flags values </p>
 
 </div>
 </div>
@@ -375,6 +404,35 @@ Accessing the simple flags (Mid-level access)</h2></td></tr>
 </div><div class="memdoc">
 <p><br  />
  returns true if either action is a write </p>
+
+</div>
+</div>
+<a id="ga1e6bf5fadd96a36207f7f16244f0cb43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1e6bf5fadd96a36207f7f16244f0cb43">&#9670;&nbsp;</a></span>xed_flag_dfv_get_default_flags_values()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="xed-common-hdrs_8h.html#a029d5ee2957ac2af5e2b75ec09f1daf9">XED_DLL_EXPORT</a> <a class="el" href="xed-types_8h.html#ad355c921b747945a82d62233a599c7b5">xed_bool_t</a> xed_flag_dfv_get_default_flags_values </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="xed-reg-enum_8h.html#af05c33c5a68e9304d1d8ac0408ae3f61">xed_reg_enum_t</a>&#160;</td>
+          <td class="paramname"><em>dfv_reg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__FLAGS.html#gaae30d8d7a89b14d2b55bd99e0e23c761">xed_flag_dfv_t</a> *&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>extracts the default flags values from XED DFV pseudo-register to a given xed_flag_dfv_t pointer If the given DFV enumeration is invalid, the function returns 0 </p>
 
 </div>
 </div>

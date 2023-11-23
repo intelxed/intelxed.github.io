@@ -24,6 +24,6 @@ var searchData=
   ['_5freg_21',['_reg',['../structxed__operand__s.html#aecf0d39932822f1a79838ec7ff5d591a',1,'xed_operand_s']]],
   ['_5frw_22',['_rw',['../structxed__operand__s.html#aadd7d08d3a7d3a054e920d400d77251e',1,'xed_operand_s']]],
   ['_5ftype_23',['_type',['../structxed__operand__s.html#a1e0fdf66e3f80cc241c204015d168fb7',1,'xed_operand_s']]],
-  ['_5fu_24',['_u',['../structxed__operand__s.html#a6494502d7105fa995bcad950ffa5bbe3',1,'xed_operand_s']]],
+  ['_5fu_24',['_u',['../structxed__operand__s.html#ac49d81c01b948d5a8ac664f059b79725',1,'xed_operand_s']]],
   ['_5fxtype_25',['_xtype',['../structxed__operand__s.html#ad8e970f9e25990f49f819bf036362411',1,'xed_operand_s']]]
 ];

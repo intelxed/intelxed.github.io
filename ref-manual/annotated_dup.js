@@ -12,6 +12,7 @@ var annotated_dup =
     [ "xed_encoder_instruction_t", "structxed__encoder__instruction__t.html", "structxed__encoder__instruction__t" ],
     [ "xed_encoder_operand_t", "structxed__encoder__operand__t.html", "structxed__encoder__operand__t" ],
     [ "xed_encoder_prefixes_t", "unionxed__encoder__prefixes__t.html", "unionxed__encoder__prefixes__t" ],
+    [ "xed_flag_dfv_s", "unionxed__flag__dfv__s.html", "unionxed__flag__dfv__s" ],
     [ "xed_flag_enum_s", "structxed__flag__enum__s.html", "structxed__flag__enum__s" ],
     [ "xed_flag_set_s", "unionxed__flag__set__s.html", "unionxed__flag__set__s" ],
     [ "xed_format_options_t", "structxed__format__options__t.html", "structxed__format__options__t" ],

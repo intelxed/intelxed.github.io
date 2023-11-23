@@ -1,5 +1,17 @@
 var NAVTREEINDEX130 =
 {
+"xed-operand-enum_8h.html#a0b20a7e57bdc3f5c90e06c8ce5835415":[3,0,58,104],
+"xed-operand-enum_8h.html#a0d7bcf5ec77229f6164335024434d48c":[3,0,58,99],
+"xed-operand-enum_8h.html#a0efb0810cad2045837ebce9806b2ba5b":[3,0,58,76],
+"xed-operand-enum_8h.html#a13e798bcca7a3802df2a33b050428b5f":[3,0,58,110],
+"xed-operand-enum_8h.html#a155946d458ae6fcf8dc5e7444bcda3c1":[3,0,58,120],
+"xed-operand-enum_8h.html#a166f90023862d8986ec334f37b3154ad":[3,0,58,30],
+"xed-operand-enum_8h.html#a188699fffbaff11afcf0771e39898c73":[3,0,58,55],
+"xed-operand-enum_8h.html#a18abf08eaaa4919d255ffe61a5fe1805":[3,0,58,27],
+"xed-operand-enum_8h.html#a18cdc7b81646a282b25f7110d85c7f5a":[3,0,58,62],
+"xed-operand-enum_8h.html#a1ab830b14b3217f4f64da415744e0f05":[3,0,58,108],
+"xed-operand-enum_8h.html#a1b6a6cdfc86e0552937ff3b2b6df49d7":[3,0,58,3],
+"xed-operand-enum_8h.html#a1d4f72ca3092d346afc761bf57371a96":[3,0,58,37],
 "xed-operand-enum_8h.html#a1dce11f58d20effb48e373b36cc9d5d3":[3,0,58,63],
 "xed-operand-enum_8h.html#a258e14b753cd83c2c816fd25ad37d8cf":[3,0,58,5],
 "xed-operand-enum_8h.html#a25e9e4ba8043540cc33137e87dc85e9a":[3,0,58,12],
@@ -237,17 +249,5 @@ var NAVTREEINDEX130 =
 "xed-operand-width-enum_8h.html#a4bc2ed96b8433c06c363d614a2fa1676a47fdaae9b71537c524ba469cfd580b6f":[3,0,63,130,6],
 "xed-operand-width-enum_8h.html#a4bc2ed96b8433c06c363d614a2fa1676a4b2d0a2043d6ecd0b65c041c139ddfb7":[3,0,63,130,103],
 "xed-operand-width-enum_8h.html#a4bc2ed96b8433c06c363d614a2fa1676a503516c3e732fb9fd34ff36922f1523b":[3,0,63,130,93],
-"xed-operand-width-enum_8h.html#a4bc2ed96b8433c06c363d614a2fa1676a515a596f34dc920268b0602ccc1709c6":[3,0,63,130,89],
-"xed-operand-width-enum_8h.html#a4bc2ed96b8433c06c363d614a2fa1676a5471139c362daf617a85ffbcc32a6ea5":[3,0,63,130,47],
-"xed-operand-width-enum_8h.html#a4bc2ed96b8433c06c363d614a2fa1676a54d0d1a98a5faa0ab76d4f55c3c4e5f9":[3,0,63,130,11],
-"xed-operand-width-enum_8h.html#a4bc2ed96b8433c06c363d614a2fa1676a5581a8858bd0e1e72e73e09204f9a75f":[3,0,63,130,51],
-"xed-operand-width-enum_8h.html#a4bc2ed96b8433c06c363d614a2fa1676a59833edebf71c4689fdfc377eb258df2":[3,0,63,130,35],
-"xed-operand-width-enum_8h.html#a4bc2ed96b8433c06c363d614a2fa1676a5a3d72e2427086142c631ac1e7cfac76":[3,0,63,130,118],
-"xed-operand-width-enum_8h.html#a4bc2ed96b8433c06c363d614a2fa1676a610c6ddbec2eea9dd6585329efd18d78":[3,0,63,130,34],
-"xed-operand-width-enum_8h.html#a4bc2ed96b8433c06c363d614a2fa1676a61b7122ec41dc0bf0c879f656c22af8a":[3,0,63,130,68],
-"xed-operand-width-enum_8h.html#a4bc2ed96b8433c06c363d614a2fa1676a61f26b8ccda4d1a45c1346b4e8230242":[3,0,63,130,83],
-"xed-operand-width-enum_8h.html#a4bc2ed96b8433c06c363d614a2fa1676a61fadbaa8155dbd2544f8170e1802b23":[3,0,63,130,129],
-"xed-operand-width-enum_8h.html#a4bc2ed96b8433c06c363d614a2fa1676a625f81685497b2f229da24b18b9f38a7":[3,0,63,130,55],
-"xed-operand-width-enum_8h.html#a4bc2ed96b8433c06c363d614a2fa1676a663b44d895f2231413ac3d90963f9a2a":[3,0,63,130,70],
-"xed-operand-width-enum_8h.html#a4bc2ed96b8433c06c363d614a2fa1676a66ae1301cb13ad3000b02b49b05c4bc5":[3,0,63,130,109]
+"xed-operand-width-enum_8h.html#a4bc2ed96b8433c06c363d614a2fa1676a515a596f34dc920268b0602ccc1709c6":[3,0,63,130,89]
 };
