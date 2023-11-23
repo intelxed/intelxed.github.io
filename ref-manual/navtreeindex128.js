@@ -1,5 +1,17 @@
 var NAVTREEINDEX128 =
 {
+"xed-operand-accessors_8h.html#a5d28f0d9447d2e42ce7106f149cc8816":[3,0,50,178],
+"xed-operand-accessors_8h.html#a5e43b17a7b2a531822dc9c16ea654269":[3,0,50,32],
+"xed-operand-accessors_8h.html#a5e88a3da61cf7514dcae4297c8c5ac48":[3,0,50,80],
+"xed-operand-accessors_8h.html#a5ff4fa74028fd60ace51565338e53237":[3,0,50,175],
+"xed-operand-accessors_8h.html#a60c7d821605a405b50b8fc6b4c59b2a7":[3,0,50,104],
+"xed-operand-accessors_8h.html#a61983ed9ac6bd7f78d33800a006a3054":[3,0,50,118],
+"xed-operand-accessors_8h.html#a61a8dc6adbab50bdce04d235afe72f87":[3,0,50,95],
+"xed-operand-accessors_8h.html#a61e53d4a10377cfb1c7cbca536148d94":[3,0,50,267],
+"xed-operand-accessors_8h.html#a62ad89ed5453a6088d7e779d834f93d7":[3,0,50,261],
+"xed-operand-accessors_8h.html#a62ebfc7ac28a3acc7012cf30d6e4036a":[3,0,50,98],
+"xed-operand-accessors_8h.html#a63806d11bd448fd26c15f0eda6ca2896":[3,0,50,256],
+"xed-operand-accessors_8h.html#a64550385a97ab0eed0501eaa2dcdff2c":[3,0,50,6],
 "xed-operand-accessors_8h.html#a651c02cf031239da9b8a6939c064f2d6":[3,0,50,262],
 "xed-operand-accessors_8h.html#a65906e01f649f5b63a73c993c8ebe3ac":[3,0,50,93],
 "xed-operand-accessors_8h.html#a665c50ec7837b6844463359b9801ed15":[3,0,50,219],
@@ -237,17 +249,5 @@ var NAVTREEINDEX128 =
 "xed-operand-ctype-enum_8h.html#aa463757a8bc6082d97a4b7d705b07a4a":[3,0,54,0],
 "xed-operand-ctype-enum_8h.html#aa6214a6640463a67681525e1f4300fec":[3,0,54,5],
 "xed-operand-ctype-enum_8h.html#ab9ead9f3798fbdfa449ea80f9a17332f":[3,0,54,6],
-"xed-operand-ctype-enum_8h.html#acb11b166f7cbfeb8413fa2124f2a94d3":[3,0,54,10],
-"xed-operand-ctype-enum_8h.html#aea628004249447a747606a0db3ef92ad":[3,0,54,4],
-"xed-operand-ctype-enum_8h.html#af16285420d0b44b367186ec576eac89f":[3,0,54,1],
-"xed-operand-ctype-map_8h.html":[3,0,55],
-"xed-operand-ctype-map_8h.html#a1caa2ab3867b0914778b62c5c6e316d4":[3,0,55,1],
-"xed-operand-ctype-map_8h.html#a959a6b5e5b21106fb8c83a7a12b1a6f3":[3,0,55,0],
-"xed-operand-element-type-enum_8h.html":[3,0,56],
-"xed-operand-element-type-enum_8h.html#a004e8c5bac7b850fa9b06074924d0b24":[3,0,56,7],
-"xed-operand-element-type-enum_8h.html#a1535c49a267b6278828d33ac76d7a950":[3,0,56,13],
-"xed-operand-element-type-enum_8h.html#a1cb6efe86e9809036a94bd7e651e6f27":[3,0,56,10],
-"xed-operand-element-type-enum_8h.html#a2de5cc078552bb3742d35d5b7dd7b35a":[3,0,56,5],
-"xed-operand-element-type-enum_8h.html#a44618d143cc92ca07d983f208927d874":[3,0,56,8],
-"xed-operand-element-type-enum_8h.html#a605d3d866ef14a129f5e41b965d457ea":[3,0,56,0]
+"xed-operand-ctype-enum_8h.html#acb11b166f7cbfeb8413fa2124f2a94d3":[3,0,54,10]
 };

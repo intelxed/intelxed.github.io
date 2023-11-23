@@ -8,7 +8,7 @@ var modules =
     [ "Operand storage fields", "group__OPERANDS.html", "group__OPERANDS" ],
     [ "Iforms", "group__IFORM.html", "group__IFORM" ],
     [ "Groupings of features for chips", "group__ISASET.html", "group__ISASET" ],
-    [ "CPUID APIs", "group__CPUID.html", "group__CPUID" ],
+    [ "CPUID Interface", "group__CPUID.html", "group__CPUID" ],
     [ "Printing (disassembling) Instructions", "group__PRINT.html", "group__PRINT" ],
     [ "Register Interface", "group__REGINTFC.html", "group__REGINTFC" ],
     [ "Flags Interface", "group__FLAGS.html", "group__FLAGS" ],

@@ -1,5 +1,14 @@
 var group__FLAGS =
 [
+    [ "xed_flag_dfv_s", "unionxed__flag__dfv__s.html", [
+      [ "cf", "unionxed__flag__dfv__s.html#a127a69107891a5681c6bb5ee5d31b948", null ],
+      [ "flat", "unionxed__flag__dfv__s.html#ae84dfb3102c6ae2aa805dadeb72fa845", null ],
+      [ "of", "unionxed__flag__dfv__s.html#aa56b5c16ec68fe61c17f8f3f8df91eb4", null ],
+      [ "pad", "unionxed__flag__dfv__s.html#a93a866dd8ea912da407645e7ecd8a9d6", null ],
+      [ "s", "unionxed__flag__dfv__s.html#a6bea49b671421312a21157f831070794", null ],
+      [ "sf", "unionxed__flag__dfv__s.html#ad954fa6d6cb8cbe57f754834be23552e", null ],
+      [ "zf", "unionxed__flag__dfv__s.html#a1dc9643445d11253d3e6497f9a07a99d", null ]
+    ] ],
     [ "xed_flag_enum_s", "structxed__flag__enum__s.html", [
       [ "action", "structxed__flag__enum__s.html#a6ff90d561a1023be5c27bc5ba1da6a83", null ],
       [ "flag", "structxed__flag__enum__s.html#a0c855e9832d9215abbeee4d8c4611f76", null ]
@@ -27,7 +36,7 @@ var group__FLAGS =
       [ "of", "unionxed__flag__set__s.html#a785e5f20a19d10fce1ec7549d3a2ee6a", null ],
       [ "pf", "unionxed__flag__set__s.html#a67dee0986ec87026ca20dd3f77431d38", null ],
       [ "rf", "unionxed__flag__set__s.html#ac6ab00c5d37abe6db8280ea2c6e2e6e2", null ],
-      [ "s", "unionxed__flag__set__s.html#ab8eaa7df00f7f734f15f37d321949cf3", null ],
+      [ "s", "unionxed__flag__set__s.html#a0889d4ce4230366e0ae7dc3bb6629b79", null ],
       [ "sf", "unionxed__flag__set__s.html#ac10d3332027d6bd9685c1165f994ca76", null ],
       [ "tf", "unionxed__flag__set__s.html#a3674598aac3f0fe791f47ac79f0c37eb", null ],
       [ "vif", "unionxed__flag__set__s.html#a607ecb9cdd15dfb2a132a4fc593fe0b6", null ],
@@ -45,6 +54,7 @@ var group__FLAGS =
       [ "written", "structxed__simple__flag__s.html#adfa93f6dc27a5ed9554b4da06fe316eb", null ]
     ] ],
     [ "xed_flag_action_t", "group__FLAGS.html#ga5bc1a4dd2c5de72ee2e5c26c6383ca13", null ],
+    [ "xed_flag_dfv_t", "group__FLAGS.html#gaae30d8d7a89b14d2b55bd99e0e23c761", null ],
     [ "xed_simple_flag_t", "group__FLAGS.html#ga5e19836dc4585fa560b6a061af1749b9", null ],
     [ "xed_flag_action_action_invalid", "group__FLAGS.html#ga21cc087c3f007cc0944c7acf286f504c", null ],
     [ "xed_flag_action_get_action", "group__FLAGS.html#ga80abcc15e609878f1daaac1b988fc0fe", null ],
@@ -54,6 +64,7 @@ var group__FLAGS =
     [ "xed_flag_action_read_flag", "group__FLAGS.html#ga08e4a4c4eea80dc85f569ca1a4b7f614", null ],
     [ "xed_flag_action_write_action", "group__FLAGS.html#ga93ce4bd708adffe1ec0c5c3a884802cc", null ],
     [ "xed_flag_action_writes_flag", "group__FLAGS.html#gae17824babf697205b4ec3ea1547e6f95", null ],
+    [ "xed_flag_dfv_get_default_flags_values", "group__FLAGS.html#ga1e6bf5fadd96a36207f7f16244f0cb43", null ],
     [ "xed_flag_set_is_subset_of", "group__FLAGS.html#ga1beb49469f104f6e92147b0522fb7cc0", null ],
     [ "xed_flag_set_mask", "group__FLAGS.html#ga615e2237e74d1c365addeb299d2efdd4", null ],
     [ "xed_flag_set_print", "group__FLAGS.html#ga7f7a68d1f3d02a08b60205a96e025bb2", null ],
