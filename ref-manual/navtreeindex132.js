@@ -1,5 +1,13 @@
 var NAVTREEINDEX132 =
 {
+"xed-reg-class-enum_8h.html#a8ac6bf3f9f78208385c46ea25324ea76a6a964bcf6e7f2efcb33513966ac551a5":[3,0,67,29,24],
+"xed-reg-class-enum_8h.html#a8ac6bf3f9f78208385c46ea25324ea76a6f3bcdea30666c7ada2c6a21e8ecc867":[3,0,67,29,16],
+"xed-reg-class-enum_8h.html#a8ac6bf3f9f78208385c46ea25324ea76a72c46b1fc59bf81a1814047e0b809bf1":[3,0,67,29,1],
+"xed-reg-class-enum_8h.html#a8ac6bf3f9f78208385c46ea25324ea76a7d6e85ce75d2c4c15a4cfd4957f0495d":[3,0,67,29,22],
+"xed-reg-class-enum_8h.html#a8ac6bf3f9f78208385c46ea25324ea76aa2f0446a1626cb97caddfcf94c406d43":[3,0,67,29,3],
+"xed-reg-class-enum_8h.html#a8ac6bf3f9f78208385c46ea25324ea76aaa425979e99361662c5870b663c246f5":[3,0,67,29,12],
+"xed-reg-class-enum_8h.html#a8ac6bf3f9f78208385c46ea25324ea76aaace4711e201fd8358343c11c4f955ae":[3,0,67,29,18],
+"xed-reg-class-enum_8h.html#a8ac6bf3f9f78208385c46ea25324ea76aaca8356f5ea67683de3d49fb3de4583f":[3,0,67,29,9],
 "xed-reg-class-enum_8h.html#a8ac6bf3f9f78208385c46ea25324ea76ab02b323ba71ce251bca0ac4206b7d028":[3,0,67,29,19],
 "xed-reg-class-enum_8h.html#a8ac6bf3f9f78208385c46ea25324ea76ac0034a83a994e9409676cf3035392165":[3,0,67,29,6],
 "xed-reg-class-enum_8h.html#a8ac6bf3f9f78208385c46ea25324ea76ac8f4b25e5db3bc8d8cc2c59d8a42e34b":[3,0,67,29,11],
@@ -241,13 +249,5 @@ var NAVTREEINDEX132 =
 "xed-reg-enum_8h.html#a89c8d7f1aee116e02d1f0748bc6c3147":[3,0,69,244],
 "xed-reg-enum_8h.html#a8baa2e6b06bdeffe939a47b4fa4878d8":[3,0,69,363],
 "xed-reg-enum_8h.html#a8c61803b2101e00ca850114ecd395a40":[3,0,69,269],
-"xed-reg-enum_8h.html#a8cb1aa923ab35f0e64b761734b39bf73":[3,0,69,219],
-"xed-reg-enum_8h.html#a8cf9ab477f6f2b1b651745e4efc42d3e":[3,0,69,236],
-"xed-reg-enum_8h.html#a8e5513652364221271b71de45cde8aad":[3,0,69,45],
-"xed-reg-enum_8h.html#a8e7405add5841a45cde061bfecb20450":[3,0,69,10],
-"xed-reg-enum_8h.html#a8ebc3f4bda3f4c805c0472256ca5b094":[3,0,69,238],
-"xed-reg-enum_8h.html#a9052ae42046ebf70a9e3547fb28e4e3c":[3,0,69,192],
-"xed-reg-enum_8h.html#a917b1080aa694d40131d4d6fdc148c82":[3,0,69,241],
-"xed-reg-enum_8h.html#a91f197c09ae692e32fbea7c7dd56ef2f":[3,0,69,78],
-"xed-reg-enum_8h.html#a92221b690cc0fb69c37f778274b4ac68":[3,0,69,178]
+"xed-reg-enum_8h.html#a8cb1aa923ab35f0e64b761734b39bf73":[3,0,69,219]
 };

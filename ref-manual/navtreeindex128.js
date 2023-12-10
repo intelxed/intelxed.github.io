@@ -1,5 +1,13 @@
 var NAVTREEINDEX128 =
 {
+"xed-operand-accessors_8h.html#a5715b155234687415f476b8262202656":[3,0,50,13],
+"xed-operand-accessors_8h.html#a57c8e2543cd6252aaca1116f462d2cb9":[3,0,50,212],
+"xed-operand-accessors_8h.html#a5811acb7234721f70ea7f5dd544d7069":[3,0,50,151],
+"xed-operand-accessors_8h.html#a59a241c31ccc5941233e6cf8b8129206":[3,0,50,66],
+"xed-operand-accessors_8h.html#a59c966119d9a401ff7d2ac3859e5fba5":[3,0,50,209],
+"xed-operand-accessors_8h.html#a5aa5d53b2271109aed7a262d24520ae8":[3,0,50,26],
+"xed-operand-accessors_8h.html#a5b0e163aed68c3f708dfda38b04971ac":[3,0,50,189],
+"xed-operand-accessors_8h.html#a5b73be9683ab063b2f693be60f4f465c":[3,0,50,264],
 "xed-operand-accessors_8h.html#a5d28f0d9447d2e42ce7106f149cc8816":[3,0,50,178],
 "xed-operand-accessors_8h.html#a5e43b17a7b2a531822dc9c16ea654269":[3,0,50,32],
 "xed-operand-accessors_8h.html#a5e88a3da61cf7514dcae4297c8c5ac48":[3,0,50,80],
@@ -241,13 +249,5 @@ var NAVTREEINDEX128 =
 "xed-operand-ctype-enum_8h.html#a0b2cec39e2812706b0bf62b761543318a9a255d3f647ece1d03c1490937310594":[3,0,54,11,9],
 "xed-operand-ctype-enum_8h.html#a0b2cec39e2812706b0bf62b761543318aa811bb27288bbe23144a687c9c7d9a3e":[3,0,54,11,7],
 "xed-operand-ctype-enum_8h.html#a0b2cec39e2812706b0bf62b761543318aff84e7f86488a4287b5d32d5b22810cd":[3,0,54,11,6],
-"xed-operand-ctype-enum_8h.html#a10139a6bd8e58a770e0b791aa8f366f6":[3,0,54,7],
-"xed-operand-ctype-enum_8h.html#a37255d3faa41fe69bf5772bcfc347d08":[3,0,54,2],
-"xed-operand-ctype-enum_8h.html#a38e14a0ab83d75b129e98a9a2ec9b425":[3,0,54,3],
-"xed-operand-ctype-enum_8h.html#a4d2cb05076c060bb8c72cf82316239f1":[3,0,54,8],
-"xed-operand-ctype-enum_8h.html#a6eeb704612004ca7f6979188c528a18e":[3,0,54,9],
-"xed-operand-ctype-enum_8h.html#aa463757a8bc6082d97a4b7d705b07a4a":[3,0,54,0],
-"xed-operand-ctype-enum_8h.html#aa6214a6640463a67681525e1f4300fec":[3,0,54,5],
-"xed-operand-ctype-enum_8h.html#ab9ead9f3798fbdfa449ea80f9a17332f":[3,0,54,6],
-"xed-operand-ctype-enum_8h.html#acb11b166f7cbfeb8413fa2124f2a94d3":[3,0,54,10]
+"xed-operand-ctype-enum_8h.html#a10139a6bd8e58a770e0b791aa8f366f6":[3,0,54,7]
 };

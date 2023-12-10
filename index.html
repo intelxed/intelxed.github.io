@@ -19,7 +19,7 @@
       </CENTER>
       <HR>
 
-      <p> The Intel&reg; X86 Encoder Decoder (Intel&reg; XED), is a software library (and
+      <p> The Intel&reg; X86 Encoder Decoder (Intel&reg; XED) is a software library (and
       associated headers) for encoding and decoding X86 (IA32 and
       Intel64) instructions. The decoder takes sequences of 1-15 bytes
       along with machine mode information and produces a data
@@ -37,16 +37,16 @@
       performance
       model</A>, <A HREF="http://www.cs.virginia.edu/kim/docs/wish11zsim.pdf">ZSIM</A>,
       <A HREF="https://software.intel.com/en-us/intel-vtune-amplifier-xe">Intel&reg; VTune Amplifier</A>, <A HREF="https://software.intel.com/en-us/articles/intel-architecture-code-analyzer">IACA</A>,
-      as well as in projects at McAfee, Wind River, and many other
+      and in projects at McAfee, Wind River, and many other
       projects inside and outside Intel.
 
       <p> Intel&reg; XED supports the notion of layers of instructions. As new
-       instructions are made public corresponding to future processors, 
+       instructions corresponding to future processors are made public, 
        the associated layers are added
        to the tables of instructions in the "datafiles" subdirectory.
-        (Intel announces and documents instructions in the 
+        (Intel typically announces and documents instructions in the 
         <A HREF="http://www.intel.com/software/isa">ISE</A> and 
-        <A HREF="http://www.intel.com/sdm">SDM</A> documents typically).
+        <A HREF="http://www.intel.com/sdm">SDM</A> documents).
 
       <p> Intel&reg; XED compiles with various compilers (GNU gcc, MSVS, Intel
       ICC/ICL and Clang) and is supported on various operating systems
@@ -55,23 +55,23 @@
       <p> The Intel&reg; XED examples also include binary image readers for
        Windows PECOFF, ELF, and Mac OSX MACHO binary file formats (32b
        and 64b). These allow Intel&reg; XED to be used as a simple
-       disassembler. The Intel&reg; XED disassembler supports 3 output formats:
+       disassembler. The Intel&reg; XED disassembler supports three output formats:
        Intel, ATT SYSV, and a more detailed internal format describing
        all resources read and written. The Intel&reg; XED command line tool
        example can be linked with libelf/libdwarf on Linux and with
        dbghelp.dll on Microsoft Windows to access symbol information
        in binaries.  The command line tool can also emit (graphviz)
-       "dot" graphs to show register dependences between instructions.
+       "dot" graphs to show register dependencies between instructions.
 
       <p> When required, Intel&reg; XED can be built without the encoder or
         the decoder to reduce the code/data footprint.  The
         code in the Intel&reg; XED library is written in C and is partially
-        generated from tables using python scripts at build time. Intel&reg; XED
+        generated from tables using Python scripts at build time. Intel&reg; XED
         is designed for embedding and has a minimal set of simple
-        external dependencies. Intel&reg; XED requires only 6 simple external
+        external dependencies. Intel&reg; XED requires only six simple external
         library functions (like memcmp and memset). The libxed library
         makes no system calls and allocates no memory.  It is
-        multithread-safe after one-time initialization of the tables.
+        multithread-safe after the one-time initialization of the tables.
         
       <UL>
         <LI> <A HREF="https://github.com/intelxed">Repositories</A>

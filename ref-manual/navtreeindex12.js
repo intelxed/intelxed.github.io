@@ -1,5 +1,9 @@
 var NAVTREEINDEX12 =
 {
+"xed-error-enum_8h.html#a67b4769e669745a7d911ea197f8c9ceb":[3,0,24,9],
+"xed-error-enum_8h.html#a6c3f1fcb2d05e4d17210157d72a8f467":[3,0,24,21],
+"xed-error-enum_8h.html#a80b6a8ea9a310decf56ebf6935fc9a89":[3,0,24,15],
+"xed-error-enum_8h.html#a80be801da5960f3365fd5a630aaef024":[3,0,24,0],
 "xed-error-enum_8h.html#a827342e7f3bd6edcf574f955851a18fb":[3,0,24,8],
 "xed-error-enum_8h.html#a8e616abbdc3c688d4544dea040e3be0b":[3,0,24,14],
 "xed-error-enum_8h.html#aad8bf579bf584c3f394e070167e33b4c":[3,0,24,12],
@@ -245,9 +249,5 @@ var NAVTREEINDEX12 =
 "xed-extension-enum_8h.html#ab042d34ae83b12e9ce3b1e19ee9b51b1":[3,0,26,70],
 "xed-extension-enum_8h.html#ab0ef9d6a535e3ec824913caa4399e500":[3,0,26,73],
 "xed-extension-enum_8h.html#ab11bfc2fcfb5adedae567b154fe39954":[3,0,26,2],
-"xed-extension-enum_8h.html#ab286dbe06b7f4fd7b109f4b971848e30":[3,0,26,87],
-"xed-extension-enum_8h.html#ab5b8d2d1b2db5d06dd4e6185255d7355":[3,0,26,106],
-"xed-extension-enum_8h.html#aba54c2ee9593116007f0442a8b499bc5":[3,0,26,9],
-"xed-extension-enum_8h.html#abcefb1bbec601f3341d7729efbf68765":[3,0,26,67],
-"xed-extension-enum_8h.html#abd4d3c01129905641e3df11027506958":[3,0,26,12]
+"xed-extension-enum_8h.html#ab286dbe06b7f4fd7b109f4b971848e30":[3,0,26,87]
 };

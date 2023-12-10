@@ -97,7 +97,7 @@ Repository Access</h1>
 </div><!-- fragment --><h1><a class="anchor" id="MBUILD"></a>
 Introduction to using mbuild</h1>
 <p>Mbuild is a python-based build system. For more information about mbuild see: <a href="https://intelxed.github.io">https://intelxed.github.io</a></p>
-<p>The Intel&reg; XED build using mbuild is dependency-driven. It uses file and command signatures to detect the need to rebuild files.</p>
+<p>The Intel&reg; XED build using mbuild is dependency driven. It uses file and command signatures to detect the need to rebuild files.</p>
 <p>The mbuild script requires python 3.8 or later.</p>
 <p>Assuming you checked out the tree as described above, you can build Intel&reg; XED using mbuild as follows on Linux: </p><div class="fragment"><div class="line">mkdir build</div>
 <div class="line">cd build</div>
@@ -108,14 +108,14 @@ Introduction to using mbuild</h1>
 <div class="line">../xed/mfile.py install        (optional)</div>
 <div class="line">../xed/mfile.py install zip    (optional, makes a zip file)</div>
 <div class="line">../xed/mfile.py examples install zip    (optional, makes a zip file that includes the examples)</div>
-</div><!-- fragment --><p>Actual windows example:</p>
+</div><!-- fragment --><p>Actual Windows example:</p>
 <div class="fragment"><div class="line">git clone https:<span class="comment">//github.com/intelxed/xed.git xed</span></div>
 <div class="line">git clone https:<span class="comment">//github.com/intelxed/mbuild.git mbuild</span></div>
 <div class="line">mkdir test</div>
 <div class="line">cd test</div>
 <div class="line">C:/Python3/python ../xed/mfile.py examples install zip</div>
 </div><!-- fragment --><p>For more information on building for windows see section <a class="el" href="index.html#WINDOWS">Windows notes</a></p>
-<p>Actual linux example (password prompts omitted):</p>
+<p>Actual Linux example (password prompts omitted):</p>
 <div class="fragment"><div class="line">git clone https:<span class="comment">//github.com/intelxed/xed.git xed</span></div>
 <div class="line">git clone https:<span class="comment">//github.com/intelxed/mbuild.git mbuild</span></div>
 <div class="line">mkdir test</div>
@@ -124,10 +124,10 @@ Introduction to using mbuild</h1>
 </div><!-- fragment --><p>To build 32b on a 64b platform, add to the mfile.py execution "host_cpu=ia32": </p><div class="fragment"><div class="line">C:/Python3/python ../xed/mfile.py examples install zip host_cpu=ia32</div>
 </div><!-- fragment --><h1><a class="anchor" id="INSTALL"></a>
 Making Intel® XED kits</h1>
-<p>Some of the headers are private (for building Intel&reg; XED), some are public and some are generated. To simplify use, it is recommended that all users work from Intel&reg; XED kits, rather from the Intel&reg; XED sources. This section describes how to build Intel&reg; XED kits using the "install" target.</p>
-<p>The install target collects up all pieces and puts them in one subdirectory. The static public headers and dynamically generated public header files are put in an "include" subdirectory.</p>
-<p>Static libraries are put the "lib" directory. If you are doing a shared object or DLL build, the shared object or DLL is put in the bin directory. This simplifies using the examples.</p>
-<p>The manual and examples, if generated, are also included in doc directory.</p>
+<p>Some headers are private (for building Intel&reg; XED), some are public and some are generated. It is recommended that all users work from Intel&reg; XED kits to simplify use, rather from the Intel&reg; XED sources. This section describes how to build Intel&reg; XED kits using the "install" target.</p>
+<p>The install target collects all the pieces and puts them in one subdirectory. The static public headers and dynamically generated public header files are put in an "include" subdirectory.</p>
+<p>Static libraries are put in the "lib" directory. If you are doing a shared object or DLL build, the shared object or DLL is put in the bin directory. This simplifies using the examples.</p>
+<p>The manual and examples, if generated, are also included in the doc directory.</p>
 <p>The structure of a Intel&reg; XED kit is as follows: </p><div class="fragment"><div class="line">                |-bin------</div>
 <div class="line">                |-doc------|-html-</div>
 <div class="line">                |-examples-</div>
@@ -137,10 +137,10 @@ Making Intel® XED kits</h1>
 </div><!-- fragment --><p>You can also combine the various targets in one invocation. It will be quicker than the sequence of commands. </p><div class="fragment"><div class="line">../xed/mfile.py doc doc-build examples install   </div>
 </div><!-- fragment --><h1><a class="anchor" id="ENC2"></a>
 Building the fast encoder</h1>
-<p>A set of additional encoder libraries can be created and built by adding the &ndash;enc2 option to the command line. See the Intel&reg; XED reference manual for more information about the Intel&reg; XED ENC2. A test for every encode function can be built by adding the &ndash;enc2-test option. One library is built for 64b mode with 64b addressing (m64,a64) and another library is built for 32b mode with 32b addressing (m32,a32). Due to the large amount of code generated, compilation time is sigificantly longer when using the &ndash;enc2 options. The Intel&reg; XED ENC2 libraries and headers are placed in the build directory's wkit/{include,lib} directories as well as the installed kit if the "install" target is used.</p>
+<p>A set of additional encoder libraries can be created and built by adding the &ndash;enc2 option to the command line. See the Intel&reg; XED reference manual for more information about the Intel&reg; XED ENC2. A test for every encode function can be built by adding the &ndash;enc2-test option. One library is built for 64b mode with 64b addressing (m64,a64) and another library is built for 32b mode with 32b addressing (m32,a32). Due to the large amount of code generated, compilation time is significantly longer when using the &ndash;enc2 options. The Intel&reg; XED ENC2 libraries and headers are placed in the build directory's wkit/{include,lib} directories as well as the installed kit if the "install" target is used.</p>
 <h1><a class="anchor" id="WINDOWS"></a>
 Windows notes</h1>
-<p>For building on windows, the easiest build method assumes that you've configured your environment by running the appropriate BAT file, such as vcvars32.bat or vcvarsamd64.bat from the bin directory of your MSVS installation, by opening a Visual Studio command prompt or by having installed the compiler environment in to the default environment during MSVS installation.</p>
+<p>For building on Windows, the easiest build method assumes that you've configured your environment by running the appropriate BAT file, such as vcvars32.bat or vcvarsamd64.bat from the bin directory of your MSVS installation, by opening a Visual Studio command prompt or by having installed the compiler environment in to the default environment during MSVS installation.</p>
 <p>On windows you can build from a cmd.exe or a cygwin window, with MSVS or GNU gcc. </p><div class="fragment"><div class="line"><span class="comment">/* Run the Visual Studio setup script (vcvars32.bat or vcvarsamd64.bat) from your compiler installation */</span></div>
 <div class="line">C:/Python3/python ../xed/mfile.py examples    ( from a cmd.exe window <span class="keyword">using</span> win32 python)</div>
 <div class="line"> </div>
@@ -153,10 +153,10 @@ Windows notes</h1>
 <div class="line"><span class="stringliteral">/* or from cygwin, using GCC */</span></div>
 <div class="line"><span class="stringliteral">../xed/mfile.py --compiler=gnu examples         ( from a cygwin window, using cygwin&#39;</span>s gcc)</div>
 </div><!-- fragment --><p>The cygwin builds will use cygwin's python to launch the mfile, but win32 c:/Python3/python to run the generators. I try to avoid building using cygwin's python because those builds are single threaded because of long standing bugs in cygwin.</p>
-<p>If you want to have symbols in the xed command line example, you must build with MSVS 8 (2005) or later and supply the "--dbghelp" option to the build line. During execution, dbghelp.dll version 6.9.3.113 or later, is required. Dbghelp.dll must be placed in the same directory as xed.exe. Dbghelp.dll is available from Microsoft.</p>
+<p>If you want to have symbols in the Intel&reg; XED command line example, you must build with MSVS 8 (2005) or later and supply the "--dbghelp" option to the build line. During execution, dbghelp.dll version 6.9.3.113 or later, is required. Dbghelp.dll must be placed in the same directory as xed.exe. Dbghelp.dll is available from Microsoft.</p>
 <h1><a class="anchor" id="SHARED"></a>
 Shared libraries and DLLs</h1>
-<p>If you build Intel&reg; XED using the --shared object you'll get a libxed.so on Linux or a libxed.dll on Windows. When you link against these shared objects/DLL you are required to define XED_DLL (/DXED_DLL on Windows or -DXED_DLL on Linux).</p>
+<p>If you build Intel&reg; XED using the --shared object, you'll get a libxed.so on Linux or a libxed.dll on Windows. When you link against these shared objects/DLL you are required to define XED_DLL (/DXED_DLL on Windows or -DXED_DLL on Linux).</p>
 <h1><a class="anchor" id="HELP"></a>
 The mbuild options</h1>
 <p>If you supply the --help message to the ../xed/mfile.py you'll see the various options controlling compilation. Some options are built into mbuild and are not relevant for Intel&reg; XED build (like the assembler overrides). I've omitted the irrelevant ones in the following options listing:</p>
