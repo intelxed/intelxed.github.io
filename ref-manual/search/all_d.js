@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['of_206',['of',['../unionxed__flag__dfv__s.html#aa56b5c16ec68fe61c17f8f3f8df91eb4',1,'xed_flag_dfv_s::of()'],['../unionxed__flag__set__s.html#a785e5f20a19d10fce1ec7549d3a2ee6a',1,'xed_flag_set_s::of()']]],
+  ['of_206',['of',['../unionxed__flag__dfv__s.html#a785e5f20a19d10fce1ec7549d3a2ee6a',1,'xed_flag_dfv_s::of()'],['../unionxed__flag__set__s.html#a785e5f20a19d10fce1ec7549d3a2ee6a',1,'xed_flag_set_s::of()']]],
   ['omit_5funit_5fscale_207',['omit_unit_scale',['../structxed__format__options__t.html#a376259c6f83ac22702c42fe1adbab400',1,'xed_format_options_t']]],
   ['opcode_5fsrm_208',['opcode_srm',['../structxed__enc2__req__payload__t.html#adfdc7ddb9279cacd7be88d5ce436f8ed',1,'xed_enc2_req_payload_t']]],
   ['operand_5findx_209',['operand_indx',['../structxed__print__info__t.html#a4337c4b316e91d8ed38fb21c929760d2',1,'xed_print_info_t']]],
