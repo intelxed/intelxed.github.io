@@ -23,6 +23,7 @@ var xed_exception_enum_8h =
     [ "XED_EXCEPTION_APX_EVEX_KEYLOCKER_DEFINED", "xed-exception-enum_8h.html#a13a217e1503376f73a540c834f26038e", null ],
     [ "XED_EXCEPTION_APX_EVEX_KMOV_DEFINED", "xed-exception-enum_8h.html#acf8958edd4bfa3eb753a661a3974f0f9", null ],
     [ "XED_EXCEPTION_APX_EVEX_PP2_DEFINED", "xed-exception-enum_8h.html#a880f583d392a2d305cdbafdde10bf5ac", null ],
+    [ "XED_EXCEPTION_APX_EVEX_RAO_INT_DEFINED", "xed-exception-enum_8h.html#af75c6c09a615c393eb7d1d546059d01a", null ],
     [ "XED_EXCEPTION_APX_EVEX_SHA_DEFINED", "xed-exception-enum_8h.html#a00e8faab1adf942d0e653a530c6ea52c", null ],
     [ "XED_EXCEPTION_APX_LEGACY_JMPABS_DEFINED", "xed-exception-enum_8h.html#a79a17e1fbfc63a8371bbbbaad80e27cd", null ],
     [ "XED_EXCEPTION_AVX512_E10_DEFINED", "xed-exception-enum_8h.html#a941da424a7b9abe9876a5a181d3d0e38", null ],
@@ -77,6 +78,7 @@ var xed_exception_enum_8h =
     [ "XED_EXCEPTION_SSE_TYPE_4M_DEFINED", "xed-exception-enum_8h.html#aaeeeeea27dda85d267fbd9eed3e99a75", null ],
     [ "XED_EXCEPTION_SSE_TYPE_5_DEFINED", "xed-exception-enum_8h.html#a3b7b4cfa080161083df1d1dc8f6bfed3", null ],
     [ "XED_EXCEPTION_SSE_TYPE_7_DEFINED", "xed-exception-enum_8h.html#a1465f01ed712c4c76f0c35deafe000e0", null ],
+    [ "XED_EXCEPTION_USER_MSR_EVEX_DEFINED", "xed-exception-enum_8h.html#a3859b1cc1200614bbf2cbc6b0e5c52ad", null ],
     [ "XED_EXCEPTION_USER_MSR_LEGACY_DEFINED", "xed-exception-enum_8h.html#a76252b1de5b51ec5589cb9932a89888b", null ],
     [ "XED_EXCEPTION_USER_MSR_VEX_DEFINED", "xed-exception-enum_8h.html#a938751a32b1bb6ab042a00234b534f90", null ],
     [ "xed_exception_enum_t", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4d", [
@@ -104,6 +106,7 @@ var xed_exception_enum_8h =
       [ "XED_EXCEPTION_APX_EVEX_KEYLOCKER", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4da433f1d82bfa81b232547d05a9e636c53", null ],
       [ "XED_EXCEPTION_APX_EVEX_KMOV", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4dac60f884cac26b37cb7e3e9f764157e42", null ],
       [ "XED_EXCEPTION_APX_EVEX_PP2", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4daf81015f497ef00877c80fb7140324e38", null ],
+      [ "XED_EXCEPTION_APX_EVEX_RAO_INT", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4da88e68ce5b9dca61c444b611d8cc2441d", null ],
       [ "XED_EXCEPTION_APX_EVEX_SHA", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4da72ef872bdf5f6ff5238a281f8a32bbfc", null ],
       [ "XED_EXCEPTION_APX_LEGACY_JMPABS", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4da29db0ef9c2bff1a0556f7b2ca1de5c08", null ],
       [ "XED_EXCEPTION_AVX512_E1", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4da1ffe8995c0627e98009eb009596bcc3c", null ],
@@ -156,6 +159,7 @@ var xed_exception_enum_8h =
       [ "XED_EXCEPTION_SSE_TYPE_4M", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4da03480fc546b534c5df235afb99e04405", null ],
       [ "XED_EXCEPTION_SSE_TYPE_5", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4da532f1d71d1f83dc7a851327a58cd4f8e", null ],
       [ "XED_EXCEPTION_SSE_TYPE_7", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4da8ccc67cb4a5cd9f8bb8cf5938dfc4c88", null ],
+      [ "XED_EXCEPTION_USER_MSR_EVEX", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4da97d7d9861c94dbe801d1e59b174f0da9", null ],
       [ "XED_EXCEPTION_USER_MSR_LEGACY", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4da47ecaf229884abb99ca03fa63714f50c", null ],
       [ "XED_EXCEPTION_USER_MSR_VEX", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4daba6652db8396b92c35c499df06bbc826", null ],
       [ "XED_EXCEPTION_LAST", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4da418443a779ba5fd7ba6897f80e7b524f", null ]
