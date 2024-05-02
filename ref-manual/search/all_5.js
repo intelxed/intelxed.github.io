@@ -14,11 +14,10 @@ var searchData=
   ['evexaaa_90',['evexaaa',['../structxed__enc2__req__payload__t.html#a79021e981aeee1d3a92221f798c9969d',1,'xed_enc2_req_payload_t']]],
   ['evexb_91',['evexb',['../structxed__enc2__req__payload__t.html#ae2d398dcd38fecd2620befceeb362c2a',1,'xed_enc2_req_payload_t']]],
   ['evexll_92',['evexll',['../structxed__enc2__req__payload__t.html#aabfe8de21aa32847104e511db0e871fc',1,'xed_enc2_req_payload_t']]],
-  ['evexrr_93',['evexrr',['../structxed__enc2__req__payload__t.html#a539fb9c118cc44f9908b9391d91c2550',1,'xed_enc2_req_payload_t']]],
-  ['evexvv_94',['evexvv',['../structxed__enc2__req__payload__t.html#a02db03d83296edc1ea700196b4da800b',1,'xed_enc2_req_payload_t']]],
-  ['evexz_95',['evexz',['../structxed__enc2__req__payload__t.html#a40b487ffc402b25211859cf4acf38cd5',1,'xed_enc2_req_payload_t']]],
-  ['evvspace_96',['evvspace',['../structxed__operand__storage__s.html#a5b62abfb6ec6963c76a763f27165c010',1,'xed_operand_storage_s']]],
-  ['examples_20of_20using_20intel_26reg_3b_20xed_97',['Examples of using Intel&amp;reg; XED',['../group__EXAMPLES.html',1,'']]],
-  ['extension_98',['extension',['../structxed__iform__info__s.html#af6f9cb7167ac8757f659fa0173cfd0d6',1,'xed_iform_info_s']]],
-  ['extra_5findex_5foperand_99',['extra_index_operand',['../structxed__print__info__t.html#ab333e6d2b6d6beab5dbcea01a55ffaf0',1,'xed_print_info_t']]]
+  ['evexvv_93',['evexvv',['../structxed__enc2__req__payload__t.html#a02db03d83296edc1ea700196b4da800b',1,'xed_enc2_req_payload_t']]],
+  ['evexz_94',['evexz',['../structxed__enc2__req__payload__t.html#a40b487ffc402b25211859cf4acf38cd5',1,'xed_enc2_req_payload_t']]],
+  ['evvspace_95',['evvspace',['../structxed__operand__storage__s.html#a5b62abfb6ec6963c76a763f27165c010',1,'xed_operand_storage_s']]],
+  ['examples_20of_20using_20intel_26reg_3b_20xed_96',['Examples of using Intel&amp;reg; XED',['../group__EXAMPLES.html',1,'']]],
+  ['extension_97',['extension',['../structxed__iform__info__s.html#af6f9cb7167ac8757f659fa0173cfd0d6',1,'xed_iform_info_s']]],
+  ['extra_5findex_5foperand_98',['extra_index_operand',['../structxed__print__info__t.html#ab333e6d2b6d6beab5dbcea01a55ffaf0',1,'xed_print_info_t']]]
 ];

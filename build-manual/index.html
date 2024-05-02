@@ -42,19 +42,17 @@ $(function() {
 <div class="title">Intel&reg; XED Build Guide </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>November 2023</p>
+<div class="textblock"><p>April 2024</p>
 <h1><a class="anchor" id="INTRO"></a>
 Introduction</h1>
 <p>Intel&reg; XED can be built with many compilers:</p><ul>
 <li>GNU GCC</li>
 <li>Microsoft Visual Studio</li>
-<li>Intel ICL/ICC</li>
 <li>LLVM/Clang</li>
 </ul>
 <p>Intel&reg; XED also works with the following operating systems:</p><ul>
 <li>Linux</li>
 <li>Microsoft Windows (with or without cygwin)</li>
-<li>Apple Mac OS/X</li>
 <li>FreeBSD</li>
 </ul>
 <p>The default compiler on Linux and FreeBSD is GNU gcc. The default on Windows is to use MSVS. The default compiler on OS X is clang.</p>
@@ -174,8 +172,8 @@ The mbuild options</h1>
 <div class="line">                        be located.</div>
 <div class="line">  -v VERBOSE, --verbose=VERBOSE</div>
 <div class="line">                        Verbosity level. Defaults to value passed to env_t()</div>
-<div class="line">  --compiler=COMPILER   Compiler (ms,gnu,clang,icc,icl,iclang, icx). Default</div>
-<div class="line">                        is gnu on linux and ms on windows. Default is: ms</div>
+<div class="line">  --compiler=COMPILER   Compiler (ms,gnu,clang). Default is gnu on linux and </div>
+<div class="line">                        ms on windows.</div>
 <div class="line">  --debug               Debug build</div>
 <div class="line">  --shared              Shared DLL build</div>
 <div class="line">  --<span class="keyword">static</span>              Statically link executables</div>
@@ -206,8 +204,6 @@ The mbuild options</h1>
 <div class="line">  --setup-msvc, --setup-msvs, --msvs-setup, --msvc-setup</div>
 <div class="line">                        Use the value of the --msvc-version to initialize the</div>
 <div class="line">                        MSVC configuration.</div>
-<div class="line">  --icc-version=ICC_VERSION, --iccver=ICC_VERSION, --icc-ver=ICC_VERSION</div>
-<div class="line">                        ICC/ICL version 7, 8, 9, 10, 11</div>
 <div class="line">  --gcc-version=GCC_VERSION, --gccversion=GCC_VERSION, --gcc-ver=GCC_VERSION</div>
 <div class="line">                        GCC version, with dots as in 2.96, 3.4.3, 4.2.0, etc.</div>
 <div class="line">  --cc=CC               full path to C compiler</div>
@@ -330,6 +326,9 @@ The mbuild options</h1>
 <div class="line">  --enc2-test           Build the enc2 fast encoder *tests*. Longer build.</div>
 <div class="line">  --enc2-test-checked   Build the enc2 fast encoder *tests*. Test the checked</div>
 <div class="line">                        interface. Longer build.</div>
+<div class="line">  --enc2-operands-checked</div>
+<div class="line">                        A more strict testing of enc2 - validates operand values </div>
+<div class="line">                        as well as iforms</div>
 <div class="line">  --encoder-chip=ENCODER_CHIP</div>
 <div class="line">                        Specific encoder chip. Default is ALL</div>
 <div class="line">  --setup-hooks         Copies git hook scripts locally and exits. Does NOT</div>
