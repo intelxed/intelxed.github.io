@@ -16,6 +16,7 @@ var xed_util_8h =
     [ "xed_get_byte", "xed-util_8h.html#ad28359fdc8cf4aeefefb26c3233d4a83", null ],
     [ "xed_internal_assert", "xed-util_8h.html#a8ad52f4a3721b0210ab44f9b81f75fb7", null ],
     [ "xed_itoa", "xed-util_8h.html#ace29fb2a5586630ee42bbd63a837fa86", null ],
+    [ "xed_itoa_bin", "xed-util_8h.html#a0ee1c7afec4b5ad7888589d9da897ea4", null ],
     [ "xed_itoa_hex", "xed-util_8h.html#a688fb0af17a6b44a63ca3a983daaa7ac", null ],
     [ "xed_itoa_hex_ul", "xed-util_8h.html#a7c1b28c4495d486bf16bd7c65e9dd91e", null ],
     [ "xed_itoa_hex_zeros", "xed-util_8h.html#a7d82a16920644510bd5edf88e945c71e", null ],

@@ -134,6 +134,9 @@ Functions</h2></td></tr>
 <tr class="separator:a8ad52f4a3721b0210ab44f9b81f75fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace29fb2a5586630ee42bbd63a837fa86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xed-common-hdrs_8h.html#a029d5ee2957ac2af5e2b75ec09f1daf9">XED_DLL_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-util_8h.html#ace29fb2a5586630ee42bbd63a837fa86">xed_itoa</a> (char *buf, xed_uint64_t f, int buflen)</td></tr>
 <tr class="separator:ace29fb2a5586630ee42bbd63a837fa86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ee1c7afec4b5ad7888589d9da897ea4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xed-common-hdrs_8h.html#a029d5ee2957ac2af5e2b75ec09f1daf9">XED_DLL_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-util_8h.html#a0ee1c7afec4b5ad7888589d9da897ea4">xed_itoa_bin</a> (char *buf, xed_uint64_t f, <a class="el" href="xed-types_8h.html#a0c92e8263b7ca02d8e4826ae5b79bb30">xed_uint_t</a> bits_to_print, <a class="el" href="xed-types_8h.html#a0c92e8263b7ca02d8e4826ae5b79bb30">xed_uint_t</a> buflen)</td></tr>
+<tr class="memdesc:a0ee1c7afec4b5ad7888589d9da897ea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the input value <code>f</code> into its binary representation as a string and store it in <code>buf</code>.  <a href="xed-util_8h.html#a0ee1c7afec4b5ad7888589d9da897ea4">More...</a><br /></td></tr>
+<tr class="separator:a0ee1c7afec4b5ad7888589d9da897ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a688fb0af17a6b44a63ca3a983daaa7ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xed-common-hdrs_8h.html#a029d5ee2957ac2af5e2b75ec09f1daf9">XED_DLL_EXPORT</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-util_8h.html#a688fb0af17a6b44a63ca3a983daaa7ac">xed_itoa_hex</a> (char *buf, xed_uint64_t f, <a class="el" href="xed-types_8h.html#a0c92e8263b7ca02d8e4826ae5b79bb30">xed_uint_t</a> bits_to_print, int buflen)</td></tr>
 <tr class="memdesc:a688fb0af17a6b44a63ca3a983daaa7ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">defaults to lowercase  <a href="xed-util_8h.html#a688fb0af17a6b44a63ca3a983daaa7ac">More...</a><br /></td></tr>
 <tr class="separator:a688fb0af17a6b44a63ca3a983daaa7ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -500,6 +503,58 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0ee1c7afec4b5ad7888589d9da897ea4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ee1c7afec4b5ad7888589d9da897ea4">&#9670;&nbsp;</a></span>xed_itoa_bin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="xed-common-hdrs_8h.html#a029d5ee2957ac2af5e2b75ec09f1daf9">XED_DLL_EXPORT</a> int xed_itoa_bin </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xed_uint64_t&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="xed-types_8h.html#a0c92e8263b7ca02d8e4826ae5b79bb30">xed_uint_t</a>&#160;</td>
+          <td class="paramname"><em>bits_to_print</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="xed-types_8h.html#a0c92e8263b7ca02d8e4826ae5b79bb30">xed_uint_t</a>&#160;</td>
+          <td class="paramname"><em>buflen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert the input value <code>f</code> into its binary representation as a string and store it in <code>buf</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buf</td><td>Pointer to the character array where the binary representation will be stored. </td></tr>
+    <tr><td class="paramname">f</td><td>Input value to be converted. </td></tr>
+    <tr><td class="paramname">bits_to_print</td><td>Number of bits to print (limited to 64 bits). </td></tr>
+    <tr><td class="paramname">buflen</td><td>Length of the <code>buf</code> array. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of characters actually copied (excluding the null terminator). </dd></dl>
 
 </div>
 </div>
