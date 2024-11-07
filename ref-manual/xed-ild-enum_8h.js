@@ -20,6 +20,7 @@ var xed_ild_enum_8h =
     [ "XED_ILD_VEX_MAP1_DEFINED", "xed-ild-enum_8h.html#aa39be214d759b5346876bb32cf6fb75b", null ],
     [ "XED_ILD_VEX_MAP2_DEFINED", "xed-ild-enum_8h.html#a820f4b0488c08715d485ed76370a6f8a", null ],
     [ "XED_ILD_VEX_MAP3_DEFINED", "xed-ild-enum_8h.html#aeab9eaa784b8ae064d5de85a59695b4d", null ],
+    [ "XED_ILD_VEX_MAP5_DEFINED", "xed-ild-enum_8h.html#afe1cc1832155d2c6ced5994a03d899ef", null ],
     [ "XED_ILD_VEX_MAP7_DEFINED", "xed-ild-enum_8h.html#a822f3ea9752a884402ae764487657db5", null ],
     [ "xed_ild_map_enum_t", "xed-ild-enum_8h.html#a573968bc8cdeb699857acbd9fa0b772d", [
       [ "XED_ILD_AMD_3DNOW", "xed-ild-enum_8h.html#a573968bc8cdeb699857acbd9fa0b772da1228937b80806bdd31fac1020610ba28", null ],
@@ -40,6 +41,7 @@ var xed_ild_enum_8h =
       [ "XED_ILD_VEX_MAP1", "xed-ild-enum_8h.html#a573968bc8cdeb699857acbd9fa0b772da46c38b585d36bcbdae3a1b66bfb3098d", null ],
       [ "XED_ILD_VEX_MAP2", "xed-ild-enum_8h.html#a573968bc8cdeb699857acbd9fa0b772dabd5c91b37e73a7086d8fb556b85ddd8e", null ],
       [ "XED_ILD_VEX_MAP3", "xed-ild-enum_8h.html#a573968bc8cdeb699857acbd9fa0b772dabb81ecb7b44acf861d976e58dd1647a3", null ],
+      [ "XED_ILD_VEX_MAP5", "xed-ild-enum_8h.html#a573968bc8cdeb699857acbd9fa0b772da791a2e2f989f110f473bb5f5a3821ec0", null ],
       [ "XED_ILD_VEX_MAP7", "xed-ild-enum_8h.html#a573968bc8cdeb699857acbd9fa0b772dae94525246705a16cab5ceb33ac71d6bd", null ],
       [ "XED_ILD_MAP_INVALID", "xed-ild-enum_8h.html#a573968bc8cdeb699857acbd9fa0b772da5a1925bfedeb28184c13b9a96a5357ee", null ],
       [ "XED_ILD_LAST", "xed-ild-enum_8h.html#a573968bc8cdeb699857acbd9fa0b772da343b62400c222f36b1b4e65d4a7cfc22", null ]

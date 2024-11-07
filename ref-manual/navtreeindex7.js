@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"xed-build-defines_8h.html#a87d55f68ab62adc3d837b4869e7d699c":[3,0,4,10],
 "xed-build-defines_8h.html#a95f1fad201f70ea6c2a52466dbae3e24":[3,0,4,12],
 "xed-build-defines_8h.html#aa4d59703d69cbc4f06db0bc5ae86d8af":[3,0,4,3],
 "xed-build-defines_8h.html#abea6dd2cd2a6977b9e9dc0798493faa6":[3,0,4,11],
@@ -238,16 +239,15 @@ var NAVTREEINDEX7 =
 "xed-category-enum_8h.html#affbae944e41a71c4970da58a28d1cd00":[3,0,5,88],
 "xed-category-enum_8h.html#affdf6d1b8d8ab5d7ce8fbed110805a35":[3,0,5,45],
 "xed-chip-enum_8h.html":[3,0,6],
-"xed-chip-enum_8h.html#a0045f23f890651636577917d67d0ef5f":[3,0,6,52],
-"xed-chip-enum_8h.html#a00928128e179741d7d4437dd95d91154":[3,0,6,66],
+"xed-chip-enum_8h.html#a0045f23f890651636577917d67d0ef5f":[3,0,6,53],
+"xed-chip-enum_8h.html#a00928128e179741d7d4437dd95d91154":[3,0,6,67],
 "xed-chip-enum_8h.html#a06e420940b2009dddceb6543ef2c1e79":[3,0,6,8],
-"xed-chip-enum_8h.html#a08ef266b46970c5b3e59d9b2b7fc4416":[3,0,6,48],
-"xed-chip-enum_8h.html#a09db8bb6b79d22bc43b2f1d76c220617":[3,0,6,58],
-"xed-chip-enum_8h.html#a0b769e47be34178f17460963100bc748":[3,0,6,60],
-"xed-chip-enum_8h.html#a1af5f053166b8aaaa88415cdfb6c9259":[3,0,6,24],
+"xed-chip-enum_8h.html#a08ef266b46970c5b3e59d9b2b7fc4416":[3,0,6,49],
+"xed-chip-enum_8h.html#a09db8bb6b79d22bc43b2f1d76c220617":[3,0,6,59],
+"xed-chip-enum_8h.html#a0b769e47be34178f17460963100bc748":[3,0,6,61],
+"xed-chip-enum_8h.html#a1af5f053166b8aaaa88415cdfb6c9259":[3,0,6,25],
 "xed-chip-enum_8h.html#a1cd5d2a695cab334b6b1c88e42e62b4b":[3,0,6,15],
-"xed-chip-enum_8h.html#a1d346c20a937ba70005fc7c15dd9a7fe":[3,0,6,22],
-"xed-chip-enum_8h.html#a21e1c3bb6fbec9973234d978ab1e7112":[3,0,6,59],
-"xed-chip-enum_8h.html#a2a60001c05b73f0096f6705026b9b170":[3,0,6,2],
-"xed-chip-enum_8h.html#a2cf71d7255c8b70d4f4b85a5710d7ac5":[3,0,6,6]
+"xed-chip-enum_8h.html#a1d346c20a937ba70005fc7c15dd9a7fe":[3,0,6,23],
+"xed-chip-enum_8h.html#a21e1c3bb6fbec9973234d978ab1e7112":[3,0,6,60],
+"xed-chip-enum_8h.html#a2a60001c05b73f0096f6705026b9b170":[3,0,6,2]
 };

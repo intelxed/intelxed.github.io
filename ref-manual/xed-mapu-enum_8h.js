@@ -20,6 +20,7 @@ var xed_mapu_enum_8h =
     [ "XED_MAPU_VEX_MAP1_DEFINED", "xed-mapu-enum_8h.html#a2dcd2279be79692bf89788e7045acb89", null ],
     [ "XED_MAPU_VEX_MAP2_DEFINED", "xed-mapu-enum_8h.html#a284440b0d85191c1d9fe0a5e68f35216", null ],
     [ "XED_MAPU_VEX_MAP3_DEFINED", "xed-mapu-enum_8h.html#a2b4af3d1e1baf50c0fa8dd9bb06f9198", null ],
+    [ "XED_MAPU_VEX_MAP5_DEFINED", "xed-mapu-enum_8h.html#a399e4fb2434618f538854cf91cc16cce", null ],
     [ "XED_MAPU_VEX_MAP7_DEFINED", "xed-mapu-enum_8h.html#a0b58d6ebb087d38f098f815b89d8797e", null ],
     [ "xed_mapu_enum_t", "xed-mapu-enum_8h.html#a4735ecb72821e6c68d4e410db638ba6b", [
       [ "XED_MAPU_INVALID", "xed-mapu-enum_8h.html#a4735ecb72821e6c68d4e410db638ba6ba534419c97d26987706dfed1f57ebd7bb", null ],
@@ -41,6 +42,7 @@ var xed_mapu_enum_8h =
       [ "XED_MAPU_VEX_MAP1", "xed-mapu-enum_8h.html#a4735ecb72821e6c68d4e410db638ba6ba4fda5710fc50aadb6252b24c07a50159", null ],
       [ "XED_MAPU_VEX_MAP2", "xed-mapu-enum_8h.html#a4735ecb72821e6c68d4e410db638ba6baaab8fd7d5836acb6b95979192d5a80ad", null ],
       [ "XED_MAPU_VEX_MAP3", "xed-mapu-enum_8h.html#a4735ecb72821e6c68d4e410db638ba6ba123d6eac55ea9af4a2ce1ddfa18bd7f6", null ],
+      [ "XED_MAPU_VEX_MAP5", "xed-mapu-enum_8h.html#a4735ecb72821e6c68d4e410db638ba6ba4d412509ea5340550138481babfb66f3", null ],
       [ "XED_MAPU_VEX_MAP7", "xed-mapu-enum_8h.html#a4735ecb72821e6c68d4e410db638ba6bac8f87ff55b589923c9143357ed03e4ca", null ],
       [ "XED_MAPU_LAST", "xed-mapu-enum_8h.html#a4735ecb72821e6c68d4e410db638ba6ba954405caa0e7507eb3b8118789bf7686", null ]
     ] ],

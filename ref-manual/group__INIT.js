@@ -21,5 +21,5 @@ var group__INIT =
     [ "xed_state_set_machine_mode", "group__INIT.html#gabb8aa407f1664d9cee6201bb69e638f7", null ],
     [ "xed_state_set_stack_address_width", "group__INIT.html#ga724e2158223d6c97bd8fb619af042cf7", null ],
     [ "xed_state_zero", "group__INIT.html#ga8eea80ff7aa0fc77c3c3e90ce3e1fd64", null ],
-    [ "xed_tables_init", "group__INIT.html#gacc180d75159533eb63e61611004d4512", null ]
+    [ "xed_tables_init", "group__INIT.html#ga0fba52fba611ceaf93ace0a236d9cb7c", null ]
 ];
