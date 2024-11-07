@@ -1,6 +1,7 @@
 var group__PRINT =
 [
     [ "xed_format_options_t", "structxed__format__options__t.html", [
+      [ "emit_ignored_branch_taken_hint", "structxed__format__options__t.html#ae241ede0d62ea594d6cb4d3b2b3e8460", null ],
       [ "hex_address_before_symbolic_name", "structxed__format__options__t.html#a9859337bb1e80b9406ef029e2e88a388", null ],
       [ "lowercase_hex", "structxed__format__options__t.html#aa4854459a1abec9171c9065e164edecf", null ],
       [ "no_sign_extend_signed_immediates", "structxed__format__options__t.html#a52f1af3c6153aea31d80aa837d8fd075", null ],

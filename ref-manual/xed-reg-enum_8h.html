@@ -1343,8 +1343,6 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="xed-reg-enum_8h.html#af05c33c5a68e9304d1d8ac0408ae3f61aec333803672d4f9317198faa16535df6">XED_REG_TILECONFIG</a>, 
 <br />
-&#160;&#160;<a class="el" href="xed-reg-enum_8h.html#af05c33c5a68e9304d1d8ac0408ae3f61adbf23c905b7f860b98ea29d210a9b6f7">XED_REG_IA32_KERNEL_GS_BASE</a>, 
-<br />
 &#160;&#160;<a class="el" href="xed-reg-enum_8h.html#af05c33c5a68e9304d1d8ac0408ae3f61a31c7fe3bdde476ffb225ad22ccc908c4">XED_REG_DFV0</a>, 
 <br />
 &#160;&#160;<a class="el" href="xed-reg-enum_8h.html#af05c33c5a68e9304d1d8ac0408ae3f61a938b999ccdad087e4c93f226ae7a3c59">XED_REG_DFV1</a>, 
@@ -1376,6 +1374,8 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="xed-reg-enum_8h.html#af05c33c5a68e9304d1d8ac0408ae3f61ae2fb9c47d6a7658fb56ba0b72c609fc0">XED_REG_DFV14</a>, 
 <br />
 &#160;&#160;<a class="el" href="xed-reg-enum_8h.html#af05c33c5a68e9304d1d8ac0408ae3f61a109eabcc1d98f57fe4e17cf5c09b278f">XED_REG_DFV15</a>, 
+<br />
+&#160;&#160;<a class="el" href="xed-reg-enum_8h.html#af05c33c5a68e9304d1d8ac0408ae3f61adbf23c905b7f860b98ea29d210a9b6f7">XED_REG_IA32_KERNEL_GS_BASE</a>, 
 <br />
 &#160;&#160;<a class="el" href="xed-reg-enum_8h.html#af05c33c5a68e9304d1d8ac0408ae3f61a85e9380a781b38209b6ea7e616ccd872">XED_REG_X87CONTROL</a>, 
 <br />
@@ -1743,7 +1743,7 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="xed-reg-enum_8h.html#af05c33c5a68e9304d1d8ac0408ae3f61afdcd04ad6ee6a0e2e1f8089c89651365">XED_REG_PSEUDO_FIRST</a> =XED_REG_STACKPUSH, 
 <br />
-&#160;&#160;<a class="el" href="xed-reg-enum_8h.html#af05c33c5a68e9304d1d8ac0408ae3f61ad8a61b93c3d6273d4e9d6ea637553884">XED_REG_PSEUDO_LAST</a> =XED_REG_DFV15, 
+&#160;&#160;<a class="el" href="xed-reg-enum_8h.html#af05c33c5a68e9304d1d8ac0408ae3f61ad8a61b93c3d6273d4e9d6ea637553884">XED_REG_PSEUDO_LAST</a> =XED_REG_IA32_KERNEL_GS_BASE, 
 <br />
 &#160;&#160;<a class="el" href="xed-reg-enum_8h.html#af05c33c5a68e9304d1d8ac0408ae3f61aff704eec3f5ff61766f2ea6325b19ad0">XED_REG_PSEUDOX87_FIRST</a> =XED_REG_X87CONTROL, 
 <br />
@@ -7923,7 +7923,6 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="af05c33c5a68e9304d1d8ac0408ae3f61a964f6af2bc8d22bce7a2ac7bf3b8e100"></a>XED_REG_FSBASE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="af05c33c5a68e9304d1d8ac0408ae3f61a091a1d5a538f1a143d598c498466e314"></a>XED_REG_GSBASE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="af05c33c5a68e9304d1d8ac0408ae3f61aec333803672d4f9317198faa16535df6"></a>XED_REG_TILECONFIG&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="af05c33c5a68e9304d1d8ac0408ae3f61adbf23c905b7f860b98ea29d210a9b6f7"></a>XED_REG_IA32_KERNEL_GS_BASE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="af05c33c5a68e9304d1d8ac0408ae3f61a31c7fe3bdde476ffb225ad22ccc908c4"></a>XED_REG_DFV0&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="af05c33c5a68e9304d1d8ac0408ae3f61a938b999ccdad087e4c93f226ae7a3c59"></a>XED_REG_DFV1&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="af05c33c5a68e9304d1d8ac0408ae3f61ae62fe5968d32b9107f807adafa98b759"></a>XED_REG_DFV2&#160;</td><td class="fielddoc"></td></tr>
@@ -7940,6 +7939,7 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="af05c33c5a68e9304d1d8ac0408ae3f61ab19546620a31cc19848482982cc0c8c8"></a>XED_REG_DFV13&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="af05c33c5a68e9304d1d8ac0408ae3f61ae2fb9c47d6a7658fb56ba0b72c609fc0"></a>XED_REG_DFV14&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="af05c33c5a68e9304d1d8ac0408ae3f61a109eabcc1d98f57fe4e17cf5c09b278f"></a>XED_REG_DFV15&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af05c33c5a68e9304d1d8ac0408ae3f61adbf23c905b7f860b98ea29d210a9b6f7"></a>XED_REG_IA32_KERNEL_GS_BASE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="af05c33c5a68e9304d1d8ac0408ae3f61a85e9380a781b38209b6ea7e616ccd872"></a>XED_REG_X87CONTROL&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="af05c33c5a68e9304d1d8ac0408ae3f61aa2bcad2140c60812654e2a46e380c2e9"></a>XED_REG_X87STATUS&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="af05c33c5a68e9304d1d8ac0408ae3f61abe1498274f6c478a81f4009e2dbd8afa"></a>XED_REG_X87TAG&#160;</td><td class="fielddoc"></td></tr>

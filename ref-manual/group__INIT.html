@@ -113,8 +113,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga884629a9ddd4db55da6aa0b012423108"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga017b6fcac483ea9f1621c4cdd0af84bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xed-common-hdrs_8h.html#a029d5ee2957ac2af5e2b75ec09f1daf9">XED_DLL_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__INIT.html#ga017b6fcac483ea9f1621c4cdd0af84bd">xed_register_abort_function</a> (<a class="el" href="xed-util_8h.html#a45f6a52b3be7c5335e5b59827e43ca23">xed_user_abort_function_t</a> fn, void *other)</td></tr>
 <tr class="separator:ga017b6fcac483ea9f1621c4cdd0af84bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacc180d75159533eb63e61611004d4512"><td class="memItemLeft" align="right" valign="top">void <a class="el" href="xed-common-hdrs_8h.html#a029d5ee2957ac2af5e2b75ec09f1daf9">XED_DLL_EXPORT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__INIT.html#gacc180d75159533eb63e61611004d4512">xed_tables_init</a> (void)</td></tr>
-<tr class="separator:gacc180d75159533eb63e61611004d4512"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0fba52fba611ceaf93ace0a236d9cb7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xed-common-hdrs_8h.html#a029d5ee2957ac2af5e2b75ec09f1daf9">XED_DLL_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__INIT.html#ga0fba52fba611ceaf93ace0a236d9cb7c">xed_tables_init</a> (void)</td></tr>
+<tr class="separator:ga0fba52fba611ceaf93ace0a236d9cb7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Initialization</h2></td></tr>
@@ -171,7 +171,7 @@ Stack address width</h2></td></tr>
 <div class="fragment"><div class="line"><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="xed-interface_8h.html">xed-interface.h</a>&quot;</span></div>
 <div class="line">}</div>
-</div><!-- fragment --><p>Once, before using Intel&reg; XED, you must call <a class="el" href="group__INIT.html#gacc180d75159533eb63e61611004d4512">xed_tables_init()</a> to initialize the tables Intel&reg; XED uses for encoding and decoding: </p><div class="fragment"><div class="line"><a class="code" href="group__INIT.html#gacc180d75159533eb63e61611004d4512">xed_tables_init</a>();</div>
+</div><!-- fragment --><p>Once, before using Intel&reg; XED, you must call <a class="el" href="group__INIT.html#ga0fba52fba611ceaf93ace0a236d9cb7c">xed_tables_init()</a> to initialize the tables Intel&reg; XED uses for encoding and decoding: </p><div class="fragment"><div class="line"><a class="code" href="group__INIT.html#ga0fba52fba611ceaf93ace0a236d9cb7c">xed_tables_init</a>();</div>
 </div><!-- fragment --><p>Once initialized, Intel&reg; XED is reentrant (multithread safe). All values used for encoding and decoding live on the caller's stack or in the passed-in parameters.</p>
 <p>If your program is multithreaded, initialize Intel&reg; XED once (and only once) using the above call before you attempt to decode or encode from any thread. Each thread does NOT need to initialize Intel&reg; XED. The idea is to initialize Intel&reg; XED before creating your threads. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -708,14 +708,14 @@ Stack address width</h2></td></tr>
 
 </div>
 </div>
-<a id="gacc180d75159533eb63e61611004d4512"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacc180d75159533eb63e61611004d4512">&#9670;&nbsp;</a></span>xed_tables_init()</h2>
+<a id="ga0fba52fba611ceaf93ace0a236d9cb7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0fba52fba611ceaf93ace0a236d9cb7c">&#9670;&nbsp;</a></span>xed_tables_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="xed-common-hdrs_8h.html#a029d5ee2957ac2af5e2b75ec09f1daf9">XED_DLL_EXPORT</a> xed_tables_init </td>
+          <td class="memname"><a class="el" href="xed-common-hdrs_8h.html#a029d5ee2957ac2af5e2b75ec09f1daf9">XED_DLL_EXPORT</a> void xed_tables_init </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -729,7 +729,7 @@ Stack address width</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="agroup__INIT_html_gacc180d75159533eb63e61611004d4512"><div class="ttname"><a href="group__INIT.html#gacc180d75159533eb63e61611004d4512">xed_tables_init</a></div><div class="ttdeci">void XED_DLL_EXPORT xed_tables_init(void)</div></div>
+<div class="ttc" id="agroup__INIT_html_ga0fba52fba611ceaf93ace0a236d9cb7c"><div class="ttname"><a href="group__INIT.html#ga0fba52fba611ceaf93ace0a236d9cb7c">xed_tables_init</a></div><div class="ttdeci">XED_DLL_EXPORT void xed_tables_init(void)</div></div>
 <div class="ttc" id="axed-interface_8h_html"><div class="ttname"><a href="xed-interface_8h.html">xed-interface.h</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
