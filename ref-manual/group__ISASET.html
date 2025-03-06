@@ -82,7 +82,7 @@ $(document).ready(function(){initNavTree('group__ISASET.html',''); initResizable
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Groupings of features for chips</div>  </div>
@@ -92,10 +92,10 @@ $(document).ready(function(){initNavTree('group__ISASET.html',''); initResizable
 <p>Every Intel&reg; XED iform belongs to one <a class="el" href="xed-isa-set-enum_8h.html#a4a1095357d6e9552d94418d2bd9f5681">xed_isa_set_enum_t</a>. Each Intel&reg; XED chip of type <a class="el" href="xed-chip-enum_8h.html#ae77c7c405380680ef2414d50d67f1301">xed_chip_enum_t</a> represents a collection of xed "isa-sets". If you have a <a class="el" href="group__DEC.html#gacc9a7be76b242c5bf65f56036f5399e6">xed_decoded_inst_t</a>, you can get the isa set via the function <a class="el" href="group__DEC.html#ga085ca25ab4513e982c563b30927dffc9">xed_decoded_inst_get_isa_set</a>.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structxed__chip__features__t.html">xed_chip_features_t</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga9c78205724d78b3382a57418a7b0bb90"><td class="memItemLeft" align="right" valign="top">typedef xed_uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ISASET.html#ga9c78205724d78b3382a57418a7b0bb90">xed_features_elem_t</a></td></tr>
+<tr class="separator:ga9c78205724d78b3382a57418a7b0bb90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -105,6 +105,21 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Every Intel&reg; XED iform belongs to one <a class="el" href="xed-isa-set-enum_8h.html#a4a1095357d6e9552d94418d2bd9f5681">xed_isa_set_enum_t</a>. Each Intel&reg; XED chip of type <a class="el" href="xed-chip-enum_8h.html#ae77c7c405380680ef2414d50d67f1301">xed_chip_enum_t</a> represents a collection of xed "isa-sets". If you have a <a class="el" href="group__DEC.html#gacc9a7be76b242c5bf65f56036f5399e6">xed_decoded_inst_t</a>, you can get the isa set via the function <a class="el" href="group__DEC.html#ga085ca25ab4513e982c563b30927dffc9">xed_decoded_inst_get_isa_set</a>. </p>
 <p>Intel&reg; XED chip-check supports the detection of all Intel&reg; APX instructions and flavors, whether be it a new Intel&reg; APX instruction, legacy instruction with REX2 prefix, EVEX instruction with EGPR as one of its operands (register or memory) or EVEX instruction with ignored EGPR encoding. </p>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="ga9c78205724d78b3382a57418a7b0bb90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9c78205724d78b3382a57418a7b0bb90">&#9670;&nbsp;</a></span>xed_features_elem_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef xed_uint64_t <a class="el" href="group__ISASET.html#ga9c78205724d78b3382a57418a7b0bb90">xed_features_elem_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga84dd41dd65bce8f8daabc8ce69c4d043"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga84dd41dd65bce8f8daabc8ce69c4d043">&#9670;&nbsp;</a></span>xed_isa_set_is_valid_for_chip()</h2>

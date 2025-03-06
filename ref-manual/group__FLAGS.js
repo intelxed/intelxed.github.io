@@ -64,7 +64,6 @@ var group__FLAGS =
     [ "xed_flag_action_read_flag", "group__FLAGS.html#ga08e4a4c4eea80dc85f569ca1a4b7f614", null ],
     [ "xed_flag_action_write_action", "group__FLAGS.html#ga93ce4bd708adffe1ec0c5c3a884802cc", null ],
     [ "xed_flag_action_writes_flag", "group__FLAGS.html#gae17824babf697205b4ec3ea1547e6f95", null ],
-    [ "xed_flag_dfv_get_default_flags_values", "group__FLAGS.html#ga1e6bf5fadd96a36207f7f16244f0cb43", null ],
     [ "xed_flag_set_is_subset_of", "group__FLAGS.html#ga1beb49469f104f6e92147b0522fb7cc0", null ],
     [ "xed_flag_set_mask", "group__FLAGS.html#ga615e2237e74d1c365addeb299d2efdd4", null ],
     [ "xed_flag_set_print", "group__FLAGS.html#ga7f7a68d1f3d02a08b60205a96e025bb2", null ],

@@ -19,6 +19,7 @@ var files_dup =
     [ "xed-decode.h", "xed-decode_8h.html", "xed-decode_8h" ],
     [ "xed-decoded-inst-api.h", "xed-decoded-inst-api_8h.html", "xed-decoded-inst-api_8h" ],
     [ "xed-decoded-inst.h", "xed-decoded-inst_8h.html", "xed-decoded-inst_8h" ],
+    [ "xed-decoder-modes.h", "xed-decoder-modes_8h.html", "xed-decoder-modes_8h" ],
     [ "xed-disas.h", "xed-disas_8h.html", "xed-disas_8h" ],
     [ "xed-encode-check.h", "xed-encode-check_8h.html", "xed-encode-check_8h" ],
     [ "xed-encode-direct.h", "xed-encode-direct_8h.html", "xed-encode-direct_8h" ],
