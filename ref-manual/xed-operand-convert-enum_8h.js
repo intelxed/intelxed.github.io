@@ -1,6 +1,7 @@
 var xed_operand_convert_enum_8h =
 [
     [ "XED_OPERAND_CONVERT_BCASTSTR_DEFINED", "xed-operand-convert-enum_8h.html#a1371a2803791d973f1c63d454fb5c837", null ],
+    [ "XED_OPERAND_CONVERT_DFVSTR_DEFINED", "xed-operand-convert-enum_8h.html#a5cada0d8c80f1a3f38253bc2bed023ed", null ],
     [ "XED_OPERAND_CONVERT_INVALID_DEFINED", "xed-operand-convert-enum_8h.html#aa12eac7b4d1ddf2d1cc2c4626f8c818e", null ],
     [ "XED_OPERAND_CONVERT_LAST_DEFINED", "xed-operand-convert-enum_8h.html#ab7d988b1929af2f8d81df01cd020a5ab", null ],
     [ "XED_OPERAND_CONVERT_MULTIREG10_DEFINED", "xed-operand-convert-enum_8h.html#af57a55675f6e58a30c3bc0b26dbe0dba", null ],
@@ -28,6 +29,7 @@ var xed_operand_convert_enum_8h =
       [ "XED_OPERAND_CONVERT_SAESTR", "xed-operand-convert-enum_8h.html#a08b83dd2a6ef2188efb833bd5b0d7d9fa6961f4382c00f8bccf61a585590236d6", null ],
       [ "XED_OPERAND_CONVERT_ROUNDC", "xed-operand-convert-enum_8h.html#a08b83dd2a6ef2188efb833bd5b0d7d9fa64dd1cbbeb25b835fd07ba47c9e886bf", null ],
       [ "XED_OPERAND_CONVERT_BCASTSTR", "xed-operand-convert-enum_8h.html#a08b83dd2a6ef2188efb833bd5b0d7d9fa7fc74f85c4a60317ea0466b75d5bd3cf", null ],
+      [ "XED_OPERAND_CONVERT_DFVSTR", "xed-operand-convert-enum_8h.html#a08b83dd2a6ef2188efb833bd5b0d7d9fa0c11de1665e2f87e7ba0517e975d1ad2", null ],
       [ "XED_OPERAND_CONVERT_MULTIREG_START", "xed-operand-convert-enum_8h.html#a08b83dd2a6ef2188efb833bd5b0d7d9fa0dec0fe7237f3c1f6785ccff44a0103f", null ],
       [ "XED_OPERAND_CONVERT_MULTIREG2", "xed-operand-convert-enum_8h.html#a08b83dd2a6ef2188efb833bd5b0d7d9facfd74de712af8f77d9193b210c98a1a2", null ],
       [ "XED_OPERAND_CONVERT_MULTIREG3", "xed-operand-convert-enum_8h.html#a08b83dd2a6ef2188efb833bd5b0d7d9fa5b5ad34082b1606752abd7a64973c641", null ],

@@ -85,7 +85,7 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <div class="title">Intel&reg; X86 Encoder Decoder User Guide </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>September 2024</p>
+<div class="textblock"><p>February 2025</p>
 <h1><a class="anchor" id="INTRO"></a>
 Introduction</h1>
 <p>Intel&reg; XED is an acronym for X86 Encoder Decoder. The latter part is pronounced like the (British) English "z".</p>
@@ -398,9 +398,23 @@ Intel® APX Operands</h2>
 <li>XED_EXTENSION_APXLEGACY: For new APX-F instructions within the Legacy encoding space</li>
 <li>XED_EXTENSION_APXEVEX: For new and promoted APX-F instructions within the EVEX encoding space</li>
 </ul>
-<p>CCMP and CTEST are two new sets of instructions for conditional CMP and TEST, respectively. These instructions introduce a new 4-bit pseudo-register for "Default Flags Values" called DFV (EVEX.[OF, SF, ZF, CF]).</p>
-<p>The register index represents the bits for the default flags, for example, DFV10.index == 10 == 0b1010 -&gt; OF=1, SF=0, ZF=1, CF=0. The DFV pseudo-register should be explicitly defined in an encoder request.</p>
-<p>The <a class="el" href="group__DEC.html#gaf12b60b6cc0906ebc1ad36ba4d43035e">xed_decoded_inst_get_dfv_reg()</a> API can be used to retrieve a DFV register enumeration from a decoded instruction. The <a class="el" href="group__FLAGS.html#ga1e6bf5fadd96a36207f7f16244f0cb43">xed_flag_dfv_get_default_flags_values()</a> API can be used to get the default flags values given a DFV register enumeration.</p>
+<p>CCMP and CTEST are new instruction sets for conditional CMP and TEST, introducing a 4-bit "Default Flags Values" behavior, represented in Intel&reg; XED as the DFV XED-operand. The DFV XED-operand encodes default flag bits as:</p><ul>
+<li>DFV.bit[0]: Carry Flag (CF)</li>
+<li>DFV.bit[1]: Zero Flag (ZF)</li>
+<li>DFV.bit[2]: Sign Flag (SF)</li>
+<li>DFV.bit[3]: Overflow Flag (OF)</li>
+</ul>
+<p>To use DFV:</p><ul>
+<li>Decoder:<ul>
+<li>Use <a class="el" href="group__DEC.html#ga6e55f30d7eacef8308903a4acfd6193f">xed_decoded_inst_has_default_flags_values()</a> to detect DFV-supported instructions.</li>
+<li>Use <a class="el" href="group__DEC.html#ga9f45ec3ed205d0f8419d64d4bdbd7953">xed_decoded_inst_get_default_flags_values()</a> to retrieve default flags as a xed_flag_dfv_t struct.</li>
+</ul>
+</li>
+<li>Intel&reg; XED CLI encode request:<ul>
+<li>Set the DFV XED-operand as an integer representing these 4 bits in the encoder request.</li>
+</ul>
+</li>
+</ul>
 <p>Developers can, however, dynamically disable Intel&reg; APX architecture encoder support using the 'NO_APX' API <a class="el" href="xed-operand-accessors_8h.html#a0d0a166d9efe570f975cb56038144bbe">xed3_operand_set_no_apx()</a>. The <a class="el" href="xed-operand-accessors_8h.html#af21fb45771bf9807dee7a7e2019413ec">xed3_operand_set_must_use_evex()</a> API can also be used for APX promoted instructions in order to force EVEX space upon the encoding request.</p>
 <p>Developers wishing to encode No-Flags Intel&reg; APX instructions should set the NF Intel&reg; XED operand.</p>
 <h2><a class="anchor" id="OPERAND_VISIBILITY"></a>

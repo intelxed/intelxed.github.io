@@ -89,20 +89,64 @@ $(document).ready(function(){initNavTree('group__EXAMPLES.html',''); initResizab
 <p>The source code for the examples is in the "examples" subdirectory.  
 <a href="#details">More...</a></p>
 <p>The source code for the examples is in the "examples" subdirectory. </p>
-<p>There is a makefile that will build all the examples on linux or windows.</p>
-<p>There are several examples: </p><ul>
+<p>There is a makefile that will build all the examples on Linux or windows.</p>
+<p>There are several examples, mainly: </p><ul>
 <li>
-<p class="startli">xed-ex1.c: a simple decoder that prints the decode data structure. This is included in the "Small Examples" section below. It is a good example for using the major decoder APIs.</p>
+xed.c: This is the main Intel&reg; XED example. It's a complete example touching down on most of Intel&reg; XED's capabilities and APIs, including decoding, encoding, image file reading and chip-check APIs and functionality. </li>
+<li>
+xed-ex1.c: A quintessential decoder example that uses most of the decode APIs. It is recommended for users who want to deeply understand the numerous APIs for decoded instructions and their usages. This is included in the "Small Examples" section below. It is a good example for using the major decoder APIs. This example supports emitting detailed instruction metadata: prefixes, CPUID leaves, rounding modes, branch-hints, flags, operands and more. This example can also elaborate on EVEX/VEX prefix bit info using a specified verbosity mode. It supports CPUID-based defeaturing as well. </li>
+<li>
+xed-ex3.c: A lightweight encoder example used to parse command line arguments and encode them into a stream of bytes. For more insight on the encode request syntax and the encoder examples, please see <a class="el" href="group__CMDLINE.html">Intel&reg; XED command interface</a> page. </li>
+<li>
+xed-ex4.c: A simple decoder example with different disassembly output formats. It contains highly descriptive usages of the new decode-with-features APIs. </li>
+<li>
+xed-ex5-enc.c: A simple non-dynamic encoder example using the high-level encoding API. </li>
+<li>
+xed-ex6.c: This is a subset of the main example, which works as a concentrated example of the decode-encode (-de) feature. </li>
+<li>
+xed-ex9-patch.c: A non-dynamic example that shows how to patch (modify) the xed_encoder_instruction data structure yielded from the encoder. </li>
+<li>
+<p class="startli">xed-asmparse-main.c: A unique encoder example showcasing how to process command-line encode requests in assembly format It allows processing multiple requests separated by a semicolon. This is different from other encoder examples in that the input is not in Intel&reg; XED encode request format.</p>
 <p class="endli"></p>
 </li>
+</ul>
+<p>Other specific use-case examples: </p><ul>
 <li>
-xed-ex4.c:a simple decoder with different disassmebly output formats </li>
+xed-dll-discovery.c: When using Intel&reg; XED as a DLL or shared object, the enumerations can change from one version to another if instructions (or features) are added. Each Intel&reg; XED enumeration must be mapped to something your Intel&reg; XED client can use for indepedent compilation (custom fixed enumeration). This example shows how to discover the Intel&reg; XED values for the xed_iclass_enum_t and construct a mapping from names that are constant to your tool to names that can vary. You would need to do this for each Intel&reg; XED enumeration that your Intel&reg; XED client uses. </li>
 <li>
-xed-ex5-enc.c: encoder example using the high-level encoding API. </li>
+xed-enc2-*.c: These examples showcase the use of ENC2 encode APIs. ENC2 is our much faster, low-level encoder. </li>
 <li>
-xed.c: a decoder, encoder, image file reader, etc. </li>
+xed-ex-agen.c: Creates an artificial AGEN (address generation) calculator for testing and works as a valuable example for using xed_agen API. </li>
 <li>
-xed-ex3.c: an encoder (subset of the xed command line tool). Documented with "xed" on the <a class="el" href="group__CMDLINE.html">Intel&reg; XED command interface</a> page. </li>
+xed-ild-dec.c: An example for using the instruction length decoder API. </li>
+<li>
+xed-ild-dec2.c: An example that compares the results of regular decoding and instruction length decoding for further validation. </li>
+<li>
+xed-tables.c: An example that shows how to access Intel&reg; XED's internal tables, which contain static data for all Intel&reg; XED-supported instructions. </li>
+<li>
+xed-size.c: Outputs the sizes of Intel&reg; XED data structures. Can be useful for analytical purposes and auto-generation workflows. </li>
+<li>
+<p class="startli">xed-reps.c: Shows the use of the REP prefix APIs, which basically returns the non-REP variant of a REP ICLASS and vice versa.</p>
+<p class="endli"></p>
+</li>
+</ul>
+<p>The above examples use the following utilities to process different inputs: </p><ul>
+<li>
+xed-disas-elf: Used to disassemble ELF (Executable and Linkable Format) binaries. If the binary contains DWARF debugging information (generated by the compiler in a specific format), this example can map addresses to source code line numbers, making it easier to correlate the disassembled code with the original source code. </li>
+<li>
+xed-disas-macho: Useful for disassembling Mach-O binaries on macOS. </li>
+<li>
+xed-disas-hex: Used to disassemble hexadecimal byte sequences from a file. </li>
+<li>
+xed-disas-raw: Used to disassemble raw binary data. </li>
+<li>
+xed-disas-pecoff: Used to disassemble PE/COFF (Portable Executable/Common Object File Format) binaries on Windows. </li>
+<li>
+xed-enc-lang: A very detailed component that shows how to parse encode requests from the command line and then perform the encoding. </li>
+<li>
+<p class="startli">xed-dot: Generates a dependency graph from a set of decoded instructions and pours the results into a dot file. The dot file can be converted into a .png to visualize the results. Each node represents an instruction, an edge is added based on dependency between involved regs (RAW, WAW, WAR).</p>
+<p class="endli"></p>
+</li>
 </ul>
 <p>The examples are described in the following subsections:</p><ul>
 <li><a class="el" href="group__SMALLEXAMPLES.html">Small Examples</a> Small Examples</li>
