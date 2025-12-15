@@ -85,7 +85,8 @@ var menudata={children:[
 {text:"s",url:"globals_func.html#index_s"},
 {text:"x",url:"globals_func_x.html#index_x"}]},
 {text:"Variables",url:"globals_vars.html"},
-{text:"Typedefs",url:"globals_type.html"},
+{text:"Typedefs",url:"globals_type.html",children:[
+{text:"x",url:"globals_type.html#index_x"}]},
 {text:"Enumerations",url:"globals_enum.html",children:[
 {text:"x",url:"globals_enum.html#index_x"}]},
 {text:"Enumerator",url:"globals_eval.html",children:[

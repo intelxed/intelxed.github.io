@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"unionxed__union64__t.html#a45aa10d78b97e7753e3a4cfecc38f8db":[2,0,29,17],
 "unionxed__union64__t.html#a56b05ceeaf0a4899294c2bd89381452f":[2,0,29,12],
 "unionxed__union64__t.html#a59238c4741d26fc832d52bae06402272":[2,0,29,6],
 "unionxed__union64__t.html#a652f0fbf9432ba5125eebf86f0c3ce01":[2,0,29,24],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "xed-attribute-enum_8h.html#af53add38bf2d95d0b56cbc3d5df1d0c0":[3,0,2,20],
 "xed-attribute-enum_8h.html#af5d120066a6aceede46da0bf160cbb3b":[3,0,2,69],
 "xed-attribute-enum_8h.html#afbf3edbd8a2e338d3cb951cf63d43af1":[3,0,2,61],
-"xed-attribute-enum_8h.html#afc3b1e643a1a2add971a98749c82d6ba":[3,0,2,19],
-"xed-attribute-enum_8h.html#afd50c34f1ce9cbea69d5204e9276d060":[3,0,2,83]
+"xed-attribute-enum_8h.html#afc3b1e643a1a2add971a98749c82d6ba":[3,0,2,19]
 };

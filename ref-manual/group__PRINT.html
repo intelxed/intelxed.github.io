@@ -104,7 +104,7 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga649e276415051eb04318a95c4c59c874"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PRINT.html#ga649e276415051eb04318a95c4c59c874">xed_disassembly_callback_fn_t</a>) (xed_uint64_t address, char *symbol_buffer, xed_uint32_t buffer_length, xed_uint64_t *offset, void *context)</td></tr>
+<tr class="memitem:ga649e276415051eb04318a95c4c59c874"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PRINT.html#ga649e276415051eb04318a95c4c59c874">xed_disassembly_callback_fn_t</a>) (<a class="el" href="xed-types_8h.html#a8732401187d7d502b382774e82e1cd73">xed_uint64_t</a> address, char *symbol_buffer, <a class="el" href="xed-types_8h.html#a6acabb17a89cd0d93687b65c19257cbb">xed_uint32_t</a> buffer_length, <a class="el" href="xed-types_8h.html#a8732401187d7d502b382774e82e1cd73">xed_uint64_t</a> *offset, void *context)</td></tr>
 <tr class="separator:ga649e276415051eb04318a95c4c59c874"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -116,9 +116,9 @@ Functions</h2></td></tr>
 xed_decoded_inst_t Printers</h2></td></tr>
 <tr class="memitem:ga988943de2c61305278f50a26bb9945bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xed-common-hdrs_8h.html#a029d5ee2957ac2af5e2b75ec09f1daf9">XED_DLL_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PRINT.html#ga988943de2c61305278f50a26bb9945bc">xed_decoded_inst_dump</a> (const <a class="el" href="group__DEC.html#gacc9a7be76b242c5bf65f56036f5399e6">xed_decoded_inst_t</a> *p, char *buf, int buflen)</td></tr>
 <tr class="separator:ga988943de2c61305278f50a26bb9945bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafc335b6bbcbfaadcf3b4c5174c9e9444"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xed-common-hdrs_8h.html#a029d5ee2957ac2af5e2b75ec09f1daf9">XED_DLL_EXPORT</a> <a class="el" href="xed-types_8h.html#ad355c921b747945a82d62233a599c7b5">xed_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PRINT.html#gafc335b6bbcbfaadcf3b4c5174c9e9444">xed_decoded_inst_dump_xed_format</a> (const <a class="el" href="group__DEC.html#gacc9a7be76b242c5bf65f56036f5399e6">xed_decoded_inst_t</a> *p, char *buf, int buflen, xed_uint64_t runtime_address)</td></tr>
+<tr class="memitem:gafc335b6bbcbfaadcf3b4c5174c9e9444"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xed-common-hdrs_8h.html#a029d5ee2957ac2af5e2b75ec09f1daf9">XED_DLL_EXPORT</a> <a class="el" href="xed-types_8h.html#ad355c921b747945a82d62233a599c7b5">xed_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PRINT.html#gafc335b6bbcbfaadcf3b4c5174c9e9444">xed_decoded_inst_dump_xed_format</a> (const <a class="el" href="group__DEC.html#gacc9a7be76b242c5bf65f56036f5399e6">xed_decoded_inst_t</a> *p, char *buf, int buflen, <a class="el" href="xed-types_8h.html#a8732401187d7d502b382774e82e1cd73">xed_uint64_t</a> runtime_address)</td></tr>
 <tr class="separator:gafc335b6bbcbfaadcf3b4c5174c9e9444"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac09057f278cb90a5faefb39aaf4431e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xed-common-hdrs_8h.html#a029d5ee2957ac2af5e2b75ec09f1daf9">XED_DLL_EXPORT</a> <a class="el" href="xed-types_8h.html#ad355c921b747945a82d62233a599c7b5">xed_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PRINT.html#gac09057f278cb90a5faefb39aaf4431e0">xed_format_context</a> (<a class="el" href="xed-syntax-enum_8h.html#a226c37dc9f1af9e61dad79dc5f65bc9f">xed_syntax_enum_t</a> syntax, const <a class="el" href="group__DEC.html#gacc9a7be76b242c5bf65f56036f5399e6">xed_decoded_inst_t</a> *xedd, char *out_buffer, int buffer_len, xed_uint64_t runtime_instruction_address, void *context, <a class="el" href="group__PRINT.html#ga649e276415051eb04318a95c4c59c874">xed_disassembly_callback_fn_t</a> symbolic_callback)</td></tr>
+<tr class="memitem:gac09057f278cb90a5faefb39aaf4431e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xed-common-hdrs_8h.html#a029d5ee2957ac2af5e2b75ec09f1daf9">XED_DLL_EXPORT</a> <a class="el" href="xed-types_8h.html#ad355c921b747945a82d62233a599c7b5">xed_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PRINT.html#gac09057f278cb90a5faefb39aaf4431e0">xed_format_context</a> (<a class="el" href="xed-syntax-enum_8h.html#a226c37dc9f1af9e61dad79dc5f65bc9f">xed_syntax_enum_t</a> syntax, const <a class="el" href="group__DEC.html#gacc9a7be76b242c5bf65f56036f5399e6">xed_decoded_inst_t</a> *xedd, char *out_buffer, int buffer_len, <a class="el" href="xed-types_8h.html#a8732401187d7d502b382774e82e1cd73">xed_uint64_t</a> runtime_instruction_address, void *context, <a class="el" href="group__PRINT.html#ga649e276415051eb04318a95c4c59c874">xed_disassembly_callback_fn_t</a> symbolic_callback)</td></tr>
 <tr class="memdesc:gac09057f278cb90a5faefb39aaf4431e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disassemble the decoded instruction using the specified syntax.  <a href="group__PRINT.html#gac09057f278cb90a5faefb39aaf4431e0">More...</a><br /></td></tr>
 <tr class="separator:gac09057f278cb90a5faefb39aaf4431e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf353624c80f5c7d770bbdfc95a54acba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xed-common-hdrs_8h.html#a029d5ee2957ac2af5e2b75ec09f1daf9">XED_DLL_EXPORT</a> <a class="el" href="xed-types_8h.html#ad355c921b747945a82d62233a599c7b5">xed_bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PRINT.html#gaf353624c80f5c7d770bbdfc95a54acba">xed_format_generic</a> (<a class="el" href="structxed__print__info__t.html">xed_print_info_t</a> *pi)</td></tr>
@@ -142,7 +142,7 @@ Formatting options</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef int(* xed_disassembly_callback_fn_t) (xed_uint64_t address, char *symbol_buffer, xed_uint32_t buffer_length, xed_uint64_t *offset, void *context)</td>
+          <td class="memname">typedef int(* xed_disassembly_callback_fn_t) (<a class="el" href="xed-types_8h.html#a8732401187d7d502b382774e82e1cd73">xed_uint64_t</a> address, char *symbol_buffer, <a class="el" href="xed-types_8h.html#a6acabb17a89cd0d93687b65c19257cbb">xed_uint32_t</a> buffer_length, <a class="el" href="xed-types_8h.html#a8732401187d7d502b382774e82e1cd73">xed_uint64_t</a> *offset, void *context)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -224,7 +224,7 @@ Formatting options</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">xed_uint64_t&#160;</td>
+          <td class="paramtype"><a class="el" href="xed-types_8h.html#a8732401187d7d502b382774e82e1cd73">xed_uint64_t</a>&#160;</td>
           <td class="paramname"><em>runtime_address</em>&#160;</td>
         </tr>
         <tr>
@@ -280,7 +280,7 @@ Formatting options</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">xed_uint64_t&#160;</td>
+          <td class="paramtype"><a class="el" href="xed-types_8h.html#a8732401187d7d502b382774e82e1cd73">xed_uint64_t</a>&#160;</td>
           <td class="paramname"><em>runtime_instruction_address</em>, </td>
         </tr>
         <tr>

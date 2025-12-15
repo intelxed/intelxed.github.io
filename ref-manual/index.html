@@ -85,7 +85,7 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <div class="title">Intel&reg; X86 Encoder Decoder User Guide </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>February 2025</p>
+<div class="textblock"><p>December 2025</p>
 <h1><a class="anchor" id="INTRO"></a>
 Introduction</h1>
 <p>Intel&reg; XED is an acronym for X86 Encoder Decoder. The latter part is pronounced like the (British) English "z".</p>
@@ -288,25 +288,22 @@ CPUID</h2>
 <p>Intel&reg; AVX10 introduced a versioned approach for enumeration that ensures that all Intel&reg; CPUs support the same features and instructions at a given Intel&reg; AVX10 version number. This approach also reduced the required number of CPUID feature flags to be checked to determine feature support. This way, usually, it is only needed to check three fields:</p><ol type="1">
 <li>A CPUID feature bit indicating that the Intel&reg; AVX10 ISA is supported</li>
 <li>A version number to ensure that the supported version is greater than or equal to the desired version</li>
-<li>A vector length bit indicating the maximum supported vector length</li>
 </ol>
 <p>Determining whether an ISA-SET is supported by a chip: For ISA-SETs with a single CPUID group, all of its CPUID records must be set in order to be supported by the chip. For ISA-SETs with multiple CPUID groups, at least one CPUID group must be satisfied. In order to match one group, all of its cpuid records must be set. To simplify things, we can transform it into a logical expression - </p><div class="fragment"><div class="line"><span class="stringliteral">&quot;CPUID GROUP A&quot;</span>                                        OR     <span class="stringliteral">&quot;CPUID GROUP B&quot;</span>                                       OR ...</div>
 <div class="line">(<span class="stringliteral">&quot;CPUID RECORD A.A&quot;</span> AND <span class="stringliteral">&quot;CPUID RECORD A.B&quot;</span> AND ... )   OR    (<span class="stringliteral">&quot;CPUID RECORD B.A&quot;</span> AND <span class="stringliteral">&quot;CPUID RECORD B.B&quot;</span> AND ... )   OR ...</div>
 </div><!-- fragment --><p> If one CPUID group is satisfied, the whole expression will be satisfied ("OR" relationship), thus indicating chip support for the ISA. Since the CPUID group itself is an "AND" expression between all of its CPUID records, all CPUID records must be set (satisfied) in order to satisfy the sub-expression.</p>
-<p>For instance, the ISA-SET AVX512F_512 has the following CPUIDS groups: The Intel&reg; AVX10 CPUID group with three CPUID records: </p><ul>
+<p>For instance, the ISA-SET AVX512F_512 has the following CPUIDS groups: The Intel&reg; AVX10 CPUID group with two CPUID records: </p><ul>
 <li>
 CPUID name avx10_enabled, leaf 0x7, sub-leaf 0x1, register EDX, bit 19 </li>
 <li>
 CPUID name avx10_ver1, leaf 0x24, sub-leaf 0x0, register EBX, bits 0 to 7 </li>
-<li>
-CPUID name avx10_512vl, leaf 0x24, sub-leaf 0x0, register EBX, bit 18 </li>
 </ul>
 <p>The feature group with a single CPUID record: </p><ul>
 <li>
 CPUID name avx512f, leaf 0x7, sub-leaf 0x0, register EBX, bit 16 </li>
 </ul>
-<p>This means that a chip supports AVX512F_512 ISA if at least one of the two groups has a match. In order to match one CPUID group, all of its records must be set. So either the first group's three CPUID records or the second group's single CPUID record must be set.</p>
-<p>To provide further insight on Intel&reg; AVX10 CPUID, let's discuss the first CPUID group of AVX512F_512: The first record ("AVX10 Converged Vector ISA Enable" bit) is indicative of processor support of Intel&reg; AVX10 ISA. The second CPUID record specifies the processor's minimal required Intel&reg; AVX10 version (in this case, AVX10.1). The last CPUID record is the vector length bit indicating the maximum supported VL (512).</p>
+<p>This means that a chip supports AVX512F_512 ISA if at least one of the two groups has a match. In order to match one CPUID group, all of its records must be set. So either the first group's two CPUID records or the second group's single CPUID record must be set.</p>
+<p>To provide further insight on Intel&reg; AVX10 CPUID, let's discuss the first CPUID group of AVX512F_512: The first record ("AVX10 Converged Vector ISA Enable" bit) is indicative of processor support of Intel&reg; AVX10 ISA. The second CPUID record specifies the processor's minimal required Intel&reg; AVX10 version (in this case, AVX10.1).</p>
 <p>For the recommended usage of the Intel&reg; XED CPUID APIS, see <a class="el" href="group__SMALLEXAMPLES.html">Small Examples of using Intel&reg; XED</a> .</p>
 <hr  />
  <h1><a class="anchor" id="ICLASS"></a>
@@ -411,11 +408,11 @@ Intel® APX Operands</h2>
 </ul>
 </li>
 <li>Intel&reg; XED CLI encode request:<ul>
-<li>Set the DFV XED-operand as an integer representing these 4 bits in the encoder request.</li>
+<li>Set the DFV XED-operand as an integer representing these 4 bits in the encoder request (-set DFV &lt;int&gt;).</li>
 </ul>
 </li>
 </ul>
-<p>Developers can, however, dynamically disable Intel&reg; APX architecture encoder support using the 'NO_APX' API <a class="el" href="xed-operand-accessors_8h.html#a0d0a166d9efe570f975cb56038144bbe">xed3_operand_set_no_apx()</a>. The <a class="el" href="xed-operand-accessors_8h.html#af21fb45771bf9807dee7a7e2019413ec">xed3_operand_set_must_use_evex()</a> API can also be used for APX promoted instructions in order to force EVEX space upon the encoding request.</p>
+<p>Developers can, however, dynamically disable Intel&reg; APX architecture encoder support using the 'NO_APX' API <a class="el" href="xed-operand-accessors_8h.html#a0d0a166d9efe570f975cb56038144bbe">xed3_operand_set_no_apx()</a>. The <a class="el" href="xed-operand-accessors_8h.html#af21fb45771bf9807dee7a7e2019413ec">xed3_operand_set_must_use_evex()</a> API can also be used for Intel&reg; APX promoted instructions in order to force EVEX space upon the encoding request.</p>
 <p>Developers wishing to encode No-Flags Intel&reg; APX instructions should set the NF Intel&reg; XED operand.</p>
 <h2><a class="anchor" id="OPERAND_VISIBILITY"></a>
 Operand Resource Visibilities</h2>

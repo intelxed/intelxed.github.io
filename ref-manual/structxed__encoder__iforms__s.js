@@ -8,6 +8,7 @@ var structxed__encoder__iforms__s =
     [ "x_BRDISP8", "structxed__encoder__iforms__s.html#aa8aa7299d15fc317aaed24685ab17db5", null ],
     [ "x_BRDISPz", "structxed__encoder__iforms__s.html#a2b7e8b95a46a0e523224b202f71e8831", null ],
     [ "x_DISP_NT", "structxed__encoder__iforms__s.html#a152a2063eb97c37cecd9937bd7bd6c28", null ],
+    [ "x_EVAPX_SCC", "structxed__encoder__iforms__s.html#af82311532d264bbf6ba646e16aa1fea8", null ],
     [ "x_EVEX_62_REXR_ENC", "structxed__encoder__iforms__s.html#a14e96596e3e59ea2b4136b48a6b93641", null ],
     [ "x_EVEX_BYTE3_ENC", "structxed__encoder__iforms__s.html#a42ed83d08c9bfd608b143f6dafe3c752", null ],
     [ "x_EVEX_PP_ENC", "structxed__encoder__iforms__s.html#aa6104c6988c2fcd7636a59dc00c66028", null ],
