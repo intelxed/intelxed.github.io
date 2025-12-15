@@ -2,6 +2,7 @@ var xed_decoded_inst_api_8h =
 [
     [ "xed_classify_amx", "group__DEC.html#gad84607e74716099baebf37d1e3a52218", null ],
     [ "xed_classify_apx", "group__DEC.html#gaccbefbde9fcabac83b461f919b1d26f0", null ],
+    [ "xed_classify_apx_foundation", "group__DEC.html#ga93db306f37074e1a21e74ba1e78026aa", null ],
     [ "xed_classify_avx", "group__DEC.html#gafc66dd9deb31e146fb0a129ea0f122cd", null ],
     [ "xed_classify_avx512", "group__DEC.html#ga6d866ee79e914b4c227281d293639df5", null ],
     [ "xed_classify_avx512_maskop", "group__DEC.html#ga146d6336f8ea16959cd8b30710f6e64e", null ],
@@ -16,7 +17,6 @@ var xed_decoded_inst_api_8h =
     [ "xed_decoded_inst_get_branch_displacement", "group__DEC.html#ga314ef550387f40ce6fb46b115ed8164a", null ],
     [ "xed_decoded_inst_get_branch_displacement_width", "group__DEC.html#ga6ce6a33dea91f1cb846c78cf2848be58", null ],
     [ "xed_decoded_inst_get_branch_displacement_width_bits", "group__DEC.html#ga6983743d83d51517bae4404d3345b865", null ],
-    [ "xed_decoded_inst_get_byte", "group__DEC.html#ga89defb76a530889fb56b00ed2094d569", null ],
     [ "xed_decoded_inst_get_category", "group__DEC.html#gadb8cfb26a825d8a8d8dcbf49857eab63", null ],
     [ "xed_decoded_inst_get_default_flags_values", "group__DEC.html#ga9f45ec3ed205d0f8419d64d4bdbd7953", null ],
     [ "xed_decoded_inst_get_extension", "group__DEC.html#ga2ad01ffd078ac7166c8a2bc1be1b6d4d", null ],

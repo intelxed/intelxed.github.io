@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"xed-attribute-enum_8h.html#afd50c34f1ce9cbea69d5204e9276d060":[3,0,2,83],
 "xed-attributes_8h.html":[3,0,3],
 "xed-build-defines_8h.html":[3,0,4],
 "xed-build-defines_8h.html#a1371000eebf7e948d73de2afbd2b3cd4":[3,0,4,6],
@@ -9,10 +10,9 @@ var NAVTREEINDEX7 =
 "xed-build-defines_8h.html#a2085d19702a50435ddfc4d2288074e9b":[3,0,4,9],
 "xed-build-defines_8h.html#a3925943d185a09ad9e32ed8637ccb533":[3,0,4,5],
 "xed-build-defines_8h.html#a7ee22c57b08114eb73a947ad5439307e":[3,0,4,1],
-"xed-build-defines_8h.html#a87d55f68ab62adc3d837b4869e7d699c":[3,0,4,10],
-"xed-build-defines_8h.html#a95f1fad201f70ea6c2a52466dbae3e24":[3,0,4,12],
+"xed-build-defines_8h.html#a95f1fad201f70ea6c2a52466dbae3e24":[3,0,4,11],
 "xed-build-defines_8h.html#aa4d59703d69cbc4f06db0bc5ae86d8af":[3,0,4,3],
-"xed-build-defines_8h.html#abea6dd2cd2a6977b9e9dc0798493faa6":[3,0,4,11],
+"xed-build-defines_8h.html#abea6dd2cd2a6977b9e9dc0798493faa6":[3,0,4,10],
 "xed-build-defines_8h.html#ad814bc316b47add9888ac9c9a52b660c":[3,0,4,7],
 "xed-build-defines_8h.html#af5657cebfa3a6cc8af616ee02019e044":[3,0,4,0],
 "xed-category-enum_8h.html":[3,0,5],
@@ -248,6 +248,6 @@ var NAVTREEINDEX7 =
 "xed-category-enum_8h.html#affbae944e41a71c4970da58a28d1cd00":[3,0,5,88],
 "xed-category-enum_8h.html#affdf6d1b8d8ab5d7ce8fbed110805a35":[3,0,5,45],
 "xed-chip-enum_8h.html":[3,0,6],
-"xed-chip-enum_8h.html#a0045f23f890651636577917d67d0ef5f":[3,0,6,53],
-"xed-chip-enum_8h.html#a00928128e179741d7d4437dd95d91154":[3,0,6,67]
+"xed-chip-enum_8h.html#a0045f23f890651636577917d67d0ef5f":[3,0,6,54],
+"xed-chip-enum_8h.html#a00928128e179741d7d4437dd95d91154":[3,0,6,68]
 };

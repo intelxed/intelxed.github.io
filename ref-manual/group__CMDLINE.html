@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('group__CMDLINE.html',''); initResizabl
 <a href="#details">More...</a></p>
 <p>The command line tool called xed or xed.exe is built when you build the examples (<a class="el" href="group__EXAMPLES.html">Examples of using Intel&reg; XED</a>) that come with Intel&reg; XED. </p>
 <p>This tool is useful for encoding and decoding or even decoding-then-re-encoding a single instruction or all the instructions in the text segment of an ELF binary (32 or 64b). For decoding, just jump to the examples.</p>
-<p>This section also explains a little language for writing the instructions for encode requests (-e option). This tool is constantly updated. The xed-ex3 (xed-ex3.exe) example is just the encoder portion of the xed command line tool.</p>
+<p>This section also explains a little language for writing the instructions for encode requests (-e option). This tool is constantly updated. The xed-enc (xed-enc.exe) example is just the encoder portion of the xed command line tool.</p>
 <p>The SUPPRESSED operands emitted by the decoder are not used when encoding. They are ignored. They are not required to select an encoding.</p>
 <p>The syntax for encodable strings is as follows: </p><div class="fragment"><div class="line">Opcode[/width]   [operand [operand]]</div>
 </div><!-- fragment --><p>The width is a 8, 16, 32 or 64, indicating the effective operand width if it differs from the default. 8b operations generally require this. Or since most operations that default to 32b widths in 64b mode, it is required for 64b operation widths in 64b mode.</p>
@@ -99,7 +99,8 @@ $(document).ready(function(){initNavTree('group__CMDLINE.html',''); initResizabl
 <ul>
 <li>A register name such as EAX or R8B, etc. Case does not matter.</li>
 <li>An immediate specifier such as IMM:12ff</li>
-<li>A branch displacement specifier such as BRDISP:0000001f</li>
+<li>A branch displacement specifier such as RELBR:0000001f for instructions that use relative offsets</li>
+<li>A branch displacement specifier such as ABSBR:0000001f0000001f for instructions that specify an absolute address</li>
 <li>A memory specifier that indicates the base register, index register, scale value, and displacement value. If one of the fields is not required, a - is necessary. The displacement is omittable. For example: MEM4:ESI,EAX,8,ff or MEM4:EBX. The first one specifies that the memory address 4 bytes and should be ESI + EAX * 8 + 0xff. The second one specifies that EBX should be used to access 4 bytes of memory; note the displacement is omitted. A segment override can be specified as follows: MEM4:GS:EAX by using a segment-name followed by a ":" before the base register. If there is no base register, you can use a "-", for example: MEM4:GS:-,-,11223344. One also needs to specify a memory operation width. This can be accomplished by indicating a number of bytes just after the MEM specifier. For example: MEM2:EAX indicates a 2 byte memory operation.</li>
 <li>An address generation specifer that has the same syntax as the above MEM: specifier, but is only used for LEA instructions. Example: AGEN:EAX,EBX,2,-</li>
 </ul>
@@ -213,22 +214,22 @@ $(document).ready(function(){initNavTree('group__CMDLINE.html',''); initResizabl
 <div class="line">Encodable! 8B0424</div>
 <div class="line">.byte 0x8b,0x04,0x24</div>
 <div class="line"> </div>
-<div class="line">% xed -64 -e CCMPB r8b r9b dfv14</div>
-<div class="line">Request: CCMPB MODE:2, REG0:R8B, REG1:R9B, REG2:DFV14, SMODE:2</div>
-<div class="line">OPERAND ORDER: REG0 REG1 REG2 </div>
+<div class="line">% xed -64 -set DFV 14 -e CCMPB r8b r9b</div>
+<div class="line">Request: CCMPB DFV:14, MODE:2, REG0:R8B, REG1:R9B, SMODE:2</div>
+<div class="line">OPERAND ORDER: REG0 REG1</div>
 <div class="line">Encodable! 6254740238C8</div>
 <div class="line">.byte 0x62,0x54,0x74,0x02,0x38,0xc8</div>
-</div><!-- fragment --><p>Or using the xed-ex3 example tool: </p><div class="fragment"><div class="line">% obj/xed-ex3</div>
-<div class="line">Usage: obj/xed-ex3 [-16|-32|-64] [-s16|-s32] encode-<span class="keywordtype">string</span></div>
+</div><!-- fragment --><p>Or using the xed-enc example tool: </p><div class="fragment"><div class="line">% obj/xed-enc</div>
+<div class="line">Usage: obj/xed-enc [-16|-32|-64] [-s16|-s32] encode-<span class="keywordtype">string</span></div>
 </div><!-- fragment --><p>The -16, -32 or -64 are for specifying the major mode of the machine. The major mode of the machine determines the default data operand size and default addressing width. In 64b mode, the default data size is 32b and the default addressing mode is 64b addressing. In 32b mode, the default addressing width is 32b. In 16b mode, the default addressing width is 16b. In 32b mode or 16b mode, the stack addressing width must also be specified. Usually it matches the major mode. The -s16 option is for specifying 16b stack addressing in 32b mode. The -s32 is for specifying 32b stack addressing in 16 bit mode.</p>
-<div class="fragment"><div class="line">% obj/xed-ex3 -64 PUSH/64 RAX</div>
+<div class="fragment"><div class="line">% obj/xed-enc -64 PUSH/64 RAX</div>
 <div class="line">Encode request:</div>
 <div class="line">PUSH EOSZ:3, MODE:2, REG0:RAX, SMODE:2</div>
 <div class="line">OPERAND ORDER: REG0</div>
 <div class="line"> </div>
 <div class="line">Encodable! 50</div>
 <div class="line"> </div>
-<div class="line">% obj/xed-ex3 MOV MEM4:EAX IMM:11223344</div>
+<div class="line">% obj/xed-enc MOV MEM4:EAX IMM:11223344</div>
 <div class="line">Encode request:</div>
 <div class="line">MOV EASZ:2, IMM0:0x11223344, IMM_WIDTH:32, MEM0:dword ptr [EAX], MEM_WIDTH:4, MODE:1, SMODE:1</div>
 <div class="line">OPERAND ORDER: MEM0 IMM0</div>
@@ -261,7 +262,7 @@ An example of using the encoder</h1>
 <div class="line"><span class="preprocessor">#include &lt;stdlib.h&gt;</span>  <span class="comment">// strtol, ...</span></div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="xed-interface_8h.html">xed/xed-interface.h</a>&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;xed-examples-util.h&quot;</span></div>
-<div class="line"><span class="preprocessor">#include &quot;xed-enc-lang.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;xed-util-enc-lang.h&quot;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#define BUF_LEN 50</span></div>
 <div class="line"> </div>
@@ -311,7 +312,7 @@ An example of using the encoder</h1>
 <div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
 <div class="line">    <a class="code" href="xed-types_8h.html#ad355c921b747945a82d62233a599c7b5">xed_bool_t</a> valid;</div>
 <div class="line">    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> width_bits;</div>
-<div class="line">    xed_uint64_t immed_val;</div>
+<div class="line">    <a class="code" href="xed-types_8h.html#a8732401187d7d502b382774e82e1cd73">xed_uint64_t</a> immed_val;</div>
 <div class="line">} immed_parser_t;</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> immed_parser_init(immed_parser_t* <span class="keyword">self</span>,</div>
@@ -426,9 +427,9 @@ An example of using the encoder</h1>
 <div class="line">    <a class="code" href="xed-reg-enum_8h.html#af05c33c5a68e9304d1d8ac0408ae3f61">xed_reg_enum_t</a> segment_reg;</div>
 <div class="line">    <a class="code" href="xed-reg-enum_8h.html#af05c33c5a68e9304d1d8ac0408ae3f61">xed_reg_enum_t</a> base_reg;</div>
 <div class="line">    <a class="code" href="xed-reg-enum_8h.html#af05c33c5a68e9304d1d8ac0408ae3f61">xed_reg_enum_t</a> index_reg;</div>
-<div class="line">    xed_uint8_t scale_val;</div>
+<div class="line">    <a class="code" href="xed-types_8h.html#a5250e7e686ac9043e802df4b99368fab">xed_uint8_t</a> scale_val;</div>
 <div class="line"> </div>
-<div class="line">    xed_int64_t disp_val;</div>
+<div class="line">    <a class="code" href="xed-types_8h.html#adc48f0f92515dfe20384cbba8b3769d9">xed_int64_t</a> disp_val;</div>
 <div class="line">    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> disp_width_bits;</div>
 <div class="line"> </div>
 <div class="line">    <a class="code" href="xed-types_8h.html#a0c92e8263b7ca02d8e4826ae5b79bb30">xed_uint_t</a> mem_len;</div>
@@ -536,14 +537,14 @@ An example of using the encoder</h1>
 <div class="line">    <span class="keywordflow">if</span> (match(self-&gt;scale,<span class="stringliteral">&quot;1&quot;</span>) || match(self-&gt;scale,<span class="stringliteral">&quot;2&quot;</span>) ||</div>
 <div class="line">        match(self-&gt;scale,<span class="stringliteral">&quot;4&quot;</span>) || match(self-&gt;scale,<span class="stringliteral">&quot;8&quot;</span>) ) {</div>
 <div class="line">        <span class="keyword">self</span>-&gt;valid=1;</div>
-<div class="line">        <span class="keyword">self</span>-&gt;scale_val = <a class="code" href="xed-portability_8h.html#a3fb2e11b3d32594f913f5b80849133e1">XED_CAST</a>(xed_uint8_t,strtol(self-&gt;scale, 0, 10));</div>
+<div class="line">        <span class="keyword">self</span>-&gt;scale_val = <a class="code" href="xed-portability_8h.html#a3fb2e11b3d32594f913f5b80849133e1">XED_CAST</a>(<a class="code" href="xed-types_8h.html#a5250e7e686ac9043e802df4b99368fab">xed_uint8_t</a>,strtol(self-&gt;scale, 0, 10));</div>
 <div class="line">        <span class="keyword">self</span>-&gt;segment_reg = <a class="code" href="group__ENUM.html#ga48dc3d086b469ae580ca47917043c2fd">str2xed_reg_enum_t</a>(self-&gt;segment);</div>
 <div class="line">        <span class="keyword">self</span>-&gt;base_reg = <a class="code" href="group__ENUM.html#ga48dc3d086b469ae580ca47917043c2fd">str2xed_reg_enum_t</a>(self-&gt;base);</div>
 <div class="line">        <span class="keyword">self</span>-&gt;index_reg = <a class="code" href="group__ENUM.html#ga48dc3d086b469ae580ca47917043c2fd">str2xed_reg_enum_t</a>(self-&gt;indx);</div>
 <div class="line"> </div>
 <div class="line">        <span class="comment">// look for a displacement</span></div>
 <div class="line">        <span class="keywordflow">if</span> (n_addr_tokens == 4 &amp;&amp; strcmp(astr[3], <span class="stringliteral">&quot;-&quot;</span>) != 0) {</div>
-<div class="line">            xed_uint64_t unsigned64_disp=0;</div>
+<div class="line">            <a class="code" href="xed-types_8h.html#a8732401187d7d502b382774e82e1cd73">xed_uint64_t</a> unsigned64_disp=0;</div>
 <div class="line">            <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nibbles = 0;</div>
 <div class="line">            <a class="code" href="xed-portability_8h.html#a4eab1affb8a1c6e1db4c0e6585cbd120">xed_strncpy</a>(self-&gt;disp, astr[3], BUF_LEN-1);</div>
 <div class="line">            <span class="keyword">self</span>-&gt;disp_valid = 1;</div>
@@ -553,13 +554,13 @@ An example of using the encoder</h1>
 <div class="line">            unsigned64_disp = convert_ascii_hex_to_int(self-&gt;disp);</div>
 <div class="line">            <span class="keyword">self</span>-&gt;disp_width_bits = nibbles*4; <span class="comment">// nibbles to bits</span></div>
 <div class="line">            <span class="keywordflow">switch</span> (self-&gt;disp_width_bits){</div>
-<div class="line">              <span class="keywordflow">case</span> 8:  <span class="keyword">self</span>-&gt;disp_val = <a class="code" href="xed-util_8h.html#a29a8c7d15c7bed2f34e174764b7532c6">xed_sign_extend8_64</a>((xed_int8_t)unsigned64_disp);</div>
+<div class="line">              <span class="keywordflow">case</span> 8:  <span class="keyword">self</span>-&gt;disp_val = <a class="code" href="xed-util_8h.html#a29a8c7d15c7bed2f34e174764b7532c6">xed_sign_extend8_64</a>((<a class="code" href="xed-types_8h.html#aa2e8f0569652d005899dfd753d7f3424">xed_int8_t</a>)unsigned64_disp);</div>
 <div class="line">                <span class="keywordflow">break</span>;</div>
-<div class="line">              <span class="keywordflow">case</span> 16: <span class="keyword">self</span>-&gt;disp_val = <a class="code" href="xed-util_8h.html#a11ce8adb47394961e0963153f905a8c0">xed_sign_extend16_64</a>((xed_int16_t)unsigned64_disp);</div>
+<div class="line">              <span class="keywordflow">case</span> 16: <span class="keyword">self</span>-&gt;disp_val = <a class="code" href="xed-util_8h.html#a11ce8adb47394961e0963153f905a8c0">xed_sign_extend16_64</a>((<a class="code" href="xed-types_8h.html#a9f666071d648a20cea8099b0e8ab98c2">xed_int16_t</a>)unsigned64_disp);</div>
 <div class="line">                <span class="keywordflow">break</span>;</div>
-<div class="line">              <span class="keywordflow">case</span> 32: <span class="keyword">self</span>-&gt;disp_val = <a class="code" href="xed-util_8h.html#a18389860c680a9845b9b5045f3306089">xed_sign_extend32_64</a>((xed_int32_t)unsigned64_disp);</div>
+<div class="line">              <span class="keywordflow">case</span> 32: <span class="keyword">self</span>-&gt;disp_val = <a class="code" href="xed-util_8h.html#a18389860c680a9845b9b5045f3306089">xed_sign_extend32_64</a>((<a class="code" href="xed-types_8h.html#a219044bb4cf3c8dd47ec03700dcb490d">xed_int32_t</a>)unsigned64_disp);</div>
 <div class="line">                <span class="keywordflow">break</span>;</div>
-<div class="line">              <span class="keywordflow">case</span> 64: <span class="keyword">self</span>-&gt;disp_val = (xed_int64_t)unsigned64_disp;</div>
+<div class="line">              <span class="keywordflow">case</span> 64: <span class="keyword">self</span>-&gt;disp_val = (<a class="code" href="xed-types_8h.html#adc48f0f92515dfe20384cbba8b3769d9">xed_int64_t</a>)unsigned64_disp;</div>
 <div class="line">                <span class="keywordflow">break</span>;</div>
 <div class="line">            }               </div>
 <div class="line">        }</div>
@@ -822,7 +823,7 @@ An example of using the encoder</h1>
 <div class="line">                       simm.immed_val);</div>
 <div class="line">            <a class="code" href="group__ENC.html#gaf2477dc50a13ec112d7cf3f3fa5c9178">xed_encoder_request_set_simm</a>(</div>
 <div class="line">                &amp;req, </div>
-<div class="line">                <a class="code" href="xed-portability_8h.html#ae0cdf0e8a0284d011be1a08e8a4e3094">XED_STATIC_CAST</a>(xed_int32_t,simm.immed_val),</div>
+<div class="line">                <a class="code" href="xed-portability_8h.html#ae0cdf0e8a0284d011be1a08e8a4e3094">XED_STATIC_CAST</a>(<a class="code" href="xed-types_8h.html#a219044bb4cf3c8dd47ec03700dcb490d">xed_int32_t</a>,simm.immed_val),</div>
 <div class="line">                simm.width_bits/8); <span class="comment">//FIXME</span></div>
 <div class="line">            <a class="code" href="group__ENC.html#ga1e46ce602263f0de591b3ebc268cc12e">xed_encoder_request_set_operand_order</a>(&amp;req,</div>
 <div class="line">                                                  operand_index,</div>
@@ -834,7 +835,7 @@ An example of using the encoder</h1>
 <div class="line">        <span class="keywordflow">if</span> (imm2.valid) {</div>
 <div class="line">            <span class="keywordflow">if</span> (imm2.width_bits != 8)</div>
 <div class="line">                xedex_derror(<span class="stringliteral">&quot;2nd immediate must be just 1 byte long&quot;</span>);</div>
-<div class="line">            <a class="code" href="group__ENC.html#ga4edd1347ebaceee3811584123b4daa9b">xed_encoder_request_set_uimm1</a>(&amp;req, (xed_uint8_t)imm2.immed_val);</div>
+<div class="line">            <a class="code" href="group__ENC.html#ga4edd1347ebaceee3811584123b4daa9b">xed_encoder_request_set_uimm1</a>(&amp;req, (<a class="code" href="xed-types_8h.html#a5250e7e686ac9043e802df4b99368fab">xed_uint8_t</a>)imm2.immed_val);</div>
 <div class="line">            <a class="code" href="group__ENC.html#ga1e46ce602263f0de591b3ebc268cc12e">xed_encoder_request_set_operand_order</a>(&amp;req,</div>
 <div class="line">                                                  operand_index,</div>
 <div class="line">                                                  <a class="code" href="xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aaecf4b40f8ec183182501a80b93b5b4dc">XED_OPERAND_IMM1</a>);</div>
@@ -849,7 +850,7 @@ An example of using the encoder</h1>
 <div class="line">                       disp.immed_val);</div>
 <div class="line">            <a class="code" href="group__ENC.html#ga4cf70558191e089e2fed5f1481ca2be0">xed_encoder_request_set_branch_displacement</a>(</div>
 <div class="line">                &amp;req,</div>
-<div class="line">                <a class="code" href="xed-portability_8h.html#ae0cdf0e8a0284d011be1a08e8a4e3094">XED_STATIC_CAST</a>(xed_int64_t,disp.immed_val),</div>
+<div class="line">                <a class="code" href="xed-portability_8h.html#ae0cdf0e8a0284d011be1a08e8a4e3094">XED_STATIC_CAST</a>(<a class="code" href="xed-types_8h.html#adc48f0f92515dfe20384cbba8b3769d9">xed_int64_t</a>,disp.immed_val),</div>
 <div class="line">                disp.width_bits/8); <span class="comment">//FIXME</span></div>
 <div class="line">            <a class="code" href="group__ENC.html#ga1e46ce602263f0de591b3ebc268cc12e">xed_encoder_request_set_operand_order</a>(&amp;req,</div>
 <div class="line">                                                  operand_index,</div>
@@ -865,7 +866,7 @@ An example of using the encoder</h1>
 <div class="line">                       disp.immed_val);</div>
 <div class="line">            <a class="code" href="group__ENC.html#ga4cf70558191e089e2fed5f1481ca2be0">xed_encoder_request_set_branch_displacement</a>(</div>
 <div class="line">                &amp;req,</div>
-<div class="line">                <a class="code" href="xed-portability_8h.html#ae0cdf0e8a0284d011be1a08e8a4e3094">XED_STATIC_CAST</a>(xed_int64_t,disp.immed_val),</div>
+<div class="line">                <a class="code" href="xed-portability_8h.html#ae0cdf0e8a0284d011be1a08e8a4e3094">XED_STATIC_CAST</a>(<a class="code" href="xed-types_8h.html#adc48f0f92515dfe20384cbba8b3769d9">xed_int64_t</a>,disp.immed_val),</div>
 <div class="line">                disp.width_bits/8); <span class="comment">//FIXME</span></div>
 <div class="line">            <a class="code" href="group__ENC.html#ga1e46ce602263f0de591b3ebc268cc12e">xed_encoder_request_set_operand_order</a>(&amp;req,</div>
 <div class="line">                                                  operand_index,</div>
@@ -882,7 +883,7 @@ An example of using the encoder</h1>
 <div class="line">                       ptr_disp.immed_val);</div>
 <div class="line">            <a class="code" href="group__ENC.html#ga4cf70558191e089e2fed5f1481ca2be0">xed_encoder_request_set_branch_displacement</a>(</div>
 <div class="line">                &amp;req,</div>
-<div class="line">                <a class="code" href="xed-portability_8h.html#ae0cdf0e8a0284d011be1a08e8a4e3094">XED_STATIC_CAST</a>(xed_int64_t,ptr_disp.immed_val),</div>
+<div class="line">                <a class="code" href="xed-portability_8h.html#ae0cdf0e8a0284d011be1a08e8a4e3094">XED_STATIC_CAST</a>(<a class="code" href="xed-types_8h.html#adc48f0f92515dfe20384cbba8b3769d9">xed_int64_t</a>,ptr_disp.immed_val),</div>
 <div class="line">                ptr_disp.width_bits/8); <span class="comment">//FIXME</span></div>
 <div class="line">            <a class="code" href="group__ENC.html#ga1e46ce602263f0de591b3ebc268cc12e">xed_encoder_request_set_operand_order</a>(&amp;req,</div>
 <div class="line">                                                  operand_index,</div>
@@ -969,6 +970,7 @@ An example of using the encoder</h1>
 <div class="ttc" id="agroup__ENC_html_gaff030e16b97deae21b1f7613684c54c7"><div class="ttname"><a href="group__ENC.html#gaff030e16b97deae21b1f7613684c54c7">xed_encoder_request_set_iclass</a></div><div class="ttdeci">XED_DLL_EXPORT void xed_encoder_request_set_iclass(xed_encoder_request_t *p, xed_iclass_enum_t iclass)</div></div>
 <div class="ttc" id="axed-reg-class-enum_8h_html_a8ac6bf3f9f78208385c46ea25324ea76"><div class="ttname"><a href="xed-reg-class-enum_8h.html#a8ac6bf3f9f78208385c46ea25324ea76">xed_reg_class_enum_t</a></div><div class="ttdeci">xed_reg_class_enum_t</div><div class="ttdef"><b>Definition:</b> xed-reg-class-enum.h:55</div></div>
 <div class="ttc" id="agroup__ENC_html_ga4cf70558191e089e2fed5f1481ca2be0"><div class="ttname"><a href="group__ENC.html#ga4cf70558191e089e2fed5f1481ca2be0">xed_encoder_request_set_branch_displacement</a></div><div class="ttdeci">XED_DLL_EXPORT void xed_encoder_request_set_branch_displacement(xed_encoder_request_t *p, xed_int64_t brdisp, xed_uint_t nbytes)</div></div>
+<div class="ttc" id="axed-types_8h_html_a219044bb4cf3c8dd47ec03700dcb490d"><div class="ttname"><a href="xed-types_8h.html#a219044bb4cf3c8dd47ec03700dcb490d">xed_int32_t</a></div><div class="ttdeci">int32_t xed_int32_t</div><div class="ttdef"><b>Definition:</b> xed-types.h:36</div></div>
 <div class="ttc" id="axed-reg-class-enum_8h_html_a8ac6bf3f9f78208385c46ea25324ea76a4b38262d5964ea32ff908573477d4508"><div class="ttname"><a href="xed-reg-class-enum_8h.html#a8ac6bf3f9f78208385c46ea25324ea76a4b38262d5964ea32ff908573477d4508">XED_REG_CLASS_GPR64</a></div><div class="ttdeci">@ XED_REG_CLASS_GPR64</div><div class="ttdef"><b>Definition:</b> xed-reg-class-enum.h:66</div></div>
 <div class="ttc" id="agroup__REGINTFC_html_ga46208c55a69fb76e42f1b5755aa4923e"><div class="ttname"><a href="group__REGINTFC.html#ga46208c55a69fb76e42f1b5755aa4923e">xed_gpr_reg_class</a></div><div class="ttdeci">XED_DLL_EXPORT xed_reg_class_enum_t xed_gpr_reg_class(xed_reg_enum_t r)</div><div class="ttdoc">Returns the specific width GPR reg class (like XED_REG_CLASS_GPR32 or XED_REG_CLASS_GPR64) for a give...</div></div>
 <div class="ttc" id="axed-reg-class-enum_8h_html_a8ac6bf3f9f78208385c46ea25324ea76ab02b323ba71ce251bca0ac4206b7d028"><div class="ttname"><a href="xed-reg-class-enum_8h.html#a8ac6bf3f9f78208385c46ea25324ea76ab02b323ba71ce251bca0ac4206b7d028">XED_REG_CLASS_SR</a></div><div class="ttdeci">@ XED_REG_CLASS_SR</div><div class="ttdef"><b>Definition:</b> xed-reg-class-enum.h:75</div></div>
@@ -986,27 +988,30 @@ An example of using the encoder</h1>
 <div class="ttc" id="axed-operand-enum_8h_html_a09c2a35d8bb7bfe68bb3d34b0a5e011aaecf4b40f8ec183182501a80b93b5b4dc"><div class="ttname"><a href="xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aaecf4b40f8ec183182501a80b93b5b4dc">XED_OPERAND_IMM1</a></div><div class="ttdeci">@ XED_OPERAND_IMM1</div><div class="ttdef"><b>Definition:</b> xed-operand-enum.h:212</div></div>
 <div class="ttc" id="agroup__ENC_html_gad447fb779e58b7eaae0dd54e51af6066"><div class="ttname"><a href="group__ENC.html#gad447fb779e58b7eaae0dd54e51af6066">xed_encoder_request_set_relbr</a></div><div class="ttdeci">XED_DLL_EXPORT void xed_encoder_request_set_relbr(xed_encoder_request_t *p)</div></div>
 <div class="ttc" id="axed-reg-enum_8h_html_af05c33c5a68e9304d1d8ac0408ae3f61a230de5f9718ee37117d83f61bcbe5f46"><div class="ttname"><a href="xed-reg-enum_8h.html#af05c33c5a68e9304d1d8ac0408ae3f61a230de5f9718ee37117d83f61bcbe5f46">XED_REG_DIL</a></div><div class="ttdeci">@ XED_REG_DIL</div><div class="ttdef"><b>Definition:</b> xed-reg-enum.h:586</div></div>
+<div class="ttc" id="axed-types_8h_html_adc48f0f92515dfe20384cbba8b3769d9"><div class="ttname"><a href="xed-types_8h.html#adc48f0f92515dfe20384cbba8b3769d9">xed_int64_t</a></div><div class="ttdeci">int64_t xed_int64_t</div><div class="ttdef"><b>Definition:</b> xed-types.h:37</div></div>
 <div class="ttc" id="axed-reg-class-enum_8h_html_a8ac6bf3f9f78208385c46ea25324ea76a48f1d7eaa9f38ea082107f49f301a821"><div class="ttname"><a href="xed-reg-class-enum_8h.html#a8ac6bf3f9f78208385c46ea25324ea76a48f1d7eaa9f38ea082107f49f301a821">XED_REG_CLASS_YMM</a></div><div class="ttdeci">@ XED_REG_CLASS_YMM</div><div class="ttdef"><b>Definition:</b> xed-reg-class-enum.h:82</div></div>
 <div class="ttc" id="axed-reg-enum_8h_html_af05c33c5a68e9304d1d8ac0408ae3f61ad6c133bbbecb808e5319355f6c422c25"><div class="ttname"><a href="xed-reg-enum_8h.html#af05c33c5a68e9304d1d8ac0408ae3f61ad6c133bbbecb808e5319355f6c422c25">XED_REG_SPL</a></div><div class="ttdeci">@ XED_REG_SPL</div><div class="ttdef"><b>Definition:</b> xed-reg-enum.h:583</div></div>
 <div class="ttc" id="agroup__ENC_html_ga7b4e446882bcc615e917132f3fbb16b3"><div class="ttname"><a href="group__ENC.html#ga7b4e446882bcc615e917132f3fbb16b3">xed_encoder_request_set_mem0</a></div><div class="ttdeci">XED_DLL_EXPORT void xed_encoder_request_set_mem0(xed_encoder_request_t *p)</div></div>
 <div class="ttc" id="agroup__ENC_html_ga7be1c7da28a5d88f485f7e80b67959b4"><div class="ttname"><a href="group__ENC.html#ga7be1c7da28a5d88f485f7e80b67959b4">xed_encoder_request_set_ptr</a></div><div class="ttdeci">XED_DLL_EXPORT void xed_encoder_request_set_ptr(xed_encoder_request_t *p)</div></div>
 <div class="ttc" id="agroup__ENC_html_ga0aee8955a9af2f70d8b8f4c917bba23e"><div class="ttname"><a href="group__ENC.html#ga0aee8955a9af2f70d8b8f4c917bba23e">xed_encoder_request_set_absbr</a></div><div class="ttdeci">XED_DLL_EXPORT void xed_encoder_request_set_absbr(xed_encoder_request_t *p)</div></div>
-<div class="ttc" id="axed-types_8h_html_a0c92e8263b7ca02d8e4826ae5b79bb30"><div class="ttname"><a href="xed-types_8h.html#a0c92e8263b7ca02d8e4826ae5b79bb30">xed_uint_t</a></div><div class="ttdeci">unsigned int xed_uint_t</div><div class="ttdef"><b>Definition:</b> xed-types.h:52</div></div>
+<div class="ttc" id="axed-types_8h_html_a0c92e8263b7ca02d8e4826ae5b79bb30"><div class="ttname"><a href="xed-types_8h.html#a0c92e8263b7ca02d8e4826ae5b79bb30">xed_uint_t</a></div><div class="ttdeci">unsigned int xed_uint_t</div><div class="ttdef"><b>Definition:</b> xed-types.h:39</div></div>
 <div class="ttc" id="axed-reg-enum_8h_html_af05c33c5a68e9304d1d8ac0408ae3f61afac474058f0819d415285511086bf219"><div class="ttname"><a href="xed-reg-enum_8h.html#af05c33c5a68e9304d1d8ac0408ae3f61afac474058f0819d415285511086bf219">XED_REG_INVALID</a></div><div class="ttdeci">@ XED_REG_INVALID</div><div class="ttdef"><b>Definition:</b> xed-reg-enum.h:449</div></div>
 <div class="ttc" id="axed-reg-class-enum_8h_html_a8ac6bf3f9f78208385c46ea25324ea76ae913260759e30f32c4553ad763c3db76"><div class="ttname"><a href="xed-reg-class-enum_8h.html#a8ac6bf3f9f78208385c46ea25324ea76ae913260759e30f32c4553ad763c3db76">XED_REG_CLASS_INVALID</a></div><div class="ttdeci">@ XED_REG_CLASS_INVALID</div><div class="ttdef"><b>Definition:</b> xed-reg-class-enum.h:56</div></div>
 <div class="ttc" id="agroup__ENC_html_ga03790a14a625c544edcbda559e359f14"><div class="ttname"><a href="group__ENC.html#ga03790a14a625c544edcbda559e359f14">xed_encoder_request_set_memory_operand_length</a></div><div class="ttdeci">XED_DLL_EXPORT void xed_encoder_request_set_memory_operand_length(xed_encoder_request_t *p, xed_uint_t nbytes)</div></div>
 <div class="ttc" id="axed-operand-enum_8h_html_a09c2a35d8bb7bfe68bb3d34b0a5e011aa89727de05ece94e9ddcd53a74b6cf8c2"><div class="ttname"><a href="xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aa89727de05ece94e9ddcd53a74b6cf8c2">XED_OPERAND_ABSBR</a></div><div class="ttdeci">@ XED_OPERAND_ABSBR</div><div class="ttdef"><b>Definition:</b> xed-operand-enum.h:173</div></div>
 <div class="ttc" id="axed-portability_8h_html_a4eab1affb8a1c6e1db4c0e6585cbd120"><div class="ttname"><a href="xed-portability_8h.html#a4eab1affb8a1c6e1db4c0e6585cbd120">xed_strncpy</a></div><div class="ttdeci">XED_DLL_EXPORT int xed_strncpy(char *dst, const char *src, int len)</div><div class="ttdoc">returns the number of bytes remaining for the next use of xed_strncpy() or xed_strncat() .</div></div>
 <div class="ttc" id="axed-operand-enum_8h_html_a09c2a35d8bb7bfe68bb3d34b0a5e011aa17757f8f75fb149d6a9ceff628403994"><div class="ttname"><a href="xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aa17757f8f75fb149d6a9ceff628403994">XED_OPERAND_MEM0</a></div><div class="ttdeci">@ XED_OPERAND_MEM0</div><div class="ttdef"><b>Definition:</b> xed-operand-enum.h:223</div></div>
-<div class="ttc" id="axed-iclass-enum_8h_html_ad318511ae9cc50f102251b3c91a1ab9fa2c77d475f97998fe763062db09fd15de"><div class="ttname"><a href="xed-iclass-enum_8h.html#ad318511ae9cc50f102251b3c91a1ab9fa2c77d475f97998fe763062db09fd15de">XED_ICLASS_INVALID</a></div><div class="ttdeci">@ XED_ICLASS_INVALID</div><div class="ttdef"><b>Definition:</b> xed-iclass-enum.h:2003</div></div>
-<div class="ttc" id="axed-iclass-enum_8h_html_ad318511ae9cc50f102251b3c91a1ab9f"><div class="ttname"><a href="xed-iclass-enum_8h.html#ad318511ae9cc50f102251b3c91a1ab9f">xed_iclass_enum_t</a></div><div class="ttdeci">xed_iclass_enum_t</div><div class="ttdef"><b>Definition:</b> xed-iclass-enum.h:2002</div></div>
+<div class="ttc" id="axed-iclass-enum_8h_html_ad318511ae9cc50f102251b3c91a1ab9fa2c77d475f97998fe763062db09fd15de"><div class="ttname"><a href="xed-iclass-enum_8h.html#ad318511ae9cc50f102251b3c91a1ab9fa2c77d475f97998fe763062db09fd15de">XED_ICLASS_INVALID</a></div><div class="ttdeci">@ XED_ICLASS_INVALID</div><div class="ttdef"><b>Definition:</b> xed-iclass-enum.h:1988</div></div>
+<div class="ttc" id="axed-iclass-enum_8h_html_ad318511ae9cc50f102251b3c91a1ab9f"><div class="ttname"><a href="xed-iclass-enum_8h.html#ad318511ae9cc50f102251b3c91a1ab9f">xed_iclass_enum_t</a></div><div class="ttdeci">xed_iclass_enum_t</div><div class="ttdef"><b>Definition:</b> xed-iclass-enum.h:1987</div></div>
 <div class="ttc" id="axed-operand-enum_8h_html_a09c2a35d8bb7bfe68bb3d34b0a5e011aaf84141b5908fd0d494f446a66f3eeef3"><div class="ttname"><a href="xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aaf84141b5908fd0d494f446a66f3eeef3">XED_OPERAND_PTR</a></div><div class="ttdeci">@ XED_OPERAND_PTR</div><div class="ttdef"><b>Definition:</b> xed-operand-enum.h:262</div></div>
 <div class="ttc" id="axed-operand-enum_8h_html_a09c2a35d8bb7bfe68bb3d34b0a5e011aabe26987877ba7bfe6b67c7106fd77286"><div class="ttname"><a href="xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aabe26987877ba7bfe6b67c7106fd77286">XED_OPERAND_MEM1</a></div><div class="ttdeci">@ XED_OPERAND_MEM1</div><div class="ttdef"><b>Definition:</b> xed-operand-enum.h:224</div></div>
 <div class="ttc" id="axed-portability_8h_html_ae0cdf0e8a0284d011be1a08e8a4e3094"><div class="ttname"><a href="xed-portability_8h.html#ae0cdf0e8a0284d011be1a08e8a4e3094">XED_STATIC_CAST</a></div><div class="ttdeci">#define XED_STATIC_CAST(x, y)</div><div class="ttdef"><b>Definition:</b> xed-portability.h:27</div></div>
 <div class="ttc" id="agroup__ENUM_html_ga88cb3037e2542aa6062c9d46d481ddca"><div class="ttname"><a href="group__ENUM.html#ga88cb3037e2542aa6062c9d46d481ddca">xed_reg_enum_t2str</a></div><div class="ttdeci">const XED_DLL_EXPORT char * xed_reg_enum_t2str(const xed_reg_enum_t p)</div><div class="ttdoc">This converts strings to xed_reg_enum_t types.</div></div>
-<div class="ttc" id="axed-types_8h_html_ad355c921b747945a82d62233a599c7b5"><div class="ttname"><a href="xed-types_8h.html#ad355c921b747945a82d62233a599c7b5">xed_bool_t</a></div><div class="ttdeci">unsigned int xed_bool_t</div><div class="ttdef"><b>Definition:</b> xed-types.h:55</div></div>
+<div class="ttc" id="axed-types_8h_html_ad355c921b747945a82d62233a599c7b5"><div class="ttname"><a href="xed-types_8h.html#ad355c921b747945a82d62233a599c7b5">xed_bool_t</a></div><div class="ttdeci">unsigned int xed_bool_t</div><div class="ttdef"><b>Definition:</b> xed-types.h:42</div></div>
+<div class="ttc" id="axed-types_8h_html_a8732401187d7d502b382774e82e1cd73"><div class="ttname"><a href="xed-types_8h.html#a8732401187d7d502b382774e82e1cd73">xed_uint64_t</a></div><div class="ttdeci">uint64_t xed_uint64_t</div><div class="ttdef"><b>Definition:</b> xed-types.h:33</div></div>
 <div class="ttc" id="agroup__ENC_html_ga9002c58e013af93550df7bd9b37e13ed"><div class="ttname"><a href="group__ENC.html#ga9002c58e013af93550df7bd9b37e13ed">xed_encoder_request_set_base0</a></div><div class="ttdeci">XED_DLL_EXPORT void xed_encoder_request_set_base0(xed_encoder_request_t *p, xed_reg_enum_t base_reg)</div></div>
 <div class="ttc" id="axed-reg-enum_8h_html_af05c33c5a68e9304d1d8ac0408ae3f61a964b335e035bb710e28c91215102bce2"><div class="ttname"><a href="xed-reg-enum_8h.html#af05c33c5a68e9304d1d8ac0408ae3f61a964b335e035bb710e28c91215102bce2">XED_REG_EIP</a></div><div class="ttdeci">@ XED_REG_EIP</div><div class="ttdef"><b>Definition:</b> xed-reg-enum.h:617</div></div>
+<div class="ttc" id="axed-types_8h_html_a5250e7e686ac9043e802df4b99368fab"><div class="ttname"><a href="xed-types_8h.html#a5250e7e686ac9043e802df4b99368fab">xed_uint8_t</a></div><div class="ttdeci">uint8_t xed_uint8_t</div><div class="ttdef"><b>Definition:</b> xed-types.h:30</div></div>
 <div class="ttc" id="axed-util_8h_html_a29a8c7d15c7bed2f34e174764b7532c6"><div class="ttname"><a href="xed-util_8h.html#a29a8c7d15c7bed2f34e174764b7532c6">xed_sign_extend8_64</a></div><div class="ttdeci">XED_DLL_EXPORT xed_int64_t xed_sign_extend8_64(xed_int8_t x)</div></div>
 <div class="ttc" id="agroup__ENUM_html_ga48dc3d086b469ae580ca47917043c2fd"><div class="ttname"><a href="group__ENUM.html#ga48dc3d086b469ae580ca47917043c2fd">str2xed_reg_enum_t</a></div><div class="ttdeci">XED_DLL_EXPORT xed_reg_enum_t str2xed_reg_enum_t(const char *s)</div><div class="ttdoc">This converts strings to xed_reg_enum_t types.</div></div>
 <div class="ttc" id="axed-operand-enum_8h_html_a09c2a35d8bb7bfe68bb3d34b0a5e011aa3ce839ecfbe4f991f6c46b7cb767a703"><div class="ttname"><a href="xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aa3ce839ecfbe4f991f6c46b7cb767a703">XED_OPERAND_AGEN</a></div><div class="ttdeci">@ XED_OPERAND_AGEN</div><div class="ttdef"><b>Definition:</b> xed-operand-enum.h:174</div></div>
@@ -1017,9 +1022,9 @@ An example of using the encoder</h1>
 <div class="ttc" id="axed-reg-class-enum_8h_html_a8ac6bf3f9f78208385c46ea25324ea76aaca8356f5ea67683de3d49fb3de4583f"><div class="ttname"><a href="xed-reg-class-enum_8h.html#a8ac6bf3f9f78208385c46ea25324ea76aaca8356f5ea67683de3d49fb3de4583f">XED_REG_CLASS_GPR32</a></div><div class="ttdeci">@ XED_REG_CLASS_GPR32</div><div class="ttdef"><b>Definition:</b> xed-reg-class-enum.h:65</div></div>
 <div class="ttc" id="axed-reg-enum_8h_html_af05c33c5a68e9304d1d8ac0408ae3f61a96dbea34f2eefe6c944f5fac9ef55dc6"><div class="ttname"><a href="xed-reg-enum_8h.html#af05c33c5a68e9304d1d8ac0408ae3f61a96dbea34f2eefe6c944f5fac9ef55dc6">XED_REG_SIL</a></div><div class="ttdeci">@ XED_REG_SIL</div><div class="ttdef"><b>Definition:</b> xed-reg-enum.h:585</div></div>
 <div class="ttc" id="axed-util_8h_html_a18389860c680a9845b9b5045f3306089"><div class="ttname"><a href="xed-util_8h.html#a18389860c680a9845b9b5045f3306089">xed_sign_extend32_64</a></div><div class="ttdeci">XED_DLL_EXPORT xed_int64_t xed_sign_extend32_64(xed_int32_t x)</div></div>
-<div class="ttc" id="axed-types_8h_html_a349b1a771c4078c6828d9000243752a1"><div class="ttname"><a href="xed-types_8h.html#a349b1a771c4078c6828d9000243752a1">xed_int_t</a></div><div class="ttdeci">int xed_int_t</div><div class="ttdef"><b>Definition:</b> xed-types.h:53</div></div>
+<div class="ttc" id="axed-types_8h_html_a349b1a771c4078c6828d9000243752a1"><div class="ttname"><a href="xed-types_8h.html#a349b1a771c4078c6828d9000243752a1">xed_int_t</a></div><div class="ttdeci">int xed_int_t</div><div class="ttdef"><b>Definition:</b> xed-types.h:40</div></div>
 <div class="ttc" id="agroup__ENC_html_ga5dcaec413dfefdd6ca2ad179e5a181c9"><div class="ttname"><a href="group__ENC.html#ga5dcaec413dfefdd6ca2ad179e5a181c9">xed_encoder_request_set_uimm0_bits</a></div><div class="ttdeci">XED_DLL_EXPORT void xed_encoder_request_set_uimm0_bits(xed_encoder_request_t *p, xed_uint64_t uimm, xed_uint_t nbits)</div></div>
-<div class="ttc" id="axed-operand-accessors_8h_html_a4d08319933fa41df36c8e1e5b350980d"><div class="ttname"><a href="xed-operand-accessors_8h.html#a4d08319933fa41df36c8e1e5b350980d">xed3_operand_get_vl</a></div><div class="ttdeci">static XED_INLINE xed_bits_t xed3_operand_get_vl(const xed_decoded_inst_t *d)</div><div class="ttdef"><b>Definition:</b> xed-operand-accessors.h:1587</div></div>
+<div class="ttc" id="axed-operand-accessors_8h_html_a4d08319933fa41df36c8e1e5b350980d"><div class="ttname"><a href="xed-operand-accessors_8h.html#a4d08319933fa41df36c8e1e5b350980d">xed3_operand_get_vl</a></div><div class="ttdeci">static XED_INLINE xed_bits_t xed3_operand_get_vl(const xed_decoded_inst_t *d)</div><div class="ttdef"><b>Definition:</b> xed-operand-accessors.h:1563</div></div>
 <div class="ttc" id="axed-portability_8h_html_a7bb6c2f4c722b4f7357ecf13eb7e4b07"><div class="ttname"><a href="xed-portability_8h.html#a7bb6c2f4c722b4f7357ecf13eb7e4b07">xed_strlen</a></div><div class="ttdeci">XED_DLL_EXPORT xed_uint_t xed_strlen(const char *s)</div></div>
 <div class="ttc" id="agroup__ENC_html_gafe70e5db7dc59e9880f2db3ec7e71d9d"><div class="ttname"><a href="group__ENC.html#gafe70e5db7dc59e9880f2db3ec7e71d9d">xed_encoder_request_set_mem1</a></div><div class="ttdeci">XED_DLL_EXPORT void xed_encoder_request_set_mem1(xed_encoder_request_t *p)</div></div>
 <div class="ttc" id="agroup__ENC_html_ga4edd1347ebaceee3811584123b4daa9b"><div class="ttname"><a href="group__ENC.html#ga4edd1347ebaceee3811584123b4daa9b">xed_encoder_request_set_uimm1</a></div><div class="ttdeci">XED_DLL_EXPORT void xed_encoder_request_set_uimm1(xed_encoder_request_t *p, xed_uint8_t uimm)</div></div>
@@ -1033,10 +1038,12 @@ An example of using the encoder</h1>
 <div class="ttc" id="agroup__ENC_html_ga53b937905ca110c4dd4b20e5695d8937"><div class="ttname"><a href="group__ENC.html#ga53b937905ca110c4dd4b20e5695d8937">xed_encoder_request_set_effective_operand_width</a></div><div class="ttdeci">XED_DLL_EXPORT void xed_encoder_request_set_effective_operand_width(xed_encoder_request_t *p, xed_uint_t width_bits)</div></div>
 <div class="ttc" id="axed-portability_8h_html_a99b93e37a937348afa3e458fb1e04fb1"><div class="ttname"><a href="xed-portability_8h.html#a99b93e37a937348afa3e458fb1e04fb1">XED_FMT_LX</a></div><div class="ttdeci">#define XED_FMT_LX</div><div class="ttdef"><b>Definition:</b> xed-portability.h:132</div></div>
 <div class="ttc" id="axed-portability_8h_html_a3fb2e11b3d32594f913f5b80849133e1"><div class="ttname"><a href="xed-portability_8h.html#a3fb2e11b3d32594f913f5b80849133e1">XED_CAST</a></div><div class="ttdeci">#define XED_CAST(x, y)</div><div class="ttdef"><b>Definition:</b> xed-portability.h:29</div></div>
+<div class="ttc" id="axed-types_8h_html_a9f666071d648a20cea8099b0e8ab98c2"><div class="ttname"><a href="xed-types_8h.html#a9f666071d648a20cea8099b0e8ab98c2">xed_int16_t</a></div><div class="ttdeci">int16_t xed_int16_t</div><div class="ttdef"><b>Definition:</b> xed-types.h:35</div></div>
 <div class="ttc" id="agroup__ENC_html_gab416edcadb0d2b59fb62cfcd93991c3d"><div class="ttname"><a href="group__ENC.html#gab416edcadb0d2b59fb62cfcd93991c3d">xed_encoder_request_set_effective_address_size</a></div><div class="ttdeci">XED_DLL_EXPORT void xed_encoder_request_set_effective_address_size(xed_encoder_request_t *p, xed_uint_t width_bits)</div></div>
 <div class="ttc" id="axed-interface_8h_html"><div class="ttname"><a href="xed-interface_8h.html">xed-interface.h</a></div></div>
+<div class="ttc" id="axed-types_8h_html_aa2e8f0569652d005899dfd753d7f3424"><div class="ttname"><a href="xed-types_8h.html#aa2e8f0569652d005899dfd753d7f3424">xed_int8_t</a></div><div class="ttdeci">int8_t xed_int8_t</div><div class="ttdef"><b>Definition:</b> xed-types.h:34</div></div>
 <div class="ttc" id="astructxed__decoded__inst__s_html"><div class="ttname"><a href="structxed__decoded__inst__s.html">xed_decoded_inst_s</a></div><div class="ttdef"><b>Definition:</b> xed-decoded-inst.h:53</div></div>
-<div class="ttc" id="axed-operand-accessors_8h_html_adcaebd214aa9b9d18d2929b3cd44f340"><div class="ttname"><a href="xed-operand-accessors_8h.html#adcaebd214aa9b9d18d2929b3cd44f340">xed3_operand_set_vl</a></div><div class="ttdeci">static XED_INLINE void xed3_operand_set_vl(xed_decoded_inst_t *d, xed_bits_t opval)</div><div class="ttdef"><b>Definition:</b> xed-operand-accessors.h:1591</div></div>
+<div class="ttc" id="axed-operand-accessors_8h_html_adcaebd214aa9b9d18d2929b3cd44f340"><div class="ttname"><a href="xed-operand-accessors_8h.html#adcaebd214aa9b9d18d2929b3cd44f340">xed3_operand_set_vl</a></div><div class="ttdeci">static XED_INLINE void xed3_operand_set_vl(xed_decoded_inst_t *d, xed_bits_t opval)</div><div class="ttdef"><b>Definition:</b> xed-operand-accessors.h:1567</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
