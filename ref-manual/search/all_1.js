@@ -8,5 +8,6 @@ var searchData=
   ['af_31',['af',['../unionxed__flag__set__s.html#ab4abcec0d4a5b52f337a38e40f15caac',1,'xed_flag_set_s']]],
   ['agen_32',['agen',['../structxed__operand__storage__s.html#aa98814ea0c9dc7d120c6154c40cd2082',1,'xed_operand_storage_s::agen()'],['../group__AGEN.html',1,'(Global Namespace)']]],
   ['amd3dnow_33',['amd3dnow',['../structxed__operand__storage__s.html#a45b2c0ac61e1490670bab0e744c81f98',1,'xed_operand_storage_s']]],
-  ['asz_34',['asz',['../structxed__operand__storage__s.html#a6b35796e7ba1792792ab31d714a60761',1,'xed_operand_storage_s']]]
+  ['api_5fcheck_34',['api_check',['../xed-util_8h.html#afa7446e6c21bd0a71e0efa9b2676a963',1,'xed-util.h']]],
+  ['asz_35',['asz',['../structxed__operand__storage__s.html#a6b35796e7ba1792792ab31d714a60761',1,'xed_operand_storage_s']]]
 ];

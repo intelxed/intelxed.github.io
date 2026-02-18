@@ -1,5 +1,6 @@
 var xed_util_8h =
 [
+    [ "api_check", "xed-util_8h.html#afa7446e6c21bd0a71e0efa9b2676a963", null ],
     [ "XED2DIE", "xed-util_8h.html#ae9644a4aa92c87b2adae4c1e8bf963c7", null ],
     [ "XED2IMSG", "xed-util_8h.html#a760385c6d83d5fc71d4c024f683c8486", null ],
     [ "XED2TMSG", "xed-util_8h.html#ad5f7160aa01ef065e178d2a94f3160a5", null ],

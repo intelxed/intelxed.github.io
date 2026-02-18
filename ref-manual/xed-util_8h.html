@@ -93,6 +93,8 @@ $(document).ready(function(){initNavTree('xed-util_8h.html',''); initResizable()
 <div class="textblock"><code>#include &quot;<a class="el" href="xed-common-hdrs_8h.html">xed-common-hdrs.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="xed-types_8h.html">xed-types.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="xed-portability_8h.html">xed-portability.h</a>&quot;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -120,6 +122,13 @@ Macros</h2></td></tr>
 <tr class="separator:a3f5db43cb695b01d7f69c7c080b61c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50f75a29830559433eb138c0f06cb1d2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-util_8h.html#a50f75a29830559433eb138c0f06cb1d2">XED_VERY_VERBOSE</a>&#160;&#160;&#160;(0)</td></tr>
 <tr class="separator:a50f75a29830559433eb138c0f06cb1d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">API Input Validation</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>Macros for validating API inputs at function boundaries</p>
+<p>These macros provide runtime validation of API inputs with minimal overhead. They are enabled by default and can be disabled with the &ndash;no-api-check build flag. When disabled, they compile to no-ops that suppress unused variable warnings. </p>
+</div></td></tr>
+<tr class="memitem:afa7446e6c21bd0a71e0efa9b2676a963"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xed-util_8h.html#afa7446e6c21bd0a71e0efa9b2676a963">api_check</a>(cond)&#160;&#160;&#160;do { (void)(cond); } while(0)</td></tr>
+<tr class="memdesc:afa7446e6c21bd0a71e0efa9b2676a963"><td class="mdescLeft">&#160;</td><td class="mdescRight">When API checks are disabled, cast to void to suppress warnings.  <a href="xed-util_8h.html#afa7446e6c21bd0a71e0efa9b2676a963">More...</a><br /></td></tr>
+<tr class="separator:afa7446e6c21bd0a71e0efa9b2676a963"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -200,6 +209,26 @@ Variables</h2></td></tr>
 <tr class="separator:a0113585b6ec05b9e2fb348c063808dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="afa7446e6c21bd0a71e0efa9b2676a963"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa7446e6c21bd0a71e0efa9b2676a963">&#9670;&nbsp;</a></span>api_check</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define api_check</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">cond</td><td>)</td>
+          <td>&#160;&#160;&#160;do { (void)(cond); } while(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>When API checks are disabled, cast to void to suppress warnings. </p>
+
+</div>
+</div>
 <a id="ae9644a4aa92c87b2adae4c1e8bf963c7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae9644a4aa92c87b2adae4c1e8bf963c7">&#9670;&nbsp;</a></span>XED2DIE</h2>
 
