@@ -33,6 +33,7 @@ var structxed__operand__storage__s =
     [ "has_modrm", "structxed__operand__storage__s.html#a5e1b914cf33a996de380ab2b84a6eff4", null ],
     [ "has_sib", "structxed__operand__storage__s.html#ae60ed464f49cf38771c67a6d32121340", null ],
     [ "hint", "structxed__operand__storage__s.html#a3390c38d47d6aff23814ae37b503666a", null ],
+    [ "ibhf", "structxed__operand__storage__s.html#a6007187333b463e470bde1170694ffdf", null ],
     [ "iclass", "structxed__operand__storage__s.html#a839074130fe4117198c2bf1e272c7335", null ],
     [ "ild_f2", "structxed__operand__storage__s.html#ac57a7ddb914e1a186da00bc469e521fb", null ],
     [ "ild_f3", "structxed__operand__storage__s.html#abf010802f0bac1cc77681c7b9debd86c", null ],

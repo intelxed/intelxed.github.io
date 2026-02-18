@@ -79,7 +79,8 @@ var menudata={children:[
 {text:"File List",url:"files.html"},
 {text:"Globals",url:"globals.html",children:[
 {text:"All",url:"globals.html",children:[
-{text:"s",url:"globals.html#index_s"},
+{text:"a",url:"globals.html#index_a"},
+{text:"s",url:"globals_s.html#index_s"},
 {text:"x",url:"globals_x.html#index_x"}]},
 {text:"Functions",url:"globals_func.html",children:[
 {text:"s",url:"globals_func.html#index_s"},
@@ -92,4 +93,5 @@ var menudata={children:[
 {text:"Enumerator",url:"globals_eval.html",children:[
 {text:"x",url:"globals_eval.html#index_x"}]},
 {text:"Macros",url:"globals_defs.html",children:[
-{text:"x",url:"globals_defs.html#index_x"}]}]}]}]}
+{text:"a",url:"globals_defs.html#index_a"},
+{text:"x",url:"globals_defs_x.html#index_x"}]}]}]}]}

@@ -42,7 +42,7 @@ $(function() {
 <div class="title">Intel&reg; XED Build Guide </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>December 2025</p>
+<div class="textblock"><p>February 2026</p>
 <h1><a class="anchor" id="INTRO"></a>
 Introduction</h1>
 <p>Intel&reg; XED can be built with many compilers:</p><ul>
@@ -279,7 +279,6 @@ The mbuild options</h1>
 <div class="line">  --no-ptl              Disable Panther Lake <span class="keyword">public</span> instructions</div>
 <div class="line">  --no-emr              Disable Emerald Rapids <span class="keyword">public</span> instructions</div>
 <div class="line">  --no-arl              Disable Arrow Lake <span class="keyword">public</span> instructions</div>
-<div class="line">  --no-lnl              Disable Lunar Lake <span class="keyword">public</span> instructions</div>
 <div class="line">  --dbghelp             Use dbghelp.dll on windows.</div>
 <div class="line">  --prefix=PREFIX_DIR   XED System install directory.</div>
 <div class="line">  --prefix-lib-dir=PREFIX_LIB_DIR</div>
@@ -291,6 +290,7 @@ The mbuild options</h1>
 <div class="line">  --limit-strings       Remove some strings to save space.</div>
 <div class="line">  --no-encoder          Disable the encoder</div>
 <div class="line">  --no-decoder          Disable the decoder</div>
+<div class="line">  --no-api-check        Disable API input validation checks</div>
 <div class="line">  --generator-options=GENERATOR_OPTIONS</div>
 <div class="line">                        Options to pass through <span class="keywordflow">for</span> the decode generator</div>
 <div class="line">  --legal-header=LEGAL_HEADER</div>

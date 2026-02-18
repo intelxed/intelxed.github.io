@@ -1,5 +1,8 @@
 var NAVTREEINDEX6 =
 {
+"unionxed__union64__t.html#a051add75892a4457b58fcbc334410158":[2,0,29,10],
+"unionxed__union64__t.html#a0ca2ece37c2a141300af11ffe6dd9357":[2,0,29,5],
+"unionxed__union64__t.html#a3e14c09b37cc7f2ada4210fb6374b3d5":[2,0,29,11],
 "unionxed__union64__t.html#a45aa10d78b97e7753e3a4cfecc38f8db":[2,0,29,17],
 "unionxed__union64__t.html#a56b05ceeaf0a4899294c2bd89381452f":[2,0,29,12],
 "unionxed__union64__t.html#a59238c4741d26fc832d52bae06402272":[2,0,29,6],
@@ -246,8 +249,5 @@ var NAVTREEINDEX6 =
 "xed-attribute-enum_8h.html#af14f9810b41f796f591eb8fd378cc26b":[3,0,2,34],
 "xed-attribute-enum_8h.html#af3b872fd6f4d5bce3e5e6ddf06849d58":[3,0,2,17],
 "xed-attribute-enum_8h.html#af4f7a1ab93a9c141d0ce522164ae111c":[3,0,2,66],
-"xed-attribute-enum_8h.html#af53add38bf2d95d0b56cbc3d5df1d0c0":[3,0,2,20],
-"xed-attribute-enum_8h.html#af5d120066a6aceede46da0bf160cbb3b":[3,0,2,69],
-"xed-attribute-enum_8h.html#afbf3edbd8a2e338d3cb951cf63d43af1":[3,0,2,61],
-"xed-attribute-enum_8h.html#afc3b1e643a1a2add971a98749c82d6ba":[3,0,2,19]
+"xed-attribute-enum_8h.html#af53add38bf2d95d0b56cbc3d5df1d0c0":[3,0,2,20]
 };

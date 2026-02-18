@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['encoding_20instructions_71787',['Encoding Instructions',['../group__ENC.html',1,'']]],
-  ['examples_20of_20using_20intel_26reg_3b_20xed_71788',['Examples of using Intel&amp;reg; XED',['../group__EXAMPLES.html',1,'']]]
+  ['encoding_20instructions_71829',['Encoding Instructions',['../group__ENC.html',1,'']]],
+  ['examples_20of_20using_20intel_26reg_3b_20xed_71830',['Examples of using Intel&amp;reg; XED',['../group__EXAMPLES.html',1,'']]]
 ];

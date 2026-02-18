@@ -1,6 +1,7 @@
 var xed_build_defines_8h =
 [
     [ "XED_AMD_ENABLED", "xed-build-defines_8h.html#af5657cebfa3a6cc8af616ee02019e044", null ],
+    [ "XED_API_CHECK_ENABLED", "xed-build-defines_8h.html#aacade2442819633bf3200ba04dfd9bbe", null ],
     [ "XED_APX", "xed-build-defines_8h.html#a7ee22c57b08114eb73a947ad5439307e", null ],
     [ "XED_AVX", "xed-build-defines_8h.html#a15be773b13b8f2512466af13cefa88c8", null ],
     [ "XED_CET", "xed-build-defines_8h.html#aa4d59703d69cbc4f06db0bc5ae86d8af", null ],
