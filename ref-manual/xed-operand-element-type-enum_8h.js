@@ -1,10 +1,13 @@
 var xed_operand_element_type_enum_8h =
 [
     [ "XED_OPERAND_ELEMENT_TYPE_BFLOAT16_DEFINED", "xed-operand-element-type-enum_8h.html#a605d3d866ef14a129f5e41b965d457ea", null ],
+    [ "XED_OPERAND_ELEMENT_TYPE_BFLOAT4_DEFINED", "xed-operand-element-type-enum_8h.html#a50b7e607c682cc8058aea0c689e19af2", null ],
+    [ "XED_OPERAND_ELEMENT_TYPE_BFLOAT6_DEFINED", "xed-operand-element-type-enum_8h.html#a45db041925814ebe3c3844e4ae8901ec", null ],
     [ "XED_OPERAND_ELEMENT_TYPE_BFLOAT8_DEFINED", "xed-operand-element-type-enum_8h.html#a607534aded8fe79807dbcf2c1a811544", null ],
     [ "XED_OPERAND_ELEMENT_TYPE_DOUBLE_DEFINED", "xed-operand-element-type-enum_8h.html#ae8c7a51d5a8d529fce6549d9f924f537", null ],
     [ "XED_OPERAND_ELEMENT_TYPE_FLOAT16_DEFINED", "xed-operand-element-type-enum_8h.html#ae23167448fe9c9a9de2e3d84cb9e0a89", null ],
     [ "XED_OPERAND_ELEMENT_TYPE_FLOAT8_DEFINED", "xed-operand-element-type-enum_8h.html#a377bb319bb3f1359a279f4ac0bcf1914", null ],
+    [ "XED_OPERAND_ELEMENT_TYPE_HFLOAT6_DEFINED", "xed-operand-element-type-enum_8h.html#ad70876760aa096ff5bcc535b1adf7233", null ],
     [ "XED_OPERAND_ELEMENT_TYPE_HFLOAT8_DEFINED", "xed-operand-element-type-enum_8h.html#aeb1d88b825431ef2e571a894b8789887", null ],
     [ "XED_OPERAND_ELEMENT_TYPE_INT8_DEFINED", "xed-operand-element-type-enum_8h.html#a6ebdbdda070c44f419a285a6144e3615", null ],
     [ "XED_OPERAND_ELEMENT_TYPE_INT_DEFINED", "xed-operand-element-type-enum_8h.html#addfdf70704ad2e2a605b56347764c614", null ],
@@ -34,9 +37,12 @@ var xed_operand_element_type_enum_8h =
       [ "XED_OPERAND_ELEMENT_TYPE_HFLOAT8", "xed-operand-element-type-enum_8h.html#a6942f19fe2b1943a9a98d6598ff2c9d5ae11af1ce6bc457e3f000aa791b66f6d7", null ],
       [ "XED_OPERAND_ELEMENT_TYPE_INT8", "xed-operand-element-type-enum_8h.html#a6942f19fe2b1943a9a98d6598ff2c9d5a65c513b782b4b1926be1e28c1dd14342", null ],
       [ "XED_OPERAND_ELEMENT_TYPE_UINT8", "xed-operand-element-type-enum_8h.html#a6942f19fe2b1943a9a98d6598ff2c9d5a86f475e7d469d5c35d299632d9008adc", null ],
+      [ "XED_OPERAND_ELEMENT_TYPE_BFLOAT4", "xed-operand-element-type-enum_8h.html#a6942f19fe2b1943a9a98d6598ff2c9d5a0da42f632a9cfe5dd0797ee08866371c", null ],
+      [ "XED_OPERAND_ELEMENT_TYPE_BFLOAT6", "xed-operand-element-type-enum_8h.html#a6942f19fe2b1943a9a98d6598ff2c9d5a6aee66d6be02b10ca75fbb63bebb7f2f", null ],
+      [ "XED_OPERAND_ELEMENT_TYPE_HFLOAT6", "xed-operand-element-type-enum_8h.html#a6942f19fe2b1943a9a98d6598ff2c9d5acdc933f2bf263b8070aecc8ca4ebf661", null ],
       [ "XED_OPERAND_ELEMENT_TYPE_LAST", "xed-operand-element-type-enum_8h.html#a6942f19fe2b1943a9a98d6598ff2c9d5ad54ac5f4faa48b32f7e5d4ba0879c803", null ]
     ] ],
     [ "str2xed_operand_element_type_enum_t", "group__ENUM.html#gafbbf731b710c483159c6537de39341bd", null ],
-    [ "xed_operand_element_type_enum_t2str", "group__ENUM.html#gabf9ce787fb08d0014ebfa206982a3bc4", null ],
+    [ "xed_operand_element_type_enum_t2str", "group__ENUM.html#gab0f74c1c30fcd81ff3a6ee826312b2af", null ],
     [ "xed_operand_element_type_enum_t_last", "group__ENUM.html#gac3f800fb363fbd6d06a9bdeba545158f", null ]
 ];

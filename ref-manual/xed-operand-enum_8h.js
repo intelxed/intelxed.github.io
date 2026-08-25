@@ -295,6 +295,6 @@ var xed_operand_enum_8h =
       [ "XED_OPERAND_LAST", "xed-operand-enum_8h.html#a09c2a35d8bb7bfe68bb3d34b0a5e011aa6558448a12b7ce8bf00d73cf3e45dafd", null ]
     ] ],
     [ "str2xed_operand_enum_t", "group__ENUM.html#ga5171a8e9ed0f5bd702649ab74c6c7f26", null ],
-    [ "xed_operand_enum_t2str", "group__ENUM.html#ga04fcaf9740e48685baff9bf854a1facf", null ],
+    [ "xed_operand_enum_t2str", "group__ENUM.html#ga3f850ee11175397830e198cca305c2c2", null ],
     [ "xed_operand_enum_t_last", "group__ENUM.html#ga06cb1fd18627777b7858fd895b61c49b", null ]
 ];

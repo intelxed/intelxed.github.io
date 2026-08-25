@@ -21,6 +21,6 @@ var xed_machine_mode_enum_8h =
       [ "XED_MACHINE_MODE_LAST", "xed-machine-mode-enum_8h.html#a754db9d73c5365644094cd161fe570a7a97414d3e1b22e5bb1f62ce7d98465966", null ]
     ] ],
     [ "str2xed_machine_mode_enum_t", "group__ENUM.html#gaa6229dc875554ab07fbb2b1bdd18bb65", null ],
-    [ "xed_machine_mode_enum_t2str", "group__ENUM.html#ga4bd645fe28e5410c5701c75a9c671714", null ],
+    [ "xed_machine_mode_enum_t2str", "group__ENUM.html#ga78deb434d03034b4f1f33e15d591a2f6", null ],
     [ "xed_machine_mode_enum_t_last", "group__ENUM.html#ga0da5a2732f8dc5cdd043f920ea6a9416", null ]
 ];

@@ -217,6 +217,6 @@ var xed_attribute_enum_8h =
       [ "XED_ATTRIBUTE_LAST", "xed-attribute-enum_8h.html#a848d4cf396be5a647413e94bc6f0a383a938e0359670348622c6a9c8ecf083ef4", null ]
     ] ],
     [ "str2xed_attribute_enum_t", "group__ENUM.html#ga81b5de8d76c2801a6b1cbca58beb270b", null ],
-    [ "xed_attribute_enum_t2str", "group__ENUM.html#ga2264d988e4a69383b29b4e4086c91a6a", null ],
+    [ "xed_attribute_enum_t2str", "group__ENUM.html#gada6931da58ac7e5526a2e761bace1435", null ],
     [ "xed_attribute_enum_t_last", "group__ENUM.html#ga0fd9c06747c9755c0e631746acbd5661", null ]
 ];

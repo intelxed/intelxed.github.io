@@ -19,6 +19,6 @@ var xed_reg_role_enum_8h =
       [ "XED_REG_ROLE_LAST", "xed-reg-role-enum_8h.html#a0f47d808cc158100cda543079bd484d8aeeb967b14152c1bb1572dc10dbdf4493", null ]
     ] ],
     [ "str2xed_reg_role_enum_t", "group__ENUM.html#ga3fde56fafd5fbe4c642c0566e0e84f28", null ],
-    [ "xed_reg_role_enum_t2str", "group__ENUM.html#gabe4442aed8c462716bb7877c9ef2e080", null ],
+    [ "xed_reg_role_enum_t2str", "group__ENUM.html#ga505d6d380f2d8aff57e327d92e0962c7", null ],
     [ "xed_reg_role_enum_t_last", "group__ENUM.html#ga30015569197d490a9b6afa9ff9826089", null ]
 ];

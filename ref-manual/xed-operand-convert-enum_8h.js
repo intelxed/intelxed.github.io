@@ -49,6 +49,6 @@ var xed_operand_convert_enum_8h =
       [ "XED_OPERAND_CONVERT_LAST", "xed-operand-convert-enum_8h.html#a08b83dd2a6ef2188efb833bd5b0d7d9fa31bba6c5dafa9661913a2917446516d5", null ]
     ] ],
     [ "str2xed_operand_convert_enum_t", "group__ENUM.html#gaff3cfcae6a879b77bff27c370f29551c", null ],
-    [ "xed_operand_convert_enum_t2str", "group__ENUM.html#ga5ac1a337029da11c1247e0d63b9eeb40", null ],
+    [ "xed_operand_convert_enum_t2str", "group__ENUM.html#ga719971cbbfb1150742978f4da3c621b3", null ],
     [ "xed_operand_convert_enum_t_last", "group__ENUM.html#ga4457b5e416e0f2a52e67af75638c5f27", null ]
 ];

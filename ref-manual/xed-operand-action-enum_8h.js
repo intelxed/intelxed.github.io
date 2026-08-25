@@ -21,6 +21,6 @@ var xed_operand_action_enum_8h =
       [ "XED_OPERAND_ACTION_LAST", "xed-operand-action-enum_8h.html#a6bf8113365b84b9d6ab549fdfef2643fa795e1dcfec6087cb0730ff16398ae28b", null ]
     ] ],
     [ "str2xed_operand_action_enum_t", "group__ENUM.html#ga58675ccc52549df6fb0439df1a5f220d", null ],
-    [ "xed_operand_action_enum_t2str", "group__ENUM.html#gae7afb4fbfcb60625ff89148aa1f8b87a", null ],
+    [ "xed_operand_action_enum_t2str", "group__ENUM.html#gadcb26694cb188a9c6316098a84245d6d", null ],
     [ "xed_operand_action_enum_t_last", "group__ENUM.html#gafee0e2b2c340b16d909f3c0987a41b27", null ]
 ];

@@ -20,6 +20,7 @@ var xed_chip_enum_8h =
     [ "XED_CHIP_COOPER_LAKE_DEFINED", "xed-chip-enum_8h.html#a7ba49c0960d1496d8949a8e80f60beb9", null ],
     [ "XED_CHIP_DIAMOND_RAPIDS_DEFINED", "xed-chip-enum_8h.html#ac32f600e2f83482be49d1bb4be0a5d47", null ],
     [ "XED_CHIP_EMERALD_RAPIDS_DEFINED", "xed-chip-enum_8h.html#a97aaa4dc67efc5c3b4d3008f3cf1950b", null ],
+    [ "XED_CHIP_FUTURE_AG_DEFINED", "xed-chip-enum_8h.html#a74a10dd32610f3f5a69894a18b8cd9c8", null ],
     [ "XED_CHIP_FUTURE_DEFINED", "xed-chip-enum_8h.html#a99d0a5744be906e3abf250e672e30a7e", null ],
     [ "XED_CHIP_GOLDMONT_DEFINED", "xed-chip-enum_8h.html#a40670a7fc7db0b5866e107a28b4641a6", null ],
     [ "XED_CHIP_GOLDMONT_PLUS_DEFINED", "xed-chip-enum_8h.html#af94b574efbd3518f4bb3bb20a1f19f79", null ],
@@ -149,10 +150,11 @@ var xed_chip_enum_8h =
       [ "XED_CHIP_PANTHER_LAKE", "xed-chip-enum_8h.html#ae77c7c405380680ef2414d50d67f1301a766eb0d1aa4df19f030c7f7351752aad", null ],
       [ "XED_CHIP_NOVA_LAKE", "xed-chip-enum_8h.html#ae77c7c405380680ef2414d50d67f1301a8cebe5ec45dbb24b93b47c8a55046c33", null ],
       [ "XED_CHIP_FUTURE", "xed-chip-enum_8h.html#ae77c7c405380680ef2414d50d67f1301af28881ece421024d724058378ac61d6f", null ],
+      [ "XED_CHIP_FUTURE_AG", "xed-chip-enum_8h.html#ae77c7c405380680ef2414d50d67f1301a60b56a1d8397b27b4a8b2567275f651f", null ],
       [ "XED_CHIP_ALL", "xed-chip-enum_8h.html#ae77c7c405380680ef2414d50d67f1301a79f8e9ed1124b446bab6b173f95342d3", null ],
       [ "XED_CHIP_LAST", "xed-chip-enum_8h.html#ae77c7c405380680ef2414d50d67f1301a3c10391b9dea59a079998e4570b58eda", null ]
     ] ],
     [ "str2xed_chip_enum_t", "group__ENUM.html#ga173110605dc1e32525e9df181f2f761f", null ],
-    [ "xed_chip_enum_t2str", "group__ENUM.html#ga675755f9224885ff0a19e1be6de04c5c", null ],
+    [ "xed_chip_enum_t2str", "group__ENUM.html#ga3033cd80db8c6b31f22d1c006d9a89fc", null ],
     [ "xed_chip_enum_t_last", "group__ENUM.html#gae1493f95f3c18922653568a787eae70e", null ]
 ];

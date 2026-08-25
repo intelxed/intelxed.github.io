@@ -19,6 +19,7 @@ var xed_reg_enum_8h =
     [ "XED_REG_BOUND_LAST_DEFINED", "xed-reg-enum_8h.html#a6de06d20b78d753617f2470cc3d0b356", null ],
     [ "XED_REG_BP_DEFINED", "xed-reg-enum_8h.html#a21c2c08a618be78bd6a45cd0c575fdfc", null ],
     [ "XED_REG_BPL_DEFINED", "xed-reg-enum_8h.html#af07061872ea96bd461693d6d32bffa2f", null ],
+    [ "XED_REG_BSR0_DEFINED", "xed-reg-enum_8h.html#abb21c76995cc9a77ce9b797c4d5a433a", null ],
     [ "XED_REG_BX_DEFINED", "xed-reg-enum_8h.html#a2fd966bd860d6c5872573f69f1aa72b4", null ],
     [ "XED_REG_CH_DEFINED", "xed-reg-enum_8h.html#a94c17c92394c0e036e2d1c697920a498", null ],
     [ "XED_REG_CL_DEFINED", "xed-reg-enum_8h.html#a4f09eba2a4d4e0211058e24ad2bd81f2", null ],
@@ -641,6 +642,7 @@ var xed_reg_enum_8h =
       [ "XED_REG_DFV14", "xed-reg-enum_8h.html#af05c33c5a68e9304d1d8ac0408ae3f61ae2fb9c47d6a7658fb56ba0b72c609fc0", null ],
       [ "XED_REG_DFV15", "xed-reg-enum_8h.html#af05c33c5a68e9304d1d8ac0408ae3f61a109eabcc1d98f57fe4e17cf5c09b278f", null ],
       [ "XED_REG_IA32_KERNEL_GS_BASE", "xed-reg-enum_8h.html#af05c33c5a68e9304d1d8ac0408ae3f61adbf23c905b7f860b98ea29d210a9b6f7", null ],
+      [ "XED_REG_BSR0", "xed-reg-enum_8h.html#af05c33c5a68e9304d1d8ac0408ae3f61ae0675311509a9e2a13ed7d50f7e5bf64", null ],
       [ "XED_REG_X87CONTROL", "xed-reg-enum_8h.html#af05c33c5a68e9304d1d8ac0408ae3f61a85e9380a781b38209b6ea7e616ccd872", null ],
       [ "XED_REG_X87STATUS", "xed-reg-enum_8h.html#af05c33c5a68e9304d1d8ac0408ae3f61aa2bcad2140c60812654e2a46e380c2e9", null ],
       [ "XED_REG_X87TAG", "xed-reg-enum_8h.html#af05c33c5a68e9304d1d8ac0408ae3f61abe1498274f6c478a81f4009e2dbd8afa", null ],
@@ -847,6 +849,6 @@ var xed_reg_enum_8h =
       [ "XED_REG_ZMM_LAST", "xed-reg-enum_8h.html#af05c33c5a68e9304d1d8ac0408ae3f61a43e6bb45a207ea67279aaad74c9bca14", null ]
     ] ],
     [ "str2xed_reg_enum_t", "group__ENUM.html#ga48dc3d086b469ae580ca47917043c2fd", null ],
-    [ "xed_reg_enum_t2str", "group__ENUM.html#ga88cb3037e2542aa6062c9d46d481ddca", null ],
+    [ "xed_reg_enum_t2str", "group__ENUM.html#ga6e1d27954bb8dbebebb088ae44ebae86", null ],
     [ "xed_reg_enum_t_last", "group__ENUM.html#gad2255166d37ffe04cbf52650a2fd27f2", null ]
 ];

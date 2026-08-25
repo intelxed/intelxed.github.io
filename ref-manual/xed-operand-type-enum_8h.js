@@ -21,6 +21,6 @@ var xed_operand_type_enum_8h =
       [ "XED_OPERAND_TYPE_LAST", "xed-operand-type-enum_8h.html#a7f9198331fe1015a2df65f7b42aa43a8a7973023a05605602afb1a59a3f8c8238", null ]
     ] ],
     [ "str2xed_operand_type_enum_t", "group__ENUM.html#ga2442452a830a0f64d1763c56508d3912", null ],
-    [ "xed_operand_type_enum_t2str", "group__ENUM.html#gab0d89025730840a865d073efe56afe57", null ],
+    [ "xed_operand_type_enum_t2str", "group__ENUM.html#ga021159c29a43501d408f7ebfba49b6f7", null ],
     [ "xed_operand_type_enum_t_last", "group__ENUM.html#ga1cfa27d03ddc76f1464284b2a061b738", null ]
 ];
