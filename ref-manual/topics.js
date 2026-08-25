@@ -1,0 +1,21 @@
+var topics =
+[
+    [ "Decoding Instructions", "group__DEC.html", "group__DEC" ],
+    [ "Encoding Instructions", "group__ENC.html", "group__ENC" ],
+    [ "High Level API for Encoding Instructions", "group__ENCHL.html", "group__ENCHL" ],
+    [ "Patching instructions", "group__ENCHLPATCH.html", "group__ENCHLPATCH" ],
+    [ "Fast Encoder for Specific Instructions", "group__ENC2.html", "group__ENC2" ],
+    [ "Operand storage fields", "group__OPERANDS.html", "group__OPERANDS" ],
+    [ "Iforms", "group__IFORM.html", "group__IFORM" ],
+    [ "Groupings of features for chips", "group__ISASET.html", "group__ISASET" ],
+    [ "CPUID Interface", "group__CPUID.html", "group__CPUID" ],
+    [ "Printing (disassembling) Instructions", "group__PRINT.html", "group__PRINT" ],
+    [ "Register Interface", "group__REGINTFC.html", "group__REGINTFC" ],
+    [ "Flags Interface", "group__FLAGS.html", "group__FLAGS" ],
+    [ "Address generation calculation support", "group__AGEN.html", "group__AGEN" ],
+    [ "Intel&reg; XED enumerations", "group__ENUM.html", "group__ENUM" ],
+    [ "Intel&reg; XED initialization", "group__INIT.html", "group__INIT" ],
+    [ "Intel&reg; XED command interface", "group__CMDLINE.html", null ],
+    [ "Examples of using Intel&reg; XED", "group__EXAMPLES.html", null ],
+    [ "Small Examples of using Intel&reg; XED", "group__SMALLEXAMPLES.html", null ]
+];

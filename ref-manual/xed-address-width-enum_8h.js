@@ -13,6 +13,6 @@ var xed_address_width_enum_8h =
       [ "XED_ADDRESS_WIDTH_LAST", "xed-address-width-enum_8h.html#a2fe76cf1d3e62a77190798dc87c0a865a6ab14f7ce07e0a997bf8685c255c33d6", null ]
     ] ],
     [ "str2xed_address_width_enum_t", "group__ENUM.html#ga8fd9a4f1ade05aaf01cd94178a18e643", null ],
-    [ "xed_address_width_enum_t2str", "group__ENUM.html#gae57cb864831ac7ccce6d617cbf7d9f95", null ],
+    [ "xed_address_width_enum_t2str", "group__ENUM.html#ga918ff74926ae74315e7f7d16b3d9bc64", null ],
     [ "xed_address_width_enum_t_last", "group__ENUM.html#ga33a055078a60078e6995fe42d2590dc7", null ]
 ];

@@ -1,5 +1,11 @@
 var xed_exception_enum_8h =
 [
+    [ "XED_EXCEPTION_ACE_E1_DEFINED", "xed-exception-enum_8h.html#a10ad9cbfa1f4f4647769fbb4e0e75795", null ],
+    [ "XED_EXCEPTION_ACE_E2_DEFINED", "xed-exception-enum_8h.html#a6f7072c94af9e63a14c96535ae494f59", null ],
+    [ "XED_EXCEPTION_ACE_E3_DEFINED", "xed-exception-enum_8h.html#ae435958bfd40043f649dde44d40fa001", null ],
+    [ "XED_EXCEPTION_ACE_E4_DEFINED", "xed-exception-enum_8h.html#a93ae39fa7fc324d4f91868813a15d743", null ],
+    [ "XED_EXCEPTION_ACE_E5_DEFINED", "xed-exception-enum_8h.html#a72f6396d4fbc8d6f85a630460a3accd3", null ],
+    [ "XED_EXCEPTION_ACE_E6_DEFINED", "xed-exception-enum_8h.html#aee4aaac3017092f00c4133282b0815fc", null ],
     [ "XED_EXCEPTION_AMX_E1_DEFINED", "xed-exception-enum_8h.html#a65212ff235d142d995f5613f5cfb9782", null ],
     [ "XED_EXCEPTION_AMX_E1_EVEX_DEFINED", "xed-exception-enum_8h.html#a98584b1d486e7b438ea47e9f17c83978", null ],
     [ "XED_EXCEPTION_AMX_E2_DEFINED", "xed-exception-enum_8h.html#a9ce51e35bb8e178baf0adb129178e462", null ],
@@ -88,6 +94,12 @@ var xed_exception_enum_8h =
     [ "XED_EXCEPTION_USER_MSR_VEX_DEFINED", "xed-exception-enum_8h.html#a938751a32b1bb6ab042a00234b534f90", null ],
     [ "xed_exception_enum_t", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4d", [
       [ "XED_EXCEPTION_INVALID", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4dac46edbcf63abdf12eb19682d92a7825f", null ],
+      [ "XED_EXCEPTION_ACE_E1", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4da0a9ab122dd421eaf53657723b509db3e", null ],
+      [ "XED_EXCEPTION_ACE_E2", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4dae189597b75e84030c5240e68af11d00a", null ],
+      [ "XED_EXCEPTION_ACE_E3", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4dae08c5e3a32de4ac69cd1fb3ea8774fdb", null ],
+      [ "XED_EXCEPTION_ACE_E4", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4da8ea2c64448c0505e707ca4d98cebeeb8", null ],
+      [ "XED_EXCEPTION_ACE_E5", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4da42cfc6ac5e9a54579bc89bcd635b4d22", null ],
+      [ "XED_EXCEPTION_ACE_E6", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4da00d094e54b3f1e99befedd286e68597d", null ],
       [ "XED_EXCEPTION_AMX_E1", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4da7a7d97525bd9d00da1618af56ec1be18", null ],
       [ "XED_EXCEPTION_AMX_E1_EVEX", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4daf7c506764913555f3e019a4321199dee", null ],
       [ "XED_EXCEPTION_AMX_E2", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4da7dd3d2746c962bae7fd79ab502583272", null ],
@@ -175,6 +187,6 @@ var xed_exception_enum_8h =
       [ "XED_EXCEPTION_LAST", "xed-exception-enum_8h.html#a49126b5e9b22f54161f21c31248faf4da418443a779ba5fd7ba6897f80e7b524f", null ]
     ] ],
     [ "str2xed_exception_enum_t", "group__ENUM.html#ga7f97deb562fc5e4d308cedc814e1bce7", null ],
-    [ "xed_exception_enum_t2str", "group__ENUM.html#gade4c2458e7afa3b95a6d88817f7407f1", null ],
+    [ "xed_exception_enum_t2str", "group__ENUM.html#gae2525ce3762d153878ee91f318133689", null ],
     [ "xed_exception_enum_t_last", "group__ENUM.html#ga5ea8256fd31ec5fc132b22d7090f4cc6", null ]
 ];

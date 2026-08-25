@@ -21,6 +21,6 @@ var xed_flag_action_enum_8h =
       [ "XED_FLAG_ACTION_LAST", "xed-flag-action-enum_8h.html#a773a73e698efc788d2e9e7cf908ba147aa2cac01f0f0768f0c57a23ea1ef34a48", null ]
     ] ],
     [ "str2xed_flag_action_enum_t", "group__ENUM.html#gaf0163bfa8ac51705924b9a4c2b5e9a6b", null ],
-    [ "xed_flag_action_enum_t2str", "group__ENUM.html#gaafda51c88700946980c26272f880786d", null ],
+    [ "xed_flag_action_enum_t2str", "group__ENUM.html#ga0215c700030c339be9d2eea22a1959c1", null ],
     [ "xed_flag_action_enum_t_last", "group__ENUM.html#gac37fef1f31349c9ed9e1cfdf395da50a", null ]
 ];

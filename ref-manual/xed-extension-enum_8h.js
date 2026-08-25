@@ -2,6 +2,7 @@ var xed_extension_enum_8h =
 [
     [ "XED_EXTENSION_3DNOW_DEFINED", "xed-extension-enum_8h.html#a62295868b9bd5b75c8b9f7a0dd105450", null ],
     [ "XED_EXTENSION_3DNOW_PREFETCH_DEFINED", "xed-extension-enum_8h.html#af972cce983d997013c2a174195a19701", null ],
+    [ "XED_EXTENSION_ACE_DEFINED", "xed-extension-enum_8h.html#aa2276880657cad92f658d4a38add4694", null ],
     [ "XED_EXTENSION_ADOX_ADCX_DEFINED", "xed-extension-enum_8h.html#ab11bfc2fcfb5adedae567b154fe39954", null ],
     [ "XED_EXTENSION_AES_DEFINED", "xed-extension-enum_8h.html#a73cdbadfcec55e20cbfe83717be28611", null ],
     [ "XED_EXTENSION_AMD_INVLPGB_DEFINED", "xed-extension-enum_8h.html#a33e12c54d5daed8c520c055b2027ea93", null ],
@@ -114,6 +115,7 @@ var xed_extension_enum_8h =
       [ "XED_EXTENSION_INVALID", "xed-extension-enum_8h.html#ae7b9f64cdf123c5fda22bd10d5db9916a3ea1695b0c0ef81c2803d02149c7e434", null ],
       [ "XED_EXTENSION_3DNOW", "xed-extension-enum_8h.html#ae7b9f64cdf123c5fda22bd10d5db9916a851e5df8c401aa7ec3567afe14d72bd0", null ],
       [ "XED_EXTENSION_3DNOW_PREFETCH", "xed-extension-enum_8h.html#ae7b9f64cdf123c5fda22bd10d5db9916acb4d9bf61942a745620ca98fcfdc4c8d", null ],
+      [ "XED_EXTENSION_ACE", "xed-extension-enum_8h.html#ae7b9f64cdf123c5fda22bd10d5db9916a6e882d58f972db19e2aab7e3d63630bd", null ],
       [ "XED_EXTENSION_ADOX_ADCX", "xed-extension-enum_8h.html#ae7b9f64cdf123c5fda22bd10d5db9916aebaa84a1878e12143a7e014c31cfc5e5", null ],
       [ "XED_EXTENSION_AES", "xed-extension-enum_8h.html#ae7b9f64cdf123c5fda22bd10d5db9916a68fa9836626c9bb2e77f8fad70e89ff2", null ],
       [ "XED_EXTENSION_AMD_INVLPGB", "xed-extension-enum_8h.html#ae7b9f64cdf123c5fda22bd10d5db9916af3a215b6b0771fd11425d30fe5ef165a", null ],
@@ -223,6 +225,6 @@ var xed_extension_enum_8h =
       [ "XED_EXTENSION_LAST", "xed-extension-enum_8h.html#ae7b9f64cdf123c5fda22bd10d5db9916af2497c2387bb0356fa931d8410d2e514", null ]
     ] ],
     [ "str2xed_extension_enum_t", "group__ENUM.html#ga1c44135eaf6d653eccd237520b55dfb7", null ],
-    [ "xed_extension_enum_t2str", "group__ENUM.html#ga48b592b593ef896ee01a431bc9f31910", null ],
+    [ "xed_extension_enum_t2str", "group__ENUM.html#ga2ea45fff0e4b87d67256fb8f61093219", null ],
     [ "xed_extension_enum_t_last", "group__ENUM.html#ga19b17461c117cb7802afb941e838db37", null ]
 ];

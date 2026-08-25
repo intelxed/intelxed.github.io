@@ -5,8 +5,8 @@ var group__INIT =
       [ "stack_addr_width", "structxed__state__s.html#a202e530cc6f872ce7744b4bdddcb49ba", null ]
     ] ],
     [ "xed_state_t", "group__INIT.html#ga0579d095621727c10fb89befa307a809", null ],
-    [ "xed_get_copyright", "group__INIT.html#gab8d9c7a109a7e0d1cd483e68e3033cc4", null ],
-    [ "xed_get_version", "group__INIT.html#ga884629a9ddd4db55da6aa0b012423108", null ],
+    [ "xed_get_copyright", "group__INIT.html#ga6e97932ab5f01db46fec0712ef7ce871", null ],
+    [ "xed_get_version", "group__INIT.html#ga255fff7197c320f9dca838f31929783f", null ],
     [ "xed_register_abort_function", "group__INIT.html#ga017b6fcac483ea9f1621c4cdd0af84bd", null ],
     [ "xed_state_get_address_width", "group__INIT.html#gaa5df14c6b5a97bd9f9ee4c50ab790a85", null ],
     [ "xed_state_get_machine_mode", "group__INIT.html#ga8b1fc00b95c50fd54959889d72dc569a", null ],

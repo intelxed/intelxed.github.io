@@ -233,6 +233,6 @@ var xed_category_enum_8h =
       [ "XED_CATEGORY_LAST", "xed-category-enum_8h.html#a3e6e23a35a7ad463e2422d7db98e49f5a05331113355163706eb8f226b8da42c2", null ]
     ] ],
     [ "str2xed_category_enum_t", "group__ENUM.html#gac610a6c96eedfac9cc046bafdf24d2bd", null ],
-    [ "xed_category_enum_t2str", "group__ENUM.html#ga53dc3410aa5e3f1f5a04d4a89cf14cc4", null ],
+    [ "xed_category_enum_t2str", "group__ENUM.html#gaa42c09d55b48c3aa0424554dcf059de7", null ],
     [ "xed_category_enum_t_last", "group__ENUM.html#ga97cf2ec4b3a8616cd8ac347d18624bf7", null ]
 ];

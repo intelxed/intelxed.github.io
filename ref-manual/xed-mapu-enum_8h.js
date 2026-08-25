@@ -47,6 +47,6 @@ var xed_mapu_enum_8h =
       [ "XED_MAPU_LAST", "xed-mapu-enum_8h.html#a4735ecb72821e6c68d4e410db638ba6ba954405caa0e7507eb3b8118789bf7686", null ]
     ] ],
     [ "str2xed_mapu_enum_t", "group__ENUM.html#ga216f54077a8bbab0f8dbb250ea5d1bec", null ],
-    [ "xed_mapu_enum_t2str", "group__ENUM.html#ga1348114ba7dfe75137eb654a9f53f846", null ],
+    [ "xed_mapu_enum_t2str", "group__ENUM.html#ga856d04bf54216e07ec472f5a84b945d2", null ],
     [ "xed_mapu_enum_t_last", "group__ENUM.html#ga205d6e35fcaf6b820bf9f8d9f57bde55", null ]
 ];

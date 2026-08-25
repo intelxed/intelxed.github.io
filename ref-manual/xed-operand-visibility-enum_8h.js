@@ -13,6 +13,6 @@ var xed_operand_visibility_enum_8h =
       [ "XED_OPVIS_LAST", "xed-operand-visibility-enum_8h.html#ae678c6279a7ba50bf58f2e357242b58da03ae73fc4d8e27bd7316a577ded26e26", null ]
     ] ],
     [ "str2xed_operand_visibility_enum_t", "group__ENUM.html#gaee0641e8722891769a673d945fdbd32b", null ],
-    [ "xed_operand_visibility_enum_t2str", "group__ENUM.html#ga74efc2328c2dd8d91ead49c2c33b2167", null ],
+    [ "xed_operand_visibility_enum_t2str", "group__ENUM.html#gac564e2571b5c4431730b11e01642ba11", null ],
     [ "xed_operand_visibility_enum_t_last", "group__ENUM.html#ga34c4bf3df5a3cea65aba5e13c9d5bbd5", null ]
 ];

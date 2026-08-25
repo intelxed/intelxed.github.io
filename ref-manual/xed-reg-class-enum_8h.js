@@ -61,6 +61,6 @@ var xed_reg_class_enum_8h =
       [ "XED_REG_CLASS_LAST", "xed-reg-class-enum_8h.html#a8ac6bf3f9f78208385c46ea25324ea76ae232c1338f3d7874d6eb029b1bbc58d4", null ]
     ] ],
     [ "str2xed_reg_class_enum_t", "group__ENUM.html#ga42de53e0622823b27dfbc1b0bcab381b", null ],
-    [ "xed_reg_class_enum_t2str", "group__ENUM.html#ga48c530f9f9fcf703b16782c144a8f9ee", null ],
+    [ "xed_reg_class_enum_t2str", "group__ENUM.html#ga7e0abdf4266580da77b90873a103edc4", null ],
     [ "xed_reg_class_enum_t_last", "group__ENUM.html#ga1a6bbdc6f91152faa4705c360ad8b0d0", null ]
 ];

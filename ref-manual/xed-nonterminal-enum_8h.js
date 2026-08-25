@@ -545,6 +545,6 @@ var xed_nonterminal_enum_8h =
       [ "XED_NONTERMINAL_LAST", "xed-nonterminal-enum_8h.html#ae0eb8f71a8f89cddf0df4b1a6a2b27afa5292799c7b361c388820e1e462e09698", null ]
     ] ],
     [ "str2xed_nonterminal_enum_t", "group__ENUM.html#gabe8ef68d543f1bda1075eaf53a15d09f", null ],
-    [ "xed_nonterminal_enum_t2str", "group__ENUM.html#gaa1a9da4ec82d04c760d9fbd6276a8ecc", null ],
+    [ "xed_nonterminal_enum_t2str", "group__ENUM.html#ga62531ecea80eec2466e716f8263bc17a", null ],
     [ "xed_nonterminal_enum_t_last", "group__ENUM.html#ga405ca1a9c5cb7c87d38d3d49be5a75d4", null ]
 ];

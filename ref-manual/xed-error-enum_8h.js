@@ -45,6 +45,6 @@ var xed_error_enum_8h =
       [ "XED_ERROR_LAST", "xed-error-enum_8h.html#a2611877aa5e8b566c1c2be45aa89c792a31699d329b9d3c4d12980d3605428a8f", null ]
     ] ],
     [ "str2xed_error_enum_t", "group__ENUM.html#ga203bb495b7c49e34ef3e83c25024775b", null ],
-    [ "xed_error_enum_t2str", "group__ENUM.html#ga096d962191d0bef4dea339f09f49bcf4", null ],
+    [ "xed_error_enum_t2str", "group__ENUM.html#ga3bedb05443282de153bb187745b05617", null ],
     [ "xed_error_enum_t_last", "group__ENUM.html#gab58a666af2254a23031d8e0ce4b255b3", null ]
 ];
